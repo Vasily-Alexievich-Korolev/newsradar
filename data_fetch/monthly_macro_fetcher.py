@@ -4,7 +4,7 @@
 从 akshare 一次性抓取所有月度频率的宏观经济指标，
 增量更新到 eco_data/ 下的对应 CSV 文件。
 
-覆盖指标：CPI, PPI, PMI, M1/M2, 工业增加值, 社会融资规模, 北向资金
+覆盖指标：CPI, PPI, PMI, M1/M2, 社会融资规模
 
 数据来源：akshare -> 国家统计局 / 中国人民银行 / 东方财富
 """
@@ -48,12 +48,6 @@ INDICATORS = {
         "func": "macro_china_money_supply",
         "date_col": "月份",
         "value_col": "货币和准货币(M2)",
-    },
-    "工业增加值": {
-        "output": os.path.join(ECO_DIR, "规模以上工业增加值.csv"),
-        "func": "macro_china_industrial_production_yearly",
-        "date_col": "月份",
-        "value_col": "同比增长",
     },
     "社融增量": {
         "output": os.path.join(ECO_DIR, "社会融资规模增量.csv"),
@@ -143,6 +137,8 @@ def fetch_and_merge(indicator_name, config):
     else:
         combined = new_rows
 
+    # 确保 date 列全是字符串，避免 sort_values 类型混合报错
+    combined["date"] = combined["date"].astype(str).str.strip()
     combined = combined.drop_duplicates(subset=["date"], keep="last")
     combined = combined.sort_values("date")
     combined.to_csv(config["output"], index=False, encoding="utf-8-sig")

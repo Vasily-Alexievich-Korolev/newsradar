@@ -41,6 +41,19 @@ def read_csv(name, path, col_map=None):
         return None
 
 
+def read_csv_history(path, n=6):
+    """读取 CSV 最近 n 行 DataFrame，用于计算 delta 和均值。"""
+    if not os.path.exists(path):
+        return None
+    try:
+        df = pd.read_csv(path, encoding='utf-8-sig')
+        if df.empty or len(df) < 2:
+            return None
+        return df.tail(n)
+    except Exception:
+        return None
+
+
 def fetch_akshare(symbol_func, params=None):
     """通过 akshare 实时抓取（用于 GitHub Actions 环境）。"""
     try:
@@ -153,78 +166,155 @@ def get_macro_snapshot():
         except Exception as e:
             print(f"  > akshare 宏观抓取失败: {e}")
 
+    # 为每条指标附加 delta（环比变化率）和 5 期均值
+    for name, path in csv_files.items():
+        if name not in result:
+            continue
+        hist = read_csv_history(path, n=6)
+        if hist is None:
+            continue
+        val_cols = [c for c in hist.columns if c.lower() not in ('date', '日期', '月份', '时间', 'time')]
+        if not val_cols:
+            continue
+        col = val_cols[-1]
+        try:
+            vals = hist[col].apply(lambda x: float(str(x).replace('%','').replace(',','').replace('+','')))
+            latest = vals.iloc[-1]
+            prev = vals.iloc[-2]
+            if prev != 0:
+                result[name]["_delta"] = f"{(latest - prev) / abs(prev) * 100:+.1f}%"
+            if len(vals) >= 5:
+                result[name]["_mean5"] = f"{vals.tail(5).mean():.2f}"
+        except:
+            pass
+
     return result
 
 
 def describe_macro(macro):
-    """将宏观数据转为简洁的文本摘要。"""
-    lines = []
+    """将宏观数据转为机构级结构化摘要（含 delta 和趋势）。"""
+    sections = []
 
-    # 利率
+    # ── 利率 ──
     dr007 = macro.get("DR007", {})
+    shibor = macro.get("Shibor", {})
     lpr = macro.get("LPR", {})
+    bond = macro.get("国债收益率", {})
+    rate_parts = []
     if dr007:
-        val = dr007.get("DR007", "")
-        lines.append(f"DR007={(val if isinstance(val,str) else f'{val:.2f}')}%")
+        v = _value("DR007", dr007)
+        rate_parts.append(f"DR007={safe_fmt(v)}% Δ{_delta(dr007)}")
+    if shibor:
+        for k in ['隔夜', '1周']:
+            if k in shibor:
+                rate_parts.append(f"Shibor{k}={shibor[k]}")
     if lpr:
-        lines.append(f"LPR1Y={lpr.get('LPR1Y','')}% LPR5Y={lpr.get('LPR5Y','')}%")
+        rate_parts.append(f"LPR1Y={lpr.get('LPR1Y','')}% LPR5Y={lpr.get('LPR5Y','')}%")
+    if bond:
+        v = bond.get("中国10年", bond.get("10年", ""))
+        if v:
+            rate_parts.append(f"CN10Y={v}%")
+    if rate_parts:
+        sections.append("【利率】" + " | ".join(rate_parts))
 
-    # 通胀
+    # ── 通胀 ──
     cpi = macro.get("CPI", {})
     ppi = macro.get("PPI", {})
-    if cpi:
-        v = cpi.get("CPI", 0)
-        if isinstance(v, (int, float)):
-            lines.append(f"CPI={v*100:.1f}%")
-    if ppi:
-        v = ppi.get("PPI", 0)
-        if isinstance(v, (int, float)):
-            lines.append(f"PPI={'+' if v>=0 else ''}{v*100:.1f}%")
+    if cpi or ppi:
+        parts = []
+        if cpi: parts.append(f"CPI={_val_pct('CPI', cpi)} Δ{_delta(cpi)}")
+        if ppi: parts.append(f"PPI={_val_pct('PPI', ppi)} Δ{_delta(ppi)}")
+        sections.append("【通胀】" + " | ".join(parts))
 
-    # 货币
+    # ── 货币信用 ──
     m1 = macro.get("M1", {})
     m2 = macro.get("M2", {})
-    if m1:
-        v = m1.get("M1同比增速", 0)
-        if isinstance(v, (int, float)):
-            lines.append(f"M1={'+' if v>=0 else ''}{v*100:.1f}%")
-    if m2:
-        v = m2.get("M2同比增速", 0)
-        if isinstance(v, (int, float)):
-            lines.append(f"M2={'+' if v>=0 else ''}{v*100:.1f}%")
+    social_inc = macro.get("社融增量", {})
+    social_stock = macro.get("社融存量", {})
+    loan = macro.get("企业贷款占比", {})
+    money_parts = []
+    if m1: money_parts.append(f"M1={_val_pct_raw(m1)} Δ{_delta(m1)}")
+    if m2: money_parts.append(f"M2={_val_pct_raw(m2)} Δ{_delta(m2)}")
+    if social_inc: money_parts.append(f"社融增量={_val_raw(social_inc)}亿")
+    if social_stock: money_parts.append(f"社融存量={_val_raw(social_stock)}亿")
+    if money_parts:
+        sections.append("【货币信用】" + " | ".join(money_parts))
 
-    # 经济
+    # ── 经济动能 ──
     pmi = macro.get("PMI", {})
     ind = macro.get("工业增加值", {})
-    if pmi:
-        v = pmi.get("PMI", 0)
-        if isinstance(v, (int, float)):
-            lines.append(f"PMI={v*100:.1f}")
-    if ind:
-        v = ind.get("规模以上工业增加值同比增速", 0)
-        if isinstance(v, (int, float)):
-            lines.append(f"工业增加值={'+' if v>=0 else ''}{v*100:.1f}%")
+    econ_parts = []
+    if pmi: econ_parts.append(f"PMI={_val_pct('PMI', pmi)} Δ{_delta(pmi)}")
+    if ind: econ_parts.append(f"工业增加值={_val_pct_raw(ind)}")
+    if econ_parts:
+        sections.append("【经济动能】" + " | ".join(econ_parts))
 
-    # 资金
+    # ── 资金面 ──
     north = macro.get("北向资金", {})
     margin = macro.get("两融余额", {})
-    if north:
-        v = north.get("北向资金（亿元）", "")
-        lines.append(f"北向={v}亿" if not isinstance(v, float) else f"北向={v:.0f}亿")
-    if margin:
-        v = margin.get("融资融券余额（亿元）", "")
-        lines.append(f"两融={v}亿" if not isinstance(v, float) else f"两融={v:.0f}亿")
+    turnover = macro.get("A股成交额", {})
+    cap_parts = []
+    if north: cap_parts.append(f"北向={_val_raw(north)}亿")
+    if margin: cap_parts.append(f"两融={_val_raw(margin)}亿")
+    if turnover: cap_parts.append(f"成交额={_val_raw(turnover)}亿")
+    if cap_parts:
+        sections.append("【资金面】" + " | ".join(cap_parts))
 
-    # 债券
+    # ── 利差 ──
     spread = macro.get("中美利差", {})
     if spread:
-        cn10 = spread.get("中国10年", "")
-        us10 = spread.get("美国10年", "")
+        cn = spread.get("中国10年", "")
+        us = spread.get("美国10年", "")
         diff = spread.get("中美10年利差", "")
-        if cn10 and us10:
-            lines.append(f"CN10Y={cn10}% US10Y={us10}% 利差={diff}%")
+        if cn and us:
+            sections.append(f"【利差】CN10Y={cn}% US10Y={us}% 利差={diff}%")
 
-    return " | ".join(lines)
+    # ── 估值 ──
+    pe = macro.get("PE", {})
+    pb = macro.get("PB", {})
+    val_parts = []
+    if pe: val_parts.append(f"PE={_val_raw(pe)}")
+    if pb: val_parts.append(f"PB={_val_raw(pb)}")
+    if val_parts:
+        sections.append("【估值】" + " | ".join(val_parts))
+
+    return "\n".join(sections) if sections else "无宏观数据"
+
+
+# ── 辅助函数 ──
+def _value(key, d):
+    for k, v in d.items():
+        if key.lower() in k.lower():
+            try: return float(str(v).replace('%','').replace(',',''))
+            except: return v
+    return None
+
+def _delta(d):
+    return d.get("_delta", "").replace("+", "↑").replace("-", "↓") if "_delta" in d else ""
+
+def _val_pct(key, d):
+    v = _value(key, d)
+    if v is None: return "N/A"
+    return f"{v:.1f}%" if abs(v) < 100 else f"{v:.0f}"
+
+def _val_pct_raw(d):
+    for k, v in d.items():
+        if k.startswith("_"): continue
+        try: return f"{float(str(v).replace('%','').replace('+','')):.1f}%"
+        except: return str(v)
+    return "N/A"
+
+def _val_raw(d):
+    for k, v in d.items():
+        if k.startswith("_"): continue
+        try: return f"{float(str(v).replace(',','')):.0f}"
+        except: return str(v)
+    return "N/A"
+
+def safe_fmt(v):
+    if v is None: return "N/A"
+    try: return f"{float(v):.2f}"
+    except: return str(v)
 
 
 # ============================================================
@@ -338,38 +428,56 @@ def call_deepseek(macro_text: str, etf_data: dict) -> dict:
         data_lines.append(f"- {name}:{p} {info['chg_5d']}")
     data_text = "\n".join(data_lines)
 
-    prompt = f"""你是一名宏观策略研究员，基于以下经济数据进行系统性分析。
+    prompt = f"""你是一名宏观策略研究员，需要基于以下宏观经济数据进行系统性分析，并给出可交易的市场判断。
 
-请分析：流动性（资金松紧）、信用周期、经济基本面、资金行为、当前核心矛盾、对股市/加密的影响。
+# 分析目标
+1. 宏观经济处于：扩张 / 复苏 / 过热 / 滞胀 / 收缩 / 企稳震荡 哪一阶段
+2. 流动性环境（宽松 / 中性 / 收紧）
+3. 信用周期（扩张 / 收缩 / 见底 / 见顶）
+4. 风险偏好（上升 / 下降 / 中性）
+5. 对股市的方向性影响（偏多 / 偏空 / 震荡）
 
-要求：
-- 不要逐条复述数据
-- 做跨指标联动分析，识别背离关系
-- 强调边际变化而不是绝对值
-- 输出用以下格式，**不要用 JSON**，用 Markdown
+# 分析要求
+- **绝对禁止逐条复述数据**！如果你只是把数据复述一遍，你的输出毫无价值
+- 做"跨指标联动分析"——把利率、通胀、货币、资金面串成因果链
+- 重点识别背离关系（如宽松流动性+收缩信用 = 什么信号？）
+- 强调边际变化（数据中的 Δ ↑↓ 箭头）而不是绝对值
+- 区分领先指标（社融、北向资金）vs 滞后指标（CPI）
+- 每个结论必须有 1-2 句因果链推导
 
-## 宏观周期判断
-（扩张/复苏/过热/滞胀/收缩/企稳震荡）
+# 输出格式（严格遵循）
 
-## 流动性
-（宽松/中性/收紧 + 一句话理由）
+## 1. 宏观周期判断
+（只给一个阶段，后面跟 2-3 句基于数据的因果推导）
 
-## 经济状态
-（结论 + 一句话理由）
+## 2. 流动性分析
+（结论 + 因果链：DR007/M2/LPR 互相印证了什么？）
 
-## 资金面
-（结论 + 一句话理由）
+## 3. 信用周期
+（结论 + 因果链：社融和M2的缺口说明什么？）
 
-## 核心矛盾
-（1-3个当前最关键的背离或冲突）
+## 4. 经济基本面
+（结论 + 因果链：PMI/CPI 联合指向什么状态？）
 
-## 对市场的影响
-- 对A股方向性判断
-- 对美股方向性判断
-- 对利率/债市判断
+## 5. 资金面
+（结论 + 因果链：北向/两融/成交量反映什么风险偏好？）
 
-## 一句话总结
+## 6. 核心矛盾（最重要！）
+指出 2-3 个最关键的背离或冲突，例如：
+- 矛盾1: （流动性指标A）宽松 vs （信用指标B）收缩 → 意味着什么
+- 矛盾2: ...
+- 矛盾3: ...
 
+## 7. 市场结论
+- 对A股：方向判断 + 风格偏好（大盘/小盘、成长/价值）+ 依据
+- 对美股：方向判断 + 依据
+- 对利率/债市：方向判断 + 依据
+- 最大风险来源
+
+## 8. 一句话总结
+（格式：当前市场处于 X 阶段，流动性 Y，核心矛盾是 Z，短期关注 A）
+
+---
 【经济数据】
 {data_text}
 """
