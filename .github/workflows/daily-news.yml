@@ -65,7 +65,7 @@ jobs:
           git add eco_data/ news/reports/ news/events.json \
                   sse_etf_data/ data_stock/
           git commit -m "auto: update $(TZ=Asia/Shanghai date +%Y-%m-%d)" || echo "No changes"
-          git pull --rebase
+          git pull --rebase -X theirs origin main
           git push
 
       # ── 部署到 Pages ──
