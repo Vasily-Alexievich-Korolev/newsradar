@@ -153,7 +153,12 @@ def main():
     print("=" * 50)
 
     for name, config in INDICATORS.items():
-        fetch_and_merge(name, config)
+        try:
+            fetch_and_merge(name, config)
+        except Exception as e:
+            import traceback
+            print(f"\n  [{name}] 未捕获异常: {e}")
+            traceback.print_exc()
 
     # 汇总
     print("\n" + "=" * 50)

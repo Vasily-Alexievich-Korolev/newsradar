@@ -139,7 +139,12 @@ def main():
                 print(f"    {f:<25s} {size_kb:>8.1f} KB")
 
     print("=" * 56)
-    return 1 if fail_count > 0 else 0
+    if fail_count > len(results) // 2:
+        print(f"  ⚠ 失败超过半数 ({fail_count}/{len(results)})，退出")
+        return 1
+    elif fail_count > 0:
+        print(f"  ⚠ 部分失败 ({fail_count}/{len(results)})，不影响流程，继续")
+    return 0
 
 
 if __name__ == "__main__":
