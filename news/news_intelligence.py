@@ -91,7 +91,6 @@ FINANCE_SOURCES = [
     {'name': '中国新闻网', 'url': 'https://www.chinanews.com.cn/rss/finance.xml'},
     {'name': '世界报', 'url': 'https://www.lemonde.fr/en/economy/rss_full.xml'},
     {'name': '朝日新闻', 'url': 'https://www.asahi.com/rss/asahi/business.rdf'},
-    {'name': '日经亚洲', 'url': 'https://asia.nikkei.com/rss/feed'},
     {'name': '人民网财经', 'url': 'http://www.people.com.cn/rss/finance.xml'},
     {'name': '华尔街见闻', 'url': 'https://rsshub.rssforever.com/wallstreetcn/news/global'},
 ]
@@ -105,7 +104,6 @@ TECH_SOURCES = [
 CRYPTO_SOURCES = [
     {'name': 'CoinDesk', 'url': 'https://www.coindesk.com/arc/outboundfeeds/rss/'},
     {'name': 'CoinTelegraph', 'url': 'https://cointelegraph.com/rss'},
-    {'name': 'The Block', 'url': 'https://www.theblock.co/rss.xml'},
 ]
 
 ALL_CATEGORIES = {
@@ -570,10 +568,9 @@ def format_briefing(result, news_count):
     # ---- 脚注 ----
     lines.append(f"\n*简报生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}*")
     lines.append("*数据来源: 纽约时报、福克斯新闻、BBC、卫报、金融时报、Investing、")
-    lines.append("今日俄罗斯、联合早报、中国新闻网、世界报、朝日新闻、日经亚洲、")
+    lines.append("今日俄罗斯、联合早报、中国新闻网、世界报、朝日新闻、")
     lines.append("新华社、人民网财经、华尔街见闻、")
-    lines.append("TechCrunch、Ars Technica、MIT Tech Review、")
-    lines.append("CoinDesk、CoinTelegraph、The Block*")
+    lines.append("TechCrunch、Ars Technica、MIT Tech Review*")
 
     return "\n".join(lines)
 

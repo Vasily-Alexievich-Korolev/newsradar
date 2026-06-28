@@ -40,7 +40,6 @@ FETCHERS = [
     ("全市场 PE/PB 估值",           "market_valuation_fetcher.py"),
 
     # 补充数据源
-    ("BTC/ETH/SOL 日线价格",        "update_btc_daily.py"),
     ("上交所 ETF 份额",             "update_etf_share.py"),
     ("核心 ETF 日K线",              "update_etf_kline.py"),
 ]

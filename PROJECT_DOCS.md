@@ -23,7 +23,6 @@ news_program/
 │   ├── turnover_fetcher.py        ← A 股日成交额
 │   ├── account_fetcher.py         ← 新增投资者开户数（月频）
 │   ├── market_valuation_fetcher.py ← 全市场 PE / PB 估值
-│   ├── update_btc_daily.py         ← 币安主流币种 1d K 线
 │   ├── update_etf_share.py         ← 上交所 ETF 日份额
 │   └── update_etf_kline.py         ← 核心 ETF 日 K 线
 │
@@ -40,7 +39,7 @@ news_program/
 ├── eco_data/                 ← 宏观经济历史数据（CSV，已持久化到 git）
 ├── sse_etf_data/             ← 上交所 ETF 份额日数据（CSV）
 ├── data_stock/               ← A 股核心 ETF 日 K 线（CSV）
-├── data/                     ← 币安日 K 线（*_history_1d.csv，不含 1h 大文件）
+├── data/                     ← 项目数据（CSV）
 ├── news_data/                ← RSS 缓存（从新闻源抓取的原始数据）
 │
 └── .gitignore
@@ -75,7 +74,6 @@ news_program/
               │  │ PE / PB        │    │
               │  └─────────────────┘    │
               │  ┌─────────────────┐    │
-              │  │ BTC 1d K 线     │    │  → data/*_history_1d.csv
               │  │ ETF 日份额      │    │  → sse_etf_data/*.csv
               │  │ ETF 日 K 线     │    │  → data_stock/*_Klines.csv
               │  └─────────────────┘    │
@@ -159,18 +157,16 @@ news_program/
 
 | 脚本 | 数据源 | 输出文件 | 频率 |
 |------|--------|----------|:----:|
-| `update_btc_daily.py` | Binance API | `data/*_history_1d.csv` | 日 |
 | `update_etf_share.py` | 上交所 SSE API | `sse_etf_data/sse_etf_*.csv` | 日 |
 | `update_etf_kline.py` | akshare → 东方财富 | `data_stock/*_Klines.csv` | 日 |
 
-`update_btc_daily.py` 抓取 6 个主流币种：BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT, XRPUSDT, PEPEUSDT。
 `update_etf_kline.py` 抓取 6 只核心 ETF：上证50(510050)、沪深300(510300)、中证500(510500)、中证1000(512100)、科创50(588000)、创业板指(sz399006)。
 
 ### 3.2 经济分析（news/eco_analysis.py）
 
 **流程：**
 1. 读取 `eco_data/` 下的所有 CSV 文件，获取最新一条记录
-2. 也尝试读取 ETF 数据（`data_stock/`）和 BTC 数据（`data/`）
+2. 也尝试读取 ETF 数据（`data_stock/`）
 3. 如果没有本地数据，用 akshare 实时抓取
 4. 将所有数据打包发给 DeepSeek API，要求分析：
    - 宏观周期判断（扩张/复苏/过热/滞胀/收缩/企稳震荡）
@@ -178,7 +174,7 @@ news_program/
    - 经济状态
    - 资金面
    - 核心矛盾（背离或冲突）
-   - 对 BTC/A股/美股/债市的影响
+   - 对 A股/美股/债市的影响
 5. 输出 Markdown 报告到 `news/reports/eco_YYYY-MM-DD.md`
 
 **关键逻辑：**
@@ -190,11 +186,11 @@ news_program/
 ### 3.3 新闻简报（news/news_intelligence.py）
 
 **流程：**
-1. 抓取 25 个 RSS 新闻源（世界/政治/财经/科技/加密分类）
+1. 抓取 22 个 RSS 新闻源（世界/政治/财经/科技分类）
 2. 读取 `news/reports/eco_*.md` 获取经济分析摘要
 3. 读取 `news/events.json` 获取追踪中的重大事件
 4. 全部发给 DeepSeek API 生成结构化简报：
-   - 每日四维简报（政治/经济/科技/加密）
+   - 每日四维简报（政治/经济/科技）
    - 长尾效应分析
    - 水面下的隐藏信号
 5. 更新 `events.json`（新增事件、更新已有事件状态）
@@ -311,7 +307,6 @@ set PYTHONIOENCODING=utf-8
 | 宏观经济 CSV | `main` | `eco_data/*.csv` |
 | ETF 份额 | `main` | `sse_etf_data/*.csv` |
 | ETF K 线 | `main` | `data_stock/*_Klines.csv` |
-| 币安日 K 线 | `main` | `data/*_history_1d.csv` |
 | RSS 缓存 | 不持久化 | `news_data/`（每次重新抓） |
 | 经济分析报告 | `main` | `news/reports/eco_*.md` |
 | 新闻简报 | `main` | `news/reports/briefing_*.md` |

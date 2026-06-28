@@ -71,16 +71,19 @@ INDICATORS = {
 
 
 def load_existing(path):
-    """读取已有 CSV，返回 (DataFrame, 已有日期集合)。"""
+    """读取已有 CSV，返回 (DataFrame, 已有日期集合)。解析失败则视为空。"""
     if not os.path.exists(path):
         return pd.DataFrame(), set()
-    df = pd.read_csv(path, encoding="utf-8-sig")
-    if df.empty:
-        return df, set()
-    # 找到第一列作为日期列
-    date_col = df.columns[0]
-    dates = set(df[date_col].astype(str).str.strip())
-    return df, dates
+    try:
+        df = pd.read_csv(path, encoding="utf-8-sig")
+        if df.empty:
+            return df, set()
+        date_col = df.columns[0]
+        dates = set(df[date_col].astype(str).str.strip())
+        return df, dates
+    except Exception:
+        print(f"(警告: CSV 损坏，从 {os.path.basename(path)} 重新抓取)")
+        return pd.DataFrame(), set()
 
 
 def fetch_and_merge(indicator_name, config):

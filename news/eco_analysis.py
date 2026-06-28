@@ -19,7 +19,6 @@ PROJECT_DIR = os.path.dirname(BASE_DIR)
 ECO_DIR = os.path.join(PROJECT_DIR, "eco_data")
 SSE_DIR = os.path.join(PROJECT_DIR, "sse_etf_data")
 STOCK_DIR = os.path.join(PROJECT_DIR, "data_stock")
-CRYPTO_DIR = os.path.join(PROJECT_DIR, "data")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 
 # ============================================================
@@ -31,7 +30,7 @@ def read_csv(name, path, col_map=None):
     if not os.path.exists(path):
         return None
     try:
-        df = pd.read_csv(path, encoding='utf-8')
+        df = pd.read_csv(path, encoding='utf-8-sig')
         if df.empty:
             return None
         row = df.tail(1).to_dict('records')[0]
@@ -262,7 +261,7 @@ def get_etf_prices():
             continue
         has_local = True
         try:
-            df = pd.read_csv(path, encoding='utf-8')
+            df = pd.read_csv(path, encoding='utf-8-sig')
             if df.empty:
                 continue
             recent = df.tail(5)
@@ -313,39 +312,6 @@ def get_etf_prices():
     return result
 
 
-def get_btc_snapshot():
-    """读取 BTC 日线数据获取涨跌幅（优先本地，无则 akshare）。"""
-    btc_path = os.path.join(CRYPTO_DIR, "BTC_factors.csv")
-    if os.path.exists(btc_path):
-        try:
-            df = pd.read_csv(btc_path)
-            if 'close' in df.columns and len(df) >= 2:
-                recent = df.tail(5)
-                chg_1d = (recent.iloc[-1]['close'] - recent.iloc[-2]['close']) / recent.iloc[-2]['close'] * 100
-                chg_5d = (recent.iloc[-1]['close'] - recent.iloc[0]['close']) / recent.iloc[0]['close'] * 100
-                return {"price": f"{recent.iloc[-1]['close']:.2f}", "chg_1d": f"{chg_1d:+.2f}%", "chg_5d": f"{chg_5d:+.2f}%"}
-        except Exception:
-            pass
-
-    # 本地无数据时用 akshare
-    try:
-        import akshare as ak
-        crypto_df = ak.crypto_hist(symbol="BTC-USD")
-        if crypto_df is not None and len(crypto_df) >= 2:
-            crypto_df = crypto_df.tail(5)
-            cur = crypto_df.iloc[-1]['close']
-            prev_1d = crypto_df.iloc[-2]['close']
-            prev_5d = crypto_df.iloc[0]['close']
-            return {
-                "price": f"{cur:.2f}",
-                "chg_1d": f"{(cur-prev_1d)/prev_1d*100:+.2f}%",
-                "chg_5d": f"{(cur-prev_5d)/prev_5d*100:+.2f}%",
-            }
-    except Exception:
-        pass
-    return None
-
-
 # ============================================================
 # DeepSeek API 调用
 # ============================================================
@@ -354,7 +320,7 @@ DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 BASE_URL = "https://api.deepseek.com"
 
 
-def call_deepseek(macro_text: str, etf_data: dict, btc_data: dict) -> dict:
+def call_deepseek(macro_text: str, etf_data: dict) -> dict:
     """将宏观+ETF数据发给 DeepSeek，获取经济分析报告。"""
     if not DEEPSEEK_API_KEY:
         print("  > 未设置 DEEPSEEK_API_KEY，跳过 API 调用")
@@ -370,11 +336,6 @@ def call_deepseek(macro_text: str, etf_data: dict, btc_data: dict) -> dict:
     for name, info in etf_data.items():
         p = f" {info.get('price','')}" if info.get('price') else ""
         data_lines.append(f"- {name}:{p} {info['chg_5d']}")
-    if btc_data:
-        data_lines.append(f"\n## 比特币")
-        data_lines.append(f"- 价格: {btc_data['price']}")
-        data_lines.append(f"- 1日: {btc_data['chg_1d']}")
-        data_lines.append(f"- 5日: {btc_data['chg_5d']}")
     data_text = "\n".join(data_lines)
 
     prompt = f"""你是一名宏观策略研究员，基于以下经济数据进行系统性分析。
@@ -403,7 +364,6 @@ def call_deepseek(macro_text: str, etf_data: dict, btc_data: dict) -> dict:
 （1-3个当前最关键的背离或冲突）
 
 ## 对市场的影响
-- 对BTC方向性判断
 - 对A股方向性判断
 - 对美股方向性判断
 - 对利率/债市判断
@@ -430,17 +390,15 @@ def call_deepseek(macro_text: str, etf_data: dict, btc_data: dict) -> dict:
 
 
 def build_eco_json():
-    """组装完整的宏观经济快照 JSON（宏观 + ETF + BTC）。"""
+    """组装完整的宏观经济快照 JSON（宏观 + ETF）。"""
     macro = get_macro_snapshot()
     macro_text = describe_macro(macro) if macro else "无宏观数据"
     etf = get_etf_prices()
-    btc = get_btc_snapshot()
 
     return {
         "date": datetime.now().strftime("%Y-%m-%d"),
         "macro": macro_text,
         "etf": etf,
-        "btc": btc,
     }
 
 
@@ -453,7 +411,7 @@ def main():
     print(json_str)
 
     # 调 DeepSeek 做分析
-    result = call_deepseek(data["macro"], data["etf"] or {}, data["btc"] or {})
+    result = call_deepseek(data["macro"], data["etf"] or {})
 
     # 保存为 markdown 报告
     os.makedirs(REPORTS_DIR, exist_ok=True)
@@ -468,7 +426,6 @@ def main():
     else:
         lines.append("## 原始数据（API 未执行）\n")
         lines.append(f"宏观: {data['macro']}\n")
-        lines.append(f"BTC: {data['btc']}\n")
         lines.append(f"指数: {data['etf']}\n")
 
     with open(report_path, 'w', encoding='utf-8') as f:
