@@ -429,6 +429,21 @@ def call_deepseek(macro_text: str, etf_data: dict, btc_data: dict) -> dict:
         return {"analysis": f"API 调用失败: {e}"}
 
 
+def build_eco_json():
+    """组装完整的宏观经济快照 JSON（宏观 + ETF + BTC）。"""
+    macro = get_macro_snapshot()
+    macro_text = describe_macro(macro) if macro else "无宏观数据"
+    etf = get_etf_prices()
+    btc = get_btc_snapshot()
+
+    return {
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "macro": macro_text,
+        "etf": etf,
+        "btc": btc,
+    }
+
+
 def main():
     print("\n[经济数据分析]")
     data = build_eco_json()

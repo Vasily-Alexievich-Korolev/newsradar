@@ -41,7 +41,8 @@ CAT_COLORS = {
 }
 
 # 部署后的根路径（GitHub Pages project site 用 /newsradar/，根域名用空字符串）
-BASE_URL = "/newsradar"
+# 可通过环境变量 SITE_BASE_URL 覆盖，例如：export SITE_BASE_URL=/my-site
+BASE_URL = os.environ.get("SITE_BASE_URL", "/newsradar")
 
 
 def nav_links():

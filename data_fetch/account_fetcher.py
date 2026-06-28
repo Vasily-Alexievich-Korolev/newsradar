@@ -10,7 +10,8 @@ A 股新增投资者开户数自动抓取工具
 import os
 import pandas as pd
 
-OUTPUT_CSV = "eco_data/新开户数.csv"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_CSV = os.path.join(BASE_DIR, "eco_data", "新开户数.csv")
 
 
 def load_existing():
@@ -30,7 +31,7 @@ def fetch_account_data():
     df = ak.stock_account_statistics_em()
 
     # 保存-读取以解决中文列名编码问题
-    tmp = ".tmp_acct.csv"
+    tmp = os.path.join(BASE_DIR, ".tmp_acct.csv")
     df.to_csv(tmp, index=False, encoding="utf-8-sig")
     df = pd.read_csv(tmp, encoding="utf-8-sig")
     os.remove(tmp)

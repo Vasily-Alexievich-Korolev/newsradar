@@ -46,11 +46,9 @@ sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
 # - 本地开发: set DEEPSEEK_API_KEY=sk-xxx 或 export DEEPSEEK_API_KEY=sk-xxx
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 if not DEEPSEEK_API_KEY:
-    raise RuntimeError(
-        "DEEPSEEK_API_KEY environment variable is not set.\n"
-        "  - On GitHub Actions: add it to repository secrets\n"
-        "  - On local machine: set via: set DEEPSEEK_API_KEY=sk-xxx\n"
-    )
+    print("  ⚠ 未设置 DEEPSEEK_API_KEY，将跳过 AI 分析，仅生成 RSS 原始数据")
+    print("    - GitHub Actions: 在仓库 Settings > Secrets > Actions 添加 DEEPSEEK_API_KEY")
+    print("    - 本地开发: set DEEPSEEK_API_KEY=sk-xxx 或 export DEEPSEEK_API_KEY=sk-xxx")
 BASE_URL = "https://api.deepseek.com"
 
 # 路径配置
@@ -445,6 +443,10 @@ def call_deepseek_analysis(news_list, events_db_text):
     """调用 DeepSeek API 进行新闻分析。"""
     print("\n[2/4] 调用 DeepSeek API 分析新闻...")
     print("  > 新闻数量:", len(news_list))
+
+    if not DEEPSEEK_API_KEY:
+        print("  > 跳过 API 调用（无 API Key）")
+        return None
 
     client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=BASE_URL, timeout=300)
 

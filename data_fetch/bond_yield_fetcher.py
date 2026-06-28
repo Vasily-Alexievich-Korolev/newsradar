@@ -14,8 +14,9 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-# CSV 路径（相对于工作目录 Scripts/）
-OUTPUT_CSV = "eco_data/国债收益率.csv"
+# CSV 路径
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_CSV = os.path.join(BASE_DIR, "eco_data", "国债收益率.csv")
 
 # 关键期限列表（与现有 CSV 对齐）
 KEY_TERMS = ["3月", "6月", "1年", "3年", "5年", "7年", "10年", "30年"]

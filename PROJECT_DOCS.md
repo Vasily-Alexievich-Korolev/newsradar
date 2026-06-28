@@ -153,6 +153,7 @@ news_program/
 - `bond_yield_fetcher.py` 使用分块抓取（每块 350 天绕开 API 限制）
 - `DR007_get.py` 直接从央行 API 获取，不依赖 akshare
 - `market_valuation_fetcher.py` 依赖 `py_mini_racer`（JS 引擎）解析 legulegu 的验证码
+- **⚠ 版本锁**：`market_valuation_fetcher.py` 使用了 akshare 内部模块路径 `akshare.stock_feature.stock_a_pe_and_pb`（非公开 API），akshare 重构可能导致导入失败。建议在 `requirements.txt` 或 CI 中锁定 akshare 版本。当前已知兼容版本：akshare >= 1.14
 
 #### 3 个补充数据 fetcher
 

@@ -4,6 +4,9 @@ import pandas as pd
 from datetime import datetime, timedelta
 from dateutil.parser import parse as parse_date
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEFAULT_OUTPUT = os.path.join(BASE_DIR, "eco_data", "dr007_history.csv")
+
 
 URL = "https://www.chinamoney.com.cn/ags/ms/cm-u-dlrp/PrDlyBltn"
 
@@ -80,7 +83,7 @@ def fetch_dr007_by_date(date_str):
 def fetch_dr007_history(
     start_date,
     end_date,
-    output_csv="eco_data/dr007_history.csv"
+    output_csv=DEFAULT_OUTPUT
 ):
     """
     批量抓取 DR007 历史数据（支持增量更新）

@@ -33,6 +33,9 @@ FETCHERS = [
     ("A股成交额（上证指数）",       "turnover_fetcher.py"),
     ("新增投资者开户数（月频）",    "account_fetcher.py"),
 
+    # 月度宏观指标（CPI/PPI/PMI/M1/M2/工业增加值/社融）
+    ("月度宏观指标批量更新",        "monthly_macro_fetcher.py"),
+
     # 全市场估值（依赖 py_mini_racer，可能出问题）
     ("全市场 PE/PB 估值",           "market_valuation_fetcher.py"),
 

@@ -13,6 +13,8 @@ import pandas as pd
 from datetime import datetime
 import py_mini_racer
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 try:
     from akshare.stock_feature.stock_a_pe_and_pb import hash_code, get_cookie_csrf
 except ImportError:
@@ -111,7 +113,7 @@ def fetch_pb_data(market="上证"):
 
 def auto_update_pe():
     """增量更新 PE CSV"""
-    output = "eco_data/全市场PE.csv"
+    output = os.path.join(BASE_DIR, "eco_data", "全市场PE.csv")
     existing_dates = set()
 
     if os.path.exists(output):
@@ -140,7 +142,7 @@ def auto_update_pe():
 
 def auto_update_pb():
     """增量更新 PB CSV"""
-    output = "eco_data/全市场PB.csv"
+    output = os.path.join(BASE_DIR, "eco_data", "全市场PB.csv")
     existing_dates = set()
 
     if os.path.exists(output):

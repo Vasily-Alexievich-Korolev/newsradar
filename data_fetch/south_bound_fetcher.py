@@ -10,8 +10,9 @@
 import os
 import pandas as pd
 
-# CSV 路径（相对于工作目录 Scripts/）
-OUTPUT_CSV = "eco_data/南向资金.csv"
+# CSV 路径
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_CSV = os.path.join(BASE_DIR, "eco_data", "南向资金.csv")
 
 
 def load_existing():

@@ -11,7 +11,8 @@ import os
 import pandas as pd
 from datetime import datetime, timedelta
 
-OUTPUT_CSV = "eco_data/A股成交额.csv"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_CSV = os.path.join(BASE_DIR, "eco_data", "A股成交额.csv")
 
 
 def load_existing():
