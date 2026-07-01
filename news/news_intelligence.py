@@ -587,34 +587,59 @@ def update_events_db(events_db, result):
     for e in events:
         title_to_event[e["title"]] = e
 
-    # 处理追踪事件更新
+    # 处理追踪事件更新（支持模糊标题匹配）
+    seen_titles_for_today = set()
     for update in result.get("追踪事件更新", []):
         title = update.get("标题", "")
         if title in title_to_event:
             e = title_to_event[title]
-            e["last_updated"] = today
-            e["daily_history"].append({
-                "date": today,
-                "summary": update.get("新动态", ""),
-                "impact": update.get("更新评估", ""),
-            })
+        else:
+            # 模糊匹配已有事件
+            e = None
+            for existing_title, existing_event in title_to_event.items():
+                if is_duplicate(title, existing_title):
+                    e = existing_event
+                    break
+            if e is None:
+                continue  # 找不到对应事件，跳过
 
-            # 更新状态
-            status_map = {"相同": "active", "升级": "escalating",
-                          "缓解": "resolving", "解决": "resolved"}
-            new_status = status_map.get(update.get("状态变化", ""))
-            if new_status:
-                e["status"] = new_status
+        e["last_updated"] = today
+        e["daily_history"].append({
+            "date": today,
+            "summary": update.get("新动态", ""),
+            "impact": update.get("更新评估", ""),
+        })
 
-    # 处理新检测事件
+        # 更新状态
+        status_map = {"相同": "active", "升级": "escalating",
+                      "缓解": "resolving", "解决": "resolved"}
+        new_status = status_map.get(update.get("状态变化", ""))
+        if new_status:
+            e["status"] = new_status
+
+    # 处理新检测事件（先去重：同一批次内标题相似的只保留第一个）
+    new_event_titles_seen = set()
     for new_event in result.get("新检测事件", []):
         title = new_event.get("标题", "") or new_event.get("信号", "")[:60] or f"未命名事件: {new_event.get('为何重要','')[:40]}..."
 
-        # 模糊去重：检查标题关键词重叠 > 50% 则视为同一事件
+        # 批次内去重
+        is_dup_in_batch = False
+        for seen in new_event_titles_seen:
+            if is_duplicate(title, seen):
+                is_dup_in_batch = True
+                break
+        if is_dup_in_batch:
+            continue
+        new_event_titles_seen.add(title)
+
+        # 模糊去重：检查标题是否指向同一事件
         def is_duplicate(new_title, existing_title):
-            # 将中文标题拆分为单个汉字/英文单词进行比较
+            # 快速检查：子串匹配（一个标题完全包含另一个）
+            if new_title in existing_title or existing_title in new_title:
+                return True
+
+            # 中文/英文 token 重叠度
             def tokenize(s):
-                # 中文字符逐字拆分，英文按空格/下划线拆分
                 result = []
                 for ch in s:
                     if '\u4e00' <= ch <= '\u9fff':
@@ -626,9 +651,18 @@ def update_events_db(events_db, result):
             ex_words = tokenize(existing_title)
             if not words or not ex_words:
                 return False
+
+            # 核心实体重叠度（降低阈值到 30%，因为 LLM 标题表述变化大）
             overlap = words & ex_words
+            # 排除过于通用的单字（"的"/"与"/"和"/"在"等 无法出现在中文标题中）
+            common = set("的与和在及于或是被把从以")
+            overlap = overlap - common
+            words = words - common
+            ex_words = ex_words - common
+            if not words or not ex_words:
+                return False
             ratio = len(overlap) / min(len(words), len(ex_words))
-            return ratio >= 0.5 or words.issubset(ex_words) or ex_words.issubset(words)
+            return ratio >= 0.3 or words.issubset(ex_words) or ex_words.issubset(words)
 
         existing_event = None
         for e in events:
