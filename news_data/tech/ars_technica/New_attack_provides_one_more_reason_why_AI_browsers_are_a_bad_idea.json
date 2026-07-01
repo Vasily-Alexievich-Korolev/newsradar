@@ -1,0 +1,8 @@
+{
+    "source": "Ars Technica",
+    "title": "New attack provides one more reason why AI browsers are a bad idea",
+    "link": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+    "summary": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+    "published": "Tue, 30 Jun 2026 20:03:14 +0000",
+    "category": "tech"
+}

@@ -58,8 +58,11 @@ def run_fetcher(display_name, script_name):
     start = time.time()
     try:
         # 设置 UTF-8 编码避免 Windows 终端问题
+        # 绕过公司代理（东方财富等国内源不需要代理）
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
+        env["NO_PROXY"] = "*"
+        env["no_proxy"] = "*"
         result = subprocess.run(
             [sys.executable, script_path],
             cwd=PROJECT_DIR,

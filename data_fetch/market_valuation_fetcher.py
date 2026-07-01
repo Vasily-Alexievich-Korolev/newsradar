@@ -131,7 +131,10 @@ def auto_update_pe():
         print("PE 无需更新")
         return
 
-    combined = pd.concat([pd.read_csv(output) if os.path.exists(output) else pd.DataFrame(), missing], ignore_index=True)
+    combined = pd.concat([
+        pd.read_csv(output, parse_dates=["time"]) if os.path.exists(output) else pd.DataFrame(),
+        missing
+    ], ignore_index=True)
     combined = combined.drop_duplicates(subset=["time"])
     combined = combined.sort_values("time").reset_index(drop=True)
 
@@ -160,7 +163,10 @@ def auto_update_pb():
         print("PB 无需更新")
         return
 
-    combined = pd.concat([pd.read_csv(output) if os.path.exists(output) else pd.DataFrame(), missing], ignore_index=True)
+    combined = pd.concat([
+        pd.read_csv(output, parse_dates=["time"]) if os.path.exists(output) else pd.DataFrame(),
+        missing
+    ], ignore_index=True)
     combined = combined.drop_duplicates(subset=["time"])
     combined = combined.sort_values("time").reset_index(drop=True)
 
