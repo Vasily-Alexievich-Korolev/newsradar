@@ -66,6 +66,8 @@ def run_fetcher(display_name, script_name):
             capture_output=True,
             timeout=300,
             text=True,
+            encoding='utf-8',  # 显式 UTF-8 避免 Windows GBK 解码失败
+            errors='replace',  # 无法解码的字符用 ? 替换
             env=env,
         )
         elapsed = time.time() - start
