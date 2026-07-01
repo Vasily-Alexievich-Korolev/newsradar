@@ -9,10 +9,11 @@ run_news_pipeline.py — 本地新闻情报管线运行主控
   4. 新闻简报（DeepSeek）
   5. 构建静态站点
   6. Git 提交 + 推送到远程
-  7. 自动关机（可选）
+  7. 部署到 GitHub Pages (gh-pages 分支)
+  8. 自动关机（可选）
 
 使用方式：
-  python run_news_pipeline.py              # 完整运行
+  python run_news_pipeline.py                # 完整运行
   python run_news_pipeline.py --no-shutdown  # 跑完不关机
   python run_news_pipeline.py --skip-fetch   # 跳过数据抓取
   python run_news_pipeline.py --skip-ai      # 跳过 AI 分析
@@ -24,11 +25,14 @@ import subprocess
 import time
 import argparse
 import platform
+import glob
+import tempfile
+import shutil
 from datetime import datetime
 
 # ── 项目根目录 ──
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PYTHON = "python"  # 直接使用系统 python（已在 venv 中激活或被调度器指定）
+PYTHON = sys.executable
 
 # ── 步骤耗时统计 ──
 timings = []
@@ -98,44 +102,80 @@ def check_api_key():
 
 
 def git_push():
-    """Git 提交并推送到远程"""
-    log("步骤 6: Git 提交 + 推送")
+    """Git 提交并推送到远程 main 分支"""
+    log("步骤 5: Git 提交 + 推送")
 
     # git add
-    run_step("git add 数据文件", [
-        "git", "add",
+    run_step("git add 数据文件", ["git", "add",
         "eco_data/", "news/reports/", "news/events.json",
         "sse_etf_data/", "data_stock/",
     ])
-    # 日K线文件：先检查是否存在再 add
-    import glob
     daily_files = glob.glob(os.path.join(BASE_DIR, "data", "*_history_1d.csv"))
     if daily_files:
         run_step("git add 日K线", ["git", "add"] + daily_files)
     else:
         print("  > 无日K线文件，跳过")
 
-    # git diff 检查是否有变更
+    # 检查是否有变更
     result = subprocess.run(
         ["git", "diff", "--staged", "--quiet"],
-        cwd=BASE_DIR,
-        capture_output=True,
+        cwd=BASE_DIR, capture_output=True,
     )
     if result.returncode == 0:
         print("  > 无数据变更，跳过提交")
         return True
 
-    # git commit
     date_str = datetime.now().strftime("%Y-%m-%d")
-    ok = run_step("git commit", [
-        "git", "commit", "-m", f"auto: update {date_str}"
-    ])
+    ok = run_step("git commit", ["git", "commit", "-m", f"auto: update {date_str}"])
     if not ok:
         return False
-
-    # git push
-    ok = run_step("git push", ["git", "push", "origin", "main"])
+    ok = run_step("git push", ["git", "push", "newsradar", "main"])
     return ok
+
+
+def deploy_pages():
+    """部署静态站点到 gh-pages 分支（用于 GitHub Pages）"""
+    log("步骤 6: 部署到 GitHub Pages")
+    site_dir = os.path.join(BASE_DIR, "news", "static_site")
+    if not os.path.isdir(site_dir):
+        print("  > static_site 目录不存在，跳过")
+        return False
+
+    tmp = tempfile.mkdtemp(prefix="gh_pages_")
+    try:
+        dst = os.path.join(tmp, "site")
+        shutil.copytree(site_dir, dst)
+
+        # 在临时目录创建 orphan 分支
+        subprocess.run(["git", "init"], cwd=tmp, capture_output=True)
+        subprocess.run(["git", "checkout", "--orphan", "gh-pages"],
+                       cwd=tmp, capture_output=True)
+        subprocess.run(["git", "add", "-A"], cwd=tmp, capture_output=True)
+
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        r = subprocess.run(
+            ["git", "commit", "-m", f"deploy: {date_str}"],
+            cwd=tmp, capture_output=True,
+        )
+        if r.returncode != 0:
+            print("  > 无变更，跳过部署")
+            return True
+
+        # 推送到远程 gh-pages 分支
+        remote_url = subprocess.run(
+            ["git", "remote", "get-url", "newsradar"],
+            cwd=BASE_DIR, capture_output=True, text=True,
+        ).stdout.strip()
+
+        subprocess.run(
+            ["git", "push", "--force", remote_url, "gh-pages:gh-pages"],
+            cwd=tmp, capture_output=True, timeout=30,
+        )
+        print("  > 已推送到远程 gh-pages 分支")
+        print("  > Pages 地址: https://vasily-alexievich-korolev.github.io/newsradar/")
+        return True
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def shutdown():
@@ -149,7 +189,6 @@ def shutdown():
 
 
 def print_summary():
-    """打印执行汇总"""
     print(f"\n{'='*56}")
     print(f"  执行汇总")
     print(f"{'='*56}")
@@ -173,51 +212,46 @@ def main():
     print(f"  时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"  目录: {BASE_DIR}")
 
-    # ── 加载密钥 ──
+    # 步骤 0: 加载密钥
     log("步骤 0: 加载环境变量")
     load_env()
     has_api_key = check_api_key()
 
-    # ── 步骤 1: 数据抓取 ──
+    # 步骤 1: 数据抓取
     if not args.skip_fetch:
         log("步骤 1: 宏观经济 + 市场数据抓取")
-        run_step("update_all_eco.py", [
-            PYTHON, "data_fetch/update_all_eco.py"
-        ])
+        run_step("update_all_eco.py", [PYTHON, "data_fetch/update_all_eco.py"])
     else:
         print("  > 跳过数据抓取 (--skip-fetch)")
 
-    # ── 步骤 2: 经济分析 ──
+    # 步骤 2: 经济分析
     if not args.skip_ai and has_api_key:
         log("步骤 2: 经济分析 (DeepSeek)")
-        run_step("eco_analysis.py", [
-            PYTHON, "news/eco_analysis.py"
-        ])
+        run_step("eco_analysis.py", [PYTHON, "news/eco_analysis.py"])
     else:
         print("  > 跳过经济分析")
 
-    # ── 步骤 3: 新闻简报 ──
+    # 步骤 3: 新闻简报
     if not args.skip_ai and has_api_key:
         log("步骤 3: 新闻简报 (DeepSeek)")
-        run_step("news_intelligence.py", [
-            PYTHON, "news/news_intelligence.py"
-        ])
+        run_step("news_intelligence.py", [PYTHON, "news/news_intelligence.py"])
     else:
         print("  > 跳过新闻简报")
 
-    # ── 步骤 4: 构建静态站 ──
+    # 步骤 4: 构建静态站
     log("步骤 4: 构建静态站点")
-    run_step("build_static_site.py", [
-        PYTHON, "news/build_static_site.py"
-    ])
+    run_step("build_static_site.py", [PYTHON, "news/build_static_site.py"])
 
-    # ── 步骤 5: Git 提交 + 推送 ──
+    # 步骤 5: Git 提交 + 推送
     git_push()
 
-    # ── 汇总 ──
+    # 步骤 6: 部署到 GitHub Pages
+    deploy_pages()
+
+    # 汇总
     print_summary()
 
-    # ── 步骤 7: 关机 ──
+    # 步骤 7: 关机
     if not args.no_shutdown:
         shutdown()
     else:
