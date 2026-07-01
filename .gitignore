@@ -14,4 +14,6 @@ Thumbs.db
 *.tar.gz
 *.7z
 
+.workbuddy/.env
+.env
 .workbuddy/

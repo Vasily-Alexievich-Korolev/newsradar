@@ -3,7 +3,7 @@
 eco_analysis.py — 经济数据摘要生成器
 
 读取已有的 eco_data/ + sse_etf_data/ + data_stock/ 数据，
-如果本地没有（如 GitHub Actions 环境），则通过 akshare 实时抓取。
+如果本地 CSV 不存在，则通过 akshare 实时抓取。
 
 输出：
   - news/reports/eco_YYYY-MM-DD.md（人类可读报告）
@@ -55,7 +55,7 @@ def read_csv_history(path, n=6):
 
 
 def fetch_akshare(symbol_func, params=None):
-    """通过 akshare 实时抓取（用于 GitHub Actions 环境）。"""
+    """通过 akshare 实时抓取（本地 CSV 缺失时的备用方案）。"""
     try:
         import akshare as ak
         func = getattr(ak, symbol_func)
@@ -101,7 +101,7 @@ def get_macro_snapshot():
         if row:
             result[name] = row
 
-    # 如果本地没有数据，尝试 akshare 实时抓取（GitHub Actions 环境）
+    # 如果本地没有数据，尝试 akshare 实时抓取（备用方案）
     if not result:
         print("  > 未找到本地宏观数据，尝试 akshare 实时抓取...")
         try:
@@ -332,7 +332,7 @@ TARGET_ETF = {
     "159845": "中证1000(另一个)",
 }
 
-# 美股指数（GitHub Actions 时用 akshare）
+# 美股指数（本地 CSV 缺失时用 akshare）
 US_INDEX = {
     "SPY": "标普500",
     "QQQ": "纳斯达克",

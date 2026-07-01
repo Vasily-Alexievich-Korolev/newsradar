@@ -1,6 +1,7 @@
 # News Program — 每日新闻情报系统
 
-自动抓取宏观经济数据 + 全球新闻，通过 DeepSeek 生成每日经济分析和新闻简报，并构建静态网站部署到 GitHub Pages。
+自动抓取宏观经济数据 + 全球新闻，通过 DeepSeek 生成每日经济分析和新闻简报，并构建静态网站。
+由 Windows 定时任务每天 06:00 自动运行，完成后推送到远程仓库。不依赖 GitHub Actions。
 
 ---
 
@@ -221,9 +222,31 @@ news_program/
 
 ---
 
-## 四、GitHub Actions 工作流
+## 四、本地运行方式
 
-**文件：** `.github/workflows/daily-news.yml`
+**入口脚本：** `run_news_pipeline.py`
+
+**命令行参数：**
+
+| 参数 | 作用 |
+|------|------|
+| 无参数 | 完整运行：抓数据 → 分析 → 推送 → 关机 |
+| `--no-shutdown` | 跑完后不关机 |
+| `--skip-fetch` | 跳过数据抓取（已有数据时加速） |
+| `--skip-ai` | 跳过 AI 分析（调试时使用） |
+
+**示例：**
+```bash
+# 完整运行
+python run_news_pipeline.py
+
+# 仅构建静态站 + 推送（不抓数据、不调 AI）
+python run_news_pipeline.py --skip-fetch --skip-ai --no-shutdown
+```
+
+**Python 环境：**
+- Python 3.13.12 (managed: `C:\Users\Vasily_A_K\.workbuddy\binaries\python\versions\3.13.12\python.exe`)
+- pip 安装：`akshare pandas requests py_mini_racer python-dateutil openai feedparser beautifulsoup4 lxml`
 
 **触发：**
 - 定时：交易日 北京时间 06:00（UTC 22:00 前一天，周日至周四）
@@ -317,8 +340,15 @@ set PYTHONIOENCODING=utf-8
 
 ## 八、定时任务
 
-GitHub Actions 自动在每个交易日 06:00（北京时间）运行完整管线。
+Windows Task Scheduler 每天 06:00 自动运行完整管线。
 
-也可通过 WorkBuddy 设置本地自动化：
-1. 手动触发工作流：GitHub → Actions → Daily News Intelligence → Run workflow
+**手动导入（需执行一次）：**
+1. 按 `Win+R` 输入 `taskschd.msc`
+2. 右侧点 **导入任务** → 选择 `NewsRadar_task.xml`
+3. 确认用户账号，点确定
+
+**或直接用命令行导入（管理员终端）：**
+```cmd
+schtasks /Create /XML "D:\Python_Program\news_program\NewsRadar_task.xml" /TN "NewsRadar\DailyPipeline"
+```
 2. 本地测试：按第六节步骤依次运行

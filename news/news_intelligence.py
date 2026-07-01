@@ -41,14 +41,11 @@ sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
 # 配置区
 # ============================================================
 
-# API Key 必须通过环境变量设置
-# - GitHub Actions: 在仓库 Settings > Secrets > Actions 添加 DEEPSEEK_API_KEY
-# - 本地开发: set DEEPSEEK_API_KEY=sk-xxx 或 export DEEPSEEK_API_KEY=sk-xxx
+# API Key 通过 .env 文件或环境变量设置
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 if not DEEPSEEK_API_KEY:
     print("  ⚠ 未设置 DEEPSEEK_API_KEY，将跳过 AI 分析，仅生成 RSS 原始数据")
-    print("    - GitHub Actions: 在仓库 Settings > Secrets > Actions 添加 DEEPSEEK_API_KEY")
-    print("    - 本地开发: set DEEPSEEK_API_KEY=sk-xxx 或 export DEEPSEEK_API_KEY=sk-xxx")
+    print("    - 本地: 在 .env 中设置 DEEPSEEK_API_KEY=sk-xxx")
 BASE_URL = "https://api.deepseek.com"
 
 # 路径配置

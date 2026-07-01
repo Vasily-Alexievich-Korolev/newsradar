@@ -3,7 +3,7 @@
 update_all_eco.py — 宏观经济数据一键更新主控脚本
 
 依次运行所有 9 个宏观数据抓取脚本，支持增量更新。
-在 GitHub Actions 环境中自动工作（无需虚拟环境）。
+在 GitHub Actions 环境中自动工作。
 
 使用方式:
     python data_fetch/update_all_eco.py
