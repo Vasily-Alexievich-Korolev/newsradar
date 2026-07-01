@@ -143,8 +143,11 @@ def deploy_pages():
 
     tmp = tempfile.mkdtemp(prefix="gh_pages_")
     try:
-        dst = os.path.join(tmp, "site")
-        shutil.copytree(site_dir, dst)
+        # 复制站点文件到临时仓库根目录（不是子目录）
+        for item in os.listdir(site_dir):
+            s = os.path.join(site_dir, item)
+            d = os.path.join(tmp, item)
+            (shutil.copytree(s, d) if os.path.isdir(s) else shutil.copy2(s, d))
 
         # 在临时目录创建 orphan 分支
         subprocess.run(["git", "init"], cwd=tmp, capture_output=True)
