@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "last_run": "2026-06-28",
+  "last_run": "2026-07-01",
   "events": [
     {
       "id": "ae8854d907ac",
       "title": "委内瑞拉双震灾后人道主义危机与国际救援",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -55,6 +55,11 @@
           "date": "2026-06-28",
           "summary": "死亡人数升至至少1430人，失踪超5万，余震持续；美国加州等地救援队抵达并救出一名婴儿，但救援进展缓慢，国内批评军方反应迟缓。",
           "impact": "死亡人数持续上升，国际救援力量仍在动员，但救援窗口期正在关闭，人道主义危机加剧。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "死亡人数升至至少1719人，失踪近5万；美国救援队救出婴儿和11岁男孩，但救援设备短缺；余震持续（4.6级）。",
+          "impact": "死亡数字可能严重低估，救援窗口期接近关闭，疾病爆发风险增高。"
         }
       ],
       "causal_chain": [
@@ -68,7 +73,7 @@
       "title": "美伊在霍尔木兹海峡冲突升级",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -131,6 +136,11 @@
           "date": "2026-06-28",
           "summary": "美国连续第二天空袭伊朗，伊朗攻击巴林和科威特以报复；特朗普威胁伊朗'可能不复灭'；霍尔木兹海峡航运部分恢复后再次紧张。",
           "impact": "冲突进入第四天，双方均无降级意愿，霍尔木兹海峡航运风险极高，全球能源供应面临严重威胁。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "美伊同意在卡塔尔举行谈判，但伊朗否认高级别直接会晤；双方仍交换打击（伊朗攻击巴林和科威特）；航运部分恢复后再次紧张。",
+          "impact": "谈判缺乏实质性进展，伊朗坚持海峡控制权为筹码，冲突风险仍高。"
         }
       ],
       "causal_chain": [
@@ -144,7 +154,7 @@
       "title": "英国首相斯塔默辞职与工党领导权争夺",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
@@ -192,6 +202,11 @@
           "date": "2026-06-28",
           "summary": "安迪·伯纳姆成为唯一候选人，预计7月17日接任首相；特朗普批评伯纳姆是'极端自由派'；伯纳姆团队开始组建，Rachel Reeves可能被降职。",
           "impact": "伯纳姆接任已成定局，政治过渡相对平稳，但新政府与特朗普政府的关系可能面临挑战。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "安迪·伯纳姆成为唯一候选人，计划7月17日接任；伯纳姆提出‘No.10 North’权力下放计划；特朗普批评其‘极端自由派’。",
+          "impact": "权力交接有序，但伯纳姆面临经济紧缩和国防开支压力。"
         }
       ],
       "causal_chain": [
@@ -204,7 +219,7 @@
       "title": "全球AI科技股暴跌与行业估值修正",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -267,6 +282,11 @@
           "date": "2026-06-28",
           "summary": "BIS正式警告AI投资泡沫可能演变为漫长崩盘，指出五大超大规模云企业资本支出合计将超1万亿美元；韩国KOSPI因AI估值担忧暂停交易。",
           "impact": "BIS警告具有极高权威性，加剧市场对AI回报的怀疑，科技股抛售可能进一步扩大。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "费城半导体指数Q2飙升88%创纪录，但韩国KOSPI因AI估值担忧暂停交易；BIS报告警告1万亿美元资本支出风险。",
+          "impact": "AI投资泡沫担忧持续，但短期内资金仍涌入，市场分化加剧。"
         }
       ],
       "causal_chain": [
@@ -280,7 +300,7 @@
       "title": "欧洲极端热浪与气候适应危机",
       "category": "culture",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -333,6 +353,11 @@
           "date": "2026-06-28",
           "summary": "热浪东移，德国和波兰气温接近40°C，电力需求创纪录；法国EDF核电站因冷却问题减产，巴黎24小时内记录109例热相关死亡。",
           "impact": "热浪持续升级，对电力系统、健康及农业生产造成压力，中国制冷设备出口量激增。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "热浪东移至德国、波兰，气温接近40°C；法国记录1000例超额死亡；巴黎24小时内109例热相关死亡。",
+          "impact": "热浪加剧能源需求，核电站冷却问题突出，死亡率上升，气候适应政策紧迫。"
         }
       ],
       "causal_chain": [
@@ -346,7 +371,7 @@
       "title": "北京小飞机撞击高楼事故",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
@@ -394,6 +419,11 @@
           "date": "2026-06-28",
           "summary": "中国官方确认飞行员死亡，另有13人受伤；初步调查正在进行，但官方对事件性质披露有限。",
           "impact": "事件性质仍不明确，但调查已启动，短期内对中国航空安全信心产生波动。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "中国官方确认飞行员死亡，13人受伤；初步调查进行中，信息披露有限。",
+          "impact": "事件性质未完全澄清，但未进一步恶化，关注后续调查报告。"
         }
       ],
       "causal_chain": [
@@ -411,7 +441,7 @@
       "title": "刚果（金）埃博拉疫情扩散至法国",
       "category": "health",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -479,6 +509,11 @@
           "date": "2026-06-28",
           "summary": "法国确诊首例埃博拉病例，患者为从刚果（金）返回的医生；卫生部门称风险很低。",
           "impact": "埃博拉首次登陆欧洲，尽管风险评估较低，但可能触发全球公共卫生警觉，影响航空和旅游。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "法国确认首例病例（从刚果返回的医生），卫生部门称风险低；刚果境内仍有近300人失联。",
+          "impact": "国际传播能力有限，但需密切监测接触者。"
         }
       ],
       "causal_chain": [
@@ -497,7 +532,7 @@
       "title": "特朗普威胁对欧洲征收100%数字税关税",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -545,6 +580,11 @@
           "date": "2026-06-28",
           "summary": "特朗普明确表示将对任何征收数字税的国家征收100%关税，并声称优先于现有贸易协定。",
           "impact": "美欧贸易战一触即发，欧洲科技公司和依赖欧洲市场的美国科技巨头将受冲击。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "特朗普明确表示将征收100%关税以回应数字税，并称优先于现有贸易协定。",
+          "impact": "加剧美欧贸易紧张，可能引发报复性措施。"
         }
       ],
       "causal_chain": [
@@ -700,7 +740,7 @@
       "title": "美国通胀加速与美联储加息压力",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -728,6 +768,11 @@
           "date": "2026-06-28",
           "summary": "5月PCE数据加速，核心PCE同比升至3.4%，创2023年10月以来新高；市场对美联储加息预期升温。",
           "impact": "通胀压力持续，美联储新主席沃什面临加息决策压力，市场波动加剧。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "5月核心PCE同比3.4%创2023年10月以来新高；市场对7月加息预期升温（概率36%）。",
+          "impact": "通胀顽固，美联储面临加息压力，但最高法院裁决限制总统解雇联储官员。"
         }
       ],
       "causal_chain": [
@@ -744,7 +789,7 @@
       "title": "欧洲热浪导致能源需求激增与供应压力",
       "category": "culture",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -767,6 +812,11 @@
           "date": "2026-06-28",
           "summary": "德国和波兰电力需求创纪录，法国EDF核电站因冷却问题减产。中国移动空调在欧洲卖断货。欧洲电力市场面临严峻考验。",
           "impact": "极端天气导致的能源供需矛盾突出，加剧了欧洲能源危机。电价飙升将对工业生产和居民生活造成冲击，并推高欧元区通胀。该事件与'欧洲极端热浪'事件高度重合。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "德国、波兰电力需求创纪录；法国EDF核电站因冷却减产；中国空调出口订单排到8月。",
+          "impact": "能源危机风险加剧，电价飙升，可再生能源出力有限。"
         }
       ],
       "causal_chain": [
@@ -816,8 +866,8 @@
       "title": "SpaceX IPO与双类股结构争议",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
         {
@@ -839,6 +889,11 @@
           "date": "2026-06-28",
           "summary": "SpaceX完成史上最大IPO，但债券价格下跌。公司将被纳入纳斯达克100指数。马斯克与火星殖民目标绑定股票奖励。",
           "impact": "IPO已成为现实，但其双类股结构和市场对其估值的分歧（股价下跌）仍是争议焦点。纳入纳指是利好，但整体科技股回调对其股价形成压力。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "SpaceX完成史上最大IPO（75亿美元），纳入纳斯达克100，债券价格下跌。",
+          "impact": "上市后关注股价表现和马斯克火星奖励机制。"
         }
       ],
       "causal_chain": [
@@ -854,7 +909,7 @@
       "title": "德国汽车业大规模裁员与产业危机",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -882,6 +937,11 @@
           "date": "2026-06-28",
           "summary": "大众汽车考虑关闭4家德国工厂并裁减10万岗位；保时捷因电动车战略巨亏，利润暴跌。",
           "impact": "德国汽车业危机深化，反映传统车企在电动化转型和全球竞争中的困境。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "大众考虑关闭4家德国工厂并裁减10万岗位；保时捷利润暴跌。",
+          "impact": "德国制造业衰退加深，能源成本和中国竞争是主因。"
         }
       ],
       "causal_chain": [
@@ -898,8 +958,8 @@
       "title": "黎以美三方签署框架协议",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -916,6 +976,11 @@
           "date": "2026-06-28",
           "summary": "协议签署但真主党拒绝接受，称其'羞辱性'；黎巴嫩国内爆发抗议。",
           "impact": "协议面临真主党抵制，执行前景不确定，中东和平进程仍然脆弱。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "协议签署但真主党拒绝，称‘羞辱性’；黎巴嫩国内爆发抗议。",
+          "impact": "协议基础脆弱，真主党不配合可能引发新一轮冲突。"
         }
       ],
       "causal_chain": [
@@ -932,8 +997,8 @@
       "title": "美国对部分企业开放Anthropic先进AI模型Mythos 5",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -950,6 +1015,16 @@
           "date": "2026-06-28",
           "summary": "超过100家美国企业和机构获准使用Mythos 5，包括其非美籍员工。",
           "impact": "美国政府此举强化对先进AI的管控，同时促进国内企业竞争力，但可能引发国际技术封锁争议。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "美国解除对Fable 5和Mythos 5的出口限制，恢复全球访问。",
+          "impact": "监管松动利好Anthropic商业化和军事应用。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "Coinbase等美国公司采用中国开源模型，显示美国AI出口管制正在失效，中国AI模型竞争力上升，可能重塑全球AI产业链数据中心格局。",
+          "impact": "潜在影响: 英伟达, 中国AI概念股（百度、商汤）, 开源AI项目代币"
         }
       ],
       "causal_chain": [
@@ -957,7 +1032,8 @@
         "美国企业AI竞争力短期内大幅提升",
         "加剧全球AI人才和资本向美国集中",
         "其他国家出台对等措施或加速自主AI研发",
-        "加剧AI技术领域的全球化分裂和竞争"
+        "加剧AI技术领域的全球化分裂和竞争",
+        "美国科技企业采用中国模型→中国AI生态扩展→国际AI竞争格局变化→美国公司面临供应链调整→相关资产重估"
       ],
       "estimated_resolution": "N/A"
     },
@@ -966,8 +1042,8 @@
       "title": "OpenAI推迟IPO并发布受限模型",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -984,6 +1060,11 @@
           "date": "2026-06-28",
           "summary": "OpenAI应美国政府要求限制GPT-5.6发布，同时顾问建议将IPO推迟至2027年。",
           "impact": "OpenAI在监管压力和财务挑战下放慢扩张步伐，对AI行业融资节奏产生影响。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "OpenAI应政府要求限制GPT-5.6发布，IPO推迟至2027年。",
+          "impact": "监管不确定性持续，但技术突破继续。"
         }
       ],
       "causal_chain": [
@@ -1001,8 +1082,8 @@
       "title": "澳大利亚大幅加强未成年人社交媒体禁令",
       "category": "culture",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
         {
@@ -1019,6 +1100,11 @@
           "date": "2026-06-28",
           "summary": "政府宣布将平台违规罚金加倍，并给予监管机构新权力。",
           "impact": "全球社交媒体监管收紧趋势加速，科技公司面临更严格的合规成本。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "政府将平台违规罚金加倍，赋予监管机构新权力。",
+          "impact": "成为全球最严社交媒体监管范例。"
         }
       ],
       "causal_chain": [
@@ -1035,8 +1121,8 @@
       "title": "BIS警告AI投资泡沫可能引发漫长崩盘",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -1058,6 +1144,11 @@
           "date": "2026-06-28",
           "summary": "BIS年度报告明确警告，五大云厂商超1万亿美元资本支出可能引发系统性崩盘。",
           "impact": "BIS的警告被市场广泛解读为权威风险提示，科技股抛压增加。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "BIS年度报告明确警告五大云厂商超1万亿美元资本支出风险。",
+          "impact": "警示意义大于即时影响，但市场已开始关注。"
         }
       ],
       "causal_chain": [
@@ -1075,7 +1166,7 @@
       "title": "日本酸素宣布电子级氦气提价30%",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
+      "last_updated": "2026-07-01",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -1093,6 +1184,11 @@
           "date": "2026-06-28",
           "summary": "日本酸素正式提价30%，开启新一轮涨价潮。",
           "impact": "氦气是半导体制造关键气体，提价将加剧芯片成本压力，推动国产替代。"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "正式提价30%，开启新一轮涨价潮。",
+          "impact": "半导体供应链成本上升，可能加剧芯片价格压力。"
         }
       ],
       "causal_chain": [
@@ -1161,14 +1257,19 @@
       "title": "美国参议院通过决议要求总统从伊朗冲突中撤军",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
         {
           "date": "2026-06-28",
           "summary": "这是美国国会首次就美伊冲突行使战争权力，表明立法机构对特朗普政府军事行动的限制意图，可能制约总统进一步升级冲突的能力。",
           "impact": "潜在影响: 美元, 原油, 国防股"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "国会首次就美伊冲突行使战争权力，可能制约总统升级能力。",
+          "impact": "政治制衡信号，但执行效力有限。"
         }
       ],
       "causal_chain": [
@@ -1181,14 +1282,19 @@
       "title": "IBM宣布1纳米以下芯片技术突破",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "low",
       "daily_history": [
         {
           "date": "2026-06-28",
           "summary": "该技术可将晶体管密度提升至现有水平的两倍，有望延续摩尔定律十年，对半导体行业格局产生深远影响，可能加速AI计算效率。",
           "impact": "潜在影响: 半导体设备股, AI芯片公司, 台积电, 英特尔"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "技术可将晶体管密度提升两倍，有望延续摩尔定律十年。",
+          "impact": "长期利好半导体产业，短期对市场影响有限。"
         }
       ],
       "causal_chain": [
@@ -1201,14 +1307,19 @@
       "title": "康宁发布Glass Bridge玻璃光互连平台，CPO概念股大跌",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
         {
           "date": "2026-06-28",
           "summary": "该技术可能颠覆现有光通信产业链，引发A股CPO板块单日暴跌6%，改变数据中心互连技术路径，对光模块供应商构成挑战。",
           "impact": "潜在影响: A股CPO概念股, 光通信企业, 康宁"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "A股CPO板块单日暴跌6%，技术可能颠覆现有光通信产业链。",
+          "impact": "技术路径转换风险，光模块供应商承压。"
         }
       ],
       "causal_chain": [
@@ -1241,14 +1352,19 @@
       "title": "哈萨克斯坦与美国深化合作，称特朗普是'天派'",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-06-28",
-      "status": "active",
+      "last_updated": "2026-07-01",
+      "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
         {
           "date": "2026-06-28",
           "summary": "哈萨克斯坦作为中俄之间的重要枢纽，公开向美国靠拢将改变中亚地缘平衡，可能削弱中俄影响，同时为美国提供稀土矿产替代来源。",
           "impact": "潜在影响: 稀土股, 铀矿, 中俄相关企业"
+        },
+        {
+          "date": "2026-07-01",
+          "summary": "哈萨克斯坦总统公开表达亲美立场，深化军事和经济合作。",
+          "impact": "改变中亚地缘平衡，削弱中俄影响，美国可能获得稀土替代来源。"
         }
       ],
       "causal_chain": [
@@ -1273,6 +1389,226 @@
       ],
       "causal_chain": [
         "美国AI模型限制→企业成本上升→转向中国开源模型→中国AI生态受益→技术脱钩加速"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "576399402ddd",
+      "title": "特朗普家族加密货币业务利益冲突",
+      "category": "politics",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "特朗普披露2025年从加密货币业务获利超10亿美元，而其政府正放松加密监管并终止对行业巨头的诉讼，利益冲突问题可能引发国会调查和司法挑战，影响2026年中期选举。",
+          "impact": "潜在影响: 比特币, 以太坊, 合规加密交易所股票（如Coinbase）"
+        }
+      ],
+      "causal_chain": [
+        "特朗普放松加密监管→加密业务获利暴增→道德争议和调查→监管政策不确定性→加密市场波动"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "7e447f30a293",
+      "title": "美国最高法院废除政党竞选支出上限",
+      "category": "politics",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "high",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "最高法院6-3裁定允许政党无限额协调候选人支出，将极大改变美国选举资金格局，共和党在2026年中期选举中可能获得巨大优势，加剧政治极化。",
+          "impact": "潜在影响: 媒体公司（广告收入）, 政治赌注相关预测市场, 军工股票（受益于国防开支）"
+        }
+      ],
+      "causal_chain": [
+        "最高法院裁决→政党超级PAC资金涌入→广告支出激增→媒体受益→选举结果向共和党倾斜→政策变化"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "04216579a3cd",
+      "title": "秘鲁藤森庆子赢得总统选举",
+      "category": "politics",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "藤森庆子作为前强人之女获胜，延续拉丁美洲右翼趋势；秘鲁政治分裂加深，可能影响矿业投资环境（秘鲁是全球第二大铜生产国）。",
+          "impact": "潜在影响: 铜期货, 秘鲁矿业公司股票（如南方铜业）"
+        }
+      ],
+      "causal_chain": [
+        "右翼新政府上台→经济政策偏向市场自由化→矿业投资增加→铜供应预期上升→铜价波动"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "0dff2db9b60c",
+      "title": "法国通过限制快时尚法案",
+      "category": "economy",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "法国立法对快时尚品牌（如Shein、Temu）征收惩罚性费用并禁止广告，标志欧洲对亚洲电商平台的监管升级，可能引发其他国家效仿，重塑全球快时尚产业链。",
+          "impact": "潜在影响: Shein估值, Temu母公司拼多多股票, 欧洲时尚零售商（如H&M、Zara）"
+        }
+      ],
+      "causal_chain": [
+        "法国立法→惩罚性费用→快时尚成本上升→市场份额转移→欧洲本土品牌受益→亚洲电商遭冲击"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "832159c90a57",
+      "title": "Binance因监管退出欧盟市场",
+      "category": "economy",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "high",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "全球最大加密货币交易所因未能获得MiCA牌照而停止欧盟运营，客户已撤资4亿欧元，显示欧盟加密监管的严格性，其他交易所可能效仿，重塑欧洲加密格局。",
+          "impact": "潜在影响: 比特币, 以太坊, 合规交易所股票（如Coinbase）, 欧盟加密项目代币"
+        }
+      ],
+      "causal_chain": [
+        "MiCA全面实施→Binance退出→客户资金转移→其他中小交易所退出→欧洲加密流动性下降→市场集中度提高"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "3375dc809e3b",
+      "title": "中国6月制造业PMI重回扩张",
+      "category": "economy",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "low",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "PMI重回50.8显示AI出口和新能源驱动经济企稳，但内需仍弱（房地产未企稳），下半年财政或加速，对全球供应链和原材料需求有支撑。",
+          "impact": "潜在影响: 中国股市（沪深300）, 工业金属（铜、铝）, 人民币汇率"
+        }
+      ],
+      "causal_chain": [
+        "中国PMI回升→出口强劲→全球制造业复苏预期→大宗商品需求上升→金属价格上涨"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "da000d48fcf5",
+      "title": "中欧启动贸易投资磋商机制",
+      "category": "economy",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "low",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "双方同意设立四个工作组（贸易平衡、出口管制、知识产权、WTO改革），设定10月期限解决分歧，有助于避免全面贸易战，稳定全球供应链。",
+          "impact": "潜在影响: 欧洲汽车股, 中国新能源股, 航运指数"
+        }
+      ],
+      "causal_chain": [
+        "中欧谈判→缓解关税升级风险→贸易量回升→航运需求稳定→相关板块受益"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "baf1d69325d8",
+      "title": "世界杯期间德国枪击案被体育新闻掩盖",
+      "category": "culture",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "low",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "德国发生6人死亡枪击案，但媒体焦点集中在世界杯失利，反映体育事件对社会情绪的压倒性影响，可能掩盖公共安全问题。",
+          "impact": "潜在影响: 博彩股, 媒体公司收视率"
+        }
+      ],
+      "causal_chain": [
+        "枪击事件→短暂恐慌→媒体焦点转移→社会讨论有限→政策响应可能迟缓"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "99cdffe35c8e",
+      "title": "法国热浪导致超1000例超额死亡",
+      "category": "culture",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "热浪暴露欧洲基础设施适应能力不足，法国24小时109例死亡，推动气候适应政策讨论，同时促使民众转向空调消费，利好中国制冷设备出口。",
+          "impact": "潜在影响: 空调制造商（美的、格力）, 电力公司, 保险股（气候风险）"
+        }
+      ],
+      "causal_chain": [
+        "极端热浪→健康危机→政府投资气候适应→空调需求激增→中国出口增长→相关股票受益"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "d1604cac8762",
+      "title": "Anthropic推出Claude Science进军制药领域",
+      "category": "technology",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "将AI应用于蛋白质结构渲染和药物发现，开辟新的商业化路径，可能加速新药研发并降低成本，对传统制药巨头构成竞争威胁。",
+          "impact": "潜在影响: AI制药公司（Recursion、Schrodinger）, 大型药企（辉瑞、诺华）, Anthropic估值"
+        }
+      ],
+      "causal_chain": [
+        "Claude Science发布→制药公司采用→研发效率提升→传统药企调整策略→AI制药赛道热钱涌入"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "9481e0700541",
+      "title": "字节跳动自研CPU定档2027年量产",
+      "category": "technology",
+      "first_detected": "2026-07-01",
+      "last_updated": "2026-07-01",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-01",
+          "summary": "字节跳动加入自研CPU行列，旨在降低对英伟达等外部AI芯片的依赖，实现AI基础设施自主可控，可能改变全球服务器芯片市场格局。",
+          "impact": "潜在影响: 英伟达股票, AMD股票, 芯片IP供应商（Arm）, 服务器制造商"
+        }
+      ],
+      "causal_chain": [
+        "字节自研CPU→减少外购→英伟达需求预期下调→国产替代概念升温→中国半导体设备受益"
       ],
       "estimated_resolution": "N/A"
     }
