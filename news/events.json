@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "last_run": "2026-07-02",
+  "last_run": "2026-07-03",
   "events": [
     {
       "id": "576399402ddd",
       "title": "特朗普家族加密货币业务利益冲突",
       "category": "politics",
       "first_detected": "2026-07-01",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -20,6 +20,11 @@
           "date": "2026-07-02",
           "summary": "今日特朗普财务披露显示2025年从加密货币获利超14亿美元，引发国会和媒体对利益冲突的新一轮讨论。",
           "impact": "风险升高，特朗普政府放松加密监管的直接利益冲突证据更明显，可能影响2026年中期选举。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "今日特朗普2025年财务披露显示其加密货币获利超14亿美元，引发国会和媒体新一轮利益冲突讨论。",
+          "impact": "事件持续发酵，可能促使国会加强针对总统家族商业行为的立法或调查，加密市场关注监管风险。"
         }
       ],
       "causal_chain": [
@@ -107,8 +112,8 @@
       "title": "美国对部分企业开放Anthropic先进AI模型Mythos 5",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
-      "status": "resolving",
+      "last_updated": "2026-07-03",
+      "status": "resolved",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -270,6 +275,16 @@
           "date": "2026-07-02",
           "summary": "特朗普政府今日正式解除对Anthropic的Fable 5和Mythos 5出口限制，恢复全球访问。",
           "impact": "风险从高降低，但政府干预AI模型的态度仍令人不安。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "特朗普政府今日正式解除对Anthropic的Fable 5和Mythos 5出口限制，恢复全球访问。",
+          "impact": "解除限制缓解AI公司合规压力，但政府对AI的监管博弈仍持续；Anthropic转进自研芯片以降低依赖。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "继OpenAI后，Anthropic也开始自研AI芯片，这将加剧AI算力产业链的重塑，可能降低对英伟达等传统GPU厂商的依赖，同时增加半导体代工市场的竞争。",
+          "impact": "潜在影响: 英伟达, 三星电子, 台积电, AMD"
         }
       ],
       "causal_chain": [
@@ -295,7 +310,8 @@
         "双类股结构引发争议",
         "投资者对股东权利担忧",
         "可能影响其他科技公司IPO策略",
-        "康宁Glass Bridge→降低对传统CPO依赖→光模块需求预期下降→相关个股估值调整"
+        "康宁Glass Bridge→降低对传统CPO依赖→光模块需求预期下降→相关个股估值调整",
+        "Anthropic自研芯片→AI芯片市场格局变化→英伟达长期增长逻辑受质疑→半导体板块估值重估→代工订单流向三星或台积电"
       ],
       "estimated_resolution": "N/A"
     },
@@ -304,7 +320,7 @@
       "title": "美国参议院通过决议要求总统从伊朗冲突中撤军",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
@@ -397,6 +413,11 @@
           "date": "2026-07-02",
           "summary": "今日美伊在多哈举行间接会谈，双方同意暂停攻击，但伊朗同时攻击巴林和科威特。",
           "impact": "谈判进展超出预期，但敌意仍在，风险从极高降至高。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "今日美伊在多哈举行间接会谈，双方同意暂停攻击，但伊朗同时攻击巴林和科威特。",
+          "impact": "谈判取得暂时停火但双方互不信任，伊朗对盟友国的攻击显示局势仍脆弱；协议能否持久存疑。"
         }
       ],
       "causal_chain": [
@@ -531,7 +552,7 @@
       "title": "刚果（金）埃博拉疫情扩散至法国",
       "category": "health",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -619,6 +640,11 @@
           "date": "2026-07-02",
           "summary": "法国确认首例病例，刚果境内仍有近300人失联，葬礼存在不规范行为。",
           "impact": "疫情扩散风险上升，但法国卫生部门称风险低，仍需密切关注。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "法国确认首例埃博拉病例，刚果境内死亡超400人，仍有近300人失联，葬礼不规范行为持续。",
+          "impact": "疫情跨国扩散风险加剧，世界卫生组织和各国需加强边境监控；疫苗和医疗资源需求增加。"
         }
       ],
       "causal_chain": [
@@ -695,7 +721,7 @@
       "title": "委内瑞拉双震灾后人道主义危机与国际救援",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -753,6 +779,11 @@
           "date": "2026-07-02",
           "summary": "死亡人数升至至少1719人，失踪近5万；美国救援队救出婴儿，但救援设备短缺；余震持续。",
           "impact": "人道主义危机持续恶化，死亡人数可能严重低估，国际救援仍需加强。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "死亡人数升至至少1719人，失踪近5万；美国救援队救出婴儿，但救援设备短缺；余震持续。",
+          "impact": "人道主义形势严峻，疾病爆发风险上升；国际救援效率受政治因素干扰（美国冷遇反对派领袖马查多）。"
         }
       ],
       "causal_chain": [
@@ -911,7 +942,7 @@
       "title": "特朗普威胁对欧洲征收100%数字税关税",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -969,6 +1000,11 @@
           "date": "2026-07-02",
           "summary": "特朗普今日再次威胁对任何征收数字税的国家征收100%关税，并称优先于现有贸易协定。",
           "impact": "风险升高，欧洲科技股可能承压，美欧贸易战风险上升。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "特朗普今日再次威胁对任何征收数字税的国家征收100%关税，并称优先于现有贸易协定。",
+          "impact": "数字税争端加剧，欧美贸易战风险上升；对跨国科技巨头如Google、Meta、苹果构成成本压力。"
         }
       ],
       "causal_chain": [
@@ -1182,7 +1218,7 @@
       "title": "德国汽车业大规模裁员与产业危机",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -1225,6 +1261,11 @@
           "date": "2026-07-02",
           "summary": "标志着德国制造业深陷危机，能源成本、电动化转型和关税压力共同冲击，可能引发连锁反应，拖累欧元区经济。",
           "impact": "潜在影响: 欧洲汽车股, 德国DAX指数, 欧元"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "今日报道大众计划削减10万个工作岗位，德国制造业深陷能源成本、电动化转型和关税多重危机。",
+          "impact": "德国汽车业危机将拖累欧元区经济增长，可能引发连锁反应，并加剧社会政治不稳定。"
         }
       ],
       "causal_chain": [
@@ -1380,7 +1421,7 @@
       "title": "日本酸素宣布电子级氦气提价30%",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -1408,6 +1449,11 @@
           "date": "2026-07-02",
           "summary": "提价已正式生效，新一轮涨价潮开启。",
           "impact": "半导体供应链成本上升，影响芯片制造。"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "提价已正式生效，新一轮涨价潮开启。",
+          "impact": "氦气供应链紧张持续，半导体、医疗成像等产业成本上升，可能推动替代技术和循环利用。"
         }
       ],
       "causal_chain": [
@@ -1513,14 +1559,19 @@
       "title": "美国不续签USMCA转向逐年审查",
       "category": "economy",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-02",
-      "status": "active",
+      "last_updated": "2026-07-03",
+      "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
         {
           "date": "2026-07-02",
           "summary": "美国与加拿大、墨西哥的贸易协定不再长期延期，改为年度审查，导致北美供应链巨大不确定性，可能推高区域贸易成本，影响汽车、农业等行业。",
           "impact": "潜在影响: 加拿大元, 墨西哥比索, 北美汽车股, 农产品期货"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "美国今日确认不延长USMCA 16年期限，改为逐年审查，加拿大、墨西哥尚未同意。",
+          "impact": "北美贸易稳定性受损，汽车、农业等行业面临长期不确定性；美元/加元、美元/墨西哥比索波动加大。"
         }
       ],
       "causal_chain": [
@@ -1533,7 +1584,7 @@
       "title": "法国热浪造成约1000例超额死亡",
       "category": "culture",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-03",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -1541,10 +1592,16 @@
           "date": "2026-07-02",
           "summary": "极端高温暴露欧洲基础设施适应能力不足，促使各国加速气候适应政策讨论，同时推高空调等制冷产品需求。",
           "impact": "潜在影响: 中国空调出口企业, 能源股, 气候相关保险股"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "极端高温暴露欧洲基础设施适应能力不足，促进气候适应政策讨论，同时推高空调等制冷产品需求，影响电力负荷和能源价格。",
+          "impact": "潜在影响: 制冷设备股（美的、格力）, 电力股, 天然气期货, 建筑改造相关"
         }
       ],
       "causal_chain": [
-        "热浪致死 → 公众关注气候变化 → 政策推动节能建筑和制冷硬件需求 → 中国制冷设备出口受益"
+        "热浪致死 → 公众关注气候变化 → 政策推动节能建筑和制冷硬件需求 → 中国制冷设备出口受益",
+        "热浪致千人死亡→法国政府加速气候适应投资→空调和热泵需求激增→电力需求高峰推高电价→天然气和煤炭作为备用能源需求上升"
       ],
       "estimated_resolution": "N/A"
     },
@@ -1573,18 +1630,83 @@
       "title": "Meta计划出售富余AI算力",
       "category": "technology",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-02",
-      "status": "active",
+      "last_updated": "2026-07-03",
+      "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
         {
           "date": "2026-07-02",
           "summary": "暗示AI算力可能从稀缺转为过剩，Meta试图将基础设施资本开支变现，可能压低云计算市场价格，改变AI基础设施投资逻辑。",
           "impact": "潜在影响: 云服务商（AWS、Google Cloud、Azure）, NVIDIA, AI基础设施公司"
+        },
+        {
+          "date": "2026-07-03",
+          "summary": "今日消息称Meta正探索将富余AI算力对外商业化，暗示AI算力可能从稀缺转向过剩。",
+          "impact": "AI基础设施投资逻辑可能改变，云计算市场价格承压；对英伟达等算力供应商构成远期利空。"
         }
       ],
       "causal_chain": [
         "Meta出售算力 → 算力市场供给增加 → 价格下降 → AI初创企业成本降低 → 但云巨头竞争加剧"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "97c1153bfb95",
+      "title": "美国最高法院裁定特朗普出生公民权令违宪",
+      "category": "politics",
+      "first_detected": "2026-07-03",
+      "last_updated": "2026-07-03",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-03",
+          "summary": "最高法院以6-3裁定总统无权通过行政命令限制出生公民权，这是对特朗普移民政策的重要司法制约；同时判决也要求国会立法才能修改，可能引发新一轮政治斗争。",
+          "impact": "潜在影响: 美元指数, 美国国债, 移民相关板块"
+        }
+      ],
+      "causal_chain": [
+        "最高法院判决→特朗普行政权力受限→移民改革议题重回国会→中期选举前两党博弈加剧→政策不确定性影响市场"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "7a000f025898",
+      "title": "美国6月非农仅增5.7万，大幅不及预期",
+      "category": "economy",
+      "first_detected": "2026-07-03",
+      "last_updated": "2026-07-03",
+      "status": "active",
+      "tail_risk": "high",
+      "daily_history": [
+        {
+          "date": "2026-07-03",
+          "summary": "就业增长意外放缓且前值下修，表明劳动力市场可能比此前数据更疲弱，这将影响美联储加息节奏，并可能引发市场对经济衰退的重新定价。",
+          "impact": "潜在影响: 美国国债, 美元, 标普500, 黄金, 比特币"
+        }
+      ],
+      "causal_chain": [
+        "非农数据疲弱→市场下调加息预期→美债收益率下行→美元走弱→黄金和比特币上涨；同时经济放缓担忧压制股市"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "1cfa54c0bb55",
+      "title": "秘鲁法院裁定中资钱凯港应接受监管",
+      "category": "politics",
+      "first_detected": "2026-07-03",
+      "last_updated": "2026-07-03",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-03",
+          "summary": "秘鲁法院推翻此前判决，要求政府对中资控股的钱凯港实施监管，这是美国遏制中国在拉美影响力的重要一步，可能影响中国在拉美的港口投资和一带一路项目。",
+          "impact": "潜在影响: 中远海运, 中国交建, 秘鲁索尔, 铜价"
+        }
+      ],
+      "causal_chain": [
+        "秘鲁法院裁决→中资港口运营受限→中国在拉美基建投资面临审查→中美地缘竞争加剧→铜矿出口和贸易路线风险上升"
       ],
       "estimated_resolution": "N/A"
     }
