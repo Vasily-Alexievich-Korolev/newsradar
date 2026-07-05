@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard — NewsRadar</title>
+<title>Briefing 2026-07-05 — NewsRadar</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -40,36 +40,10 @@ body { font-family: 'Inter', -apple-system, sans-serif; }
 </nav>
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-    <div class="flex items-center justify-between mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">Dashboard</h1>
-      <span class="text-sm text-gray-500">Last run: 2026-07-05</span>
+    <div class="mb-4">
+      <a href="../briefings.html" class="text-sm text-blue-600 hover:underline">&larr; Back to briefings</a>
     </div>
-    
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-      <div class="bg-white rounded-xl border border-gray-200 p-4">
-        <div class="text-2xl font-bold text-gray-900">2046</div>
-        <div class="text-xs text-gray-500 mt-1">News today</div>
-      </div>
-      <div class="bg-white rounded-xl border border-gray-200 p-4">
-        <div class="text-2xl font-bold text-blue-600">36</div>
-        <div class="text-xs text-gray-500 mt-1">Tracked events</div>
-      </div>
-      <div class="bg-white rounded-xl border border-gray-200 p-4">
-        <div class="text-2xl font-bold text-amber-600">30</div>
-        <div class="text-xs text-gray-500 mt-1">Active/escalating</div>
-      </div>
-      <div class="bg-white rounded-xl border border-gray-200 p-4">
-        <div class="text-2xl font-bold text-green-600">27</div>
-        <div class="text-xs text-gray-500 mt-1">Sources</div>
-      </div>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-      <div class="lg:col-span-2 bg-white rounded-xl border border-gray-200 p-5">
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-base font-semibold">Latest Briefing</h2>
-          <a href="briefing/2026-07-05.html" class="text-xs text-blue-600 hover:underline">View full</a>
-        </div>
-        <div class="markdown text-sm text-gray-700 leading-relaxed max-h-[600px] overflow-y-auto"><p># 每日情报简报 — 2026-07-05</p>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 markdown text-sm"><p># 每日情报简报 — 2026-07-05</p>
 <blockquote>分析来源: 25 个新闻源（世界/政治/财经/科技/加密） | 今日新闻: 1229 条 | 分析引擎: DeepSeek</blockquote>
 <hr>
 <h2>[GLOBE] 政治</h2>
@@ -173,71 +147,29 @@ body { font-family: 'Inter', -apple-system, sans-serif; }
 <li><strong>未来展望</strong>: 短期内AI算力供给可能过剩，但长期需求仍存。市场将从炒作概念转向真实商业落地，具备盈利能力的公司才能存活。关注7月科技公司财报季的AI投资回报率数据。</li>
 <li><strong>关注节点</strong>: 7月中旬特斯拉、微软、谷歌等财报，OpenAI IPO进展，美国AI监管法案动态。</li></ul>
 <hr>
-<h2>[DEEP] 水面下的信号</h2></div>
-      </div>
-      <div class="space-y-4">
-        <div class="bg-white rounded-xl border border-gray-200 p-5">
-          <h2 class="text-base font-semibold mb-3">By Category</h2>
-          
-        <a href="news/world.html" class="flex items-center justify-between py-2 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="text-sm text-gray-700">World</span>
-          <span class="text-sm font-medium text-gray-900">431</span>
-        </a>
-        <a href="news/politics.html" class="flex items-center justify-between py-2 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="text-sm text-gray-700">Politics</span>
-          <span class="text-sm font-medium text-gray-900">660</span>
-        </a>
-        <a href="news/finance.html" class="flex items-center justify-between py-2 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="text-sm text-gray-700">Finance</span>
-          <span class="text-sm font-medium text-gray-900">715</span>
-        </a>
-        <a href="news/tech.html" class="flex items-center justify-between py-2 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="text-sm text-gray-700">Tech</span>
-          <span class="text-sm font-medium text-gray-900">91</span>
-        </a>
-        <a href="news/crypto.html" class="flex items-center justify-between py-2 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="text-sm text-gray-700">Crypto</span>
-          <span class="text-sm font-medium text-gray-900">149</span>
-        </a>
-        </div>
-        <div class="bg-white rounded-xl border border-gray-200 p-5">
-          <h2 class="text-base font-semibold mb-3">Active Events</h2>
-          
-        <a href="events.html#event-ae8854d907ac" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">委内瑞拉双震灾后人道主义危机与国际救援</span>
-        </a>
-        <a href="events.html#event-ce25044a72b4" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">特朗普威胁对欧洲征收100%数字税关税</span>
-        </a>
-        <a href="events.html#event-4764dbb46d70" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">德国汽车业大规模裁员与产业危机</span>
-        </a>
-        <a href="events.html#event-b4a0a38cc5fd" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">美国不续签USMCA转向逐年审查</span>
-        </a>
-        <a href="events.html#event-3b74651c7c3a" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">伊朗最高领袖葬礼启动，多国代表团出席</span>
-        </a>
-        <a href="events.html#event-7de796d41fa5" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">大众计划削减10万个工作岗位</span>
-        </a>
-        <a href="events.html#event-454219e00d90" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">BIS警告AI投资泡沫可能引发漫长崩盘</span>
-        </a>
-        <a href="events.html#event-7a000f025898" class="block text-sm py-1.5 border-b border-gray-100 last:border-0 hover:bg-gray-50 -mx-2 px-2 rounded">
-          <span class="inline-block w-2 h-2 rounded-full mr-2 bg-red-500"></span>
-          <span class="text-gray-700">美国6月非农仅增5.7万，大幅不及预期</span>
-        </a>
-        </div>
-      </div>
-    </div>
+<h2>[DEEP] 水面下的信号</h2>
+<h3>[HIGH] 美国非农数据大幅低于预期可能预示经济衰退加速到来</h3>
+<ul><li><strong>依据</strong>: 6月非农仅增5.7万，前值大幅下修，且连续三个月趋势下行。历史上类似突变往往位于经济周期拐点附近。同时ISM制造业PMI持续萎缩。</li>
+<li><strong>如果成立</strong>: 美联储将被迫转向降息，但若衰退已成现实，降息无法立即阻止企业盈利下滑，股市可能先跌后涨。黄金和国债将大幅上涨，BTC等风险资产短期承压后受益于流动性宽松。</li>
+<li><strong>置信度</strong>: high</li></ul>
+<h3>[MED] 伊朗最高领袖继任者缺席葬礼暗示深层权力斗争可能爆发</h3>
+<ul><li><strong>依据</strong>: 新任最高领袖穆杰塔巴·哈梅内伊自其父3月被杀后从未公开露面，葬礼这样重要的场合也缺席，内部消息称其健康不佳或存在派系反对。</li>
+<li><strong>如果成立</strong>: 伊朗可能出现权力真空或内部冲突，削弱其谈判立场，极端保守派可能发动对外袭击以转移矛盾，导致中东战争再度升级。原油和避险资产将剧烈波动。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[MED] 美国不续签USMCA或为退出北美贸易框架铺路，推行双边主义</h3>
+<ul><li><strong>依据</strong>: 特朗普政府拒绝延长16年期限，改为逐年审查，同时威胁对欧洲征收100%数字税关税，显示其抛弃多边框架，转向双边谈判。</li>
+<li><strong>如果成立</strong>: 全球贸易体系进一步碎片化，区域价值链被打乱，利好亚洲内部贸易（RCEP）和墨西哥制造业（吸引替代中国产能），但对加拿大和美国农业出口造成长期伤害。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[MED] 豆包和通义千问下线智能体功能，中国AI监管可能超预期严格</h3>
+<ul><li><strong>依据</strong>: 字节跳动和阿里巴巴在7月15日《人工智能拟人化互动服务管理暂行办法》生效前，主动下线智能体功能。这可能不仅是合规，而是监管层要求清理风险。</li>
+<li><strong>如果成立</strong>: 中国AI应用商业化进程将受重大限制，相关概念股（如科大讯飞、商汤）短期内承压。但利好合规能力更强的头部平台。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<hr>
+<p>*简报生成时间: 2026-07-05 06:02*</p>
+<p>*数据来源: 纽约时报、福克斯新闻、BBC、卫报、金融时报、Investing、</p>
+<p>今日俄罗斯、联合早报、中国新闻网、世界报、朝日新闻、</p>
+<p>新华社、人民网财经、华尔街见闻、</p>
+<p>TechCrunch、Ars Technica、MIT Tech Review*</p></div>
 </main>
 </body>
 </html>
