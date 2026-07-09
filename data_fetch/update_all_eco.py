@@ -27,6 +27,7 @@ FETCHERS = [
     # 资金流向类
     ("融资融券余额",                "margin_balance_fetcher.py"),
     ("南向资金（港股通）",          "south_bound_fetcher.py"),
+    ("北向资金（陆股通）",          "north_bound_fetcher.py"),
     ("中美利差",                    "cn_us_spread_fetcher.py"),
 
     # A股市场情绪类
