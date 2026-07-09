@@ -27,11 +27,15 @@ def load_existing():
 
 
 def fetch_north_bound_data():
-    """抓取北向资金历史数据"""
+    """抓取北向资金历史数据（仅保留有汇总净买额的行）"""
     import akshare as ak
 
     print("正在抓取北向资金历史数据...")
-    df = ak.stock_hsgt_hist_em(symbol="北向资金")
+    raw = ak.stock_hsgt_hist_em(symbol="北向资金")
+
+    # 仅保留有每日净买额的行（stock_hsgt_hist_em 返回混合表：
+    # 汇总行有 当日成交净买额，个股明细行没有）
+    df = raw[raw["当日成交净买额"].notna()].copy()
 
     df = df.rename(columns={
         "日期": "time",
@@ -44,8 +48,8 @@ def fetch_north_bound_data():
     df["time"] = pd.to_datetime(df["time"])
     df = df.sort_values("time").reset_index(drop=True)
 
-    print(f"  抓取成功，共 {len(df)} 条记录")
-    print(f"  最新日期: {df['time'].max().strftime('%Y-%m-%d')}")
+    print(f"  抓取成功，共 {len(df)} 条记录（汇总行）")
+    print(f"  日期范围: {df['time'].min().strftime('%Y-%m-%d')} ~ {df['time'].max().strftime('%Y-%m-%d')}")
     print(f"  最新净买额: {df.iloc[-1]['当日净买额(亿)']} 亿")
 
     return df
