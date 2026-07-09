@@ -23,7 +23,7 @@ INDICATORS = {
         "output": os.path.join(ECO_DIR, "CPI.csv"),
         "func": "macro_china_cpi_yearly",
         "date_col": "日期",
-        "value_col": "居民消费价格指数(上月=100)",
+        "value_col": "现值",
     },
     "PPI": {
         "output": os.path.join(ECO_DIR, "PPI.csv"),
@@ -34,20 +34,20 @@ INDICATORS = {
     "PMI": {
         "output": os.path.join(ECO_DIR, "PMI.csv"),
         "func": "macro_china_pmi",
-        "date_col": "日期",
-        "value_col": "制造业",
+        "date_col": "月份",
+        "value_col": "制造业-指数",
     },
     "M1": {
         "output": os.path.join(ECO_DIR, "M1.csv"),
         "func": "macro_china_money_supply",
         "date_col": "月份",
-        "value_col": "货币和准货币(M1)",
+        "value_col": "货币(M1)-数量(亿元)",
     },
     "M2": {
         "output": os.path.join(ECO_DIR, "M2.csv"),
         "func": "macro_china_money_supply",
         "date_col": "月份",
-        "value_col": "货币和准货币(M2)",
+        "value_col": "货币和准货币(M2)-数量(亿元)",
     },
     "社融增量": {
         "output": os.path.join(ECO_DIR, "社会融资规模增量.csv"),
@@ -106,14 +106,21 @@ def fetch_and_merge(indicator_name, config):
     date_col = config["date_col"]
     value_col = config["value_col"]
 
-    # 查找实际列名（模糊匹配）
+    # 查找实际列名（精确匹配优先，模糊匹配取第一个）
     actual_date = None
     actual_value = None
     for c in raw.columns:
         if date_col in str(c):
             actual_date = c
-        if value_col in str(c):
-            actual_value = c
+    # value_col: 精确等值匹配，不行再模糊（取第一个匹配）
+    exact_matches = [c for c in raw.columns if str(c).strip() == str(value_col).strip()]
+    if exact_matches:
+        actual_value = exact_matches[0]
+    else:
+        for c in raw.columns:
+            if value_col in str(c):
+                actual_value = c
+                break
 
     if actual_date is None:
         actual_date = raw.columns[0]
