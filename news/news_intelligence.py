@@ -41,6 +41,17 @@ sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
 # 配置区
 # ============================================================
 
+# 加载 .env（项目根目录下的密钥文件）
+ENV_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+if os.path.exists(ENV_PATH):
+    with open(ENV_PATH, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ[key.strip()] = value.strip()
+
 # API Key 通过 .env 文件或环境变量设置
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 if not DEEPSEEK_API_KEY:

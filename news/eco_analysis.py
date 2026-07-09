@@ -16,6 +16,17 @@ import pandas as pd
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(BASE_DIR)
+
+# 加载 .env（项目根目录下的密钥文件）
+env_path = os.path.join(PROJECT_DIR, ".env")
+if os.path.exists(env_path):
+    with open(env_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ[key.strip()] = value.strip()
 ECO_DIR = os.path.join(PROJECT_DIR, "eco_data")
 SSE_DIR = os.path.join(PROJECT_DIR, "sse_etf_data")
 STOCK_DIR = os.path.join(PROJECT_DIR, "data_stock")
@@ -543,3 +554,6 @@ def main():
     # 输出摘要（供 news_intelligence 注入）
     summary = f"【经济分析摘要】{result.get('analysis','')[:200]}..." if result.get('analysis') else ""
     print(f"\n[ECO_SUMMARY]{summary}[/ECO_SUMMARY]")
+
+if __name__ == '__main__':
+    main()
