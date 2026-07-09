@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_run": "2026-07-09",
+  "last_run": "2026-07-10",
   "events": [
     {
       "id": "576399402ddd",
@@ -450,7 +450,7 @@
       "title": "沙特Ras Tanura炼油厂附近直升机坠毁致14人死亡",
       "category": "culture",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-10",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -548,6 +548,11 @@
           "date": "2026-07-02",
           "summary": "无直接更新，但委内瑞拉地震救援仍在进行。",
           "impact": "孤立事件，风险不变。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "这起重大安全事故是中国今年多起致命工厂事故的最新一例，引起高层关注。可能引发全国性安全生产大检查，对制造业和保险行业产生短期冲击，并影响当地经济和社会稳定。",
+          "impact": "潜在影响: 中国制造业上市企业, 安全生产相关监管板块, 保险业"
         }
       ],
       "causal_chain": [
@@ -559,7 +564,8 @@
         "电价和天然气价格上涨",
         "能源公司受益，但消费者负担加重",
         "直升机坠毁→安全疑虑→短期油价波动→需关注后续调查是否涉及人为因素",
-        "极端热浪→健康危机→政府投资气候适应→空调需求激增→中国出口增长→相关股票受益"
+        "极端热浪→健康危机→政府投资气候适应→空调需求激增→中国出口增长→相关股票受益",
+        "工厂火灾→人员伤亡→中央追责→全国安全生产检查→部分工厂停产/整改→相关企业成本上升、股价承压→保险赔付增加"
       ],
       "estimated_resolution": "N/A"
     },
@@ -1390,8 +1396,8 @@
       "title": "黎以美三方签署框架协议",
       "category": "politics",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-09",
-      "status": "active",
+      "last_updated": "2026-07-10",
+      "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -1433,6 +1439,11 @@
           "date": "2026-07-09",
           "summary": "特朗普宣布美伊停火'结束'并发动新一轮打击，标志着全球最危险的地缘政治冲突之一再次升级。霍尔木兹海峡这一全球最重要能源通道的通行受到直接威胁，可能引发全球能源危机和经济衰退。",
           "impact": "潜在影响: 原油, 全球股市, 美元, 黄金, 航运, 国防军工"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "特朗普宣布停火'结束'并发动新一轮打击，伊朗反击打击巴林、科威特，霍尔木兹海峡半封闭。",
+          "impact": "协议已名存实亡，美伊进入暴力循环，全球能源危机风险极高。"
         }
       ],
       "causal_chain": [
@@ -1494,7 +1505,7 @@
       "title": "BIS警告AI投资泡沫可能引发漫长崩盘",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -1537,6 +1548,11 @@
           "date": "2026-07-09",
           "summary": "今日微软裁员和Meta算力出售强化了市场对AI投资泡沫的担忧，分析师开始认真讨论泡沫风险。IMF报告也提及AI投资过热。",
           "impact": "AI泡沫破裂的叙事正在从警告变为市场讨论的焦点。科技公司裁员和资本支出调整加剧了市场对AI投资回报率的质疑。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "Anthropic撤回模型、Meta低价发布模型加剧价格战，伯南克加入Anthropic强化治理，泡沫讨论升温。",
+          "impact": "AI估值分化，头部模型公司争夺市场份额，泡沫风险在高利率环境下日益真实。"
         }
       ],
       "causal_chain": [
@@ -1793,7 +1809,7 @@
       "title": "Meta计划出售富余AI算力",
       "category": "technology",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -1831,6 +1847,11 @@
           "date": "2026-07-09",
           "summary": "Meta正式推出‘Meta Compute’计划，首个项目落地印度。同时，微软裁员引发AI替代工人的担忧。",
           "impact": "Meta的算力出售计划表明AI算力供给可能过剩，加剧了市场对AI投资回报的担忧。同时，这揭示了AI行业从'建造'到'应用'的转变。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "Meta正式推出'Muse Spark 1.1'付费模型，首次为开发者提供收费版本，与Anthropic、OpenAI直接竞争。",
+          "impact": "Meta从算力出售转向模型即服务，加剧AI价格战，可能压缩其他模型公司利润。"
         }
       ],
       "causal_chain": [
@@ -1875,7 +1896,7 @@
       "title": "美国6月非农仅增5.7万，大幅不及预期",
       "category": "economy",
       "first_detected": "2026-07-03",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
@@ -1908,6 +1929,11 @@
           "date": "2026-07-09",
           "summary": "非农数据已引发市场剧烈反应，加息概率归零，美元指数下跌，美股科技股反弹。但今日油价飙升可能改变这一趋势。",
           "impact": "非农数据为美联储暂停加息提供了依据，但中东冲突导致油价飙升，可能通过推高通胀压力再次将加息选项摆上台面。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "今日油价飙升和美联储纪要显示加息担忧，可能抵消非农疲软带来的降息预期。",
+          "impact": "非农数据对市场影响被中东冲突和通胀担忧覆盖，美联储政策路径更加复杂。"
         }
       ],
       "causal_chain": [
@@ -1947,7 +1973,7 @@
       "title": "伊朗最高领袖葬礼启动，多国代表团出席",
       "category": "politics",
       "first_detected": "2026-07-04",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -1975,6 +2001,11 @@
           "date": "2026-07-09",
           "summary": "哈梅内伊国葬进入第三天，德黑兰出现大规模示威民众高喊‘复仇’，伊朗警告美国和以色列勿袭击葬礼。美国总统宣布停火结束并发动新一轮打击。",
           "impact": "哈梅内伊葬礼期间的强烈反美情绪和特朗普重启军事打击的决定，使得任何通过外交途径解决冲突的可能性大幅降低，局势正滑向全面战争。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "哈梅内伊国葬进入第三天，德黑兰出现大规模示威高喊'复仇'，伊朗警告美以勿袭击。美国恢复打击伊朗。",
+          "impact": "葬礼成为反美情绪集中爆发点，伊朗内部强硬派主导，短期和谈无望。"
         }
       ],
       "causal_chain": [
@@ -1987,7 +2018,7 @@
       "title": "大众计划削减10万个工作岗位",
       "category": "economy",
       "first_detected": "2026-07-04",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -2015,6 +2046,11 @@
           "date": "2026-07-09",
           "summary": "大众正式确认裁员10万，并考虑关闭四家德国工厂。保时捷也计划额外裁员4000人。",
           "impact": "大众的裁员计划是德国乃至整个欧洲制造业危机的缩影，反映了传统汽车工业在电动化转型和外部竞争压力下的生存困境。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "大众正式确认裁员10万并考虑关闭四家德国工厂，保时捷额外裁员4000人。",
+          "impact": "德国汽车业危机深化，向欧洲工业衰退传导，影响就业和消费。"
         }
       ],
       "causal_chain": [
@@ -2098,8 +2134,8 @@
       "title": "OpenAI Scaling Law被曝存在根本性Bug",
       "category": "technology",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-09",
-      "status": "escalating",
+      "last_updated": "2026-07-10",
+      "status": "active",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -2116,6 +2152,11 @@
           "date": "2026-07-09",
           "summary": "今日Anthropic限制模型访问、英伟达服务器延期传闻等加剧市场对Scaling Law有效性的质疑。同时，AI投资泡沫的担忧在升温。",
           "impact": "Scaling Law动摇的叙事正在与AI泡沫担忧形成共振。Anthropic限制最先进模型的行为可视为对AI安全性或性能瓶颈的另一种承认，可能加速市场对AI投资逻辑的重新评估。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "OpenAI今日发布GPT-5.6，但Anthropic撤回模型以及市场对Scaling Law质疑未消。",
+          "impact": "新模型发布未能完全平息质疑，AI行业仍在寻找规模定律之外的突破路径。"
         }
       ],
       "causal_chain": [
@@ -2234,7 +2275,7 @@
       "title": "OPEC+决定8月增产，油价趋势转空",
       "category": "economy",
       "first_detected": "2026-07-07",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "resolving",
       "tail_risk": "medium",
       "daily_history": [
@@ -2247,6 +2288,11 @@
           "date": "2026-07-09",
           "summary": "美伊冲突升级导致霍尔木兹海峡面临封锁威胁，油价暴涨，完全逆转了OPEC+增产带来的看空情绪。",
           "impact": "中东地缘政治风险已经完全压倒OPEC+的增产预期。如果霍尔木兹海峡航运受阻，油价可能进一步飙升，OPEC+的增产计划将难以执行。"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "美伊冲突导致霍尔木兹海峡危机，油价暴涨逆转增产利空，OPEC+增产影响减弱。",
+          "impact": "地缘政治风险完全主导油市，OPEC+决策短期失效。"
         }
       ],
       "causal_chain": [
@@ -2281,7 +2327,7 @@
       "title": "美国对伊朗石油制裁恢复，打击全球石油供应",
       "category": "economy",
       "first_detected": "2026-07-09",
-      "last_updated": "2026-07-09",
+      "last_updated": "2026-07-10",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2289,10 +2335,75 @@
           "date": "2026-07-09",
           "summary": "美国在打击伊朗的同时，恢复了对伊朗石油的制裁，撤销了此前允许他国购买伊朗石油的豁免。这等于切断了伊朗的经济命脉，同时也进一步减少了全球市场本就紧张的石油供应。",
           "impact": "潜在影响: 原油, 炼油厂, 能源主题ETF, 伊朗里亚尔"
+        },
+        {
+          "date": "2026-07-10",
+          "summary": "特朗普撤销所有豁免，伊朗紧急运出1100万桶原油，但买家难寻；卡塔尔暂停LNG增产。",
+          "impact": "制裁和冲突双重打击全球石油供应，油价短期易涨难跌。"
         }
       ],
       "causal_chain": [
         "美国恢复对伊朗石油制裁 -> 伊朗石油出口降至零 -> 全球石油日供应量减少约150-200万桶 -> 供应缺口扩大推高油价 -> 全球通胀压力加剧"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "3ff87984d9e7",
+      "title": "超强台风'巴威'逼近中国东南沿海",
+      "category": "culture",
+      "first_detected": "2026-07-10",
+      "last_updated": "2026-07-10",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-10",
+          "summary": "超强台风维持强度超过五天，将对浙江、福建、台湾等地造成严重风雨影响。可能引发大规模撤离、基础设施损毁、农业受灾，影响当地经济活动和商品价格。",
+          "impact": "潜在影响: 公用事业（电力、供水）, 农业（水果、茶叶）, 保险业, 运输物流"
+        }
+      ],
+      "causal_chain": [
+        "台风登陆→强风暴雨→城市内涝/断电→生产消费暂停→农产品减产→相关商品涨价→灾后重建需求增加"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "feba23cf4755",
+      "title": "朝鲜内阁总理朴泰成周五访华三天",
+      "category": "politics",
+      "first_detected": "2026-07-10",
+      "last_updated": "2026-07-10",
+      "status": "active",
+      "tail_risk": "low",
+      "daily_history": [
+        {
+          "date": "2026-07-10",
+          "summary": "这是朝鲜高官在2026年首次正式访华，恰逢《中朝友好合作互助条约》65周年及中国试射潜射导弹后。可能加强中朝合作关系，影响半岛局势和美国在亚太的战略部署。",
+          "impact": "潜在影响: 中国防务板块, 朝鲜相关ETF, 韩国股市"
+        }
+      ],
+      "causal_chain": [
+        "朝鲜总理访华→中朝关系升温→可能的经济合作/军事协调→影响半岛紧张局势→韩国和日本安全政策调整"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "a409f63334e9",
+      "title": "索尼获得美国有条件批准设立稳定币信托银行",
+      "category": "technology",
+      "first_detected": "2026-07-10",
+      "last_updated": "2026-07-10",
+      "status": "active",
+      "tail_risk": "medium",
+      "daily_history": [
+        {
+          "date": "2026-07-10",
+          "summary": "索尼这一传统消费电子巨头进军稳定币领域，标志着大型企业加速采用区块链技术。可能推动稳定币主流采用，但也会引发监管竞争和银行体系变革。",
+          "impact": "潜在影响: 加密货币（USDT、USDC）, 区块链基础设施提供商, 传统银行股"
+        }
+      ],
+      "causal_chain": [
+        "索尼获准发行稳定币→增加稳定币市场竞争→推动企业级区块链用例→传统银行面临脱媒压力→监管框架进一步完善"
       ],
       "estimated_resolution": "N/A"
     }
