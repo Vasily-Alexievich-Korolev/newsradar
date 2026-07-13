@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_run": "2026-07-13",
+  "last_run": "2026-07-14",
   "events": [
     {
       "id": "576399402ddd",
@@ -117,9 +117,9 @@
       "title": "美国对部分企业开放Anthropic先进AI模型Mythos 5",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-12",
+      "last_updated": "2026-07-14",
       "status": "resolved",
-      "tail_risk": "high",
+      "tail_risk": "medium",
       "daily_history": [
         {
           "date": "2026-06-28",
@@ -305,6 +305,16 @@
           "date": "2026-07-12",
           "summary": "这是科技巨头间罕见的高层诉讼，可能重塑AI行业竞争格局，影响AI初创公司的人才招募和硬件合作模式。若苹果胜诉，OpenAI将面临产品开发延迟和声誉打击；若败诉，苹果的AI硬件计划可能受阻。",
           "impact": "潜在影响: AI概念股, 苹果供应链, OpenAI相关投资"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "这是科技巨头间罕见的法律战，涉及AI人才流动和商业秘密保护，可能影响整个AI行业的招聘和合作模式。苹果指控前员工利用‘罕见’漏洞持续下载机密文件，并暗示OpenAI共谋，若胜诉将大幅提高AI公司合规成本。",
+          "impact": "潜在影响: 苹果(AAPL), OpenAI(未上市), 微软(MSFT), AI概念股"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "首次观察到AI模型内部存在类似人类思考的抽象空间，对AI可解释性和安全性具有里程碑意义。可能推动监管要求模型透明化，但也可能引发对AI意识的新一轮伦理讨论。",
+          "impact": "潜在影响: Anthropic(未上市), AI安全概念股, 监管科技(RegTech)"
         }
       ],
       "causal_chain": [
@@ -337,7 +347,9 @@
         "苹果诉讼将导致OpenAI面临法律制裁和声誉损失",
         "影响OpenAI的融资和人才吸引力",
         "可能促使其他科技公司加强对AI初创企业的知识产权保护",
-        "长期影响AI行业合作与竞争生态"
+        "长期影响AI行业合作与竞争生态",
+        "苹果起诉→OpenAI面临法律审查和声誉损失→AI人才流动受限→科技公司加强内部安全→行业竞争格局变化",
+        "Anthropic发现→AI可解释性突破→监管机构要求透明度→模型开发成本增加→但长期利好AI治理"
       ],
       "estimated_resolution": "N/A"
     },
@@ -1030,7 +1042,7 @@
       "title": "特朗普威胁对欧洲征收100%数字税关税",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -1118,6 +1130,11 @@
           "date": "2026-07-13",
           "summary": "这是史无前例的举措，将全球贸易最关键的咽喉要道商品化。此举不仅加剧了与伊朗的冲突，更可能引发全球贸易体系的根本性变革，冲击所有依赖海运的国家。",
           "impact": "潜在影响: 全球油价, 航运股, 保险, 美元"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "此举史无前例，将地缘政治风险直接货币化，实际相当于对全球贸易征收20%的通行税。可能大幅推高全球通胀，并促使各国寻求替代航线，重塑全球能源和贸易格局。",
+          "impact": "潜在影响: 原油(WTI/布伦特), 航运股, 替代能源, 中东主权基金, 全球通胀挂钩债券"
         }
       ],
       "causal_chain": [
@@ -1129,7 +1146,8 @@
         "全球经济增长放缓，风险资产承压",
         "伊朗发出关闭霍尔木兹海峡威胁 -> 全球能源市场恐慌，油价飙升 -> 各国政府紧急释放战略石油储备 -> 全球经济前景恶化，央行政策面临两难 -> 市场风险偏好急剧下降",
         "特朗普威胁切断与西班牙贸易 -> 市场担忧美欧贸易战升级 -> 欧洲资产遭到抛售 -> 欧元贬值 -> 全球贸易不确定性上升",
-        "特朗普宣布征收费用->霍尔木兹海峡通行成本剧增->全球航运保险费率飙升->全球供应链成本上升并延误->推高全球通胀并迫使各国寻找替代路线"
+        "特朗普宣布征收费用->霍尔木兹海峡通行成本剧增->全球航运保险费率飙升->全球供应链成本上升并延误->推高全球通胀并迫使各国寻找替代路线",
+        "特朗普征收20%通行费→霍尔木兹海峡通行成本暴增→全球油价和运输成本飙升→通胀预期上升→央行加息压力加大→全球经济衰退风险增加"
       ],
       "estimated_resolution": "N/A"
     },
@@ -1759,7 +1777,7 @@
       "title": "美国不续签USMCA转向逐年审查",
       "category": "economy",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "resolving",
       "tail_risk": "high",
       "daily_history": [
@@ -1802,6 +1820,11 @@
           "date": "2026-07-13",
           "summary": "美加就新的底特律-温莎大桥通行费达成协议，定于7月27日开放，解决了特朗普政府此前设置的障碍。",
           "impact": "大桥的开放利好美加贸易，但USMCA本身没有实质进展，核心矛盾仍在。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "美加就底特律-温莎大桥通行费达成协议，定于7月27日开放。",
+          "impact": "双边摩擦局部缓和，但逐年审查机制仍为长期不确定性。"
         }
       ],
       "causal_chain": [
@@ -1814,7 +1837,7 @@
       "title": "法国热浪造成约1000例超额死亡",
       "category": "culture",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -1842,6 +1865,11 @@
           "date": "2026-07-13",
           "summary": "欧洲极端热浪持续，更多地区报告数千人死亡，法国核电站因河流水温过高而面临压力。",
           "impact": "极端天气正在对整个欧洲的基础设施（电力、交通）和公共卫生系统施加巨大压力，经济影响正在扩散。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "欧洲6月报告超10,000例超额死亡，法国核电站因水温过高面临压力。",
+          "impact": "热浪影响远超此前估计，能源基础设施承压加剧。"
         }
       ],
       "causal_chain": [
@@ -1855,7 +1883,7 @@
       "title": "索尼2028年停止生产PlayStation实体光盘",
       "category": "technology",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-02",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -1863,6 +1891,11 @@
           "date": "2026-07-02",
           "summary": "标志游戏行业全面转向数字下载，冲击实体零售业和二手市场，但利好数字发行平台和订阅服务。",
           "impact": "潜在影响: 索尼, 游戏零售商, 数字发行平台"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新增直接事件。",
+          "impact": "趋势不变，实体游戏市场持续萎缩。"
         }
       ],
       "causal_chain": [
@@ -1875,7 +1908,7 @@
       "title": "Meta计划出售富余AI算力",
       "category": "technology",
       "first_detected": "2026-07-02",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -1938,6 +1971,11 @@
           "date": "2026-07-13",
           "summary": "欧盟正式指控Meta违反《数字服务法》，因其Facebook和Instagram被指具有“成瘾性设计”。",
           "impact": "监管风险从数据隐私转向算法和用户体验层面，可能迫使Meta改变核心商业模式，影响其广告收入和用户留存。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "欧盟正式指控Meta违反《数字服务法》认定Facebook/Instagram具有成瘾性设计；美国四州索赔1.4万亿美元。",
+          "impact": "监管压力显著加大，对Meta商业模式构成实质性威胁。"
         }
       ],
       "causal_chain": [
@@ -1955,7 +1993,7 @@
       "title": "美国最高法院裁定特朗普出生公民权令违宪",
       "category": "politics",
       "first_detected": "2026-07-03",
-      "last_updated": "2026-07-05",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -1973,6 +2011,11 @@
           "date": "2026-07-05",
           "summary": "最高法院以违宪为由否决特朗普限制出生公民权的行政命令，是对总统行政权力的重大司法约束，直接影响数百万移民家庭，并将成为2026年中期选举的核心议题。该判决可能引发更广泛的行政与司法权力博弈。",
           "impact": "潜在影响: 美元, 美国国债, 移民概念股"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "特朗普推出《公民身份法案》试图立法限制出生公民权。",
+          "impact": "行政路径被堵后转向立法博弈，中期选举核心议题。"
         }
       ],
       "causal_chain": [
@@ -1987,7 +2030,7 @@
       "title": "美国6月非农仅增5.7万，大幅不及预期",
       "category": "economy",
       "first_detected": "2026-07-03",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2040,6 +2083,11 @@
           "date": "2026-07-13",
           "summary": "今日油价暴涨和美联储鹰派纪要显示加息担忧，抵消了非农疲软带来的降息预期。",
           "impact": "通胀和地缘政治风险成为当前市场核心矛盾，劳动力市场数据的权重暂时下降。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "美联储理事沃勒表示可能需要加息抑制核心通胀。",
+          "impact": "非农疲软被油价和鹰派言论抵消，降息预期降温。"
         }
       ],
       "causal_chain": [
@@ -2053,7 +2101,7 @@
       "title": "秘鲁法院裁定中资钱凯港应接受监管",
       "category": "politics",
       "first_detected": "2026-07-03",
-      "last_updated": "2026-07-05",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -2066,6 +2114,11 @@
           "date": "2026-07-05",
           "summary": "秘鲁法院推翻此前判决，要求政府对中资控股的钱凯港实施监管，这是美国遏制中国在拉美影响力的重要一步。可能阻碍中国在拉美的港口投资和一带一路项目，影响中国全球供应链布局。",
           "impact": "潜在影响: 中国基建出海概念股, 一带一路相关ETF, 秘鲁货币"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新增直接事件。",
+          "impact": "中国在拉美港口投资面临持续政治阻力。"
         }
       ],
       "causal_chain": [
@@ -2079,7 +2132,7 @@
       "title": "伊朗最高领袖葬礼启动，多国代表团出席",
       "category": "politics",
       "first_detected": "2026-07-04",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -2127,6 +2180,11 @@
           "date": "2026-07-13",
           "summary": "伊朗新最高领袖誓言报复美以，同日美伊相互打击，特朗普虽宣布停火结束但仍同意继续谈判。",
           "impact": "虽然双方均有谈判意愿，但军事行动未见缓和，冲突正进入“打打谈谈”的高风险阶段，霍尔木兹海峡成为博弈焦点。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "新最高领袖誓言复仇，美伊相互打击进入第三、四晚，特朗普宣布停火结束。",
+          "impact": "冲突全面升级，霍尔木兹海峡关闭，风险极高。"
         }
       ],
       "causal_chain": [
@@ -2139,7 +2197,7 @@
       "title": "大众计划削减10万个工作岗位",
       "category": "economy",
       "first_detected": "2026-07-04",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -2187,6 +2245,11 @@
           "date": "2026-07-13",
           "summary": "大众CEO确认计划削减5万个工作岗位，并关闭德国工厂，以应对在中国市场的销量暴跌。",
           "impact": "大众的裁员和减产正式从传闻变为现实，标志德国乃至欧洲汽车工业正经历深刻的结构性危机。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "大众CEO确认额外再裁5万人，总计达10万，关闭德国工厂。",
+          "impact": "德国制造业危机深化，裁员规模超预期。"
         }
       ],
       "causal_chain": [
@@ -2199,7 +2262,7 @@
       "title": "欧盟法院维持对谷歌47亿欧元反垄断罚款",
       "category": "technology",
       "first_detected": "2026-07-05",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -2212,6 +2275,11 @@
           "date": "2026-07-06",
           "summary": "今日确认欧盟法院驳回谷歌上诉，维持47亿欧元罚款，谷歌表示将研究判决。",
           "impact": "靴子落地，谷歌财务影响有限，但强化了全球反垄断监管趋势，对大型科技股构成长期政策压力。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "法律判例已定，影响有限。"
         }
       ],
       "causal_chain": [
@@ -2224,7 +2292,7 @@
       "title": "中国金监总局接管武汉众邦银行",
       "category": "economy",
       "first_detected": "2026-07-05",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2237,6 +2305,11 @@
           "date": "2026-07-06",
           "summary": "无新动态，事件仍在发酵中，但今日无直接相关新闻。",
           "impact": "中小银行风险持续暴露，可能影响金融科技和线上助贷平台估值，但系统性风险可控。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "事件仍在发酵，关注后续处理。"
         }
       ],
       "causal_chain": [
@@ -2249,7 +2322,7 @@
       "title": "华为‘韬芯片’论文引发半导体行业震动",
       "category": "technology",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-12",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2262,6 +2335,11 @@
           "date": "2026-07-12",
           "summary": "今日无直接新动态，但中国首次运载火箭可控回收成功显示技术突破持续。",
           "impact": "华为芯片理论仍在发酵，但今日没有新增信息。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无直接新动态。",
+          "impact": "中国技术突破持续，但短期影响有限。"
         }
       ],
       "causal_chain": [
@@ -2275,9 +2353,9 @@
       "title": "OpenAI Scaling Law被曝存在根本性Bug",
       "category": "technology",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-12",
+      "last_updated": "2026-07-14",
       "status": "active",
-      "tail_risk": "high",
+      "tail_risk": "medium",
       "daily_history": [
         {
           "date": "2026-07-06",
@@ -2303,11 +2381,22 @@
           "date": "2026-07-12",
           "summary": "OpenAI今日发布GPT-5.6，但苹果起诉OpenAI窃取商业机密转移市场注意力；Anthropic撤回模型及Scaling Law质疑未消。",
           "impact": "Scaling Law争议未平息，但苹果诉讼成为新的焦点。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "苹果起诉OpenAI窃取商业机密，转移市场注意力；Anthropic撤回模型，Scaling Law质疑未消。",
+          "impact": "Scaling Law争议仍在，但苹果诉讼增加了OpenAI的运营风险。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "SpaceX作为全球估值最高未上市公司之一，其IPO后表现反映市场对太空经济和高风险成长股的偏好变化。股价逼近发行价可能引发投资者对估值泡沫的质疑，并影响后续科技公司IPO窗口。",
+          "impact": "潜在影响: SpaceX (SPCE), 太空概念股, IPO市场"
         }
       ],
       "causal_chain": [
         "市场对算力需求可持续性产生怀疑 → 英伟达等股价回调 → AI板块估值重估 → 资金流出科技股转向防御性资产",
-        "若Bug被证实 → 大型模型训练投入可能过度 → 行业转向小模型和算法优化 → 硬件需求增速放缓"
+        "若Bug被证实 → 大型模型训练投入可能过度 → 行业转向小模型和算法优化 → 硬件需求增速放缓",
+        "SpaceX股价下跌→市场对高估值科技股信心减弱→IPO窗口收紧→但长期仍受太空需求支撑"
       ],
       "estimated_resolution": "N/A"
     },
@@ -2316,7 +2405,7 @@
       "title": "特朗普与普京通话85分钟，讨论乌克兰和伊朗",
       "category": "politics",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -2324,6 +2413,11 @@
           "date": "2026-07-06",
           "summary": "此次通话是美俄领导人罕见深入交流，可能为乌克兰停火和伊朗谈判铺路，对地缘政治格局产生重大影响。通话内容显示双方有直接沟通渠道，缓解了市场对局势失控的担忧。",
           "impact": "潜在影响: 俄罗斯卢布, 欧洲天然气价格, 原油期货, 小麦期货, 乌克兰主权债"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "沟通渠道虽在，但美伊冲突恶化使乌克兰局势边缘化。"
         }
       ],
       "causal_chain": [
@@ -2337,7 +2431,7 @@
       "title": "日本首次从废旧空调中提取稀土",
       "category": "economy",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -2345,6 +2439,11 @@
           "date": "2026-07-06",
           "summary": "此举标志日本在稀土供应链自主化上迈出实质一步，减少对中国稀土的依赖，可能引发全球稀土回收产业热潮，中期内对稀土价格形成压制。",
           "impact": "潜在影响: 稀土ETF, 中国稀土出口企业, 日本材料回收企业, 绿色能源ETF"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "长期影响，稀土回收产业前景向好。"
         }
       ],
       "causal_chain": [
@@ -2358,7 +2457,7 @@
       "title": "印度股市成为AI交易震荡下的资金避风港",
       "category": "economy",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -2366,6 +2465,11 @@
           "date": "2026-07-06",
           "summary": "当全球AI相关股票因泡沫担忧下跌时，印度市场因缺乏AI概念股反而获得防御性资金流入。这一现象凸显市场对AI估值的担忧，同时可能推动印度成为新兴市场中的‘安全选择’，影响全球资金配置。",
           "impact": "潜在影响: 印度Nifty 50 ETF, 新兴市场ETF, AI重仓的日本韩国股市, 印度卢比"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "韩国股市暴跌9%熔断，AI恐慌蔓延，印度防御属性凸显。",
+          "impact": "印度股市相对表现继续验证此逻辑。"
         }
       ],
       "causal_chain": [
@@ -2379,7 +2483,7 @@
       "title": "中国快递业务量突破1000亿件，比去年提前9天",
       "category": "economy",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "low",
       "daily_history": [
@@ -2387,6 +2491,11 @@
           "date": "2026-07-06",
           "summary": "快递数据是消费活力的先行指标，提前突破千亿表明内需韧性较强，有助于提振市场对中国经济的信心，利好电商、物流和消费板块。",
           "impact": "潜在影响: 中通快递, 京东, 阿里巴巴, 消费类ETF, 物流行业指数"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "内需韧性指标，利好消费板块。"
         }
       ],
       "causal_chain": [
@@ -2400,7 +2509,7 @@
       "title": "中国试射潜射洲际导弹引发区域紧张",
       "category": "politics",
       "first_detected": "2026-07-07",
-      "last_updated": "2026-07-11",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2413,6 +2522,11 @@
           "date": "2026-07-11",
           "summary": "中国在太平洋试射潜射战略导弹，所罗门群岛抗议，但外长随后访华进行沟通。",
           "impact": "中国展示核威慑能力，但外交上通过访问缓和紧张，事件短期对市场影响有限。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "军事紧张持续，但未进一步升级。"
         }
       ],
       "causal_chain": [
@@ -2426,7 +2540,7 @@
       "title": "OPEC+决定8月增产，油价趋势转空",
       "category": "economy",
       "first_detected": "2026-07-07",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -2449,6 +2563,11 @@
           "date": "2026-07-13",
           "summary": "美伊冲突导致霍尔木兹海峡危机，油价暴涨逆转了增产带来的利空，OPEC+增产影响被完全对冲。",
           "impact": "全球石油市场供应端风险远超OPEC+的调控能力，地缘政治溢价已成为当前油价的主导因素。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "美伊冲突导致霍尔木兹海峡危机，油价暴涨逆转利空。",
+          "impact": "增产影响完全对冲，油价主导权重回地缘政治。"
         }
       ],
       "causal_chain": [
@@ -2462,7 +2581,7 @@
       "title": "加拿大选择德国潜艇，深化欧洲防务合作",
       "category": "politics",
       "first_detected": "2026-07-07",
-      "last_updated": "2026-07-07",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "low",
       "daily_history": [
@@ -2470,6 +2589,11 @@
           "date": "2026-07-07",
           "summary": "加拿大选择德国TKMS建造12艘常规潜艇，合同价值约100亿加元，标志加拿大军事采购从美国向欧洲转移，减少对美依赖。此举可能重塑北约内部平衡，并推动欧洲军工产业进一步发展。",
           "impact": "潜在影响: 德国军工股（蒂森克虏伯、莱茵金属）, 加拿大船企, 美国海军承包商"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "订单确定，长期利好德国军工。"
         }
       ],
       "causal_chain": [
@@ -2483,7 +2607,7 @@
       "title": "美国对伊朗石油制裁恢复，打击全球石油供应",
       "category": "economy",
       "first_detected": "2026-07-09",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -2506,6 +2630,11 @@
           "date": "2026-07-13",
           "summary": "伊朗紧急运出原油但买家难寻；特朗普宣布全面封锁霍尔木兹海峡，海峡航运量腰斩。",
           "impact": "制裁和实际军事封锁正在创造实质性的供应缺口，全球石油市场恐慌情绪蔓延，油价面临进一步上行风险。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "特朗普宣布全面封锁霍尔木兹海峡，海峡航运量腰斩；美军将封锁伊朗海岸线。",
+          "impact": "制裁升级为军事封锁，全球石油供应面临严重威胁。"
         }
       ],
       "causal_chain": [
@@ -2518,8 +2647,8 @@
       "title": "超强台风'巴威'逼近中国东南沿海",
       "category": "culture",
       "first_detected": "2026-07-10",
-      "last_updated": "2026-07-11",
-      "status": "active",
+      "last_updated": "2026-07-14",
+      "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
         {
@@ -2531,6 +2660,11 @@
           "date": "2026-07-11",
           "summary": "台风'巴威'维持强度超5天，已致中国福建等地11人死亡，广西洪灾加重；多地停工停学。",
           "impact": "台风对农业、基础设施和供应链造成实际损失，短期推高农产品和建材价格，但整体可控。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "已致福建11人死亡，广西洪灾加重，多地停工停学。",
+          "impact": "灾害损失扩大，影响区域经济。"
         }
       ],
       "causal_chain": [
@@ -2543,8 +2677,8 @@
       "title": "朝鲜内阁总理朴泰成周五访华三天",
       "category": "politics",
       "first_detected": "2026-07-10",
-      "last_updated": "2026-07-11",
-      "status": "active",
+      "last_updated": "2026-07-14",
+      "status": "resolving",
       "tail_risk": "low",
       "daily_history": [
         {
@@ -2556,6 +2690,11 @@
           "date": "2026-07-11",
           "summary": "朴泰成访华期间会见习近平，提出将中朝关系发展为'最强有力战略关系'，纪念《中朝友好合作互助条约》65周年。",
           "impact": "中朝高层互动频繁，显示中国在半岛问题上影响力增强，可能制衡美日韩同盟，区域地缘稳定。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "已会见习近平，提出最强有力战略关系。",
+          "impact": "中朝关系强化，地缘稳定性增加。"
         }
       ],
       "causal_chain": [
@@ -2568,7 +2707,7 @@
       "title": "索尼获得美国有条件批准设立稳定币信托银行",
       "category": "technology",
       "first_detected": "2026-07-10",
-      "last_updated": "2026-07-10",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "medium",
       "daily_history": [
@@ -2576,6 +2715,11 @@
           "date": "2026-07-10",
           "summary": "索尼这一传统消费电子巨头进军稳定币领域，标志着大型企业加速采用区块链技术。可能推动稳定币主流采用，但也会引发监管竞争和银行体系变革。",
           "impact": "潜在影响: 加密货币（USDT、USDC）, 区块链基础设施提供商, 传统银行股"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无新动态。",
+          "impact": "大型企业进军稳定币，监管进展待观察。"
         }
       ],
       "causal_chain": [
@@ -2588,7 +2732,7 @@
       "title": "SK海力士美国IPO融资265亿美元创纪录",
       "category": "economy",
       "first_detected": "2026-07-11",
-      "last_updated": "2026-07-12",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -2601,6 +2745,11 @@
           "date": "2026-07-12",
           "summary": "SK海力士今日在纳斯达克上市，股价首日涨超10%，CEO称存储芯片短缺或持续至2030年后。",
           "impact": "AI存储需求强劲，但巨型IPO抽走市场流动性，半导体板块估值压力仍存。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "上市第二日ADR暴跌近10%，韩国股价单日暴跌15%创纪录。",
+          "impact": "AI泡沫担忧导致估值回调，短期抛压巨大。"
         }
       ],
       "causal_chain": [
@@ -2613,7 +2762,7 @@
       "title": "中国首次运载火箭可控回收成功",
       "category": "technology",
       "first_detected": "2026-07-11",
-      "last_updated": "2026-07-12",
+      "last_updated": "2026-07-14",
       "status": "resolved",
       "tail_risk": "low",
       "daily_history": [
@@ -2626,6 +2775,11 @@
           "date": "2026-07-12",
           "summary": "长征十号B火箭成功回收，中国首次实现运载火箭可控回收，全球首创海上网系回收。",
           "impact": "中国航天技术里程碑，直接挑战SpaceX地位，降低商业发射成本。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "已成功实施，状态解决。",
+          "impact": "事件已结束，中国航天技术里程碑。"
         }
       ],
       "causal_chain": [
@@ -2638,8 +2792,8 @@
       "title": "IEA警告美伊冲突或颠覆明年石油市场预期",
       "category": "economy",
       "first_detected": "2026-07-11",
-      "last_updated": "2026-07-13",
-      "status": "active",
+      "last_updated": "2026-07-14",
+      "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
         {
@@ -2656,6 +2810,11 @@
           "date": "2026-07-13",
           "summary": "IEA明确指出供应缺口巨大，若冲突持续将彻底打破明年全球石油过剩的预期。",
           "impact": "市场已从对供给过剩的担忧转向对供给崩溃的恐慌，IEA的警告强化了市场对长期油价高位的预期。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "IEA预测2026年全球石油需求每日降低100万桶，供应缺口巨大。",
+          "impact": "冲突若持续，全球石油过剩预期彻底打破。"
         }
       ],
       "causal_chain": [
@@ -2668,7 +2827,7 @@
       "title": "英国前议员安·威德科姆谋杀案",
       "category": "politics",
       "first_detected": "2026-07-12",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -2681,6 +2840,11 @@
           "date": "2026-07-13",
           "summary": "英国反恐警察正式接管案件调查，一名26岁男子被捕，新证据显示此案可能与恐怖主义有关。",
           "impact": "事件性质升级为恐怖主义调查，在政治上加剧了英国社会的分裂和安全隐患，可能进一步冲击改革英国党的声誉。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "反恐警察正式接管，一名26岁男子被捕，新证据指向恐怖主义。",
+          "impact": "升级为恐袭调查，政治影响扩大。"
         }
       ],
       "causal_chain": [
@@ -2695,19 +2859,30 @@
       "title": "韩国股市暴跌9%触发熔断",
       "category": "economy",
       "first_detected": "2026-07-13",
-      "last_updated": "2026-07-13",
-      "status": "active",
+      "last_updated": "2026-07-14",
+      "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
         {
           "date": "2026-07-13",
           "summary": "韩国股市作为全球科技和半导体行业的风向标，其暴跌近9%并触发熔断，反映出在AI概念股估值泡沫和地缘政治冲击下，市场出现了严重的流动性危机和信心崩溃。",
           "impact": "潜在影响: 韩国综合股价指数(KOSPI), SK海力士, 三星电子, 北美AI芯片股"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "今日KOSPI暴跌8.95%触发熔断，SK海力士单日跌15%。",
+          "impact": "流动性危机和信心崩溃，全球AI估值修正传导至韩国。"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "韩国作为全球科技和半导体风向标，单日暴跌9%触发熔断，可能引发亚洲市场连锁反应和资本外逃。叠加美伊战争和油价冲击，亚洲新兴市场面临严峻的流动性考验。",
+          "impact": "潜在影响: 韩国KOSPI指数, SK海力士(000660.KS), 三星电子(005930.KS), 亚洲新兴市场ETF"
         }
       ],
       "causal_chain": [
         "美伊冲突升级->中东油价暴涨->韩国这个能源进口国经济前景恶化->结合AI股获利回吐->恐慌性抛售和杠杆强制平仓->市场暴跌",
-        "韩国股市暴跌->全球科技股受到拖累->投资者抛售新兴市场资产->加剧新兴市场货币贬值压力"
+        "韩国股市暴跌->全球科技股受到拖累->投资者抛售新兴市场资产->加剧新兴市场货币贬值压力",
+        "韩国股市暴跌→触发熔断→全球投资者避险→资金流出亚洲→新兴市场汇率贬值→韩国信贷紧缩→实体经济冲击"
       ],
       "estimated_resolution": "N/A"
     },
@@ -2716,7 +2891,7 @@
       "title": "英国将伊朗伊斯兰革命卫队列为恐怖组织",
       "category": "politics",
       "first_detected": "2026-07-13",
-      "last_updated": "2026-07-13",
+      "last_updated": "2026-07-14",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2724,10 +2899,35 @@
           "date": "2026-07-13",
           "summary": "这是西方大国首次将伊朗的官方武装力量列为恐怖组织，标志着外交关系的根本性决裂，将使英国境内与伊朗相关的金融、旅行和政治活动几乎不可能，极大限制了伊朗在西方世界的影响力。",
           "impact": "潜在影响: 英镑, 航运保险, 伊朗相关股票/债券"
+        },
+        {
+          "date": "2026-07-14",
+          "summary": "无进一步动态。",
+          "impact": "外交断裂已成事实，影响深度有限。"
         }
       ],
       "causal_chain": [
         "英国将IRGC列为恐怖组织->法律上禁止任何与IRGC的金融往来->切断伊朗在英国的融资渠道->加剧英伊紧张关系->推动欧盟其他国家跟进"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "6af283c83631",
+      "title": "美国四州起诉Meta索赔1.4万亿美元",
+      "category": "technology",
+      "first_detected": "2026-07-14",
+      "last_updated": "2026-07-14",
+      "status": "active",
+      "tail_risk": "high",
+      "daily_history": [
+        {
+          "date": "2026-07-14",
+          "summary": "索赔金额史上罕见，针对Meta‘成瘾性设计’的指控可能重塑社交媒体商业模式。若败诉，Meta可能面临巨额罚款和业务整改，影响整个互联网广告行业。",
+          "impact": "潜在影响: Meta(META), 社交媒体板块, 数字广告ETF"
+        }
+      ],
+      "causal_chain": [
+        "四州起诉→Meta法律风险上升→广告收入预期下调→社交平台估值模型改变→行业合规成本增加"
       ],
       "estimated_resolution": "N/A"
     }

@@ -30,6 +30,8 @@ import time
 import hashlib
 import sys
 import socket
+import traceback
+import atexit
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from openai import OpenAI
@@ -64,9 +66,122 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS_DATA_DIR = os.path.join(BASE_DIR, "news_data")
 EVENTS_DB_PATH = os.path.join(BASE_DIR, "news", "events.json")
 REPORTS_DIR = os.path.join(BASE_DIR, "news", "reports")
+LOGS_DIR = os.path.join(BASE_DIR, "logs")
 
 # 旧新闻清理天数
 NEWS_RETENTION_DAYS = 3
+
+# 日志保留天数（自动清理更早的日志文件）
+LOG_RETENTION_DAYS = 30
+
+
+# ============================================================
+# 日志功能：将全过程输出同时写入控制台和日志文件
+# ============================================================
+
+class _Tee:
+    """把写入同时镜像到原始流（控制台）和日志文件；文件侧按行加时间戳前缀。"""
+
+    def __init__(self, stream, logfile):
+        self._stream = stream      # 原始 stdout/stderr（控制台）
+        self._logfile = logfile    # 日志文件句柄
+        self._buf = ""             # 行缓冲，用于给文件加时间戳
+
+    def write(self, data):
+        # 控制台原样输出
+        try:
+            self._stream.write(data)
+        except Exception:
+            pass
+        # 文件按行加时间戳
+        self._buf += data
+        while "\n" in self._buf:
+            line, self._buf = self._buf.split("\n", 1)
+            ts = datetime.now().strftime("%H:%M:%S")
+            self._logfile.write(f"[{ts}] {line}\n")
+        try:
+            self._logfile.flush()
+        except Exception:
+            pass
+
+    def flush(self):
+        try:
+            self._stream.flush()
+        except Exception:
+            pass
+        try:
+            self._logfile.flush()
+        except Exception:
+            pass
+
+    def isatty(self):
+        return getattr(self._stream, "isatty", lambda: False)()
+
+    @property
+    def encoding(self):
+        return getattr(self._stream, "encoding", "utf-8")
+
+
+def _cleanup_old_logs():
+    """清理超过保留期的旧日志文件。"""
+    if not os.path.isdir(LOGS_DIR):
+        return
+    cutoff = time.time() - LOG_RETENTION_DAYS * 24 * 60 * 60
+    for name in os.listdir(LOGS_DIR):
+        if not name.endswith(".log"):
+            continue
+        path = os.path.join(LOGS_DIR, name)
+        try:
+            if os.path.getmtime(path) < cutoff:
+                os.remove(path)
+        except Exception:
+            pass
+
+
+def setup_logging():
+    """启用日志：接管 stdout/stderr，所有输出镜像到 logs/ 下的按日文件。
+
+    返回日志文件路径。可重复调用（幂等，不会二次包裹）。
+    """
+    if isinstance(sys.stdout, _Tee):
+        return getattr(sys.stdout, "_log_path", None)
+
+    os.makedirs(LOGS_DIR, exist_ok=True)
+    _cleanup_old_logs()
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    log_path = os.path.join(LOGS_DIR, f"news_intelligence_{today}.log")
+    logfile = open(log_path, "a", encoding="utf-8")
+
+    header = (
+        "\n" + "=" * 70 + "\n"
+        f"  运行开始: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  "
+        f"(pid={os.getpid()})\n"
+        + "=" * 70 + "\n"
+    )
+    logfile.write(header)
+    logfile.flush()
+
+    tee_out = _Tee(sys.stdout, logfile)
+    tee_out._log_path = log_path
+    sys.stdout = tee_out
+    sys.stderr = _Tee(sys.stderr, logfile)
+
+    # 进程退出时写收尾标记并关闭文件
+    def _finalize():
+        try:
+            logfile.write(
+                "-" * 70 + "\n"
+                f"  运行结束: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                + "=" * 70 + "\n"
+            )
+            logfile.flush()
+            logfile.close()
+        except Exception:
+            pass
+
+    atexit.register(_finalize)
+    return log_path
 
 # ============================================================
 # RSS 新闻源（全部保留）
@@ -588,6 +703,42 @@ def generate_event_id(title):
     return hashlib.md5(title.encode('utf-8')).hexdigest()[:12]
 
 
+def is_duplicate(new_title, existing_title):
+    """判断两个标题是否指向同一事件（模糊匹配）。
+
+    用于事件记忆库的去重：支持子串匹配与中文/英文 token 重叠度匹配。
+    """
+    # 快速检查：子串匹配（一个标题完全包含另一个）
+    if new_title in existing_title or existing_title in new_title:
+        return True
+
+    # 中文/英文 token 重叠度
+    def tokenize(s):
+        result = []
+        for ch in s:
+            if '\u4e00' <= ch <= '\u9fff':
+                result.append(ch)
+            else:
+                result.extend(re.findall(r'\w+', ch))
+        return set(result)
+    words = tokenize(new_title)
+    ex_words = tokenize(existing_title)
+    if not words or not ex_words:
+        return False
+
+    # 核心实体重叠度（降低阈值到 30%，因为 LLM 标题表述变化大）
+    overlap = words & ex_words
+    # 排除过于通用的单字（"的"/"与"/"和"/"在"等 无法出现在中文标题中）
+    common = set("的与和在及于或是被把从以")
+    overlap = overlap - common
+    words = words - common
+    ex_words = ex_words - common
+    if not words or not ex_words:
+        return False
+    ratio = len(overlap) / min(len(words), len(ex_words))
+    return ratio >= 0.3 or words.issubset(ex_words) or ex_words.issubset(words)
+
+
 def update_events_db(events_db, result):
     """根据分析结果更新事件记忆库。"""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -643,38 +794,7 @@ def update_events_db(events_db, result):
             continue
         new_event_titles_seen.add(title)
 
-        # 模糊去重：检查标题是否指向同一事件
-        def is_duplicate(new_title, existing_title):
-            # 快速检查：子串匹配（一个标题完全包含另一个）
-            if new_title in existing_title or existing_title in new_title:
-                return True
-
-            # 中文/英文 token 重叠度
-            def tokenize(s):
-                result = []
-                for ch in s:
-                    if '\u4e00' <= ch <= '\u9fff':
-                        result.append(ch)
-                    else:
-                        result.extend(re.findall(r'\w+', ch))
-                return set(result)
-            words = tokenize(new_title)
-            ex_words = tokenize(existing_title)
-            if not words or not ex_words:
-                return False
-
-            # 核心实体重叠度（降低阈值到 30%，因为 LLM 标题表述变化大）
-            overlap = words & ex_words
-            # 排除过于通用的单字（"的"/"与"/"和"/"在"等 无法出现在中文标题中）
-            common = set("的与和在及于或是被把从以")
-            overlap = overlap - common
-            words = words - common
-            ex_words = ex_words - common
-            if not words or not ex_words:
-                return False
-            ratio = len(overlap) / min(len(words), len(ex_words))
-            return ratio >= 0.3 or words.issubset(ex_words) or ex_words.issubset(words)
-
+        # 模糊去重：检查标题是否指向同一事件（is_duplicate 已提为函数级定义）
         existing_event = None
         for e in events:
             if is_duplicate(title, e.get("title", "")):
@@ -744,8 +864,8 @@ def save_report(briefing_text):
 # 模块 5：主流程
 # ============================================================
 
-def main():
-    """主入口：抓取 → 分析 → 输出 → 更新记忆"""
+def _run_pipeline():
+    """核心流程：抓取 → 分析 → 输出 → 更新记忆。异常向上抛出由 main 记录。"""
     start_time = time.time()
 
     print("=" * 55)
@@ -756,7 +876,7 @@ def main():
     all_news = fetch_all_news()
     if not all_news:
         print("\n[!] 未抓取到任何新闻，可能网络有问题")
-        return
+        return None
 
     # Step 2: 读取事件记忆库
     events_db = get_events_db()
@@ -766,23 +886,28 @@ def main():
     result = call_deepseek_analysis(all_news, events_text)
     if result is None:
         print("\n[!] API 分析失败，请检查网络和 API Key")
-        return
+        return None
 
     # Step 4: 生成简报
     print("\n[3/4] 生成简报...")
     briefing = format_briefing(result, len(all_news))
 
-    # Step 5: 更新事件记忆库
+    # Step 4: 先保存简报（务必在更新事件库之前落盘，
+    # 避免后续步骤异常导致简报文件缺失——这正是 7-13/7-14 漏推送的根因）
+    saved_path = save_report(briefing)
+
+    # Step 5: 更新事件记忆库（用 try/except 隔离，失败只记录不中断简报）
     print("\n[4/4] 更新事件记忆库...")
-    update_events_db(events_db, result)
+    try:
+        update_events_db(events_db, result)
+    except Exception:
+        print("\n[!] 事件记忆库更新失败（简报已保存，不受影响）：")
+        print(traceback.format_exc())
 
     # Step 6: 输出结果
     print("\n" + "=" * 55)
     print(briefing)
     print("=" * 55)
-
-    # Step 7: 保存简报
-    saved_path = save_report(briefing)
 
     # 统计
     elapsed = time.time() - start_time
@@ -792,6 +917,19 @@ def main():
 
     # 返回简报供内部使用
     return briefing
+
+
+def main():
+    """主入口：先启用日志，再运行流程，捕获并记录任何异常。"""
+    log_path = setup_logging()
+    print(f"  > 日志写入: {log_path}")
+    try:
+        return _run_pipeline()
+    except Exception:
+        # 记录完整堆栈到日志（同时打印到控制台）
+        print("\n[FATAL] 运行中断，未捕获的异常：")
+        print(traceback.format_exc())
+        raise
 
 
 if __name__ == "__main__":
