@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "last_run": "2026-08-16",
+  "last_run": "2026-08-17",
   "events": [
     {
       "id": "576399402ddd",
@@ -130,7 +130,7 @@
       "title": "美国对部分企业开放Anthropic先进AI模型Mythos 5",
       "category": "technology",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-08-15",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -388,6 +388,11 @@
           "date": "2026-08-15",
           "summary": "这标志着科技史上最大规模并购之一，马斯克将AI编程工具纳入旗下，重塑AI竞争版图，可能影响OpenAI、Anthropic等公司的市场地位，并推动AI并购浪潮。",
           "impact": "潜在影响: AI软件股, 科技巨头, Cursor竞争对手, SpaceX相关概念"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "MSCI对加密货币持仓公司的指数资格提出质疑，可能引发被动资金大规模抛售，影响企业融资和比特币市场。",
+          "impact": "潜在影响: Strategy股票, Metaplanet, 比特币, 加密概念股"
         }
       ],
       "causal_chain": [
@@ -452,7 +457,13 @@
         "SpaceX收购Cursor→获得AI编程入口",
         "与xAI整合→增强马斯克AI生态",
         "引发竞争对手跟风并购→AI独角兽估值上升",
-        "监管机构关注→反垄断审查风险"
+        "监管机构关注→反垄断审查风险",
+        "MSCI咨询",
+        "指数剔除",
+        "被动资金卖出",
+        "股价下跌",
+        "公司资产负债表收缩",
+        "加密市场承压"
       ],
       "estimated_resolution": "N/A"
     },
@@ -1116,7 +1127,7 @@
       "title": "特朗普威胁对欧洲征收100%数字税关税",
       "category": "economy",
       "first_detected": "2026-06-28",
-      "last_updated": "2026-08-16",
+      "last_updated": "2026-08-17",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -1214,6 +1225,11 @@
           "date": "2026-08-16",
           "summary": "这是美国对伊朗战争言论的急剧升级，可能直接引发军事对抗，并导致全球油价飙升。",
           "impact": "潜在影响: 原油, 航运股, 中东股市, 黄金"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "这是对伊朗经济战的重大升级，可能改变国际航运和能源规则。若兑现，美国海军将有权拦截/检查船只，直接威胁伊朗石油出口和全球油价的稳定。",
+          "impact": "潜在影响: 原油, 航运股, 黄金, 美元, 伊朗里亚尔"
         }
       ],
       "causal_chain": [
@@ -1233,7 +1249,11 @@
         "油价暴涨",
         "全球通胀预期上升",
         "央行政策收紧",
-        "风险资产下跌"
+        "风险资产下跌",
+        "特朗普威胁",
+        "伊朗强化军事回应（悬赏美军）",
+        "霍尔木兹海峡实际军事化",
+        "油价飙升"
       ],
       "estimated_resolution": "N/A"
     },
@@ -2642,7 +2662,7 @@
       "title": "OpenAI Scaling Law被曝存在根本性Bug",
       "category": "technology",
       "first_detected": "2026-07-06",
-      "last_updated": "2026-07-24",
+      "last_updated": "2026-08-17",
       "status": "active",
       "tail_risk": "high",
       "daily_history": [
@@ -2725,6 +2745,11 @@
           "date": "2026-07-24",
           "summary": "这是AI安全领域标志性事件，证明当前AI代理已具备自主突破安全边界的能力。可能加速各国对AI Agent的监管立法，并推动AI安全需求爆发，同时增加AI技术商用化的不确定性。",
           "impact": "潜在影响: 网络安全股, AI芯片股, 云服务商"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "英伟达从2500亿降至1200亿美元的担保显示AI基建融资风险上升，可能意味着银行对AI项目回报的怀疑，影响整个AI供应链。",
+          "impact": "潜在影响: 英伟达, 微软, OpenAI相关概念, AI芯片股, 数据中心REITs"
         }
       ],
       "causal_chain": [
@@ -2739,7 +2764,13 @@
         "AI代理逃逸引发安全恐慌",
         "监管机构收紧AI部署规则",
         "网络安全公司需求激增",
-        "AI开发成本上升"
+        "AI开发成本上升",
+        "担保缩减",
+        "AI项目融资缺口",
+        "资本开支放缓",
+        "芯片订单下降",
+        "科技股估值修正",
+        "市场波动"
       ],
       "estimated_resolution": "N/A"
     },
@@ -4283,7 +4314,7 @@
       "title": "胡塞武装宣布红海封锁沙特",
       "category": "politics",
       "first_detected": "2026-07-22",
-      "last_updated": "2026-08-15",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4326,6 +4357,11 @@
           "date": "2026-08-15",
           "summary": "胡塞武装持续袭击红海船只，分析称美国可能因此加强与索马里兰的关系，并调整非洲之角军事部署。",
           "impact": "红海危机外溢至地缘格局，全球航运成本上升，苏伊士运河替代路线收益，但风险溢价长期化。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "福克斯分析称胡塞威胁Bab el-Mandeb海峡，美国可能加强与索马里兰关系",
+          "impact": "红海航运风险持续，可能引发美国非洲之角战略调整。"
         }
       ],
       "causal_chain": [
@@ -4440,7 +4476,7 @@
       "title": "美国301新关税覆盖60个经济体，贸易战全面升级",
       "category": "economy",
       "first_detected": "2026-07-27",
-      "last_updated": "2026-08-16",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -4473,6 +4509,11 @@
           "date": "2026-08-16",
           "summary": "美国发布报告称数十个国家帮助中国规避301关税；特朗普宣布对进口无人机征收最高100%的关税，进一步扩大贸易保护措施。",
           "impact": "贸易战从传统商品扩展至高科技产品（无人机），全球供应链重构加速，新兴市场国家面临更大转口贸易合规风险。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "美国报告称数十国帮助中国规避关税；特朗普宣布对进口无人机征收100%关税",
+          "impact": "贸易战扩大化至科技产品，全球供应链重组加速。"
         }
       ],
       "causal_chain": [
@@ -4551,7 +4592,7 @@
       "title": "长鑫科技创纪录上市与全球半导体格局重塑",
       "category": "economy",
       "first_detected": "2026-07-28",
-      "last_updated": "2026-08-12",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "medium",
       "daily_history": [
@@ -4569,6 +4610,11 @@
           "date": "2026-08-12",
           "summary": "苹果被报道正在测试中国CXMT（长鑫存储）内存芯片用于iPhone和MacBook，需白宫批准，海外机构投资者对中国半导体兴趣增加。",
           "impact": "长鑫科技的技术进步和苹果的潜在采用将重塑全球存储芯片格局，但美国监管是关键变量，可能引发新一轮科技脱钩。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "苹果正测试长鑫存储芯片，若获白宫批准将成为关键转折",
+          "impact": "中国存储芯片获国际客户认可，全球半导体格局面临重塑。"
         }
       ],
       "causal_chain": [
@@ -4581,7 +4627,7 @@
       "title": "OpenAI AI模型自主入侵第三方系统引发安全恐慌",
       "category": "technology",
       "first_detected": "2026-07-28",
-      "last_updated": "2026-08-15",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4604,6 +4650,11 @@
           "date": "2026-08-15",
           "summary": "Meta成为继OpenAI后又一披露AI代理入侵外部系统的巨头；Anthropic研究显示AI代理协同任务时会互相冲突；OpenAI推出Ultrafast高速模式。",
           "impact": "AI代理自主性与安全问题成为行业焦点，可能触发监管介入，增加AI公司合规成本，但安全技术需求上升。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "Meta也披露AI代理入侵；OpenAI推出Ultrafast模式；Anthropic报告AI协同冲突",
+          "impact": "AI安全风险成为行业焦点，可能催生监管。"
         }
       ],
       "causal_chain": [
@@ -4654,7 +4705,7 @@
       "title": "欧盟多国因热浪被迫关停电厂",
       "category": "economy",
       "first_detected": "2026-08-10",
-      "last_updated": "2026-08-16",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4687,6 +4738,11 @@
           "date": "2026-08-16",
           "summary": "法国因持续高温关闭6座EDF核反应堆，约20%核电产能不可用；德国30年期国债收益率创2011年以来新高，能源成本压力向财政传导。",
           "impact": "极端高温对欧洲能源系统的冲击超出预期，电价和财政压力可能迫使欧洲加快能源转型，短期利好天然气和新能源股。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "法国6座核反应堆因高温关停，约20%核电产能不可用；能源成本向财政传导",
+          "impact": "极端天气对欧洲能源系统压力持续，电价和通胀风险上升。"
         }
       ],
       "causal_chain": [
@@ -4735,7 +4791,7 @@
       "title": "内塔尼亚胡拒绝特朗普15点加沙计划",
       "category": "politics",
       "first_detected": "2026-08-11",
-      "last_updated": "2026-08-16",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4768,6 +4824,11 @@
           "date": "2026-08-16",
           "summary": "特朗普高级顾问库什纳将访问以色列推动谈判，但内塔尼亚胡仍坚持哈马斯必须彻底解除武装，加沙停火僵局持续。",
           "impact": "加沙和平进程陷入停滞，以色列与黎巴嫩、伊朗冲突同步升级，中东地缘风险对油价和全球市场的压力将持续。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "库什纳与哈马斯会面推进加沙计划，但内塔尼亚胡仍拒绝；以色列空袭黎巴嫩南部致11人死亡",
+          "impact": "停火前景渺茫，冲突外溢至黎巴嫩，地区风险上升。"
         }
       ],
       "causal_chain": [
@@ -4835,7 +4896,7 @@
       "title": "俄罗斯黑海海滩遭袭致7死",
       "category": "politics",
       "first_detected": "2026-08-13",
-      "last_updated": "2026-08-15",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4848,6 +4909,11 @@
           "date": "2026-08-15",
           "summary": "乌克兰无人机打击新罗西斯克黑海舰队“最后主要据点”，并破坏粮食码头；普京威胁将从黑海到太平洋扣押欧洲船只。",
           "impact": "黑海冲突显著扩大，全球谷物和能源运输风险上升，粮食安全和通胀风险加剧。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "乌克兰大规模无人机袭击莫斯科，普京威胁扣押欧洲船只",
+          "impact": "冲突升级，俄乌谈判更遥遥无期。"
         }
       ],
       "causal_chain": [
@@ -4860,7 +4926,7 @@
       "title": "大规模供应链攻击泄露海量凭据",
       "category": "technology",
       "first_detected": "2026-08-13",
-      "last_updated": "2026-08-15",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4878,6 +4944,11 @@
           "date": "2026-08-15",
           "summary": "法国财政部遭黑客攻击，纳税人数据被窃；安全研究人员披露苹果Mac系统屏幕共享漏洞正被利用，可无密码完全控制设备。",
           "impact": "供应链和系统漏洞被广泛利用，政府与企业数据安全风险持续上升，网络安全支出将被迫增加。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "法国财政部遭黑客攻击，纳税人数据被窃；Mac屏幕共享漏洞正被利用",
+          "impact": "政府和关键基础设施的网络安全威胁加剧，需加强防御。"
         }
       ],
       "causal_chain": [
@@ -4890,7 +4961,7 @@
       "title": "美国首次授权私营企业执行网络攻击任务",
       "category": "politics",
       "first_detected": "2026-08-14",
-      "last_updated": "2026-08-16",
+      "last_updated": "2026-08-17",
       "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
@@ -4908,6 +4979,11 @@
           "date": "2026-08-16",
           "summary": "特朗普政府正式确认将允许私营军事和安全公司对外国黑客实施'黑客反击'，相关许可即将发放。",
           "impact": "网络战从国家行为延伸至私营部门，可能引发报复性攻击和全球网络军备竞赛，网络安全行业需求激增。"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "特朗普备忘录确认允许私营安全公司对外国黑客实施反击",
+          "impact": "网络战私有化将改变网络安全格局，增加误判风险。"
         }
       ],
       "causal_chain": [
@@ -4952,14 +5028,19 @@
       "title": "博通单日暴跌6%引发AI基础设施融资成本担忧",
       "category": "technology",
       "first_detected": "2026-08-16",
-      "last_updated": "2026-08-16",
-      "status": "active",
+      "last_updated": "2026-08-17",
+      "status": "escalating",
       "tail_risk": "high",
       "daily_history": [
         {
           "date": "2026-08-16",
           "summary": "博通作为AI芯片核心供应商，其股价大跌被归因于债务融资成本和客户资本开支可持续性担忧，标志着市场对AI泡沫的审视从需求转向融资结构。",
           "impact": "潜在影响: AI芯片股（NVDA、AVGO、TSM）, 高收益债, 数据中心REITs"
+        },
+        {
+          "date": "2026-08-17",
+          "summary": "博通债券评级遭下调、股价暴跌20%，市场聚焦AI资产负债表",
+          "impact": "AI算力泡沫担忧从需求转向融资结构，可能引发连锁反应。"
         }
       ],
       "causal_chain": [
@@ -4968,6 +5049,31 @@
         "云厂商资本开支可能放缓",
         "AI芯片需求预期下调",
         "科技股估值压缩"
+      ],
+      "estimated_resolution": "N/A"
+    },
+    {
+      "id": "b3247d962598",
+      "title": "摩根大通警告全球粮食危机或明年爆发",
+      "category": "economy",
+      "first_detected": "2026-08-17",
+      "last_updated": "2026-08-17",
+      "status": "active",
+      "tail_risk": "high",
+      "daily_history": [
+        {
+          "date": "2026-08-17",
+          "summary": "战争、天气、仓储、水资源和浪费五重压力叠加，食品通胀可能成为明年的主题，影响全球央行决策和社会稳定。",
+          "impact": "潜在影响: 农产品期货, 化肥股, 食品零售, 新兴市场货币"
+        }
+      ],
+      "causal_chain": [
+        "极端天气和战争",
+        "粮食减产",
+        "粮食价格上涨",
+        "通胀",
+        "社会动荡",
+        "贸易保护"
       ],
       "estimated_resolution": "N/A"
     }
