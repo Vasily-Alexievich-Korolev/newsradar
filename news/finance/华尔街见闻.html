@@ -1,0 +1,2747 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华尔街见闻 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / 华尔街见闻</h1>
+      <span class="text-sm text-gray-400">154 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高盛：日本想把海外资金赶回国内，投资者不买账</h3>
+          <p class="text-xs text-gray-500 mt-1">高盛研究部高级外汇策略师Karen Fishman指出，日本央行过去几年的外汇干预仅能争取时间，未能扭转日元贬值趋势。
+日元走强需要九月加息等后续政策配合，或全球避险需求上升。日本政府正鼓励国内投资者将资产从海外转回本土，但海外回报率仍更具吸引力。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959594" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高温超导已发现四十年，机理仍未完全阐明！我国科学家获重要进展</h3>
+          <p class="text-xs text-gray-500 mt-1">记者13日从复旦大学获悉，该校物理学系张远波团队联合国内外多家科研单位，首次成功制备仅含单个CuO2超导平面的极限二维铜基高温超导体Bi-2201，为解开高温超导机理这一凝聚态物理领域公认的“皇冠之谜”，搭建起高度可调的量子实验平台。相关研究12日晚刊发于《自然》杂志。
+为突破技术瓶颈，张远波课题组自主研发低温惰性气氛实验设备，在隔绝外界干扰的环境下完成样品剥离与器件加工，还创新发展出高精度原位掺...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149203" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">香飘飘上半年归母净利扭亏，冲泡类收入增长近6成</h3>
+          <p class="text-xs text-gray-500 mt-1">8月14日晚，香飘飘（603711.SH）披露未经审计的2026年半年报。
+上半年，公司实现营业收入12.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779463" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">频准激光：将于8月18日科创板上市</h3>
+          <p class="text-xs text-gray-500 mt-1">频准激光公告称，公司股票将于2026年8月18日在上海证券交易所科创板上市。本次公开发行股票1000万股，发行价186.88元/股，发行后总股本4000万股。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150042" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">韩国财阀豪赌海力士：当年都说没救了，如今它把三星拉下王座</h3>
+          <p class="text-xs text-gray-500 mt-1">2012年，几乎所有人都觉得，海力士没救了。
+欠债140亿美元，资产负债率超过206%，卖了三次，前两次甚至连个愿意接盘的人都没有。
+但SK集团会长崔泰源，却顶着九成高管的反对，砸下30亿美元，接手了这个谁都不敢要的烂摊子。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959595" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">韩国股市暴涨22%，但几乎“无人持仓”</h3>
+          <p class="text-xs text-gray-500 mt-1">韩国股市在技术面和资金面双重驱动下完成罕见快速反弹，但对冲基金的仓位却意外缺席了这波涨势，由此埋下FOMO驱动的再上攻潜力。
+KOSPI指数在短短三个交易日内累计上涨约10%，从7月30日低点算起已累计反弹逾22%，正式进入技术性牛市区间。这是该指数自7月历史性暴跌以来首次达到这一门槛。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779396" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">韩国QFI已买入长鑫科技</h3>
+          <p class="text-xs text-gray-500 mt-1">据中国基金报，韩国证券存托结算院(KSD)旗下SEIBro的数据显示，截至8月18日，过去一个月，韩国投资者买入金额最多的A股为一只神秘的股票。其间，韩国投资者净买入这只股票4532.2233万美元(约合3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779821" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">非沪籍居民及境外人士置换性购房政策微调？上海房地产交易中心热线回应</h3>
+          <p class="text-xs text-gray-500 mt-1">针对市场传出上海更新置换购房相关执行口径，8月15日，记者致电上海房地产交易中心热线“962269”进行咨询。针对非本市户籍居民置换性购房的问题，上海房地产交易中心热线工作人员表示，并未出台新政。
+据热线工作人员介绍，非本市户籍居民家庭，出售名下唯一房产，可在全市范围内置换一套住房，前后产权人需保持一致，无需提供社保或个税证明。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149965" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">阿里开源Qwen3.8，千问大模型全球下载超30亿次</h3>
+          <p class="text-xs text-gray-500 mt-1">8月14日晚，阿里千问正式开源Qwen3.8系列模型，所有开发者、科研机构和企业均可自由下载、部署和使用。
+全新开源的Qwen3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779482" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">阿贝尔掌舵半年伯克希尔大举增持谷歌，A类股晋升前五重仓股，Q2加码航空和房产股</h3>
+          <p class="text-xs text-gray-500 mt-1">“股神”巴菲特卸任CEO后的第二个季度，伯克希尔·哈撒韦的投资组合继续发生明显变化。
+据美东时间14日周五披露的递交美国证监会（SEC）13F文件，格雷格·阿贝尔正式掌舵后的二季度，伯克希尔大举增持谷歌母公司Alphabet，两类股票合计增持约4810万股；其中Alphabet A类股（GOOGL）持仓增加约2450万股，增幅超过45%，一举跃升至伯克希尔第四大重仓股。
+同时，伯克希尔继续加仓达美...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779490" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">闻泰科技上半年营收同比降94%，归母净利润转亏至4亿元，业务剥离后聚焦半导体｜财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">闻泰科技2026年上半年业绩出现明显调整。
+公司实现营业收入15.14亿元，同比下降94.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779480" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">闪迪目标在2028至2030财年实现中高双位数营收增长</h3>
+          <p class="text-xs text-gray-500 mt-1">闪迪预计2028至2030财年非GAAP毛利率约为80%。 闪迪预计2028至2030财年非GAAP营业利润率约为75%。
+风险提示及免责条款
+市场有风险，投资需谨慎。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779397" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">长期美债收益率应声下跌！美国财政部将长期单次回购上限提高至至少40亿美元</h3>
+          <p class="text-xs text-gray-500 mt-1">美国财政部宣布大幅扩大长期国债回购规模，此举被视为增强美债市场流动性的重要举措。
+财政部表示，
+将把针对长期名义付息债券的流动性支持回购操作单次最高规模至少提高一倍，升至每笔操作至少40亿美元，新规定将于2026年9月9日起正式生效。
+此次调整直接推动长期美债收益率走低，市场将其解读为财政部主动为长端债券市场注入更多流动性的信号，对持有长期美债的投资者构成利好。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779819" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">软银Q2猛砍逾七成台积电持仓，套现2.7亿美元，AI硬件押注再调整</h3>
+          <p class="text-xs text-gray-500 mt-1">软银正在进一步调整其AI投资版图。
+递交美国证监会（SEC）的最新13F文件显示，软银集团在截至6月30日的2026年第二季度大幅减持台积电（TSM）美股持仓，减持幅度超过七成，套现约2.7亿美元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779484" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">车企还绕不开华为</h3>
+          <p class="text-xs text-gray-500 mt-1">作者 | 周智宇
+车企与华为的合作再次成为行业争论焦点。
+8月8日，在一场媒体沟通会上，面对“华为合作品牌越来越多，阿维塔如何保证算法与新硬件优先性”的提问，阿维塔科技副总裁雍军说，希望华为成为公共平台，由阿维塔在其上做差异化。只是中间穿插的一句“不认为这个合作模式必须是‘必要项’”的表述，引发市场热议。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779464" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">超跌反弹一定会“二次探底”吗？</h3>
+          <p class="text-xs text-gray-500 mt-1">7月份全球主要权益市场同步回撤，科技类资产和市场指数都出现了陡峭的下跌；进入8月以来，随着外围股市风波逐渐平息、且全球科技产业进展出现了一些新的催化，A股市场也逐渐企稳并进入“超跌反弹”阶段。
+随着近两周各类品种依次呈现出轮动式反弹（科技、有色、医药、地产），市场出现部分担忧：超跌反弹之后是不是还要有“二次探底”？是继续持有、还是逢高减仓兑现收益？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779537" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">赛力斯上半年由盈转亏，净亏损17亿元，车型迭代过渡期成主因 | 财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">赛力斯上半年净亏损逾17亿元，而去年同期净利润接近30亿元，盈利能力转弱。
+据赛力斯2026年半年度报告摘要，
+公司上半年归属于上市公司股东的净利润为亏损17.17亿元，同比减少158.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779805" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">货币政策新变化</h3>
+          <p class="text-xs text-gray-500 mt-1">过去几周，货币政策出现了一些新变化：
+7月20日，首单以DR利率为基准的贷款落地。
+8月4日，首笔以国债收益率为定价基准的贷款落地。
+8月11-13日，央行连续3日7天逆回购“零操作”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779471" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">谷歌推出Gemini 3.7 Flash模型</h3>
+          <p class="text-xs text-gray-500 mt-1">Gemini 3.7 Flash将在今年年底前以限时优惠价格提供，输入价格为每100万个词元0.75美元，输出价格为每100万个词元3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779404" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">行云科技：公司所有核心长单无集中兑现风险 业绩释放平稳可持续</h3>
+          <p class="text-xs text-gray-500 mt-1">行云科技8月13日接受机构调研时表示，公司所有核心长单均采用按月交付、按月回款、逐月确认收入的常态化模式，无集中兑现风险，业绩释放平稳可持续。2026年下半年，三笔核心订单中V客户的首批交付已经完成验收和逐月租金收入确认，其他两个客户的首批交付也预计在8月份完成验收并开始确认收入，预计年内也有部分Token分成收入，算力板块营收与利润将实现显著环比提升；2027年所有长单将进入全面稳定结算周期，高...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149208" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">融资需求继续减弱，货币政策仍有放松空间——7月金融数据点评</h3>
+          <p class="text-xs text-gray-500 mt-1">事件
+2026年8月14日，央行公布2026年7月金融数据。2026年7月人民币贷款减少3400亿元，同比多减2900亿元；7月社会融资增量14062亿元，同比多增2755亿元，7月社融余额同比持平于6月的7.4%；7月M1同比持平于6月的4%，7月M2同比从6月的8%降至7.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779472" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">营收微降毛利率回升，网宿科技CDN收入收缩安全业务扩张</h3>
+          <p class="text-xs text-gray-500 mt-1">8月14日晚，网宿科技披露的2026年半年度显示，上半年，公司实现营业收入23.18亿元，同比下降1.38%；归属于上市公司股东的净利润3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779465" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">茅台上半年营收微增1.47%，净利润下滑1.95%，经营现金流暴增近五倍 | 财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">贵州茅台2026年上半年财报于周五披露，在白酒行业整体经历"周期性与结构性调整"的背景下，
+公司营业总收入922.78亿元，同比增长1.3%，但归属于上市公司股东的净利润为445.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779470" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">英媒：若美国升级战事，伊朗考虑打击美驻欧洲军事目标</h3>
+          <p class="text-xs text-gray-500 mt-1">英国媒体19日披露，伊朗高层已在斟酌应对美国升级战事的反击方案，选项包括攻击美国在欧洲的军事目标、破坏霍尔木兹海峡海底光纤电缆。
+《金融时报》以伊朗政府内部两名知情人士为消息源报道，随着美伊战事陷入僵持阶段，伊朗政府内部越来越多人认为，美国恢复对伊朗大规模军事打击“不是会不会发生，而是何时发生的问题”。
+伊朗伊斯兰革命卫队和军方官员已警告称，如果美伊之间爆发新一轮全面冲突，伊朗将扩大战场，从先前只...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779829" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">英伟达首度披露SpaceX持仓，借道xAI间接持有约210亿美元</h3>
+          <p class="text-xs text-gray-500 mt-1">英伟达首度披露SpaceX持仓，借道xAI间接持有约210亿美元。
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779494" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">英伟达拟向软银旗下SB Energy投资30亿美元，押注OpenAI俄亥俄数据中心项目</h3>
+          <p class="text-xs text-gray-500 mt-1">英伟达正将自身财务资源深度嵌入AI基础设施建设链条，这一次的目标是软银旗下的SB Energy。
+8月15日，据The Information报道，英伟达正在与SB Energy洽谈，拟投资最高30亿美元。SB Energy是软银集团旗下子公司，正主导为OpenAI开发一个大型俄亥俄数据中心项目。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779541" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">英伟达悄然缩减OpenAI数据中心担保规模，从2500亿美元降至1200亿美元以下</h3>
+          <p class="text-xs text-gray-500 mt-1">这笔AI基建史上规模最大的融资交易，正在悄悄瘦身。
+英伟达与OpenAI就俄亥俄州大型数据中心园区的融资协议已接近达成，但据知情人士透露，双方已重新设计交易结构——英伟达的财务担保规模从原定的2500亿美元，压缩至不足1200亿美元。消息由《华尔街日报》8月14日率先披露，路透社随后跟进报道。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779526" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">英伟达5000亿AI融资计划暗藏隐忧，特朗普顾问警示“暗GPU”过剩风险</h3>
+          <p class="text-xs text-gray-500 mt-1">英伟达将GPU打包成金融资产的宏大计划，正面临来自白宫内部的风险预警。
+近日，特朗普总统科学与技术顾问委员会成员David Sacks在"All In Podcast"节目中表示，英伟达与投资机构合作、将GPU打造为可融资生息资产的计划，其最大威胁并非需求不足，而是算力供给过剩——一旦出现"暗GPU"（dark GPU）局面，将对整个AI基础设施投资链条造成系统性冲击。
+Sacks的表态，是迄今为...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779545" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">联想集团刘军：AI PC国内市场销量占比过半</h3>
+          <p class="text-xs text-gray-500 mt-1">联想集团执行副总裁兼中国区总裁刘军表示，“一体多端”战略下，个人超级智能体加持终端，联想AI PC全球市场同比增86%，国内市场销量占笔记本电脑总销量的比例已突破50%。他透露，在技术侧，联想正全面升级端侧和边缘侧的算力，把Token生产更多留在本地，兼顾隐私与成本；在生态侧则加速引入Skills，增强天禧AI的L3级任务执行能力。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149947" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">老虎环球Q2押注AI“二线选手”：新进Cerebras和AMD，增持英特尔，十大重仓股全线减持</h3>
+          <p class="text-xs text-gray-500 mt-1">最新提交美国证监会（SEC）的文件显示，今年第二季度，华尔街知名成长型对冲基金老虎环球管理公司（Tiger Global Management）大幅调整美股持仓：一边减持此前重仓的科技巨头和AI热门股，一边将资金转向AI芯片“二线选手”、存储芯片和支付等领域。
+老虎环球于8月14日周五提交的13F文件披露，截至6月30日，其股票持仓总市值约239.82亿美元，共持有46只个股。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779485" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美议员质询贝森特：为何动用美国资金干预日元？要求披露规模及法律依据</h3>
+          <p class="text-xs text-gray-500 mt-1">美国参议员伊丽莎白·沃伦要求财政部长贝森特解释特朗普政府干预日元的依据，
+此举延续了这位资深民主党议员对特朗普政府外汇政策的持续审查。
+沃伦在8月13日的一封信中写道：“截至目前，政府仍未提供干预行动的详细依据，也没有正式披露购买日元使用了多少纳税人相关资金。”
+贝森特此前证实媒体关于美国和日本自1998年以来首次联合干预汇市、以支持日元的报道。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779478" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美股创新高点燃FOMO！Citadel：标普500看涨期权需求飙至2016年来最高</h3>
+          <p class="text-xs text-gray-500 mt-1">美股持续刷新纪录高位，投资者的最大焦虑已不再是市场崩盘，
+而是踏空。
+这一心态正深刻重塑期权市场的交易格局。
+Citadel Securities数据显示，
+标普500指数成分股中至少170只个股的看涨期权需求相对于平值期权的超额程度，已升至至少2016年以来最高水平。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779466" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美联合健康集团高管枪杀案嫌疑人就联邦指控认罪</h3>
+          <p class="text-xs text-gray-500 mt-1">当地时间8月14日，路易吉·曼吉奥内就枪杀联合健康保险首席执行官布赖恩·汤普森（Brian Thompson）一案正式认罪。联邦法官将路易吉·曼吉奥内的量刑日期定于12月18日。
+路易吉·曼吉奥内当天在法庭上表示，他就其联邦刑事案件认罪，承认自己枪杀了汤普森。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779483" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美联储意外暂停RMP购债：华尔街料至少持续至10月，道明证券称年末前或重启</h3>
+          <p class="text-xs text-gray-500 mt-1">美联储对银行体系流动性的判断出现了一个值得关注的新变化。
+美东时间13日周四，纽约联储官网更新的公开市场操作计划显示，在截至9月14日的一个月操作期内，美联储不会进行任何以管理银行体系准备金为目的的准备金管理购买（RMP）操作，但仍计划进行约170亿美元的再投资购债。此次暂停出乎华尔街策略师预期，因为此前市场普遍预计美联储会将RMP购债规模维持在每月100亿美元左右。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779402" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美联储官员分歧显现：巴尔金支持按兵不动，哈马克坚持加息</h3>
+          <p class="text-xs text-gray-500 mt-1">美联储内部围绕下一步货币政策走向的分歧进一步公开化。里士满联储主席巴尔金周四阐述了维持利率不变的理由，同时警告通胀存在持续性风险；克利夫兰联储主席哈马克则再度重申加息立场，延续其在7月议息会议上的异见。
+13日，
+巴尔金在南卡罗来纳州格林维尔发表讲话时表示，当前通胀很大程度上源于关税和伊朗战争引发的油价冲击等"应当会消退的冲击"，这构成其支持按兵不动的核心逻辑。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779387" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美联储Goolsbee：希望看到更多通胀降温证据，就业与经济增长稳定</h3>
+          <p class="text-xs text-gray-500 mt-1">芝加哥联邦储备银行行长Austan Goolsbee表示，近期通胀数据令人鼓舞，但他希望看到更多持续降温的证据，才能确认通胀正稳步回归美联储2%的目标。
+Goolsbee周五表示，今夏消费者价格指数（CPI）的读数令他感到乐观，显示关税冲击和能源价格上涨等一系列价格扰动因素正在逐步消化。
+"过去三个月的数据让我感到鼓舞，如果我们能连续看到三四个月类似6月份的数据，我将更有信心认为通胀正在回归2%的...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779492" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美国财政部宣布增加长期名义国债的发行规模。（彭博）</h3>
+          <p class="text-xs text-gray-500 mt-1">美国财政部宣布增加长期名义国债的发行规模。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151792" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美国救日元也没用，不改基本面，空头继续砸</h3>
+          <p class="text-xs text-gray-500 mt-1">美国著名货币经济学家Steve Hanke指出，日元近期从164升值至156仅是一次“死猫反弹”，如今已回落至159.58，干预效果昙花一现。
+美日联合干预虽比日本单独行动更具可信度，但并未改变基本面——日本货币供应量增长极为缓慢，导致名义GDP增长疲弱，这正是日元长期走弱的根源。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959628" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美国8月密歇根大学消费者信心指数三个月来首次下滑，通胀忧虑持续升温</h3>
+          <p class="text-xs text-gray-500 mt-1">美国消费者信心意外走弱，通胀预期仍处高位，叠加零售销售同步降温，市场对美国消费韧性和经济前景的担忧再度升温。
+周五公布的密歇根大学8月份的初步报告显示，
+8月消费者信心指数初值降至51，低于7月终值55.2，也明显低于彭博经济学家调查预期中值55，为三个月来首次回落。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779477" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美国7月零售销售环比 -0.6%，预期 0.1%，前值 0.2%</h3>
+          <p class="text-xs text-gray-500 mt-1">美国7月零售销售环比 -0.6%，预期 0.1%，前值 0.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779468" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美国30年期国债发行的中标收益率创2001年以来新高</h3>
+          <p class="text-xs text-gray-500 mt-1">美国30年期国债发行的中标收益率创2001年以来新高。
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779403" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">美农业部意外下调玉米单产：全球粮食安全进入高风险区？</h3>
+          <p class="text-xs text-gray-500 mt-1">8月12日，美国农业部（USDA）发布月度全球农业供需预测（WASDE）报告。受持续极端高温天气影响，该报告将2026/27年度美国玉米单产预期从7月份的183.0蒲式耳/英亩大幅下调至180.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779447" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">纳斯达克一天交易23小时，抢的是谁的生意？</h3>
+          <p class="text-xs text-gray-500 mt-1">亚洲时段最活跃的不是科技股，而是美国市场ETF
+2026年12月6日，纳斯达克计划启动每天23小时、每周五天的股票交易。SEC已批准纳斯达克23/5交易规则变更，但正式上线仍取决于SIP等行情基础设施准备及配套规则落地。
+新增夜盘从美东时间晚上9点开始，至次日凌晨4点结束。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779540" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">目前债市超涨了吗？</h3>
+          <p class="text-xs text-gray-500 mt-1">摘 要
+市场一致看多，但对短期操作比较迷茫。要不要止盈等调整？我们认为不需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779535" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">盘前涨近12%！迈威尔科技向谷歌发行认股权证，绑定定制芯片合作协议</h3>
+          <p class="text-xs text-gray-500 mt-1">迈威尔科技与谷歌签署定制半导体开发协议，并向后者发行可购买近5900万股的认股权证，消息推动迈威尔科技美股盘前涨近12%。
+据迈威尔科技向美国证券交易委员会提交的8-K文件，
+双方于2026年7月29日签署具有约束力的商业协议，涵盖为谷歌开发定制半导体产品。迈威尔科技于8月18日正式向谷歌发行认股权证，赋予其以每股206.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779817" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">甲骨文一度跌5%，“星际之门”关键AI数据中心配套天然气管道延期</h3>
+          <p class="text-xs text-gray-500 mt-1">甲骨文公司旗下一项大型人工智能数据中心计划遭遇新障碍——关键供气管道项目推迟近六个月，令外界对这一投资规模高达1650亿美元的项目能否按期落地产生疑虑。
+管道运营商Energy Transfer LP旗下子公司Transwestern Pipeline周五在监管文件中披露，
+"绿辣椒项目"（Green Chile Project）天然气管道的预计投运日期已从此前的2026年8月15日延至2027年...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779489" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">特朗普声称将宣布霍尔木兹海峡为“美国领土”</h3>
+          <p class="text-xs text-gray-500 mt-1">美国总统特朗普14日在白宫发表讲话谈及伊朗问题时，宣称“很快就会宣布霍尔木兹海峡成为美国的领土”。
+本文来源：新华社
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779487" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">爆仓前最后一个月，“AI股神”加仓美光、闪迪</h3>
+          <p class="text-xs text-gray-500 mt-1">近期Situational Awareness“折戟杠杆”震惊资本市场，最新监管文件显示，这家由“AI股神”掌管的人工智能对冲基金，在崩盘前夕仍在大举买入半导体股票。
+据监管文件显示，
+Situational Awareness在今年二季度大幅增持了存储芯片企业美光科技和闪迪，两家公司持仓合计约110亿美元，占该基金当时净资产的约四分之一。
+与此同时，该基金还削减了对英伟达、博通及超威半导体的期权...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779501" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">河南周口川汇区贾鲁河东岸堤防溃口成功合龙</h3>
+          <p class="text-xs text-gray-500 mt-1">记者了解到，经过多方应急抢险力量昼夜不停努力，8月15日晚上8时29分，河南省周口市川汇区贾鲁河东岸堤防117米溃口成功合龙。
+8月13日23时许，受贾鲁河上游持续来水与沙颍河水位顶托倒灌叠加影响，周口市川汇区新北环桥下贾鲁河东岸堤防发生溃口，初期宽度约30米，受高速水流持续冲刷逐步扩宽至117米，区域堤防防洪安全面临严峻考验。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149993" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">段永平二季度减持英伟达、谷歌，新建阿里巴巴仓位</h3>
+          <p class="text-xs text-gray-500 mt-1">当地时间8月14日，据美国证券交易委员会（SEC）披露，段永平管理的H&H International Investment二季度末持仓总市值约191亿美元，较一季度末约200亿美元有所下降。二季度，H&H继续增持拼多多、伯克希尔哈撒韦B类股和迪士尼，新建阿里巴巴仓位，同时大幅减持英伟达、谷歌、微软等，清仓台积电和CrowdStrike。
+从持仓看，苹果、伯克希尔哈撒韦B类股和拼多多位列前三大重仓...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779527" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">果然继续增长态势，平安银行抢下银行中报“头筹”</h3>
+          <p class="text-xs text-gray-500 mt-1">银行业的经营走势回升，在2026年中报是大概率事件。
+根据平安银行发布的2026年中报，该行实现营业收入706.17亿元，同比增长1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779507" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">本周市场的“核心逻辑”：美联储9月不加息了？</h3>
+          <p class="text-xs text-gray-500 mt-1">美国通胀数据意外降温，叠加就业与消费走软，本周市场对美联储9月加息的押注急剧退潮，但债券市场长端的异常信号、油价飙升以及鹰派官员的坚持，正在向这一"暂停叙事"发出挑战。
+9月加息概率从7月下旬的75%骤降至约25%，带动全球股市连续第三周上涨，美股主要指数维持历史高位附近。
+AI基础设施相关财报持续强劲，为科技股提供了额外支撑，令权益市场暂时得以忽视油价冲击与债市长端的警告音。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779497" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">最优“AI泡沫交易”：同时做多“傲慢”与“偏见”</h3>
+          <p class="text-xs text-gray-500 mt-1">当前AI泡沫环境下的最优投资策略，是同时做多"傲慢"（AI科技龙头）与"偏见"（被市场冷落的失意资产），以此捕捉名义GDP泡沫最后冲顶阶段的双向收益。
+据追风交易台消息，美银证券首席策略师Michael Hartnett在最新研报中表示，美银牛熊指标从9.7小幅回落至9.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779514" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">昆仑万维：2026年上半年净利润10.88亿元 同比扭亏为盈</h3>
+          <p class="text-xs text-gray-500 mt-1">昆仑万维公告，2026年上半年营业收入53.59亿元，同比增长43.55%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151784" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">日经225指数低开近1%，韩国首尔综指低开5%</h3>
+          <p class="text-xs text-gray-500 mt-1">日经225指数低开近1%，韩国首尔综指低开5%。
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779750" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">收入增长但商家减少了，有赞考虑转向单客价值</h3>
+          <p class="text-xs text-gray-500 mt-1">8月13日，有赞（06051.HK）发布2026年上半年业绩。报告期内，公司实现收入约7.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779391" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">揭牌时刻逐渐过去，市场反弹或逐渐步入平台期</h3>
+          <p class="text-xs text-gray-500 mt-1">【报
+告导读
+】分母侧驱动力减弱后，
+AI资产与非AI相关的实物资产逐渐步入平台期。往后看，AI相关资产的优势是当下仍在高景气，然而不利因素在累积，如果AI产业链新发债务与收入兑现比值持续抬升，这将极大约束云厂商与大模型厂商的融资能力与资本扩张；而伴随着美国经济与非美经济基本面的收敛，类似于2025年末与2026年初的AI杠杆率上行，美债实际收益率下行的场景重新出现后，实物资产的弹性也将显现
+。
+...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779539" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">据猫眼专业版数据，电影《欢迎来龙餐馆》上映6天， 总票房破8亿。</h3>
+          <p class="text-xs text-gray-500 mt-1">据猫眼专业版数据，电影《欢迎来龙餐馆》上映6天， 总票房破8亿。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150032" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">换代期承压，赛力斯等待新车接棒</h3>
+          <p class="text-xs text-gray-500 mt-1">2026年8月19日，赛力斯披露2026年半年度报告。上半年，赛力斯新能源汽车销量17.88万辆，同比增长3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779820" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">报道：理想再自研芯片，仍采用数据流架构</h3>
+          <p class="text-xs text-gray-500 mt-1">从多个信源处获悉，理想汽车正在探索自研云端推理芯片，将采用与智驾芯片相同的数据流架构，项目还在早期阶段。
+AI数据中心普遍使用GPU完成模型训练和推理，也有数据中心部署云端推理芯片。一位芯片行业人士说，云端推理芯片可以承接部分原本在GPU上运行的推理任务，例如智驾模型的数据处理、测试、仿真，以及大语言模型的请求处理。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149806" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">报道：特斯拉计划最早于本月推出新款Roadster跑车</h3>
+          <p class="text-xs text-gray-500 mt-1">特斯拉拖延近八年的新款Roadster，或终于要揭开面纱。这款融合冷气推进器与太空技术的电动跑车，被视为特斯拉与SpaceX两大业务版图加速融合的标志，也可能成为马斯克提振特斯拉市场热情的一次关键押注。
+8月14日，据报道援引三位知情人士，特斯拉计划最早于本月发布新款Roadster设计，活动地点拟设在SpaceX位于得克萨斯州麦格雷戈的测试基地。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779473" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">报道：AMD拟通过债券发行融资高达50亿美元</h3>
+          <p class="text-xs text-gray-500 mt-1">据报道，AMD拟通过债券发行融资高达50亿美元，或为该公司史上最大规模投资级债券发行，加入AI热潮驱动的企业发债浪潮。
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779401" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">投资者押注估值翻倍！报道：Anthropic拟以2万亿美元估值上市，或将成为史上最大IPO</h3>
+          <p class="text-xs text-gray-500 mt-1">Anthropic正朝着一个前所未有的市场里程碑迈进。多名投资者预计，这家AI初创公司将于今年秋季以2万亿美元或更高估值上市，届时将超越SpaceX，成为有史以来规模最大的IPO。
+据英国《金融时报》报道，
+六名Anthropic股东向该媒体透露，公司快速增长的营收将支撑其在计划中的秋季上市中实现现有估值翻倍以上。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779393" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">才一天就改口！特朗普：与伊朗谈判或适时进行</h3>
+          <p class="text-xs text-gray-500 mt-1">当地时间8月19日，美国总统特朗普就伊朗问题表示，或许在某个时候会进行谈判。
+特朗普18日在社交媒体上称，目前和未来不会与伊朗进行任何会谈或对话。此前，特朗普一直坚称美国同伊朗正在进行谈判，但遭到伊朗官员多次否认。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779831" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">手术机器人展望：从达芬奇帝国到国产替代，百亿美元蓝海如何争夺？</h3>
+          <p class="text-xs text-gray-500 mt-1">直觉外科（Intuitive Surgical, NASDAQ: ISRG）用26年时间跑通了手术机器人领域最经典的商业模式——"剃刀+刀片"：2025年全年营收突破100亿美元，经常性收入占比升至约84%，全球在用达芬奇系统超12,000台，累计手术超2,040万例。这是一个教科书级别的复利增长案例。
+但故事的核心矛盾正在于此：如果这个赛道已经被一家2,000亿美元市值的巨头统治，为什么中国市场...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3778917" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">户用光伏拉动营收，正泰电器净利增长超20%</h3>
+          <p class="text-xs text-gray-500 mt-1">8月19日，正泰电器披露2026年半年度报告。
+上半年，公司实现营业收入380.64亿元，同比增长28.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779814" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">我国首次实现火箭陆地回收有何重要意义？专家：中国航天发射成本有望降低70%以上</h3>
+          <p class="text-xs text-gray-500 mt-1">此次，朱雀三号遥二运载火箭飞行任务圆满成功，首次实现火箭陆地回收，意义究竟有多重大？专家表示，随着长征十号乙、朱雀三号可重复使用技术的突破，中国航天有望走出一条低成本、高效率的可持续发展路径。
+北京航空航天大学航空专家、《航空知识》主编 王亚男：朱雀三号遥二运载火箭首次成功完成着陆腿陆上可控一子级回收。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151840" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">恒瑞医药上半年营收下滑1.9%，净利润44.65亿元同比微增，拟最高20亿回购股份 | 财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">恒瑞医药上半年营收小幅下滑，净利润稳住阵脚，创新转型阵痛仍在。
+周三晚间，恒瑞医药发布2026年半年度报告，
+上半年实现营业收入154.56亿元，同比微降1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779810" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">思摩尔国际上半年调整后利润7.566亿元人民币，预估5.875亿元人民币。 上半年营收72.1亿元人民币，预估71.1亿元人民币。 上半年毛利率32.2％，预估33.5％。</h3>
+          <p class="text-xs text-gray-500 mt-1">思摩尔国际上半年调整后利润7.566亿元人民币，预估5.875亿元人民币。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151814" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">德银：央行购金+ETF流入，黄金处于“爆炸性”上涨阶段</h3>
+          <p class="text-xs text-gray-500 mt-1">央行持续增持、ETF资金回流，德意志银行认为黄金的“爆炸性”上涨阶段还未结束。
+据追风交易台消息，8月14日，德银大宗商品策略师Michael Hsueh发布最新研究报告《大宗商品：黄金爆炸性阶段》（
+Commodities: Gold explosive phase
+）。Hsueh认为，黄金自2024年启动的第五轮“爆炸性”上涨阶段目前仍在持续，央行购金与ETF资金流入构成双重非弹性需求支撑，年...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779529" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">德国30年期国债收益率上升8个基点至3.72%，创2011年以来新高</h3>
+          <p class="text-xs text-gray-500 mt-1">德国30年期国债收益率上升8个基点至3.72%，创2011年以来新高。
+风险提示及免责条款
+市场有风险，投资需谨慎。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779479" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">延布港遭胡塞武装封锁，沙特重返霍尔木兹“暗航”</h3>
+          <p class="text-xs text-gray-500 mt-1">在红海延布港替代出口路线被胡塞武装海上封锁掐断后，沙特正重启“暗航”，重新加大经霍尔木兹海峡的原油运输量，并转而在阿曼外海以船对船（暗航）方式向外运输，以规避海峡直接通行风险。
+上周，沙特阿美结束了霍尔木兹海峡内Ras Tanura与Juaymah码头为期三周的停滞，恢复原油装载；
+同期开始从阿曼Sohar等阿曼湾海域提供船对船销售，标的为Arab Medium与Arab Heavy原油。
+红海路...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779824" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">应用材料大跌！AI浪潮推升设备需求，财报全面超预期却难填市场“胃口”｜财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">全球最大半导体设备厂商之一应用材料交出强劲的第三季度业绩，并给出高于市场预期的第四季度指引。但在股价今年大幅上涨、市场对AI资本开支预期已经处于高位的背景下，这份“超预期”财报并未获得市场认可。
+应用材料第三财季营收91.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779409" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">常春藤名校的太空豪赌：哈佛披露22亿SpaceX仓位，为最大单一股票头寸</h3>
+          <p class="text-xs text-gray-500 mt-1">哈佛押注SpaceX，一笔早年的风险投资，如今变成了学校最大的单一股票头寸。
+哈佛大学投资管理公司（Harvard Management Company）在8月14日周五提交的监管文件中披露，其持有SpaceX股份价值22亿美元。这一仓位在哈佛43亿美元的美股投资组合中位居第一，超过其他所有单一股票持仓。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779524" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">布伦特原油91美元只是表象，170美元的柴油才是真正的能源风险</h3>
+          <p class="text-xs text-gray-500 mt-1">当原油价格在每桶90美元附近徘徊，市场情绪看似平稳，但高盛前大宗商品研究主管Jeff Currie正在发出警告：真正的能源冲击并未发生在原油市场，而是已经蔓延至消费者和企业每天实际使用的成品油市场。
+据OilPrice报道，Currie在接受CNBC采访时直言，
+"地球上没有人消费原油"，能源终端消费者面对的是汽油、柴油和航空燃油价格。
+欧洲柴油交易价格约为每桶170美元，是布伦特原油现价的近两倍...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779818" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">工业AI：从比特到原子</h3>
+          <p class="text-xs text-gray-500 mt-1">Uber联合创始人Travis Kalanick携Atoms复出并斩获a16z巨额投资。Atoms立足“从比特到原子”的工业AI愿景，将软件、传感器与机器人整合为系统，主攻食品自动化、采矿作业与自主导航场景，重塑物理世界并颠覆传统工业。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959597" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">小菜园主动降低外卖权重：堂食翻台率回升，净利润下降24%</h3>
+          <p class="text-xs text-gray-500 mt-1">小菜园用短期利润换回堂食客流，一场主动的经营调整正在展开。
+8月14日，小菜园发布截至2026年6月30日止六个月的未经审计中期业绩。上半年，公司收入为29.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779506" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">小幅反弹！美国上周首申人数升至20.9万，就业市场韧性犹存</h3>
+          <p class="text-xs text-gray-500 mt-1">美国劳动力市场韧性依然存在，但最新数据显示申请失业救济人数出现小幅回升。
+据美国劳工部周四公布的数据，截至8月8日当周，
+美国初请失业金人数增加9000人，升至20.9万
+。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779399" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">完美世界：2026年上半年由盈转亏，净利润亏损1.18亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">完美世界公告，2026年上半年营业收入27.51亿元，同比下降25.47%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151748" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宇树科技IPO：暗盘交易系捕风捉影，背后风险不容小觑</h3>
+          <p class="text-xs text-gray-500 mt-1">近期，市场上有讨论称，宇树科技场外出现“黄牛收购筹码”，部分中介报价大幅超过发行价格。
+对此，上海证券报记者向投资机构、私募、券商等市场资深人士多方求证，其均反馈称，并未发现此类情况，相关传闻基本都是捕风捉影；同时指出，这类私下场外约定和交易合规性存疑，投资者极易蒙受损失。
+作为宇树科技IPO发行主承销商的中信证券也提醒称，证券交易须严格遵守法律法规及证券市场交易规则，仅可通过法律法规认可的渠道以...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779532" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宁德时代独供澳大利亚国家电力市场规模最大的在运电池储能项目，三期采用天恒储能系统</h3>
+          <p class="text-xs text-gray-500 mt-1">宁德时代8月14日发布消息，近日，由Quinbrook开发的澳大利亚Supernode储能项目二期正式投入商业运营，三期4.69亿澳元融资同步完成交割。至此，项目一、二期（520MW/1858MWh）已全面商业化运营。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149797" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">存储巨头长存，IPO筹备重大进展来了</h3>
+          <p class="text-xs text-gray-500 mt-1">长鑫科技之后，另一家备受市场关注的存储芯片巨头长江存储控股股份有限公司（以下简称长存控股）的IPO辅导状态已变更为“辅导验收”，辅导券商为中信证券和中信建投。
+作为国内3D NAND闪存领域龙头，此次辅导验收落地，意味着长存控股上市筹备取得重要阶段性进展。
+市场层面，长存控股的竞争力正加速显现。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779808" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">天孚通信：公司CPO相关配套产品已进入量产交付阶段</h3>
+          <p class="text-xs text-gray-500 mt-1">天孚通信在投资者关系活动记录表表示，目前，公司CPO相关配套产品已进入量产交付阶段，产品良率已满足规模量产需要，公司会围绕客户需求预测提前准备产能，满足客户长期提产需求。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151823" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">外卖补贴降温之后，京东押注AI的效率叙事</h3>
+          <p class="text-xs text-gray-500 mt-1">8月13日，京东交出了一份收入与利润反向变化的二季度财报。
+具体而言，收入同比下降2.9%至3464亿元，经营利润却由亏损转为盈利45亿元，经调整净利润增长20%至89亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779400" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">回归常态，调整预期</h3>
+          <p class="text-xs text-gray-500 mt-1">我们将行情划分为北美AI链、对非美市场出海和内需三条业绩线索：1）对北美AI链而言，经过半个月的修复，涨价链条的赔率明显下降，近期AI叙事上有一些边际变化，但尚不足以带动整个板块重估，还需要耐心等远期新叙事的出现；2）对非美市场出海而言，中欧贸易争端在未来一段时间可能会继续焦灼，压制不少高端制造板块估值，同时临近中报密集披露期，汇兑损失的影响亦不容小觑；3）对于纯内需品种，国产算力景气相对优势明显...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779544" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">啤酒冲量、白酒去库，华润啤酒的双线分化</h3>
+          <p class="text-xs text-gray-500 mt-1">华润啤酒的啤酒生意仍在增长，但白酒业务带来的压力还没有结束。
+8月19日，华润啤酒发布2026年中期业绩。上半年公司实现营业额242.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779822" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">商汤：预计2026年上半年录得期内利润约5亿元至7亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">商汤：预计本集团2026年上半年将录得约人民币5亿元至人民币7亿元的期内利润，而截至2025年6月30日止六个月期间则录得期内亏损约人民币14.8927亿元。
+预计本集团2026年上半年按非国际财务报告准则(IFRS)计量的调整后净亏损对比2025年上半年的调整后净亏损同比降低60%至70%，反映2026年上半年（即2026年上半年对比2025年上半年）的调整后净亏损同比收窄幅度对比截至2025年...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150061" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">司法部发布关于欧盟外国补贴调查相关做法构成不当域外管辖的公告</h3>
+          <p class="text-xs text-gray-500 mt-1">根据《中华人民共和国反外国不当域外管辖条例》第三条、第六条等规定，司法部会同商务部等有关部门调查认定，欧盟利用其《外国补贴条例》在对京东调查中对中国实体采取的相关跨境调查做法，构成不当域外管辖措施。
+任何组织、个人不得执行或者协助执行该不当域外管辖措施。
+本公告自公布之日起实施。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779807" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">受Workday被收购报道影响，Workday涨幅一度扩大至30%。AI应用软件股集体冲高，Cloudflare、MongoDB涨超6%，Palantir、赛富时涨超4%，Applovin、ServiceNow涨超3%...</h3>
+          <p class="text-xs text-gray-500 mt-1">受Workday被收购报道影响，Workday涨幅一度扩大至30%。AI应用软件股集体冲高，Cloudflare、MongoDB涨超6%，Palantir、赛富时涨超4%，Applovin、ServiceNow涨超3%； 扩展科技软件行业ETF-iShares涨超2%。
+风险提示及免责条款
+市场有风险，投资需谨慎。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779405" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">博通暴跌20% 市场在怕什么？</h3>
+          <p class="text-xs text-gray-500 mt-1">8月11日，美国银行信用分析师Tom Curcuruto发了一份不长的降级报告。他把博通的债券评级从“增持”下调到了“市场权重”。
+注意，这不是股票评级，是信用端——也就是说，他担心的不是博通赚不赚钱，而是博通的资产负债表能不能扛住它正在做的事。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779502" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">博通一夜跌6%：AI的下一道坎，是融资成本</h3>
+          <p class="text-xs text-gray-500 mt-1">8 月 14 日，博通股价收于 393.08 美元，单日下跌 5.92%，市值蒸发约 1180 亿美元，盘中一度跌至 388.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779512" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">华尔街“选股神话”持续褪色：过去十年仅13%跑赢指数</h3>
+          <p class="text-xs text-gray-500 mt-1">数据再次证明，主动选股的光环正在消退。过去十年，美国主动管理大盘股基金中，只有一成多跑赢了指数——这是华尔街最新数据给出的答案。
+8月15日，据晨星（Morningstar）最新数据，截至今年6月30日的过去十年，仅
+13%
+的美国主动管理大盘股基金在扣除费用后跑赢基准被动基金。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779538" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">华尔街见闻早餐FM-Radio | 2026年8月15日</h3>
+          <p class="text-xs text-gray-500 mt-1">华见早安之声
+请各位听众升级为见闻最新版APP，以便成功收听以下音频。
+市场概述
+尽管对美联储加息预期推迟，但美债利率上升与财政可持续性担忧下，周五市场情绪谨慎。
+美国三大股指小幅收跌
+，道指跌0.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779496" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">华尔街多头信心大振：标普500盈利增速创30年新高</h3>
+          <p class="text-xs text-gray-500 mt-1">这一轮财报季，美国企业的盈利表现大超预期。
+标普500指数二季度盈利同比增长31%，不仅大幅超越华尔街此前23%的预期，更是彭博智库追溯至1992年以来、剔除重大衰退后复苏期的最强增速。目前逾90%的成分股已完成披露，指数上半年盈利表现有望创下2021年同期以来最佳。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779530" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“千问办公”首发上线GLM-5.3、DeepSeek V4 Pro两款模型</h3>
+          <p class="text-xs text-gray-500 mt-1">阿里巴巴旗下Agent产品“千问办公”首发上线GLM-5.3和DeepSeek V4 Pro两款前沿模型。即日起，用户可在产品首页的“前沿模型”档位直接选用。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150028" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">千问办公引入智谱、DeepSeek，打响模型聚合大战</h3>
+          <p class="text-xs text-gray-500 mt-1">办公Agent正式进入模型聚合大战。
+8月14日晚间，千问办公宣布上线GLM-5.3和DeepSeek V4 Pro两款模型，用户可以在产品首页的“前沿模型”档位直接选择使用。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779481" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">医药行业的三重共振：资金转向、业绩反转和AI重构，谁在买入？在买什么？</h3>
+          <p class="text-xs text-gray-500 mt-1">医药板块正经历一场罕见的"情绪—资金—业绩"三重共振。
+公募基金医药持仓降至6.53%，为2010年以来16年最低水平；
+而与此同时，CXO龙头药明康德中报归母净利首次突破百亿并大幅上调全年指引，百济神州、信达生物、荣昌生物三家创新药企同步释放业绩利好，中国创新药上半年出海首付款57亿美元、同比增长78%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779154" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">办公业务占比接近七成，金山软件二季度营收25.1亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">8月19日，金山软件发布截至2026年6月30日的二季度业绩。
+第二季度，集团总收益25.1亿元，办公软件及服务业务收益17亿元，同比增长25%；经调整母公司拥有人应占净溢利3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779816" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">出路在哪里？多国央行陷入“救火-加杠杆-再救火”的循环困境</h3>
+          <p class="text-xs text-gray-500 mt-1">各国央行正面临一个棘手的悖论：为防止市场崩溃而设计的救助工具，正在制造新的风险。8月15日，据《华尔街日报》报道，英格兰银行首席经济学家Huw Pill等政策制定者已开始公开表达担忧——反危机机制不仅推高了杠杆，还可能在悄然干扰货币政策的传导。
+Pill将这一困境形容为“打地鼠”：“讽刺的是，脆弱性恰恰是由那些为降低脆弱性而引入的机制所制造的。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779543" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">全球超长债供给冲击，国内基建、设备、制造业投资改善，韩国半导体繁荣与内需疲软---0819宏观脱水</h3>
+          <p class="text-xs text-gray-500 mt-1">8月17至18日海外债券市场联动上行。曲线走陡说明驱动在长久期风险补偿而非货币政策预期。美伊谈判破裂推升油价、厄尔尼诺增强推高农产品通胀预期、财政赤字扩张与私人部门承接官方减持构成三重驱动。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779815" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">全球紧缩预期升温：谁将点燃长债新一轮抛售？</h3>
+          <p class="text-xs text-gray-500 mt-1">当前，全球债券市场正遭遇一场系统性抛售潮，多个重要市场长端利率飙升至数十年来高位。美国30年期国债收益率突破5.31%，创下2007年以来最高纪录；法国10年期国债收益率触及2009年以来峰值，德国超长期国债收益率已回升至2011年水平，英国30年期国债收益率逼近6%关口。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779796" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">光迅科技上半年净利润大增56%，AI需求驱动光器件景气持续 | 财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">光迅科技发布强劲半年报，营收与利润双双实现高速增长，折射出光通信器件行业在人工智能基础设施建设浪潮下的持续景气。
+公司公告显示，
+2026年上半年营业收入达66.1亿元，同比增长26.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779812" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">兆威机电：2026年上半年净利润7464.57万元，同比减少34.10%</h3>
+          <p class="text-xs text-gray-500 mt-1">兆威机电公告，2026年上半年营业收入8.16亿元，同比增长3.80%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150054" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">但斌，再度加码科技股</h3>
+          <p class="text-xs text-gray-500 mt-1">东方港湾掌门人但斌，再度加码科技股。
+但斌8月18日晚间在社交平台上称：
+“今天计划买入SpaceX，这是我战略布局这只标的的开始。”
+据公开资料，SpaceX是在太空、连接和人工智能领域构建未来集成硬件和软件基础设施的公司，今年6月在美股上市，7月以来股价震荡调整超10%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779809" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">伯克希尔二季度13F持仓变阵：增持谷歌、达美航空，连续两季减持美银</h3>
+          <p class="text-xs text-gray-500 mt-1">“股神”巴菲特卸任CEO后，伯克希尔·哈撒韦的第二份13F报表出炉。
+据美东时间8月14日披露的文件，截至二季度末，伯克希尔13F股票组合市值约2993亿美元，较一季度末约2631亿美元增加12.09%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779522" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">伊朗警告美国若动用核武、全球基地将成靶子，驳斥特朗普、称伊方完全控制霍尔木兹</h3>
+          <p class="text-xs text-gray-500 mt-1">伊朗对美国的强硬警告仍在升级。
+据央视，伊朗伊斯兰革命卫队总司令顾问穆罕默德·雷扎·纳格迪在日前播出的采访中警告，美国若敢用对伊朗用核弹，美方在全球的基地将成为伊方的靶子。他同时强调，伊朗“不需要真正的核弹，也不需要杀戮”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779398" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">伊朗称逮捕或消灭美军者将获奖励</h3>
+          <p class="text-xs text-gray-500 mt-1">伊朗陆军总司令哈塔米今天（8月16日）发表声明称，任何逮捕或消灭一名入境美国军人的伊朗人员，都将获得50亿土曼（约合3万美元）的悬赏奖励。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150063" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">伊朗称美军已被驱逐不得进入海峡</h3>
+          <p class="text-xs text-gray-500 mt-1">伊朗陆军总司令哈塔米今天（8月16日）表示，美军已被驱逐，不再获准进入波斯湾、阿曼湾及霍尔木兹海峡。哈塔米强调，美军在地区内的基地绝不可能恢复到此前状态，伊朗也绝不会允许此类情况发生。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150068" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">伊朗称已与阿曼就霍尔木兹海峡通行方案达成协议</h3>
+          <p class="text-xs text-gray-500 mt-1">当地时间8月15日，伊朗外交部发言人巴加埃表示，尽管美国从中阻挠，伊朗和阿曼之间的会谈仍在积极推进，双方已就霍尔木兹海峡航道通行方案达成协议。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149999" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">付鹏：从大周期看本轮AI科技浪潮，我们处在什么阶段？【付鹏说1】</h3>
+          <p class="text-xs text-gray-500 mt-1">“ 交易桌前看天下，付鹏说来评财经 ”
+《付鹏说·第七季》全新升级！
+立即订阅
+《
+付鹏说第七季
+》全新升级上线，在日常视频的基础上，
+新增专栏交流群更新付鹏说最新市场观点&图表数据解读（社群第一时间更新）
+除了付鹏说日常内容，还新增了专栏在线阅读文档，给大家发送每日交易关注早报，和值得关注的研究报告，延展阅读资料，加入专栏的用户请扫码下图添加小助手进入《付鹏说》第七季专属交流群，并领取专栏资料。...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/premium/articles/3779786?layout=wscn-layout" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从房产抵押债券到GPU抵押债券，英伟达正在效仿AIG？</h3>
+          <p class="text-xs text-gray-500 mt-1">英伟达再次传出将数据中心资产证券化的计划，这次的交易可能将AI算力热潮推向一个危险的新阶段。
+据彭博宏观策略师Simon White分析，
+英伟达拟将数据中心转化为可投资资产的交易，有可能导致AI算力领域出现严重产能过剩，尤其是在基于结果定价模式逐渐成为行业标准的背景下。
+这一判断的核心逻辑在于：金融化正在人为放大需求信号，掩盖市场已经供过于求的真实状况——这与2008年金融危机前的住房泡沫如出一...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779395" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从成人电影创业到“硅谷第一夫人”：深挖Anthropic背后的神秘女人</h3>
+          <p class="text-xs text-gray-500 mt-1">2026年8月，当Anthropic以超过2万亿美元的估值冲刺IPO时，一个从未出现在公司组织架构图上的名字，正以前所未有的烈度冲击着华尔街的神经。
+Cami Clark，Anthropic CEO Dario Amodei的妻子，在一周之内，从硅谷最隐秘的“影子顾问”变成了全球财经媒体的头版人物。
+《华尔街日报》与《福布斯》相继发布深度调查，The Information同步刊发长篇人物特写，将...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779528" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从PC巨头到服务器玩家，联想AI转型迎来收获期</h3>
+          <p class="text-xs text-gray-500 mt-1">联想被资本市场贴了二十多年"卖PC"的标签——利润薄、增长慢、估值常年趴在个位数。
+但进入AI时代，这个标签正在被快速撕掉。
+8月13日午后
+，联想集团的股价直线拉升，收盘涨了20%，市值站上4400亿港元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779389" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">仅仅是美股的管理费 就已经大到足以影响经济数据了</h3>
+          <p class="text-xs text-gray-500 mt-1">8月13日，美国劳工统计局公布7月生产者价格指数（PPI）。表头环比持平，低于市场预期；同比涨幅从6月的5.5%回落至4.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779407" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">亿联网络三条业务线恢复增长，云办公终端增速超六成</h3>
+          <p class="text-xs text-gray-500 mt-1">8月18日，亿联网络披露2026年半年报。
+上半年，公司实现营业收入33.49亿元，同比增长26.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779804" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">亿纬锂能：2026年上半年净利润33.01亿元，同比增长105.66%</h3>
+          <p class="text-xs text-gray-500 mt-1">亿纬锂能公告，2026年上半年营业收入456.91亿元，同比增长62.20%；归属于上市公司股东的净利润33.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779811" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">京东电话会：盈利拐点已现，外卖亏损收窄超五成，三季度零售业务有望重回正增长</h3>
+          <p class="text-xs text-gray-500 mt-1">京东二季度营收仍处于调整期，但利润表现明显回暖，核心零售业务与外卖亏损改善共同推动盈利能力提升。
+8月13日，在2026年第二季度业绩电话会上，京东管理层将当前盈利趋势定性为一个“明确转折点”。二季度，公司归属于普通股股东的非GAAP净利润同比增长21%至89亿元人民币，京东零售毛利率和营业利润率均创促销旺季历史新高；与此同时，
+城市外卖业务亏损同比收窄超过50%，成为利润改善的重要来源。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779392" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">京东发布机器人战略 到2028年计划投入百亿级资源赋能百家品牌</h3>
+          <p class="text-xs text-gray-500 mt-1">京东发布机器人战略，立足供应链、服务、技术三大维度，推动机器人产业加速实现商业化、场景化落地。根据规划，到2028年，京东将在机器人领域投入百亿级资源，助力100个品牌实现独立销售额突破10亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151777" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">亨通股份：拟定增募资不超过36亿元用于高端铜箔产业园项目及补充流动资金</h3>
+          <p class="text-xs text-gray-500 mt-1">亨通股份公告，公司于2026年8月13日召开第十届董事会第三次会议，审议通过2026年度向特定对象发行A股股票预案。本次发行拟募集资金总额不超过人民币36亿元，扣除发行费用后拟投入绿能与电子电路用高端铜箔产业园项目27亿元、补充流动资金9亿元。发行对象为不超过35名特定投资者，发行数量不超过发行前总股本的30%，发行价格不低于定价基准日前二十个交易日公司股票交易均价的80%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149189" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">交易员已不再充分消化美联储今年加息的情景</h3>
+          <p class="text-xs text-gray-500 mt-1">交易员已不再充分消化美联储今年加息的情景。
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779394" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">五大因素叠加发酵，摩根大通：全球粮食危机或将在明年爆发</h3>
+          <p class="text-xs text-gray-500 mt-1">战争、天气、仓储、水资源、浪费——五重压力正在同步收紧全球粮食供应的"阀门"。
+8月15日，摩根大通最新研究报告显示，下一场全球粮食危机的轮廓已初步成形，食品通胀压力将持续至2027年上半年。
+该行驻伦敦高级全球经济学家Nora Szentivanyi领衔撰写了这份题为《粮食安全即国家安全：一场复合风暴》的报告。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779525" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中期选举压力是否还能触发“TACO”？</h3>
+          <p class="text-xs text-gray-500 mt-1">2026年中期选举进程过半，两党的主要博弈策略逐步明确。我们逐州分析后认为，民主党拿下众议院、共和党守住参议院是当前最可能的结果。两院分治会增加特朗普的执政摩擦，但只要共和党保住参议院，在涉及最高法院、调查弹劾、选举争议等问题上压力就有限，中选对特朗普的“TACO”约束可能弱于此前市场预期，因此我们建议更多观察金融条件和资产价格的变化。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779513" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中微半导：2026年上半年净利润1.72亿元同比增98.48%，1.66亿押注NOR Flash存储芯片</h3>
+          <p class="text-xs text-gray-500 mt-1">8月16日，中微半导发布业绩公告，2026年上半年营业收入7.26亿元，同比增长44.01%；归属于上市公司股东的净利润1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779536" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中央汇金、证金公司均退出贵州茅台十大股东名单</h3>
+          <p class="text-xs text-gray-500 mt-1">贵州茅台发布2026年半年度报告。截至二季度末，中央汇金、证金公司均退出贵州茅台十大股东名单。对比一季度末，中央汇金和证金公司分别持有贵州茅台0.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149811" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国黄金协会：我国黄金产业链完整 具备抵御外部风险的充足韧性</h3>
+          <p class="text-xs text-gray-500 mt-1">中国黄金协会
+发布严正声明称，近期，美国国土安全部将国内部分黄金企业加入所谓“维吾尔强迫劳动预防法”（UFLPA）实体清单，禁止企业生产的商品进入美国；伦敦金银市场协会（LBMA）据此暂停相关企业合格交割资格。相关措施缺乏事实依据，违背市场化原则，扰乱全球黄金产业链稳定，中国黄金协会对此坚决反对。
+我国黄金产业链完整，具备抵御外部风险的充足韧性。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3151827" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">两年前的“AI股神”：AI交易，择时是关键</h3>
+          <p class="text-xs text-gray-500 mt-1">2024年6月访谈中，“AI股神”Leopold Aschenbrenner强调押注AI时，不爆仓是第一要务，时机与顺序至关重要。讽刺的是，他创办的Situational Awareness基金今年7月因高杠杆遭保证金催缴，被迫向Citadel甩卖公开持仓。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959596" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">专利悬崖将至，BD 交易加速：MNC 如何用"下一代大药"重建自免护城河？</h3>
+          <p class="text-xs text-gray-500 mt-1">以度普利尤单抗（赛诺菲）、利生奇珠单抗（艾伯维）为代表的专利期内单品在百亿美元体量上仍保持近 30% 增长，而以乌司奴单抗（强生）、阿达木单抗（艾伯维）为代表的上一代"药王"正以 -59%、-38% 的速度坠落。
+当专利悬崖从预警变为现实，MNC 的应对不是坐等，而是用"共制剂、长效化、口服化、适应症延展"四张牌重建护城河，并掀起一轮以中国创新资产为重要供给源的 BD与并购浪潮。
+一、发生了什么？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779567" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">下周重磅日程：中国7月经济数据，阿里、小米、天孚通信、兆易创新、长飞光纤财报，宇树科技上市在即</h3>
+          <p class="text-xs text-gray-500 mt-1">财报超级周来袭，阿里、百度、快手、小米集中放榜；A股兆易创新、天孚通信、长飞光纤、科大讯飞验证存储、光模块与AI应用等主线。产业面，世界机器人大会、宇树科技上市在即、人形机器人运动会三连催化，机器人链事件密度达年内峰值。宏观面，中国7月工业、社零等经济数据与美联储7月会议纪要发布。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959598" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">a16z史上最大投资！All in Uber创始人，下注工业AI“从比特到原子”</h3>
+          <p class="text-xs text-gray-500 mt-1">Uber联合创始人Travis Kalanick沉寂八年后，携全新公司Atoms高调亮相，并拿下a16z联合创始人Ben Horowitz迄今写出的最大一张支票。这笔投资押注的核心逻辑是：AI正在从数字世界大步迈向物理世界，食品、矿业、制造业等传统产业将迎来一场堪比第二次工业革命的颠覆。
+在Atoms发布会上，Kalanick与Horowitz展开公开对话，
+首次系统阐述"工业AI"愿景——将一整...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779510" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SpaceX完成对AI软件Cursor的并购，交易规模达600亿美元！</h3>
+          <p class="text-xs text-gray-500 mt-1">SpaceX正式完成对人工智能编程初创公司Cursor的收购，交易金额高达600亿美元，成为科技行业史上规模最大的并购案之一，
+标志着马斯克在AI领域与Anthropic及OpenAI的竞争进入新阶段。
+据监管文件显示，此次收购于8月14日正式生效，距SpaceX宣布达成收购协议仅约两个月。这笔交易旨在帮助马斯克旗下现已更名为SpaceXAI的AI业务补强软件能力，切入以编程为核心的AI工具市场—...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779476" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SpaceX：与Cursor的合并于8月14日生效</h3>
+          <p class="text-xs text-gray-500 mt-1">根据SpaceX提交的8-K文件，该公司表示其与Cursor的合并已于8月14日生效。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149757" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SK集团“天价离婚案”再起波澜，董事长崔泰源就6.43亿美元判决提起上诉</h3>
+          <p class="text-xs text-gray-500 mt-1">SK集团亿万富豪董事长崔泰源（Chey Tae-won）已就法院要求其在离婚财产分割中向前妻支付9440亿韩元（约合6.43亿美元）的判决提起上诉。
+崔泰源的法律团队周五表示：
+“经过慎重审议并考虑各种情况，崔泰源董事长已向韩国最高法院提起上诉。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779491" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI内部动荡加剧：重组不断，员工疲惫，管离职潮持续，上市计划悄然推迟</h3>
+          <p class="text-xs text-gray-500 mt-1">一家估值8520亿美元、冲刺万亿IPO的公司，正在被自己的内部混乱拖累。
+今年以来，OpenAI已经历近五次组织重组。高管接连出走，安全团队被解散，员工普遍感到疲惫。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779533" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Moderna美股盘前涨超50%，公司与默沙东宣布黑色素瘤皮肤癌疫苗在大型试验中达到目标影响</h3>
+          <p class="text-xs text-gray-500 mt-1">Moderna美股盘前涨超50%，公司与默沙东宣布黑色素瘤皮肤癌疫苗在大型试验中达到目标影响。
+风险提示及免责条款
+市场有风险，投资需谨慎。本文不构成个人投资建议，也未考虑到个别用户特殊的投资目标、财务状况或需要。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779803" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Gemini 3.5 Pro延迟发布、人才持续流失——谷歌新AI掌门接手一个“烂摊子”</h3>
+          <p class="text-xs text-gray-500 mt-1">谷歌AI业务换帅，但摆在新掌门面前的，并不是一张轻松的牌。
+据报道，Koray Kavukcuoglu将接替DeepMind联合创始人Demis Hassabis，出任谷歌DeepMind高级副总裁，直接向谷歌CEO Sundar Pichai汇报。
+当前，
+谷歌旗舰模型Gemini 3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779365" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">DeepSeek Harness 来了，它不想做下一个Codex</h3>
+          <p class="text-xs text-gray-500 mt-1">就在刚刚，DeepSeek 正式发布了首款 Agent 产品，DeepSeek Harness。
+早在 V4 Flash 正式版更新日志里，除了直接对标 Claude Opus 模型的 benchmark 成绩，还有一行说明写着「
+正式版 DeepSeek-V4-Flash 使用 DeepSeek Harness 极简模式（即将发布）作为框架进行测试。
+」
+APPSO 在发布之前拿到了 DeepS...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779390" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Coherent 财报解读：二次确认光的高确定性，但市场为什么会跳水？</h3>
+          <p class="text-xs text-gray-500 mt-1">业绩与指引全面超预期，股价却在盘后一度跳水 8%。这份"教科书级财报"撕开了 AI 光模块交易的核心矛盾：当一只一年内上涨 205%、远期市盈率 39 倍的股票，交出的是一份"够好但不够惊艳"的成绩单时，市场定价的已不是基本面，而是预期本身。
+光通信巨头 Coherent发布 2026 财年第四季度财报：营收 20.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779340" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A股牛市第三阶段的新叙事</h3>
+          <p class="text-xs text-gray-500 mt-1">核心结论：①24年924开启的牛市进入第三阶段，市场调整后的新一轮上涨往往出现新叙事。②新叙事1：科技从上游到下游，从出口逻辑到国产替代，关注算力国产替代、AI应用，以及创新药券商等科技延伸领域。③新叙事2：内需的政策刺激和股价低位共振，出口数据未来边际减弱，稳增长要内需接力，如白酒、地产等。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779505" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anthropic和OpenAI，模型越强越“不敢发布”</h3>
+          <p class="text-xs text-gray-500 mt-1">AI研究机构 SemiAnalysis 创始人Dylan Patel指出，前沿AI模型的发布节奏正在明显放缓——OpenAI迟迟未发布下一代模型，Anthropic的Metis早在二月完成训练却至今未正式推出。
+为安抚监管机构，这些公司给模型加装了过度激进的分类器，严重限制了实际可用性。Anthropic曾主动呼吁监管，如今却把政府吓得不轻。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/charts/41959629" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anthropic Q2营收飙升至逾115亿美元，同比涨超14倍</h3>
+          <p class="text-xs text-gray-500 mt-1">Anthropic PBC向潜在投资者披露，公司第二季度营收较上年同期至少增长14倍。
+据彭博，
+Anthropic二季度实现初步营收超过115亿美元，而2025年同期为7.87亿美元，今年第一季度为47.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779495" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI需求爆发，生益科技上半年净利润同比增130%，营收规模创历史新高 | 财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">覆铜板龙头生益科技2026年上半年业绩大幅跃升，营收与利润双双录得高速增长，盈利能力显著改善，印证了AI基础设施建设对上游材料端的持续拉动。
+公司披露的半年报摘要显示，
+2026年上半年营业收入达190.26亿元，同比增长50.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779469" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI融资担忧发酵，博通盘中重挫7%，3700亿潜在风险响警钟</h3>
+          <p class="text-xs text-gray-500 mt-1">AI芯片融资模式正在从“利好需求”转向“信用风险”叙事，英伟达劲敌博通遭遇明显抛压。
+8月14日周五，博通（AVGO）股价低开低走，午盘刷新日低时，日内跌约7%，收盘跌逾5.9%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779486" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI“芯片通胀”席卷英国经济</h3>
+          <p class="text-xs text-gray-500 mt-1">AI驱动的芯片短缺，正在成为英国通胀的新变量。
+英国即将公布的7月CPI数据，预计将打破此前连续四个月的通胀回落趋势。据彭博对经济学家的调查，中位预测值为同比上涨2.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779531" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI算力驱动，协创数据上半年营收同比增156%，归母净利润狂增331%｜财报见闻</h3>
+          <p class="text-xs text-gray-500 mt-1">AI算力需求持续释放，协创数据2026年上半年营收和利润均实现大幅增长。
+8月13日，公司公布的财报数据显示，
+上半年实现营业总收入126.41亿元，同比增长155.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779388" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“AI版金融创新”：英伟达的“5000亿美元大算盘”</h3>
+          <p class="text-xs text-gray-500 mt-1">英伟达正在以一种前所未有的方式重塑自身的商业边界——从芯片制造商向AI基础设施"金融合伙人"转型，其核心是一套以"兜底换分润"为逻辑的新云服务收益共享模式。
+英伟达正积极推进与新兴AI云服务商（neocloud）的收益共享协议：英伟达为这些云服务商的初始建设提供信用背书，换取其云收入的一定比例分成。据追风交易台消息，摩根士丹利分析师Joseph Moore将这一机制类比为"AI领域的金融创新"，认...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779503" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“AI版金融创新”：博通大跌背后的AI芯片“卖方担保”模式</h3>
+          <p class="text-xs text-gray-500 mt-1">AI基础设施融资正在经历一场结构性变革，而市场正开始为这场变革定价。
+8月14日，博通股价收盘跌逾5.9%，盘中一度跌近7%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779508" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“AI版金融创新”：CDO vs CCO=2008 vs 2026？</h3>
+          <p class="text-xs text-gray-500 mt-1">当市场还在争论AI是否重演2000年科技泡沫时，一套与2008年次贷危机高度同构的信用架构，已悄然搭建完毕。
+本周，英伟达相继与Apollo、贝莱德、黑石、Brookfield、高盛及KKR签署谅解备忘录，计划联合搭建"算力融资平台"，旨在动员逾5000亿美元第三方资本。其核心逻辑是：GPU芯片可装入特殊目的载体、作为抵押品，并以其预期产生的现金流为基础进行融资——这与次贷危机时期楼宇、收费公路的...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779499" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI基金爆仓殃及自营交易巨头，Jane Street罕见单月巨亏150亿美元，急推110亿债务重组</h3>
+          <p class="text-xs text-gray-500 mt-1">华尔街最神秘、也最赚钱的自营交易巨头之一Jane Street，正在为一场突如其来的AI投资风暴付出罕见代价。
+美东时间14日周五，据多家媒体报道，Jane Street今年7月遭遇约150亿美元损失，若消息属实，就意味着该司录得约十年来首次单月亏损。此次损失主要与其投资的AI对冲基金Situational Awareness遭遇爆仓，以及同期科技股剧烈震荡有关。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779493" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI交易热情回归，美股盘前科技股上涨，美光涨超1%，国际油价上涨，现货黄金小幅下跌</h3>
+          <p class="text-xs text-gray-500 mt-1">全球股市连续第三周上涨，人工智能交易热情回归叠加美国通胀降温，压低了市场对美联储9月加息的预期，推动科技股全面反弹，亚太市场跟随走高。
+美股大型科技股盘前多数上涨，美光科技涨1%，SpaceX涨0.5%，特斯拉涨0.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779437" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI交易回暖，韩股重回技术牛市，三星电子、SK海力士双双涨逾4%</h3>
+          <p class="text-xs text-gray-500 mt-1">AI交易回暖推动存储芯片股大幅反弹，亚太股市全线走高，韩国股市领涨。
+此外美国劳工部周三公布数据显示，7月核心通胀率降至2021年3月以来最低水平，
+货币市场显示9月加息概率已降至50%以下，为市场风险偏好情绪提供支撑。
+周四亚太时段，MSCI亚太指数整体上涨约1%，日经225指数上涨1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779338" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">8月，华尔街的“牛市”又回来了，“赌性”也回来了</h3>
+          <p class="text-xs text-gray-500 mt-1">美股8月强势反弹，标普500指数刷新历史高点，投资者重返科技与杠杆赛道。强劲的企业盈利与通胀降温共同提供燃料，但油价飙升、长债收益率高企与跨资产信号相互矛盾，令这场"黄金时代"交易愈发脆弱。
+7月芯片股遭到猛烈抛售后，市场的恐惧情绪来得快，去得也快。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779498" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">8月14日会员早报：韩国股市重返“技术性牛市” 投资者押注Anthropic以逾2万亿美元估值上市</h3>
+          <p class="text-xs text-gray-500 mt-1">1、【韩国股市重返“技术性牛市”】8月13日，韩国基准KOSPI指数收盘上涨3.98%、报6840.67点，盘中一度涨4.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/member/articles/3779406" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">520元/股！宇树科技，未上市先疯抢！场外“暗盘”兴起，谁在豪赌？</h3>
+          <p class="text-xs text-gray-500 mt-1">宇树科技新股还未正式上市，场外“暗盘交易”就已经火了起来。
+券商中国记者获悉，宇树科技场外“暗盘交易”悄然兴起。目前多家中介通过各类渠道收购该股新股，报价分歧较大，部分中介出价520元/股（发行价150.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779509" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">2026暑期档票房超100亿</h3>
+          <p class="text-xs text-gray-500 mt-1">截至目前，2026年暑期档电影总票房（含预售）已突破100亿元，单日票房连续37天破亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150048" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

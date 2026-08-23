@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing 2026-07-11 — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4">
+      <a href="../briefings.html" class="text-sm text-blue-600 hover:underline">&larr; Back to briefings</a>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 markdown text-sm"><p># 每日情报简报 — 2026-07-11</p>
+<blockquote>分析来源: 25 个新闻源（世界/政治/财经/科技/加密） | 今日新闻: 1272 条 | 分析引擎: DeepSeek</blockquote>
+<hr>
+<h2>[GLOBE] 政治</h2>
+<p>美伊冲突急剧升级：伊朗最高领袖哈梅内伊葬礼期间，美伊相互打击，特朗普宣布停火协议'结束'但同意继续谈判；北约峰会在安卡拉举行，特朗普与盟友关系紧张；中国成功发射可回收火箭、朝鲜总理访华，地缘格局多线震荡。</p>
+<ul><li>美国恢复对伊朗'强力打击'，伊朗袭击美国在巴林、科威特、卡塔尔基地，特朗普宣布停火协议'结束'但同意继续谈判</li>
+<li>北约峰会：特朗普要求欧洲增加军费，与以色列总理内塔尼亚胡就F-35对土耳其出售发生冲突</li>
+<li>中国长征十号乙火箭首次实现可控回收，全球首创海上网系回收</li>
+<li>朝鲜内阁总理朴泰成访华，与习近平会面，提出将中朝关系发展为'最强有力战略关系'</li></ul>
+<p><strong>市场影响</strong>: 美伊冲突升级直接推高油价，霍尔木兹海峡航运锐减，全球能源供应风险陡增；北约内部分歧加剧不确定性，军工板块受益；中国火箭技术突破提振航天产业信心，但地缘紧张压制风险偏好。</p>
+<hr>
+<h2>[GLOBE] 经济</h2>
+<p>SK海力士美国IPO融资265亿美元，首日大涨标志AI芯片资本盛宴持续；油价因美伊冲突剧烈波动，IEA警告石油市场缺口巨大；欧盟要求Meta整改'成瘾设计'，科技监管趋严；全球经济增长预期下调。</p>
+<ul><li>SK海力士在纳斯达克上市，融资265亿美元创外国公司在美IPO纪录，首日涨13%</li>
+<li>IEA月报警告：若美伊再交火，明年石油市场过剩预期将被颠覆，6月全球石油供应缺口仍达940万桶/日</li>
+<li>欧盟依据数字服务法指控Meta的Instagram和Facebook采用'成瘾性设计'，可能面临巨额罚款</li>
+<li>美国6月非农仅增5.7万大幅不及预期，但美联储纪要显示加息担忧，油价飙升抵消降息预期</li></ul>
+<p><strong>市场影响</strong>: AI芯片股票受SK海力士IPO提振，但摩根士丹利警告芯片股定价权承压、资本开支放缓；油价飙升推动能源板块，但压制消费和航空股；科技监管加强利空Meta等社交平台；非农疲软与通胀担忧交织，降息预期降温。</p>
+<hr>
+<h2>[GLOBE] 文化</h2>
+<p>西班牙安达卢西亚山火致12死，欧洲热浪持续暴露基础设施脆弱性；印度西孟加拉邦因11岁女孩被强奸杀害爆发大规模抗议；英国前议员Ann Widdecombe被谋杀震惊社会。</p>
+<ul><li>西班牙南部山火肆虐，至少12人死亡、20余人失踪，多为外国游客</li>
+<li>法国热浪持续，Uber Eats和Deliveroo被迫在极端高温下给配送员安排休息</li>
+<li>印度西孟加拉邦11岁女孩遭强奸杀害，引发连日抗议，警方与示威者冲突</li>
+<li>英国前保守党/改革党议员Ann Widdecombe被发现死于家中，一名26岁男子被捕</li></ul>
+<p><strong>市场影响</strong>: 极端高温推高空调等制冷产品需求，利好中国家电出口（如美的），同时增加电力负荷和能源价格；暴力事件和抗议可能冲击当地旅游业和商业信心；名人谋杀案在英国引发政治讨论。</p>
+<hr>
+<h2>[GLOBE] 科技</h2>
+<p>苹果起诉OpenAI窃取商业机密，硅谷AI人才战白热化；中国长征十号乙成功回收，追赶SpaceX；欧盟要求Meta整改；人形机器人首次完成手术；Anthropic发现Claude内部思考空间。</p>
+<ul><li>苹果起诉OpenAI，指控其高层组织窃取苹果即将发布产品的机密信息</li>
+<li>中国长征十号乙火箭实现一子级可控回收，全球首次海上网系回收，为载人登月铺路</li>
+<li>欧盟依据DSA要求Meta修改'无限滚动'、自动播放等成瘾性设计，否则面临罚款</li>
+<li>加州大学团队实现全球首例人形机器人远程操控手术，在活体猪上完成胆囊切除</li>
+<li>Anthropic发现Claude内部存在一个'隐藏空间'用于概念推理，揭示AI思考新机制</li></ul>
+<p><strong>市场影响</strong>: 苹果诉OpenAI加剧科技巨头间的法律紧张，可能影响AI人才流动和开源合作；中国火箭突破利好商业航天和卫星互联网；欧盟监管加强利空Meta，但推动负责任的AI；人形机器人手术成功提振医疗机器人概念；Claude发现可能改变AI安全讨论。</p>
+<hr>
+<h2>[SYNC] 追踪事件更新</h2>
+<h3>^^ 伊朗最高领袖葬礼启动，多国代表团出席</h3>
+<ul><li><strong>新动态</strong>: 哈梅内伊葬礼在谨慎中结束，但其缺席引发权力真空猜测；同日美伊相互打击，特朗普宣布停火协议'结束'，但同意继续谈判；伊朗国内强硬派借葬礼鼓舞士气。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 美伊冲突从'停火'转向'边谈边打'，风险进一步升高；伊朗内部权力过渡不透明，后续政策可能更加激进。</li></ul>
+<h3>-> 美国对伊朗石油制裁恢复，打击全球石油供应</h3>
+<ul><li><strong>新动态</strong>: 美国恢复对伊朗石油制裁并撤销豁免，伊朗紧急运出1100万桶原油但买家难寻；霍尔木兹海峡航运量腰斩。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 制裁叠加军事冲突双重打击，全球石油市场供给紧张短期难以缓解，油价维持高位。</li></ul>
+<h3>-> 超强台风'巴威'逼近中国东南沿海</h3>
+<ul><li><strong>新动态</strong>: 台风'巴威'维持强度超5天，已致中国福建等地11人死亡，广西洪灾加重；多地停工停学。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 台风对农业、基础设施和供应链造成实际损失，短期推高农产品和建材价格，但整体可控。</li></ul>
+<h3>-> 朝鲜内阁总理朴泰成周五访华三天</h3>
+<ul><li><strong>新动态</strong>: 朴泰成访华期间会见习近平，提出将中朝关系发展为'最强有力战略关系'，纪念《中朝友好合作互助条约》65周年。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 中朝高层互动频繁，显示中国在半岛问题上影响力增强，可能制衡美日韩同盟，区域地缘稳定。</li></ul>
+<h3>-> 中国试射潜射洲际导弹引发区域紧张</h3>
+<ul><li><strong>新动态</strong>: 中国在太平洋试射潜射战略导弹，所罗门群岛抗议，但外长随后访华进行沟通。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 中国展示核威慑能力，但外交上通过访问缓和紧张，事件短期对市场影响有限。</li></ul>
+<h3>-> BIS警告AI投资泡沫可能引发漫长崩盘</h3>
+<ul><li><strong>新动态</strong>: 今日无直接BIS新声明，但Anthropic撤回高级模型、Meta免费发布模型加剧价格战，AI泡沫讨论持续升温。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: AI泡沫风险仍在积累，需关注下半年财报季和资本开支放缓信号。</li></ul>
+<h3>-> 法国热浪造成约1000例超额死亡</h3>
+<ul><li><strong>新动态</strong>: 法国第三波热浪来袭，Uber Eats等平台被迫调整配送政策，专家警告基础设施适应不足。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 极端高温成为欧洲结构性经济风险，影响电力、农业和旅游业，利好制冷设备行业。</li></ul>
+<h3>-> 大众计划削减10万个工作岗位</h3>
+<ul><li><strong>新动态</strong>: 大众正式确认裁员10万并可能关闭四家德国工厂，保时捷额外裁员4000人；今日新闻称大众产量因中国销量暴跌而削减。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 德国汽车工业面临中国竞争和电动化转型双重压力，持续拖累欧洲制造业信心。</li></ul>
+<h3>-> Meta计划出售富余AI算力</h3>
+<ul><li><strong>新动态</strong>: Meta推出'Muse Spark 1.1'付费模型，首次收费，与Anthropic、OpenAI直接竞争。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: Meta加速AI商业化，算力出售策略可能改变AI基础设施市场格局，利好云计算和AI应用。</li></ul>
+<h3>-> 美国6月非农仅增5.7万，大幅不及预期</h3>
+<ul><li><strong>新动态</strong>: 今日油价飙升和美联储纪要显示加息担忧，可能抵消非农疲软带来的降息预期。</li>
+<li><strong>状态变化</strong>: 相同</li>
+<li><strong>更新评估</strong>: 就业市场降温但通胀压力不减，美联储陷入两难，市场对降息定价过于乐观。</li></ul>
+<hr>
+<h2>[NEW] 新检测事件</h2>
+<h3>[HIGH] 苹果起诉OpenAI窃取商业机密</h3>
+<ul><li><strong>分类</strong>: technology</li>
+<li><strong>为何重要</strong>: 这是两大硅谷巨头关系破裂的标志性事件，苹果指控OpenAI高层组织窃取其即将发布产品的机密，可能影响AI人才流动、合作模式和知识产权保护，甚至引发反垄断调查。</li>
+<li><strong>潜在影响资产</strong>: 苹果股票, OpenAI估值, AI概念股, 半导体股</li>
+<li><strong>预估风险</strong>: high</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 苹果起诉→削弱OpenAI商业信誉→影响估值和IPO前景→加剧科技巨头间法律对抗→可能促使更严格的商业秘密保护法规</p>
+<h3>[MED] SK海力士美国IPO融资265亿美元创纪录</h3>
+<ul><li><strong>分类</strong>: economy</li>
+<li><strong>为何重要</strong>: 作为AI存储芯片龙头，SK海力士在美上市为AI基础设施投资树立标杆，但巨型IPO可能抽走市场流动性，且AI芯片需求可持续性存疑。</li>
+<li><strong>潜在影响资产</strong>: SK海力士ADR, 三星电子, 美光科技, 半导体ETF, AI相关股票</li>
+<li><strong>预估风险</strong>: medium</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- SK海力士IPO成功→增强韩国半导体全球地位→吸引更多AI公司上市→但巨量融资可能压制短期市场资金→长期利好存储芯片供应链</p>
+<h3>[MED] 欧盟依据DSA要求Meta整改'成瘾性设计'</h3>
+<ul><li><strong>分类</strong>: technology</li>
+<li><strong>为何重要</strong>: 欧盟首次对社交平台的设计模式进行严厉监管，可能迫使Meta改变核心算法和界面，影响用户时长和广告收入，并成为全球监管范本。</li>
+<li><strong>潜在影响资产</strong>: Meta股票, 社交媒体板块, 数字广告市场</li>
+<li><strong>预估风险</strong>: medium</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 欧盟罚款威胁→Meta被迫调整产品设计→用户参与度可能下降→广告收入承压→但合规成本增加</p>
+<h3>[LOW] 中国首次运载火箭可控回收成功</h3>
+<ul><li><strong>分类</strong>: technology</li>
+<li><strong>为何重要</strong>: 标志中国在可回收火箭技术上取得重大突破，全球首创海上网系回收，将大幅降低航天发射成本，提升中国商业航天竞争力，对SpaceX构成直接挑战。</li>
+<li><strong>潜在影响资产</strong>: 中国航天概念股, 卫星互联网板块, SpaceX间接影响</li>
+<li><strong>预估风险</strong>: low</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 火箭回收成功→降低发射成本→刺激中国卫星星座建设→利好通信、遥感、导航相关产业链→加剧全球航天竞争</p>
+<h3>[HIGH] IEA警告美伊冲突或颠覆明年石油市场预期</h3>
+<ul><li><strong>分类</strong>: economy</li>
+<li><strong>为何重要</strong>: IEA明确指出当前石油市场供应缺口巨大（940万桶/日），若冲突持续，明年全球石油过剩预期将被打破，能源价格可能长期维持高位，加剧全球通胀压力。</li>
+<li><strong>潜在影响资产</strong>: 原油期货, 能源板块, 航空股, 消费者股票</li>
+<li><strong>预估风险</strong>: high</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 美伊冲突升级→霍尔木兹海峡受阻→石油供应缩减→油价飙升→推高全球通胀→央行加息预期升温→经济衰退风险增加</p>
+<hr>
+<h2>[TAIL] 长尾效应分析</h2>
+<h3>美伊冲突与霍尔木兹海峡危机</h3>
+<ul><li><strong>起始时间</strong>: 2026年4月（首次打击）至今</li>
+<li><strong>影响链条</strong>: 特朗普宣布停火'结束'后，美伊进入边谈边打状态，霍尔木兹海峡航运量腰斩，石油供给持续紧张；同时伊朗国内强硬派借葬礼增强凝聚力，以色列准备加入打击，冲突有扩大至整个中东的风险。</li>
+<li><strong>未来展望</strong>: 短期油价维持高位（布伦特75-85美元），若以色列参战或伊朗封锁海峡，油价可能突破100美元；中期需关注11月美国中期选举对政策的制约。</li>
+<li><strong>关注节点</strong>: 特朗普与伊朗下一轮谈判（可能下周在瑞士）、以色列是否发动第三次打击、OPEC+紧急会议</li></ul>
+<h3>欧洲热浪与基础设施脆弱性</h3>
+<ul><li><strong>起始时间</strong>: 2026年5月首次热浪至今</li>
+<li><strong>影响链条</strong>: 法国、西班牙等地连续遭遇极端高温，导致山火、农业生产下降、电力负荷激增，暴露欧洲在住房隔热、能源网络、交通等方面的适应能力不足，推动气候政策讨论。</li>
+<li><strong>未来展望</strong>: 随着厄尔尼诺加强（2026秋冬季将形成超强厄尔尼诺），欧洲高温天气或成常态，制冷设备需求长期增长，但能源系统压力持续，可能引发天然气和电力价格波动。</li>
+<li><strong>关注节点</strong>: 欧盟气候适应政策提案、各国高温预警频率、空调能效标准更新</li></ul>
+<h3>AI投资泡沫与Scaling Law质疑</h3>
+<ul><li><strong>起始时间</strong>: 2026年6月BIS警告，持续至今</li>
+<li><strong>影响链条</strong>: Anthropic撤回高级模型、Meta免费发布模型加速价格战，市场对AI资本开支回报率产生怀疑；OpenAI发布GPT-5.6但Scaling Law质疑未消，Alphabet/微软等巨头的财报将成为试金石。</li>
+<li><strong>未来展望</strong>: AI泡沫可能在下半年财报季迎来压力测试，若企业AI收入不及预期，板块将面临大幅回调；但长期技术趋势不变，市场将从'炒概念'转向'看盈利'。</li>
+<li><strong>关注节点</strong>: 微软、谷歌、Meta 2026Q2财报、Anthropic IPO进展、OpenAI GPT-5.6用户反馈</li></ul>
+<h3>中国'韬芯片'理论冲击半导体格局</h3>
+<ul><li><strong>起始时间</strong>: 2026年7月6日论文发布</li>
+<li><strong>影响链条</strong>: 华为提出颠覆性芯片架构理论，可能绕过先进制程封锁；若理论被实验验证，将重塑全球半导体权力格局，利好中国设备/IP厂，利空美国设备巨头。</li>
+<li><strong>未来展望</strong>: 中国正加速验证，可能在未来6-12个月有原型芯片推出；美国可能加大技术封锁力度，但无法阻止理论扩散。</li>
+<li><strong>关注节点</strong>: 华为是否披露更多技术细节、中国光刻机突破进展、美国新一轮出口管制</li></ul>
+<hr>
+<h2>[DEEP] 水面下的信号</h2>
+<h3>[MED] AI交易员开始跑赢经典投资组合，但散户资金正从大盘撤退</h3>
+<ul><li><strong>依据</strong>: 摩根大通回测显示AI投资代理年化跑赢经典组合且波动更低；同时Vanda数据指出散户净流入跌至疫情后新低，不买大盘只赌热点。</li>
+<li><strong>如果成立</strong>: AI驱动的被动策略可能加速市场效率提升，但散户撤退意味着市场缺乏散户支持，波动可能加大，热点轮动更快。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[MED] 日本GPIF转向国内投资可能引发日元大规模回流</h3>
+<ul><li><strong>依据</strong>: 日本财务大臣点名要求GPIF增加对国内金融资产投资，引发日元脉冲式跳涨；高盛认为市场过度反应。</li>
+<li><strong>如果成立</strong>: 若GPIF确实调整配置，将导致大量海外资金回流日元资产，推升日元、压低日本国债收益率，并可能引发全球债市调整。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[MED] 苹果诉OpenAI可能暴露硅谷更深层的间谍与反间谍活动</h3>
+<ul><li><strong>依据</strong>: 苹果指控OpenAI高层组织鼓励招聘人员携带原型设备面试，暗示有系统性商业间谍行为。</li>
+<li><strong>如果成立</strong>: 此案可能揭开硅谷科技巨头间更广泛的机密盗窃网络，引发更多法律战和人才流动限制，提高AI行业合作成本。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[MED] 美国能源部警告战略石油储备可能无法应对未来危机</h3>
+<ul><li><strong>依据</strong>: 美国GAO警告称战略石油储备经过多年动用和基础设施老化，可能无法在危机中迅速释放。</li>
+<li><strong>如果成立</strong>: 若供应中断加剧，美国可能缺乏有效缓冲手段，油价将更快突破上行边界，并迫使美国加快与沙特等国谈判。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[HIGH] 欧洲天然气库存水平可能创15年新低，冬季面临气荒</h3>
+<ul><li><strong>依据</strong>: FT报道欧盟面临冬季天然气库存处于15年低点的风险，同时俄罗斯管道气继续削减，而美国威胁限制LNG出口以施压欧盟贸易谈判。</li>
+<li><strong>如果成立</strong>: 冬季天然气价格可能再次飙升，重演2022年危机，欧洲工业竞争力进一步受损，欧元承压。</li>
+<li><strong>置信度</strong>: high</li></ul>
+<hr>
+<p>*简报生成时间: 2026-07-11 06:03*</p>
+<p>*数据来源: 纽约时报、福克斯新闻、BBC、卫报、金融时报、Investing、</p>
+<p>今日俄罗斯、联合早报、中国新闻网、世界报、朝日新闻、</p>
+<p>新华社、人民网财经、华尔街见闻、</p>
+<p>TechCrunch、Ars Technica、MIT Tech Review*</p></div>
+</main>
+</body>
+</html>

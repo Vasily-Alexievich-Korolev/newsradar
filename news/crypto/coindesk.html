@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>coindesk — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/crypto.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Crypto</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Crypto / coindesk</h1>
+      <span class="text-sm text-gray-400">78 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wyoming joins $15 billion LayerZero exodus with state stablecoin move</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/18/wyoming-joins-usd15-billion-layerzero-exodus-with-state-stablecoin-move" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wintermute plans $1 billion AI push beyond crypto: Bloomberg</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/12/wintermute-plans-usd1-billion-ai-push-beyond-crypto-bloomberg" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wall Street's private blockchain obsession is a 'race to the bottom,' Ethereum advocate Raman warns</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/15/wall-street-s-private-blockchain-obsession-is-a-race-to-the-bottom-ethereum-advocate-raman-warns" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">U.S. accounting-standards group proposes way to see stablecoins as 'cash equivalent'</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/18/u-s-accounting-standards-group-proposes-way-to-see-stablecoins-as-cash-equivalent" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">U.S. SEC to again delay 'innovation exemption' for tokenization amid Wall Street, White House concerns</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/13/u-s-sec-to-again-delay-innovation-exemption-for-tokenization-amid-wall-street-white-house-concerns" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">U.S. SEC proposes first major crypto rule in surprise announcement</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/18/r" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump family's World Liberty Financial delay plans to sell Maldives resort token</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/14/trump-family-s-world-liberty-financial-delay-plans-to-sell-maldives-resort-token" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump expected to attend White House meeting with crypto CEOs, sources say</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump-backed World Liberty wins conditional bank charter from federal regulator</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trezor warns 14,000 customers after fulfilment partner suffers data breach</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/13/trezor-warns-14-000-users-after-fulfilment-partner-suffers-data-breach" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tokenization stocks slip as SEC delay puts 'speed bump' in crypto’s Wall Street push</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/tokenization-stocks-slip-as-sec-delay-puts-speed-bump-in-crypto-s-wall-street-push" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">TikTok code includes peer-to-peer payments over messaging: Bloomberg</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/19/tiktok-code-includes-peer-to-peer-payments-over-messaging-bloomberg" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The stablecoin yield clash that won't go away has banks, crypto battling over tradition</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The 'long bitcoin, short the bankers' era is officially over as TradFi giants embrace digital assets</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/the-long-bitcoin-short-the-bankers-era-is-officially-over-as-tradfi-giants-embrace-digital-assets" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The SEC meeting that wasn't: State of Crypto</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The $11.2 billion in 2026 funding that killed crypto’s permissionless era</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tether says it completed long-promised 'Big Four' audit of finances behind $180 billion USDT stablecoin</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swissquote cuts full-year guidance as 1H crypto income plunges, shares slide</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/swissquote-cuts-full-year-guidance-as-1h-crypto-income-plunges-shares-slide" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Strengthen the Clarity Act</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/opinion/2026/08/19/strengthen-the-clarity-act" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Strategy says MSCI should measure markets, not dictate corporate assets</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/strategy-says-msci-should-measure-markets-not-dictate-corporate-assets" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Strategy, Metaplanet unrealized bitcoin losses highlight risk of concentrating on just one token</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/daybook-us/2026/08/13/strategy-metaplanet-unrealized-bitcoin-losses-highlight-risk-of-concentrating-on-just-one-token" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Speculation on dogecoin is back to October 2025 levels. The price is down 70%</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/13/speculation-on-dogecoin-is-back-to-october-2025-levels-the-price-is-down-70" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Securitize falls 20% after earnings miss as tokenization revenue falls short</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/12/securitize-falls-20-after-earnings-miss-as-tokenization-revenue-falls-short" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SEC cancels long-awaited proposal of Reg Crypto, postponing meeting without new date</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Robot maker Unitree’s IPO surges 600% , outpacing crypto traders’ premarket bets</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/robot-maker-unitree-s-ipo-surges-600-outpacing-crypto-traders-premarket-bets" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/15/robot-maker-unitree-is-going-public-hyperliquid-traders-see-4x-upside-from-ipo-price" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Robinhood CEO urges U.S. to clear path for tokenized stocks as overseas markets advance</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/18/robinhood-ceo-urges-u-s-to-clear-path-for-tokenized-stocks-as-overseas-markets-advance" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ripple raises $275 million in senior notes for prime brokerage push</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/19/ripple-raises-usd275-million-in-debut-debt-offering-for-its-prime-brokerage-arm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">RedotPay said to put $1 billion U.S. IPO plan on hold: Bloomberg</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/14/redotpay-said-to-put-usd1-billion-u-s-ipo-plan-on-hold-bloomberg" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Prediction markets should dial back faulty filings for incentives to boost trading: CFTC</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/12/prediction-markets-should-dial-back-faulty-filings-for-incentives-to-boost-trading-cftc" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI trails Anthropic as losses deepen and Altman pauses frontier AI training</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/openai-trails-anthropic-as-losses-deepen-and-altman-pauses-frontier-ai-training" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Morgan Stanley's infrastructure partner Zerohash rebuffed in pitch to be U.S. trust bank</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/12/morgan-stanley-s-infrastructure-partner-zerohash-rebuffed-in-pitch-to-be-u-s-trust-bank" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">MiCA's cleanup is creating a new scam wave across the European Union</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Metaplanet denies selling bitcoin worth $320 million</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/13/metaplanet-denies-selling-bitcoin-worth-usd320-million" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Maya Protocol exploit drains bitcoin and other assets as pool value drops by $11 million</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">MUFG to test real-time blockchain settlement for Japanese government bond trades</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/mufg-to-test-real-time-blockchain-settlement-for-japanese-government-bond-trades" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Live updates: Bitcoin slips back to $63,000; MSCI threatens to exclude Strategy from indices</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Live updates: Bitcoin slips back even as Fed rate hike expectations dwindle</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/13/live-markets-u-s-inflation-is-stickier-than-july-s-mild-cpi-suggests" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Live updates: Bitcoin hits $69,700 as Treasury move pushes yields lower</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kalshi in talks with Sequoia, Wellington for $750 million fund raise at $40 billion valuation</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/kalshi-in-talks-with-sequoia-wellington-for-usd750-million-fund-raise-at-usd40-billion-valuation" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">JPMorgan shuttered its banking relationship with predictions platform Polymarket: FT</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/jpmorgan-shuttered-its-banking-relationship-with-predictions-platform-polymarket-ft" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">‘It has to pass’: Andrew Cuomo warns U.S. is falling behind on crypto rules</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/policy/2026/08/18/it-has-to-pass-andrew-cuomo-warns-u-s-is-falling-behind-on-crypto-rules" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israel’s largest bank to offer crypto trading with Galaxy</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/israel-s-largest-bank-partners-with-galaxy-for-crypto-trading" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">HSBC, Standard Chartered execute first live banking transaction on Swift’s 24/7 ledger</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/19/hsbc-standard-chartered-execute-first-live-banking-transaction-on-swift-s-24-7-ledger" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/13/forecasts-for-usd1-million-bitcoin-price-likely-look-too-ambitious-key-ratio-suggests" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Figure revenue doubles as blockchain loan marketplace volumes surge</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/figure-revenue-doubles-as-blockchain-loan-marketplace-volumes-surge" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fed decision making comes into focus as bitcoin holds steady, bond yields surge</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/daybook-us/2026/08/19/fed-decision-making-comes-into-focus-as-bitcoin-holds-steady-bond-yields-surge" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fear is fading across markets, be it bitcoin, stocks, gold or bonds</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/daybook-us/2026/08/14/volatility-exits-crypto-tradfi-markets-even-as-u-s-iran-risks-linger-sovereign-debt-rises" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Crypto wallet SafePal reveals a data breach exposing nearly 40,000 customers' order info</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/16/crypto-wallet-safepal-reveals-a-data-breach-exposing-nearly-40-000-customers-order-info" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Crypto investors are looking past market-cap rankings and back to fundamentals</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/16/crypto-investors-are-looking-past-market-cap-rankings-and-back-to-fundamentals" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Crypto for Advisors: The crypto advice gap</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-for-advisors-the-crypto-advice-gap" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Crypto Long & Short: Where DeFi yield really comes from (and why it broke this spring)</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/coindesk-indices/2026/08/18/crypto-long-and-short-where-defi-yield-really-comes-from-and-why-it-broke-this-spring" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Coinbase, Circle and Bullish jump as Clarity Act proponents express optimism about bill</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/coinbase-circle-and-bullish-jump-as-clarity-act-proponents-express-optimism-about-bill" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cluster of headwinds weigh on bitcoin. XRP teeters near $1</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/cluster-of-headwinds-weigh-on-bitcoin-xrp-teeters-near-usd1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Clarity survives (barely), Strategy sells and the untold story of Mastercard's $1.8 billion deal: Crypto's week in 5 stories</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/15/clarity-survives-barely-strategy-sells-and-the-untold-story-of-mastercard-s-usd1-8-billion-deal-crypto-s-week-in-5-stories" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">China triples its e-CNY network in 2026 as 8 more banks join the CBDC push this week</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/19/china-triples-digital-yuan-bank-roster-year-to-date-as-eight-more-banks-join-network" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cantor opens Kalshi prediction markets to thousands of institutional clients</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/cantor-opens-kalshi-prediction-markets-to-thousands-of-institutional-clients" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bullish shares surge 14% as subscription revenue offsets digital asset slowdown</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/bullish-reports-usd280-million-q2-net-loss-as-crypto-trading-slows" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Brazil’s largest bitcoin treasury firm plans ETF with 95% allocation to Strategy's STRC</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/brazil-s-largest-bitcoin-treasury-firm-plans-etf-with-95-allocation-to-strategy-s-strc" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin treasury company Metaplanet unveils BitBonds with $1.3 million private debt sale</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/13/bitcoin-treasury-company-metaplanet-unveils-bitbonds-with-usd1-3-million-private-debt-sale" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin stuck in a six-week range as global bond yields hit highest levels for decades</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/bitcoin-stuck-in-a-six-week-range-as-global-bond-yields-hit-highest-levels-for-decades" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin slips near $63,500 as traders look past CPI to Fed’s next tests</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/13/bitcoin-slips-near-usd63-500-as-traders-look-past-cpi-to-fed-s-next-tests" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin slips as U.S. inflation fails to spark gains, ETFs see August's first two-day drawdown</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin nears key technical breakout that could propel prices to $76,000</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/bitcoin-nears-key-technical-breakout-that-could-propel-prices-to-usd76-000" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin is flashing 8 of 12 capitulation signals, but bottom's not yet in, says VanEck</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/bitcoin-is-flashing-8-of-12-capitulation-signals-but-its-not-a-bottom-yet" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin holds steady near $64,000 as monero, hyperliquid outperform</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/13/bitcoin-holds-steady-near-usd64-000-as-monero-hyperliquid-outperform" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin holds $64,000 and solana leads gains amid 7% Korean chip stock slide</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin holders Strategy and Metaplanet face stock-index exclusion under MSCI’s new proposal</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.coindesk.com/markets/2026/08/14/bitcoin-holders-strategy-and-metaplanet-face-stock-index-exclusion-under-msci-s-new-proposal" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin firms ask AI labs for same tools attackers already have</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Beyond crypto funding rates: Ethena diversifies USDe backing with $1 billion FalconX facility</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/19/beyond-crypto-funding-rates-ethena-diversifies-usde-backing-with-usd1-billion-falconx-facility" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">B2C2 taps Schroders veteran to chase Asia’s growing crypto wealth</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.coindesk.com/business/2026/08/13/b2c2-taps-schroders-veteran-to-chase-asia-s-growing-crypto-wealth" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A year after losing $1.46 billion, Bybit says AI helped it save $700 million</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/19/a-year-after-losing-usd1-46-billion-bybit-says-ai-helped-it-save-usd700-million" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-800">crypto</span>
+            <span class="text-xs text-gray-400">CoinDesk</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI could supercharge crypto but there’s a catch, Fidelity Digital Assets says</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.coindesk.com/tech/2026/08/19/ai-could-supercharge-crypto-but-there-s-a-catch-fidelity-digital-assets-says" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

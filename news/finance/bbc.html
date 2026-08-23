@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bbc — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / bbc</h1>
+      <span class="text-sm text-gray-400">88 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zero hours crackdown could cost firms up to £2.9bn a year</h3>
+          <p class="text-xs text-gray-500 mt-1">Labour's employment rights bill crackdown on zero hours contracts could cost businesses up to £2.9bn a year, new official analysis has found.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0l525k76d0o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Young people want better job prospects and housing</h3>
+          <p class="text-xs text-gray-500 mt-1">In a recent survey only 27% of respondents say they want to stay in Guernsey.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyj260x1p1o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Young islanders concerned about their future</h3>
+          <p class="text-xs text-gray-500 mt-1">The Medical Officer Health Report shows 36% of young people are certain they will leave the island.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c87nw2dd7rjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'You could smell someone' who worked at Raleigh</h3>
+          <p class="text-xs text-gray-500 mt-1">The company was more than just a employer. For years, it was part of the fabric of Nottingham.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2kgwrv6gvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why the UK is dithering over what to do about e-scooters</h3>
+          <p class="text-xs text-gray-500 mt-1">Why is it taking so long for the government to regulate them, and what are the consequences of delay?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 22 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cn4nvn9w00no?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why is Selena Gomez being sued?</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC journalist Ana Guerra-Moore looks at why investors who backed Wondermind Global are claiming the pop star failed to fulfil promises.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/cly58dnde5yo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why airlines are warning over lithium-ion batteries</h3>
+          <p class="text-xs text-gray-500 mt-1">The airline industry wants passengers to be careful when travelling with lithium ion batteries.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Japanese firms are being so slow to use AI</h3>
+          <p class="text-xs text-gray-500 mt-1">Japanese risk aversion and conservatism blamed for slow AI take-up by the country's business sector.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwymw4434v7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Gen Z are planning for life without a state pension</h3>
+          <p class="text-xs text-gray-500 mt-1">Many younger people do not believe the state pension will exist when they are older</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 30 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8e2yp1gg37o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What's happening to UK interest rates and what does it mean for mortgages?</h3>
+          <p class="text-xs text-gray-500 mt-1">The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What is happening to UK prices?</h3>
+          <p class="text-xs text-gray-500 mt-1">UK inflation dropped slightly in June 2026, but higher energy costs are expected to push it back up.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c17rgd8e9gjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What do people want from Argos?</h3>
+          <p class="text-xs text-gray-500 mt-1">As Sainsbury agrees to sell Argos for £120m, we ask people if they still shop there, and what the new owners can do to compete with big online retailers like Amazon.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/clyj57g4kkeo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wetherspoons bans customers playing music from phones in pubs</h3>
+          <p class="text-xs text-gray-500 mt-1">The pub chain says the decision follows complaints about "other people's videos and amplified phone conversations".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cnvnl8gy22lo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Water bills set to rise for many after firms permitted extra funding</h3>
+          <p class="text-xs text-gray-500 mt-1">Ofwat has given provisional approval for 13 water companies to charge customers more to pay for investments.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2j1j5ypjdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US states call for big changes to Instagram and Facebook as Meta child privacy trial begins</h3>
+          <p class="text-xs text-gray-500 mt-1">US states are suing the social media giant to force an overhaul of its platforms for young users.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US says dozens of countries helped China dodge Trump's tariffs</h3>
+          <p class="text-xs text-gray-500 mt-1">A new US report said China had moved goods through nations with lower tariffs to dodge higher levies.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US retail giant receives $1bn boost from tariff refunds</h3>
+          <p class="text-xs text-gray-500 mt-1">The US chain said it received a $994 million pre-tax reimbursement, which resulted in its second quarter operating income rising to $2.6bn.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c78gp4y8d3eo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US inflation eases as food and fuel costs cool</h3>
+          <p class="text-xs text-gray-500 mt-1">Annual US inflation dipped to 3.4% in July, with food costs slowing and housing keeping prices slightly higher.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK economy grows but experts warn of challenging months ahead</h3>
+          <p class="text-xs text-gray-500 mt-1">Hot weather and the men's football World Cup boosted the economy but the Iran war may weigh on growth</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2d1gpx2k0o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Twitch users outraged as Amazon uses their content to train AI in opt-out feature</h3>
+          <p class="text-xs text-gray-500 mt-1">Users of the popular streaming platform criticised allowing Amazon to use their data by dafault.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cp30pz8d09jo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump sued over Truth Social's $100,000 early access service</h3>
+          <p class="text-xs text-gray-500 mt-1">The suit challenges Truth Social plan selling early access to Trump's market-moving posts.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cq6dpm5y0yyo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump pauses new tariffs on Canada for three days, saying deal close</h3>
+          <p class="text-xs text-gray-500 mt-1">The US president says the two sides are finalising documents to avert import taxes targeting a range of Canadian goods.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy9wz79ze29o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tributes to co-founder of John Pye auction house</h3>
+          <p class="text-xs text-gray-500 mt-1">A statement issued by the firm said "John lived a fantastic life full of laughter and hard work".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8xn7k2ldzxo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trainline, Virgin Atlantic and RED Driving School investigated over 'drip pricing'</h3>
+          <p class="text-xs text-gray-500 mt-1">The consumer watchdog said they were trying to find out if the three companies were not showing full prices upfront to customers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyjqe62574o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Track defect found near derailment site - report</h3>
+          <p class="text-xs text-gray-500 mt-1">Initial findings from an RAIB investigation show an "irregularity" at the site near Lewes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c4gx12v8z51o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tokenomics: Why making AI pay is tricky</h3>
+          <p class="text-xs text-gray-500 mt-1">Buyers of AI services are struggling to control costs and sellers are not sure how much to charge.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c872r52x7jgo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The furious dispute over what caused Air India flight 171 to crash</h3>
+          <p class="text-xs text-gray-500 mt-1">The final conclusions of the investigation have yet to be published, although more could become apparent in the coming days.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 10 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyk9exxp2qo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The critical tech staying safe by going underground</h3>
+          <p class="text-xs text-gray-500 mt-1">The war in Ukraine has spurred people to consider putting vital infrastructure underground.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c20ydrndr0wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The cost of being single – and how friends are teaming up to beat it</h3>
+          <p class="text-xs text-gray-500 mt-1">Many singles face extra costs for housing, bills, food and holidays but there are ways to ease the burden.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 04 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cly7dqprlnvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Global Story</h3>
+          <p class="text-xs text-gray-500 mt-1">Are we entering the Chinese Century, or is the Chinese Dream already fading for some?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/sounds/play/w3ct8mhx?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The £5 coffee that tells a story of global economic turmoil</h3>
+          <p class="text-xs text-gray-500 mt-1">Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 28 Ma</div>
+          <a href="https://www.bbc.co.uk/news/articles/cr5pp1m6z06o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Temporary ban on sale of disposable BBQs over wildfire risk</h3>
+          <p class="text-xs text-gray-500 mt-1">Single-use grills pose a "significant risk to the public" in current drought and heatwave conditions, the government warns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0jlyqdj6geo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Temporary ban on disposable BBQs as military deployed to help battle wildfires</h3>
+          <p class="text-xs text-gray-500 mt-1">Single-use grills pose a "significant risk to the public" in current drought and heatwave conditions, the government warns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0jlyqdj6geo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sun-tanned cauliflowers and knobbly spuds - the heatwave veg that's good to eat</h3>
+          <p class="text-xs text-gray-500 mt-1">British shoppers should expect to see more wonky vegetables due to repeated heatwaves.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c4g360z8d2lo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Spotify to add label for AI-generated artists and remove them from recommendations</h3>
+          <p class="text-xs text-gray-500 mt-1">The new feature, starting from mid-September, will tell listeners if an artist is AI-generated.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgxzmgejd5o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Shorts, strappy tops and sandals: What is acceptable to wear to work?</h3>
+          <p class="text-xs text-gray-500 mt-1">Here's how to style for success while keeping your cool - and where you and your boss stand on your wardrobe.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cre49389g1qo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Selena Gomez sued for alleged fraud over mental health company</h3>
+          <p class="text-xs text-gray-500 mt-1">Investors say the actor and singer did not take an "active role" in the company as promised.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8jn2811we4o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Royal Parks gardeners to strike over pay</h3>
+          <p class="text-xs text-gray-500 mt-1">Staff employed by sub-contractor Idverde are to strike after rejecting a 70p per hour pay rise.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cyvl0gp4963o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Protein or pickled garlic? What's new in ice cream</h3>
+          <p class="text-xs text-gray-500 mt-1">There's a constant battle in ice cream to come up with new flavours and to keep costs down.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c9826zl0945o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Parents 'watering down baby milk' over high costs</h3>
+          <p class="text-xs text-gray-500 mt-1">Moorside Baby Bank say parents are turning to unsafe practices over the rising cost of essentials.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cpq8p82gq49o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">PM admits cost of living help is not enough and hints at further support</h3>
+          <p class="text-xs text-gray-500 mt-1">The PM has announced a rake of measures to help people since taking office three weeks ago.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cgmkee248vdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Overhaul for Belfast cranes ahead of major contract</h3>
+          <p class="text-xs text-gray-500 mt-1">It is part of an investment of almost £100m as Harland & Wolff's Spanish owners prepare it for a major defence contract.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cedj7je0zlzo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI slows down training after its AI carried out hack</h3>
+          <p class="text-xs text-gray-500 mt-1">The ChatGPT-maker said training will be slowed for two weeks while it puts the upgrades in place.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c235dmndylzo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Monzo says issue with card payments and transfers now resolved</h3>
+          <p class="text-xs text-gray-500 mt-1">The digital bank said all of its services were now "back up and running"</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyrvxvl1eeo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mobile payments on the rise but cash decline slows</h3>
+          <p class="text-xs text-gray-500 mt-1">Nine in 10 mobile wallet users have their debit card loaded as their default payment method, new data shows.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cd7l9en2qrjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Meta hooked children on Facebook and Instagram, US court hears</h3>
+          <p class="text-xs text-gray-500 mt-1">Meta argued social media addiction does not exist, as a trial stemming from a major lawsuit brought by US states started.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cly5r7vr7q1o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Limit reduced for branded school uniform items</h3>
+          <p class="text-xs text-gray-500 mt-1">The States says the school uniform policy should be "a welcome relief" for families' budgets.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c20j3zrgzv2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jump in energy bills drives UK inflation to highest rate for four months</h3>
+          <p class="text-xs text-gray-500 mt-1">A 2.9% rise in inflation had been widely expected by economists, with Chancellor John Healey saying the Iran war “continues to impact prices here at home”.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cdrv7jr8n74o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Job vacancies at five-year low as smaller firms scale back recruitment</h3>
+          <p class="text-xs text-gray-500 mt-1">Small firms cite labour and operating costs as reasons for scaling back hiring, the UK's statistics body says.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cn9nwx090v9o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jeff Bezos and Liverpool explained</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC Sport's Sam Harris breaks down the potential new investment of Jeff Bezos into Liverpool.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.bbc.co.uk/sport/football/videos/cn0nw1j48pjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jaguar Land Rover owner Tata Group's chairman to step down</h3>
+          <p class="text-xs text-gray-500 mt-1">Chandrasekaran said he would not seek reappointment when his term ends due to a lack of support from the Tata Sons board.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c1512909pgpo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Inflation is heating up but don't expect another crisis</h3>
+          <p class="text-xs text-gray-500 mt-1">Rising living costs could heap pressure on PM Andy Burnham though it depends what happens in the coming months.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cj63jr5r09zo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'I'm in Barbados': The dos and don'ts of writing an out-of-office reply</h3>
+          <p class="text-xs text-gray-500 mt-1">As we hit peak holiday season, the BBC looks at the dos and don'ts of composing a good out-of-office message.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c934xy32919o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'I used food banks while my ex owed thousands in child maintenance'</h3>
+          <p class="text-xs text-gray-500 mt-1">Parents have told BBC Panorama the agency tasked with helping to secure financial support for children after separation or divorce is driving them to breaking point.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/c5yvdeen2z2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">I survived two years as prime minister in a hit new game - then my cabinet deserted me</h3>
+          <p class="text-xs text-gray-500 mt-1">Mobile game No 10: Full Confidence recently ranked above Minecraft on the UK App Store paid games chart</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'I started in my 20s and made £8,000': Why women are often better investors than men</h3>
+          <p class="text-xs text-gray-500 mt-1">Women can make higher returns but only about a quarter of UK women have investments, compared with about 40% of men.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/czdmgmzll1ro?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'I paid £400 for a Prada bag on Vinted - only to find it was fake'</h3>
+          <p class="text-xs text-gray-500 mt-1">A woman who paid £400 for a Prada handbag on Vinted later discovered it was a fake.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cp308wy8zk9o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'I lost $14,000 in a month': Investors hit by Korean stock market's wild swings</h3>
+          <p class="text-xs text-gray-500 mt-1">Some traders are reeling from heavy losses after a brutal correction in South Korea's stock market.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c2k7zj4knwlo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">I got an £89 refund – how to cancel and  avoid unwanted subscriptions</h3>
+          <p class="text-xs text-gray-500 mt-1">After the PM announced a crackdown on subscription traps, readers share how they got into and out of unwanted plans.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/ckg6x3n5erpo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'I feel like I dug my own grave': The workers caught in the AI transition</h3>
+          <p class="text-xs text-gray-500 mt-1">AI is reshaping the Philippines' outsourcing industry, raising questions over the future of the industry.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 04 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cgr7nxve05go?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How the High Street became a window on our political instability</h3>
+          <p class="text-xs text-gray-500 mt-1">High Streets have declined in recent years. What does this tell us about the UK?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 07 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cq5p59286v5o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How tech is helping in the battle against wildfires</h3>
+          <p class="text-xs text-gray-500 mt-1">Tech is being used to watch for wildfires but firefighters are still needed to put them out.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 04 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c62enveg1dpo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How affordable are Edinburgh's festivals?</h3>
+          <p class="text-xs text-gray-500 mt-1">The city is no stranger to complaints about soaring prices during August - but are costs on the rise?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/czdmn1re7zgo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Homes near pylons to get £250 a year off energy bills – first sites revealed</h3>
+          <p class="text-xs text-gray-500 mt-1">Households living within 1,600ft of upgraded pylons will get £250 a year off their electricity bills.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8rn42jp7d6o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Harvey Nichols bought by owner of Sports Direct</h3>
+          <p class="text-xs text-gray-500 mt-1">The department store made famous by sitcom Absolutely Fabulous had warned it would cease trading.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cd69p89gl6xo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Global borrowing costs hit fresh highs over oil, AI and inflation concerns</h3>
+          <p class="text-xs text-gray-500 mt-1">Interest rates on long-term US, UK, German and Japanese government debt have soared.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c1k1x1zdywdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">From jumpers to slug pellets - how British wool is back in demand</h3>
+          <p class="text-xs text-gray-500 mt-1">An increased demand in wool has meant prices have increased more than 70% in the last year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8xnkjwdn5wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Flock boss admits surveillance firm took too long to act over police abuse</h3>
+          <p class="text-xs text-gray-500 mt-1">US police officers have quit after using licence plate-reading cameras to track romantic partners.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/crrv1rjwgl9o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">First OpenAI, now Meta - why do AI hacks keep happening?</h3>
+          <p class="text-xs text-gray-500 mt-1">A flood of companies are revealing AI models gained access to the internet - with real consequences.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Film commission backs Amazon MGM expansion of Berkshire studios</h3>
+          <p class="text-xs text-gray-500 mt-1">The Berkshire film studio was previously home to iconic horror studio Hammer Films.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c9d8wjvd2q4o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ferguson shipyard to cut a quarter of its workforce</h3>
+          <p class="text-xs text-gray-500 mt-1">The state-owned yard on the Clyde will lose 70 of its 283 staff through a voluntary redundancy process as it awaits confirmation of promised new orders.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c20e2qe1lqpo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Engine parts smashed Ryanair window that man's head was sucked out of, report says</h3>
+          <p class="text-xs text-gray-500 mt-1">A preliminary report by US investigators says an engine fan blade broke on last month's flight from Greece to Germany.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cr59j4z3vl8o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Electric vehicle sales targets could be cut after pressure from car makers</h3>
+          <p class="text-xs text-gray-500 mt-1">The government says it is considering cutting the new electric car sales target from 80% to 50% by 2030.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c1l1yj0zd9no?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Disney and ABC sue Trump's media regulator to stop early licence renewal</h3>
+          <p class="text-xs text-gray-500 mt-1">The network accuses the administration of retaliating against ABC because it "disapproves of what ABC broadcasts".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2rzr49vr2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Discord ordered to suspend livestreams in Brazil</h3>
+          <p class="text-xs text-gray-500 mt-1">Discord told the BBC it was "thoughtfully reviewing" the order by Brazil's data protection agency and it was "committed to user safety"</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cgewpqxyrddo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Disabled people in England to get 24-hour free bus travel</h3>
+          <p class="text-xs text-gray-500 mt-1">The change, which has been welcomed by campaign groups, will come into effect in England from April.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cjwx5vx21y2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chinese robotics giant Unitree soars in stock market debut</h3>
+          <p class="text-xs text-gray-500 mt-1">Shares in the world's biggest humanoid robot maker started trading on Shanghai's Star market on Wednesday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0qv4w9492zo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Charity awarded £100k for back to school support</h3>
+          <p class="text-xs text-gray-500 mt-1">From September, uniforms will be limited to three items requiring a school logo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cgjep51d0xjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Changing pubs into homes to be made harder under new rules</h3>
+          <p class="text-xs text-gray-500 mt-1">The rules will come into force on Monday along with other changes to planning policy.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/clyllg1v0kdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Carney's final chance to convince Trump as US-Canada trade deadline looms</h3>
+          <p class="text-xs text-gray-500 mt-1">Negotiators want a deal to avoid fresh US tariffs - though Canadians are not in the mood to offer many concessions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/crl7600rpnko?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Business Daily</h3>
+          <p class="text-xs text-gray-500 mt-1">Guinness owner Diageo launches a reset after profits fall and shares slide</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/sounds/play/w3ct8glp?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham warned Iran war could hit UK growth next year</h3>
+          <p class="text-xs text-gray-500 mt-1">The conflict in the Middle East has pushed up oil and fuel prices, and also disrupted supply chains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c5y3egv4m4mo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bumble divides users by ditching its signature 'women-first' chat rule</h3>
+          <p class="text-xs text-gray-500 mt-1">The dating app's boss says the move is in response to a successful trial and a change in what users want.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvglzlj81x2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'Banned over a pair of £2 sandals': Why some sellers are complaining about Vinted</h3>
+          <p class="text-xs text-gray-500 mt-1">Several thousands of Vinted users say they have been wrongly suspended or permanently banned from the preloved app.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2kwnrn5zpo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bakery buys comedian's former sites after closure</h3>
+          <p class="text-xs text-gray-500 mt-1">Bakery business Janes Pantry confirms its plans to reopen at least 20 of the Coughlans shops.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cr491p70dv5o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Argos is getting a makeover - but can it attract new shoppers?</h3>
+          <p class="text-xs text-gray-500 mt-1">The retailer has been around for 50 years but struggled to compete with newer rivals such as Amazon. Can its new owners turn it around?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c2lqvwewgp2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">American Airlines to bring back TV screens on US flights</h3>
+          <p class="text-xs text-gray-500 mt-1">It is also adding more premium seats, with the changes aimed at improving the travel experience and boosting revenue.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c70glp55y95o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI to help planes avoid climate-warming 'sky graffiti'</h3>
+          <p class="text-xs text-gray-500 mt-1">A new UK trial hopes to reduce the condensation trails from planes, which can trap heat in the Earth's atmosphere.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

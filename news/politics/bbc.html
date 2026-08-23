@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bbc — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/politics.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Politics</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Politics / bbc</h1>
+      <span class="text-sm text-gray-400">103 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zero hours crackdown could cost firms up to £2.9bn a year</h3>
+          <p class="text-xs text-gray-500 mt-1">Labour's employment rights bill crackdown on zero hours contracts could cost businesses up to £2.9bn a year, new official analysis has found.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0l525k76d0o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zack Polanski reported to police over guillotine post</h3>
+          <p class="text-xs text-gray-500 mt-1">Zack Polanski reported to police over guillotine post</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 28 Ju</div>
+          <a href="https://www.bbc.co.uk/news/videos/c3d34n4j3v2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wildfire phone alert was 'entirely appropriate', government says</h3>
+          <p class="text-xs text-gray-500 mt-1">Millions of phones across England and Wales bleeped with a "severe alert" notification on Friday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwy4zepzp7eo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who's in Andy Burnham's cabinet?</h3>
+          <p class="text-xs text-gray-500 mt-1">An in-depth look at which Labour MPs have been appointed to cabinet roles by new Prime Minister Andy Burnham</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 28 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/ckg4we9g58do?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who voted for Count Binface and why?</h3>
+          <p class="text-xs text-gray-500 mt-1">Cheaper Flakes and using Adele to fund the NHS - voters on why they support a man dressed as a bin.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cj36gyxv2lyo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who is new chancellor John Healey? Labour veteran who quit as defence secretary</h3>
+          <p class="text-xs text-gray-500 mt-1">The former defence secretary is seen as a safe pair of hands - and is now in charge of the government's finances.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 20 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/ce85y9lm81no?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Where does this unorthodox by-election victory leave Nigel Farage?</h3>
+          <p class="text-xs text-gray-500 mt-1">As expected, the Reform UK leader easily won the Clacton by-election but was nowhere to be seen after the result.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgvjnyz8k7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What will Devon's four new councils mean for you?</h3>
+          <p class="text-xs text-gray-500 mt-1">The shake-up will need to consider everything from leisure centres and planning to recycling.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/cglj6xd99gxo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What do people in Clacton think of Farage's by-election win?</h3>
+          <p class="text-xs text-gray-500 mt-1">The Reform leader wins the by-election he triggered, and gains more votes than last time.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvg947z1we1o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What could happen to prisoner early release scheme now?</h3>
+          <p class="text-xs text-gray-500 mt-1">The PM is changing the scheme for some prisoners after a police officer's widow said the possible early release of his killers was "deplorable".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 04 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c62vqj7ged4o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'Welcome to one of the most bizarre by-elections in recent history'</h3>
+          <p class="text-xs text-gray-500 mt-1">Votes are being counted in the Clacton by-election, with results expected in the early hours of Friday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/c5y4zrxgjq2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Watch: Counting under way in Clacton by-election</h3>
+          <p class="text-xs text-gray-500 mt-1">Votes are being counted in the Clacton by-election, with results expected in the early hours of Friday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/ckge4dxdy3no?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning</h3>
+          <p class="text-xs text-gray-500 mt-1">Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its "hour of need".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK economy grows but experts warn of challenging months ahead</h3>
+          <p class="text-xs text-gray-500 mt-1">Hot weather and the men's football World Cup boosted the economy but the Iran war may weigh on growth</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2d1gpx2k0o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK diplomats no longer get hardship bonus for being posted to Buenos Aires</h3>
+          <p class="text-xs text-gray-500 mt-1">Civil servants are entitled to extra money for working in difficult or dangerous cities around the world.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cly5p995ykko?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK defends seizing shadow fleet tanker after Putin threat</h3>
+          <p class="text-xs text-gray-500 mt-1">The UK government says it is "disrupting and deterring shadow fleet vessels" in accordance with the law.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cn0npn249qvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK-made drones strike targets inside Russia</h3>
+          <p class="text-xs text-gray-500 mt-1">The drones have been used for the first time in mainland Russia to hit military and industrial targets.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c5ywwv2pp44o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tories vow to change law to stop unauthorised traveller sites</h3>
+          <p class="text-xs text-gray-500 mt-1">If elected, the Conservatives say they would amend the Town and Country Planning Act.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cp30k14w2xqo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The serial candidates standing against Farage in the Clacton by-election</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC Verify takes a look at the serial candidates standing in Clacton, how they fared in previous elections, and whether they have ever won enough votes to get their deposits back.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cd69q4yg0ggo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Nowak murder has lit a match under British politics. This is how we got here</h3>
+          <p class="text-xs text-gray-500 mt-1">The police response to the murder of Henry Nowak has triggered a heated transatlantic debate.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 06 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c39297vxmw2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Global Story</h3>
+          <p class="text-xs text-gray-500 mt-1">In Brazil and elsewhere, leaders raise concerns over alleged election meddling by the US.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/sounds/play/w3ct8ml5?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Temporary ban on sale of disposable BBQs over wildfire risk</h3>
+          <p class="text-xs text-gray-500 mt-1">Single-use grills pose a "significant risk to the public" in current drought and heatwave conditions, the government warns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0jlyqdj6geo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Temporary ban on disposable BBQs as military deployed to help battle wildfires</h3>
+          <p class="text-xs text-gray-500 mt-1">Single-use grills pose a "significant risk to the public" in current drought and heatwave conditions, the government warns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0jlyqdj6geo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swinney calls for Burnham rethink on Chinese factory in Highlands</h3>
+          <p class="text-xs text-gray-500 mt-1">The first minister is dismissing claims he is putting political point scoring before national security concerns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy8e270vvq2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Suspended Reform UK member vows to fight to remain in party</h3>
+          <p class="text-xs text-gray-500 mt-1">Tim Montgomerie says his appeal will be a test of whether the party can tolerate free speech.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c4gd1mez8zvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sir John Curtice: The 'Burnham bounce' is real but it's not massive</h3>
+          <p class="text-xs text-gray-500 mt-1">The governing party's poll ratings have improved but they're only just ahead of Reform.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 01 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c4g4djygr73o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Should Glasgow have its own mayor?</h3>
+          <p class="text-xs text-gray-500 mt-1">The BBC's David Wallace Lockhart asks if Scotland's largest city should have its own elected mayor.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 31 Ju</div>
+          <a href="https://www.bbc.co.uk/news/videos/c3ekz5n0dvqo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Shapps blocked from standing again for the Conservatives</h3>
+          <p class="text-xs text-gray-500 mt-1">Kemi Badenoch tells the BBC she leads a "new party full of new people" as ex-MP is rejected as a candidate.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 23 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyrjnwe8xlo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Scottish Labour leader hopefuls warn against party divisions</h3>
+          <p class="text-xs text-gray-500 mt-1">Monica Lennon, Joe Fagan and Michael Marra are competing to fill the post vacated by Anas Sarwar.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy8m2rzp94yo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Scottish Labour leader Anas Sarwar set to become a minister in Burnham's government</h3>
+          <p class="text-xs text-gray-500 mt-1">It would mean Sarwar leaving the Scottish Parliament and his leader role, then taking up a seat in the House of Lords.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 22 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/ce970y1n7plo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sackings, cabinet surprises and policies: Burnham's first 24 hours as PM</h3>
+          <p class="text-xs text-gray-500 mt-1">The new prime minister enters Number 10 in a flurry of activity - but he is still facing calls for a snap election.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 21 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c4gjz907pppo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ruthless plotter? Flip-flopper? Dad dancer? Insiders reveal the real Andy Burnham</h3>
+          <p class="text-xs text-gray-500 mt-1">Who is the real Andy Burnham? Laura Kuenssberg talks to more than 20 people who know him to work it out</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 18 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c3043vl2l7zo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Row after Tory bid to make Burnham face MPs before autumn fails</h3>
+          <p class="text-xs text-gray-500 mt-1">The Tories have accused Labour of "running scared" after ministers denied them a chance to delay Parliament's summer break.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 14 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cj6g61y6lpro?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Reform proposes ban on most benefits for foreign nationals in UK</h3>
+          <p class="text-xs text-gray-500 mt-1">The move would require renegotiating the UK's Brexit deal and could risk stripping British expats living in the EU of similar rights.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cly555430nno?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Reform councillor suspended over social media posts</h3>
+          <p class="text-xs text-gray-500 mt-1">In X posts from 2019, Kirklees councillor Dave Rowan appeared to make threats about John Bercow.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwy429rw9l7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Reform UK plan would overhaul welfare system with £50bn in savings</h3>
+          <p class="text-xs text-gray-500 mt-1">The party plans to release a full 50-page plan on Monday outlining their proposed changes were they to come to power.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cz977nxww1jo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Reform UK benefits ban for foreign nationals would include EU citizens</h3>
+          <p class="text-xs text-gray-500 mt-1">The move would require renegotiating the UK's Brexit deal and could risk stripping British expats living in the EU of similar rights.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cly555430nno?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Prisoner release row proving to be Burnham's first big test as PM</h3>
+          <p class="text-xs text-gray-500 mt-1">The prison overcrowding crisis presents the new PM with a dilemma for which there are only unpalatable choices.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cdewx3lpd2eo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Poorest areas should not house all asylum seekers, says Burnham</h3>
+          <p class="text-xs text-gray-500 mt-1">The prime minister was asked about protests over plans to use a former military base to house asylum seekers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c204d4z1gg8o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">PM admits cost of living help is not enough and hints at further support</h3>
+          <p class="text-xs text-gray-500 mt-1">The PM has announced a rake of measures to help people since taking office three weeks ago.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cgmkee248vdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Our exclusive behind-the-scenes access at No 10 as Andy Burnham became PM</h3>
+          <p class="text-xs text-gray-500 mt-1">Laura Kuenssberg was given unprecedented access to the new prime minister’s first days in power.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 27 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c79gdjlv78wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">North East mayors disagree over income tax revenue</h3>
+          <p class="text-xs text-gray-500 mt-1">North East Mayor Kim McGuinness and Tees Valley Mayor Ben Houchen disagree on income tax revenue use.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/crk573j6jdko?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">New health minister needs 'determination to do difficult things'</h3>
+          <p class="text-xs text-gray-500 mt-1">Jon Burrows has said he will confirm on Thursday who will replace Mike Nesbitt as health minister.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/c9d8z085p7eo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Muted response as Nigel Farage declared winner</h3>
+          <p class="text-xs text-gray-500 mt-1">Farage won 22,239 votes, with Count Binface in second with 9,455 votes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/c5ydzlry13zo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ministers push ahead with housing asylum seekers on ex-military sites</h3>
+          <p class="text-xs text-gray-500 mt-1">The government says former MoD sites are the best option despite protests from people living nearby.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/ckgdpzg0eyno?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Man guilty of harassing MP Stella Creasy on Tube train</h3>
+          <p class="text-xs text-gray-500 mt-1">The man was "abusive and aggressive" towards the Walthamstow Labour MP on a Victoria line train.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cgk40432vv5o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">MPs make fireworks plea in 'tinderbox' conditions</h3>
+          <p class="text-xs text-gray-500 mt-1">MPs say crews are under pressure due to wildfires, including the large one at a nature reserve.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cd7lpgdeev7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Louise Haigh: Labour power broker behind Burnham's rise</h3>
+          <p class="text-xs text-gray-500 mt-1">The Sheffield MP's return to the cabinet comes after she emerged as one of the PM's key political allies.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 20 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c87n0x974vjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Laura Kuenssberg: Our exclusive behind-the-scenes access at No 10 as Andy Burnham became PM</h3>
+          <p class="text-xs text-gray-500 mt-1">Laura Kuenssberg was given unprecedented access to the new prime minister’s first days in power.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 27 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c79gdjlv78wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Key takeaways as Andy Burnham becomes PM</h3>
+          <p class="text-xs text-gray-500 mt-1">The new Labour leader has formally taken office and set out his priorities for power in No 10.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 20 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c80nln7zgp7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jump in energy bills drives UK inflation to highest rate for four months</h3>
+          <p class="text-xs text-gray-500 mt-1">A 2.9% rise in inflation had been widely expected by economists, with Chancellor John Healey saying the Iran war “continues to impact prices here at home”.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cdrv7jr8n74o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Join EU migration pact to tackle small boats, says Ed Davey</h3>
+          <p class="text-xs text-gray-500 mt-1">The Liberal Democrats say taking part in the scheme would "destroy the business model" of gangs arranging Channel crossings.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8dn3n6pvyvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">I survived two years as prime minister in a hit new game - then my cabinet deserted me</h3>
+          <p class="text-xs text-gray-500 mt-1">Mobile game No 10: Full Confidence recently ranked above Minecraft on the UK App Store paid games chart</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How the Clacton by-election count will take place</h3>
+          <p class="text-xs text-gray-500 mt-1">The count with the longest ballot paper in British history is due to start at 22:00 BST on Thursday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwy42enq5qzo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How one man gets new laws passed - again and again</h3>
+          <p class="text-xs text-gray-500 mt-1">Ron Bailey has been quietly changing the law for the past 40 years - how does he do it?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/ckg4kn44l8lo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Homes near pylons to get £250 a year off energy bills – first sites revealed</h3>
+          <p class="text-xs text-gray-500 mt-1">Households living within 1,600ft of upgraded pylons will get £250 a year off their electricity bills.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8rn42jp7d6o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">He'll be the first Andy in No 10 - but his rise to power has been decades in the making</h3>
+          <p class="text-xs text-gray-500 mt-1">The outgoing Greater Manchester mayor is lining up a third attempt to be Labour leader following his return to Westminster.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 20 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cp8pml5z8p6o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Has the by-election changed things for Clacton?</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC East's political correspondent Andrew Sinclair analyses Nigel Farage's victory.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy7430n5p44o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Greens review social media operation as Polanski row rumbles on</h3>
+          <p class="text-xs text-gray-500 mt-1">The Green Party is grappling with how to manage its social media following a controversial post by its leader.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 30 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cz97ke8dn9wo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Green councillor charged with assaults</h3>
+          <p class="text-xs text-gray-500 mt-1">Siobhan Harper-Nunes is accused of attacking five people including police officers, police say.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/czdm20051pzo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Five headaches Andy Burnham will have to deal with as PM</h3>
+          <p class="text-xs text-gray-500 mt-1">From defence spending to housing - the next UK leader has a series of challenges to deal with.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 17 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c62122pgjqdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fifty police chiefs call for PM to prevent early release of PC Harper's killers</h3>
+          <p class="text-xs text-gray-500 mt-1">The intervention comes after Andy Burnham said he was "confident" the early release of PC Harper's killers could be prevented.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyrkz9ryr5o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Farage's by-election victory won't stop questions about finances</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage triggered the Clacton by-election and the result was predictable - so what did he achieve?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgwz9delwwo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Farage faces renewed watchdog probe after Clacton by-election victory</h3>
+          <p class="text-xs text-gray-500 mt-1">The investigation into a £5m gift received by Farage reopens, as he returns as the MP for Clacton.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c62x1gr62m1o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Faisal Islam: The UK's Trump trade deal no longer looks world-beating</h3>
+          <p class="text-xs text-gray-500 mt-1">While the US tariffs imposed on the UK are effectively unchanged, other countries now have a better deal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 24 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c9v4ymwddwgo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'Every day I'm just winging it': The families hoping for social care reform</h3>
+          <p class="text-xs text-gray-500 mt-1">As Andy Burnham outlines his aim to overhaul social care, BBC News speaks to the families caring for loved ones.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 29 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/ce8lzdgzee9o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Estonia rejects proposals to take prisoners from UK jails</h3>
+          <p class="text-xs text-gray-500 mt-1">Estonia's justice minister rules out a deal with the UK after Reform and the Conservatives suggested renting prison space abroad.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cly5pj0qyd4o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Emergency phone alert put domestic abuse victims at risk, campaigners say</h3>
+          <p class="text-xs text-gray-500 mt-1">The alert took many by surprise when it was sent to millions of phones on Friday night - but it may have also put vulnerable people at risk.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyllkz80dlo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Early release scheme risks more serious crimes, probation chief inspector warns</h3>
+          <p class="text-xs text-gray-500 mt-1">The chief inspector of probation for England and Wales tells the BBC services are already under "unprecedented pressure".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c39e3y1y2zjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Does Reform's plan to cut £50bn in welfare spending add up?</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC Verify breaks down what the party says it wants to do to cut the benefits bill - and how realistic it is.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/crl76jkxel3o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Disabled people in England to get 24-hour free bus travel</h3>
+          <p class="text-xs text-gray-500 mt-1">The change, which has been welcomed by campaign groups, will come into effect in England from April.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cjwx5vx21y2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Disability campaigners call for Burnham to delay assisted dying bill</h3>
+          <p class="text-xs text-gray-500 mt-1">Activists say introducing assisted dying without reforming care puts "sick and disabled people's lives at risk".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/clyxpkyg88xo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">DUP MP Jim Shannon charged with common assault of a woman</h3>
+          <p class="text-xs text-gray-500 mt-1">The incident is alleged to have happened on 1 October 2023.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cdew0l95egwo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Count Binface 'gratified' for being present at declaration</h3>
+          <p class="text-xs text-gray-500 mt-1">Count Binface - whose real name is Jonathan David Harvey - received 9,455 votes for the Clacton by-election.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/c20eyx09949o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Count Binface gets almost 10,000 votes in Clacton by-election</h3>
+          <p class="text-xs text-gray-500 mt-1">The self-styled intergalactic space warrior finished second to Reform UK leader Nigel Farage.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/crmr0kny7ego?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Could Reform really cut £50bn in welfare?</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC Verify has been breaking down Reform's plans to save more than £50bn a year from the welfare bill - and how realistic it is.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/cre4rl7dprvo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chris Mason:  Where does this unorthodox by-election victory leave Nigel Farage?</h3>
+          <p class="text-xs text-gray-500 mt-1">As expected, the Reform UK leader easily won the Clacton by-election but was nowhere to be seen after the result.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgvjnyz8k7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chris Mason: What his first week in power tells us about Andy Burnham</h3>
+          <p class="text-xs text-gray-500 mt-1">The fledgling Burnham administration has been seeking to find its feet and make a decent first impression at the same time, the BBC's political editor Chris Mason explains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 24 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cz97ngjpg3lo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chris Mason: Sarwar ministerial role sees promotion of another Starmer critic</h3>
+          <p class="text-xs text-gray-500 mt-1">Months after calling on Keir Starmer to quit, the Scottish Labour leader is set to become a minister in Burnham's government, the BBC's political editor writes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 22 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2rv14em3jo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Children in temporary accommodation hits record high</h3>
+          <p class="text-xs text-gray-500 mt-1">The number of children living in temporary accommodation has hit its 18th quarterly high in a row.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c5yw7nxdwlpo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Changing pubs into homes to be made harder under new rules</h3>
+          <p class="text-xs text-gray-500 mt-1">The rules will come into force on Monday along with other changes to planning policy.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/clyllg1v0kdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cash-strapped Thames Water poses big test for Burnham</h3>
+          <p class="text-xs text-gray-500 mt-1">Despite returning to profit after hiking bills 40%, the deeply troubled company is far from out of the woods.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 15 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c4gygy43103o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Car washes and vape shops can still sponsor skilled foreign workers despite visa changes</h3>
+          <p class="text-xs text-gray-500 mt-1">The rules were tightened in July 2025 to restrict the scheme mostly to graduate-level employees who would be earning at least £41,700.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cj639rx147eo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Can Burnham's casual style survive contact with No 10?</h3>
+          <p class="text-xs text-gray-500 mt-1">When Burnham becomes PM, he'll find it harder to wear the wardrobe that's central to his political brand.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 19 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgq2qr9gxdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Can Andy Burnham solve the housing crisis?</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC Verify has looked at the scale of the housing challenge facing Burnham when he becomes PM.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 16 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c3wygjz632qo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Calls for public inquiry into Jason Arday 'witch hunt'</h3>
+          <p class="text-xs text-gray-500 mt-1">Lord Simon Woolley said Arday had been "hounded" by the media and pursued relentlessly.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwymmp30711o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham's 'Manchesterism' got him to No 10 - but will it work for the UK?</h3>
+          <p class="text-xs text-gray-500 mt-1">Economics editor Faisal Islam examines whether the north-west city can be a template for the entire country.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 03 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/clyl3z2xld8o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham warned Iran war could hit UK growth next year</h3>
+          <p class="text-xs text-gray-500 mt-1">The conflict in the Middle East has pushed up oil and fuel prices, and also disrupted supply chains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c5y3egv4m4mo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham urges shops not to sell disposable BBQs over wildfire risks</h3>
+          <p class="text-xs text-gray-500 mt-1">The PM wants the public to avoid using single-use grills during the current spell of extremely dry weather.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cr59p2nr6dqo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham unveils plan to get rough sleepers off streets for Christmas</h3>
+          <p class="text-xs text-gray-500 mt-1">Rough sleepers in England will be offered housing, in a move likened to the “Everyone In” initiative during the pandemic.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgvy2n6grno?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham tells cabinet to tackle living costs at first meeting</h3>
+          <p class="text-xs text-gray-500 mt-1">The new prime minister chaired his first cabinet after announcing a cut to VAT on household electricity.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 21 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cx2vp4x7gkxo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham set for No 10: BBC correspondents on what Trump, Putin and others will make of him</h3>
+          <p class="text-xs text-gray-500 mt-1">In the US, China, Europe, Russia and elsewhere, how is the UK's expected new prime minister regarded?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 12 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cn8qzlvlz81o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham says he's not embarrassed about hoax message exchange</h3>
+          <p class="text-xs text-gray-500 mt-1">The PM communicated with a person posing as Susie Wiles, the chief of staff to Donald Trump.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c5y34zrg668o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham received £345,000 of donations ahead of becoming PM</h3>
+          <p class="text-xs text-gray-500 mt-1">The prime minister lists his financial interests for the first time since returning to Parliament.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c141d4l0mgko?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham has big ideas - but what will they cost?</h3>
+          <p class="text-xs text-gray-500 mt-1">Every tricky decision and trade off is being watched by the country and the markets at the same time</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 20 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c9357rlk494o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham faces unpopularity test over prisons dilemma</h3>
+          <p class="text-xs text-gray-500 mt-1">The early release conundrum has given the new PM his first taste of tricky political decision-making.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cn5n3pdlykdo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Burnham does not rule out wealth tax</h3>
+          <p class="text-xs text-gray-500 mt-1">The expected next PM says he may have to "ask for a little more" in tax and warns of "difficult" choices.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 15 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c89nww3z99po?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ann Widdecombe's loved ones gather for her funeral</h3>
+          <p class="text-xs text-gray-500 mt-1">A requiem mass is held for the former MP at Buckfast Abbey in Devon, near her Dartmoor home.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cvgwz81w892o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Angela Rayner: Cabinet comeback for one of Labour's biggest names</h3>
+          <p class="text-xs text-gray-500 mt-1">The potential contender to replace Keir Starmer is now back in the cabinet under Andy Burnham.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 21 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cqlz3p0ryylo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Andy Burnham's plan to collaborate with social media creators</h3>
+          <p class="text-xs text-gray-500 mt-1">The new prime minister plans to work with influencers and social media creators to get his message out.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 23 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy4k74xj9lyo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Andy Burnham's first week pledges - how much do they add up to?</h3>
+          <p class="text-xs text-gray-500 mt-1">BBC Verify has looked at how much Burnham's new spending commitments cost and how they will be paid for</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 24 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cy078kj0ezyo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Andy Burnham wants to fix social care - what are the options?</h3>
+          <p class="text-xs text-gray-500 mt-1">With Andy Burnham saying he wants to bring "substantial change" to social care in England, BBC Verify looks at what could be done.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 29 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cj4k54g0ldjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Analysis: Burnham's policy choices reveal what kind of PM he wants to be</h3>
+          <p class="text-xs text-gray-500 mt-1">The new prime minister has begun to set out key policies - starting with a vow to end rough sleeping.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 20 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c3r0x5nzg0eo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

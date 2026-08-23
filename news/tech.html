@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../news.html" class="text-sm text-blue-600 hover:underline">&larr; Back to sources</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Tech (all)</h1>
+      <span class="text-sm text-gray-400">30 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">You can Venmo your college tuition, for some reason</h3>
+          <p class="text-xs text-gray-500 mt-1">Kids these days don't know how good they have it.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/you-can-venmo-your-college-tuition-for-some-reason/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukrainian drones overwhelm Russian tanks’ new active protection system—for now</h3>
+          <p class="text-xs text-gray-500 mt-1">Tanks with defensive tech for shooting down drones are still proving vulnerable.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/ukrainian-drones-overwhelm-russian-tanks-new-active-protection-system-for-now/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">X-rays add new twist to narwhal's spiral tusk</h3>
+          <p class="text-xs text-gray-500 mt-1">New study finds that the tusks have not one but two spirals, twisting in opposite directions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/x-rays-add-new-twist-to-narwhals-spiral-tusk/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Download: how people really use AI, and Flock’s design choices</h3>
+          <p class="text-xs text-gray-500 mt-1">This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. We still don’t know how people are really using AI...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">We still don’t know how people are really using AI</h3>
+          <p class="text-xs text-gray-500 mt-1">AI companies like Anthropic and OpenAI regularly publish reports on how people are using products like Claude and ChatGPT, but they only release the data they want us to see, AI researchers say.&#160;...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The role of the astronaut is in flux</h3>
+          <p class="text-xs text-gray-500 mt-1">When the four astronauts on board NASA’s Artemis II swung around the moon earlier this year, they set a new record for the farthest humans have ever ventured from Earth, surpassing the distance set by...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/18/1141614/book-review-astronaut-role-in-flux/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US wait times for cancer surgeries are getting longer and longer</h3>
+          <p class="text-xs text-gray-500 mt-1">Study finds wait times for cancer surgeries hit 10-year high.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/health/2026/08/us-wait-times-for-cancer-surgeries-are-getting-longer-and-longer/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Writer introduces new AI model and upgraded harness to contain token costs</h3>
+          <p class="text-xs text-gray-500 mt-1">Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Virgin Galactic wants your help naming its new Delta class spaceship</h3>
+          <p class="text-xs text-gray-500 mt-1">Will it be the VSS...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/virgin-galactic-wants-your-help-naming-its-new-delta-class-spaceship/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukrainian drones wipe out entire US tank brigade in live war game</h3>
+          <p class="text-xs text-gray-500 mt-1">Ukrainian drone pilots teach the US military and NATO hard battlefield lessons.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/ukrainian-drones-wipe-out-entire-us-tank-brigade-in-live-war-game/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">X open sources its ranking algorithm, letting users see if they’ve been ‘shadowbanned’</h3>
+          <p class="text-xs text-gray-500 mt-1">X is expanding the open source code behind its 'For You' feed and launching new transparency tools that show users when its ranking systems have affected their accounts or posts.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/x-open-sources-its-ranking-algorithm-letting-users-see-if-theyve-been-shadowbanned/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who really needs a cocktail robot?</h3>
+          <p class="text-xs text-gray-500 mt-1">Bartesian's cocktail makers would be best described like a Keurig or Nespresso machine, but for alcoholic drinks.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/bartesian-duet-cocktail-maker-review/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">We've flown a radiation-blocking vest to the Moon and back, and it worked</h3>
+          <p class="text-xs text-gray-500 mt-1">Let's shield the astronauts instead of the spacecraft.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/weve-flown-a-radiation-blocking-vest-to-the-moon-and-back-and-it-worked/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Download: kids’ thoughts on AI, and female clones of male mice</h3>
+          <p class="text-xs text-gray-500 mt-1">This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How kids feel about AI, in their own words —Jen Sw...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/13/1141896/the-download-kids-thoughts-on-ai-female-clones-male-mice/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What’s behind this summer’s heat, and why 2027 could be worse</h3>
+          <p class="text-xs text-gray-500 mt-1">This summer has been a scorcher for much of the Northern Hemisphere. June and July marked the hottest two-month stretch in Europe since record-keeping began. The contiguous US endured its hottest mont...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/13/1141788/summer-heat-el-nino/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why people aren’t buying Mark Zuckerberg’s AI future</h3>
+          <p class="text-xs text-gray-500 mt-1">On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wildfire smoke now bigger prenatal threat than human sources of air pollution</h3>
+          <p class="text-xs text-gray-500 mt-1">Regulations reduced prenatal exposure to harmful emissions, but wildfire smoke is erasing gains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/wildfire-smoke-now-bigger-prenatal-threat-than-human-sources-of-air-pollution/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Woman claims her stepfather used Grok to transform childhood photo into explicit imagery</h3>
+          <p class="text-xs text-gray-500 mt-1">The woman claimed that AI tools are "taking everyday life and turning it into child sexual abuse."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">VisionQuest trailer kicks off Disney's D23 fan event</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://arstechnica.com/culture/2026/08/visionquest-trailer-kicks-off-disneys-d23-fan-event/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine strikes major Russian rocket factory with cruise missiles</h3>
+          <p class="text-xs text-gray-500 mt-1">"Flamingo missiles were used. A good achievement."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/ukraine-strikes-major-russian-rocket-factory-with-cruise-missiles/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What Flock’s defenders are missing</h3>
+          <p class="text-xs text-gray-500 mt-1">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Flock, the police-tech giant known for its network of som...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/17/1142200/what-flocks-defenders-are-missing/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Download: dead robot friends and the “censorship-industrial complex”</h3>
+          <p class="text-xs text-gray-500 mt-1">This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What happens when a kid’s robot best friend dies? ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/17/1142175/the-download-dead-robot-friends-censorship-industrial-complex/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What happens when a kid’s robot best friend dies?</h3>
+          <p class="text-xs text-gray-500 mt-1">When Xander first met Moxie, she taught him that when he was anxious, he could calm down by exhaling through his lips so that he buzzed like a bee. They practiced breathing like dragons to manage feel...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What we know about the alleged Iranian hacks on US water utilities</h3>
+          <p class="text-xs text-gray-500 mt-1">Over the last couple of weeks, hackers have targeted and broken into the systems of several water plants in the United States. Here’s what we know and don’t know about this wave of attacks allegedly c...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/what-we-know-about-the-alleged-iranian-hacks-on-u-s-water-utilities/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Vulnerability giving attackers full control of Macs is under active exploitation</h3>
+          <p class="text-xs text-gray-500 mt-1">Screen-sharing bug lets remote hackers log in without a password.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Unforgetful is a new reminders app for people who can’t stop hitting snooze</h3>
+          <p class="text-xs text-gray-500 mt-1">Unforgetful, the latest app from longtime indie developer Marco Arment, is designed to make reminders harder to ignore — or accidentally dismiss.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/unforgetful-is-a-new-reminders-app-for-people-who-cant-stop-hitting-snooze/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US courts will start publishing how often the government uses spyware</h3>
+          <p class="text-xs text-gray-500 mt-1">The Administrative Office of the U.S. Courts told TechCrunch that it will start disclosing how many times judges authorized the use of spyware to wiretap suspected criminals.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/us-courts-will-start-publishing-how-often-the-government-uses-spyware/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Download: Flock’s new rules, cloning’s future, and children’s cells</h3>
+          <p class="text-xs text-gray-500 mt-1">This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Flock is tightening its rules in response to a gro...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Uber and Pony.ai plan to bring 2,000 robotaxis to Europe</h3>
+          <p class="text-xs text-gray-500 mt-1">The partnership is expanding beyond the initial market of Zagreb, Croatia to four additional European cities.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">MIT Tech Review</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">This scientist is helping build a missing map of childhood</h3>
+          <p class="text-xs text-gray-500 mt-1">In 2017, Deanne Taylor attended a presentation at the University of Pennsylvania, just a short walk from her office. A researcher was there to unveil the Human Cell Atlas, an ambitious project that ai...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

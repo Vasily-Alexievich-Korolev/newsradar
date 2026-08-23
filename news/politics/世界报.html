@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界报 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/politics.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Politics</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Politics / 世界报</h1>
+      <span class="text-sm text-gray-400">65 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zimbabwe ferry disaster death toll rises to 72 as search continues</h3>
+          <p class="text-xs text-gray-500 mt-1">The death toll from Zimbabwe's worst ferry disaster has risen to 72 after authorities recovered 25 more bodies from Lake Kariba, as rescuers continued searching the waters for victims.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/zimbabwe-ferry-disaster-death-toll-rises-to-72-as-search-continues_6756551_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zelensky regains control after a month of political crisis</h3>
+          <p class="text-xs text-gray-500 mt-1">After dismissing his popular defense minister, Mykhailo Fedorov, and sparking anger in the streets and within the opposition, Ukrainian President Volodymyr Zelensky appears to have contained the unres...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/zelensky-regains-control-after-a-month-of-political-crisis_6756543_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">With Russia's strikes in Ukraine and hybrid war in Europe, Kyiv's allies face heightened uncertainty</h3>
+          <p class="text-xs text-gray-500 mt-1">Russia has stepped up deep strikes in Ukraine and continued its hybrid warfare against Europe, just as US support is faltering. Washington is warning of a possible Russian attack to test Western defen...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/with-russia-s-strikes-in-ukraine-and-hybrid-war-in-europe-kyiv-s-allies-face-heightened-uncertainty_6756460_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wildfires in Belgium force evacuations</h3>
+          <p class="text-xs text-gray-500 mt-1">By Saturday afternoon, the fire had scorched at least 16 square kilometers in the High Fens natural park. A local spokesperson called it the 'largest in recent history' for Belgium.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/environment/article/2026/08/15/wildfires-in-belgium-force-evacuations_6756544_114.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">West Bank settlers besieging Palestinian homes hand Israel's army a humiliation</h3>
+          <p class="text-xs text-gray-500 mt-1">Failing to drive out a handful of so-called 'hilltop youth,' Israel's military turned instead against their Palestinian victims. The government fears that the radical settlers will draw criticism from...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/west-bank-settlers-besieging-palestinian-homes-hand-israel-s-army-a-humiliation_6756500_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">West Bank: Israel sends troops following unusual criticism from US ambassador</h3>
+          <p class="text-xs text-gray-500 mt-1">Mike Huckabee, usually a staunch defender of Israel, had denounced a 'horrific act of terror' by settlers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/west-bank-us-ambassador-to-israel-denounces-siege-of-palestinian-homes-as-horrific-act-of-terror_6756455_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'We were petrified': Afghan women on the tragic day the Taliban came back</h3>
+          <p class="text-xs text-gray-500 mt-1">'Voices of Afghan Women' (1/6). Five years after the Taliban returned to power and imposed their archaic version of Sharia law, our special correspondent in Kabul spoke with these almost invisible wom...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/summer-reads/article/2026/08/16/we-were-petrified-afghan-women-on-the-tragic-day-the-taliban-came-back_6756566_183.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'We are losing our youth': In northern Morocco, mourning those who drowned off Ceuta</h3>
+          <p class="text-xs text-gray-500 mt-1">In Tétouan, families mourn the deaths of many young men who tried to swim to the Spanish enclave of Ceuta at the end of July. According to a Moroccan non-profit organization, over 140 people lost thei...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/le-monde-africa/article/2026/08/15/we-are-losing-our-youth-in-northern-morocco-mourning-those-who-drowned-off-ceuta_6756523_124.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Venezuelan government and opposition wrap first round of talks</h3>
+          <p class="text-xs text-gray-500 mt-1">The two sides issued a joint statement, highlighting agreements on reforming the judiciary and seeking access to earthquake recovery funds.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/venezuelan-government-opposition-wrap-first-round-of-talks_6756450_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Venezuela frees over 130 political prisoners amid post-Maduro talks</h3>
+          <p class="text-xs text-gray-500 mt-1">The move comes a day after opposition figure Dinorah Figuera vowed to fight for the release of political prisoners in formal talks with the interim government. A first round of the US-brokered talks k...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/venezuela-frees-more-political-prisoners-amid-post-maduro-talks_6756525_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US plan for electric-shock gloves for ICE agents sparks abuse concerns</h3>
+          <p class="text-xs text-gray-500 mt-1">Critics fear the devices could be misused by an agency already facing scrutiny over its use of force and the training of its officers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/us-plan-for-electric-shock-gloves-for-ice-agents-sparks-abuse-concerns_6756521_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US court rules Trump can end tariff exemption for small parcels</h3>
+          <p class="text-xs text-gray-500 mt-1">The President's agenda has faced a series of legal pushbacks since he imposed sweeping duties on trading partners after returning to the White House last year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/us-court-rules-trump-can-end-tariff-exemption-for-small-parcels_6756481_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US court dismisses Trump administration's antisemitism lawsuit against Harvard</h3>
+          <p class="text-xs text-gray-500 mt-1">A federal judge in Boston ruled that incidents cited by the Department of Justice were "too isolated and episodic" to prove Harvard violated civil rights law during pro-Palestinian campus protests.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/us-court-dismisses-trump-administration-s-antisemitism-lawsuit-against-harvard_6756478_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US court awards $29 million in damages to family of Boeing plane crash victim</h3>
+          <p class="text-xs text-gray-500 mt-1">The civil suit was brought against Boeing by Naoise Connolly Ryan, widow of Michael "Mick" Ryan, an engineer with the UN World Food Programme.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/us-court-awards-29-million-in-damages-to-family-of-boeing-plane-crash-victim_6756451_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK firefighters 'under significant pressure' as multiple blazes rage</h3>
+          <p class="text-xs text-gray-500 mt-1">The UK's National Fire Chiefs Council said firefighters battling several wildfires across the country were 'doing their absolute best' amid 'particularly difficult' conditions, with almost three-quart...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/environment/article/2026/08/14/uk-firefighters-under-significant-pressure-as-multiple-blazes-rage_6756498_114.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump's silent Iran war: Withheld information, shifting objectives and skilled deception</h3>
+          <p class="text-xs text-gray-500 mt-1">US media have reported on deteriorating living conditions for sailors aboard the USS Abraham Lincoln aircraft carrier, deployed for over eight months. Yet the White House has shown little willingness ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/trump-s-silent-iran-war-withheld-information-shifting-objectives-and-skilled-deception_6756537_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump announces tariffs of up to 100% on imported drones</h3>
+          <p class="text-xs text-gray-500 mt-1">A White House statement said the tariffs will 'encourage increased domestic production' of drones and their components, and reduce reliance on foreign supply chains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/trump-announces-tariffs-of-up-to-100-on-imported-drones_6756487_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tourists rescued by boat as forest fire threatens Greek beaches</h3>
+          <p class="text-xs text-gray-500 mt-1">Over 250 tourists in bathing suits, and many carrying children in their arms, were evacuated by sea in 15 small boats brought into service for the emergency, ERT public television reported.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/environment/article/2026/08/14/tourists-rescued-by-boat-as-forest-fire-threatens-greek-beaches_6756483_114.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tiananmen Square massacre: Le Monde reveals unseen footage of the Chinese regime's violent repression</h3>
+          <p class="text-xs text-gray-500 mt-1">Art historian Nathalie Trouveroy shared footage with Le Monde from her personal archives of the Tiananmen Square protests, shedding new light on how the Chinese regime violently repressed the student ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/video/2026/08/14/tiananmen-square-massacre-le-monde-reveals-unseen-footage-of-the-chinese-regime-s-violent-repression_6756518_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Three men executed by lethal injection on same day in US for the first time since 2010</h3>
+          <p class="text-xs text-gray-500 mt-1">Tennessee, Oklahoma and Alabama all put inmates to death on Thursday. Having three executions in one day is a coincidence in scheduling, but one which also reflects a trend of increased executions in ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/three-men-executed-by-lethal-injection-on-same-day-in-us-for-the-first-time-since-2010_6756486_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Ebola virus is outpacing the international response</h3>
+          <p class="text-xs text-gray-500 mt-1">After the 2014-2016 West African Ebola epidemic and the Covid-19 pandemic in 2020, 'pandemic preparedness' has become a global watchword. Yet, new flaws have come to light during the current Ebola cri...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/14/the-ebola-virus-is-outpacing-the-international-response_6756502_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Temperatures over 35ºC persist across western and southern Europe</h3>
+          <p class="text-xs text-gray-500 mt-1">Areas of Europe home to more than 150 million people, including large swaths of France, are set for high temperatures as the continent's latest heatwave spreads.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/temperatures-over-35-c-persist-across-western-and-southern-europe_6756499_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Syria must demonstrate exemplary justice against the former dictatorship</h3>
+          <p class="text-xs text-gray-500 mt-1">Transitional authorities tasked with holding the Bashar al-Assad regime accountable must at once convince Syrians that impunity is over while also ensuring that justice is served fairly.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/13/syria-must-demonstrate-exemplary-justice-against-the-former-dictatorship_6756466_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swedish union ends Tesla strike after almost three years</h3>
+          <p class="text-xs text-gray-500 mt-1">Sweden's union IF Metal said the US carmaker had bought out all of the union's striking members. Tesla chief executive Elon Musk has long rejected calls to allow the company's over 100,000 employees w...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/swedish-union-ends-tesla-strike-after-almost-three-years_6756472_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Romania to shut down nuclear plant due to low Danube level</h3>
+          <p class="text-xs text-gray-500 mt-1">Nearly two-thirds of the Danube, the river whose water is used to cool the plants, has recorded flow rates that are the lowest on record for a month of July.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/romania-to-shut-down-nuclear-plant-due-to-low-river-levels_6756461_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Renaissance paintings by Antonello da Messina stolen from Sicilian museum</h3>
+          <p class="text-xs text-gray-500 mt-1">The thieves removed all five panels of the 'San Gregorio Polyptych' from their frame, but abandoned two behind a wall while fleeing. An art expert estimated the stolen works at €70 million to €80 mill...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/renaissance-paintings-by-antonello-da-messina-stolen-from-sicilian-museum_6756565_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Probe into €5.8 million gift to Nigel Farage reopens as he wins by-election</h3>
+          <p class="text-xs text-gray-500 mt-1">The leader of the far-right Reform UK party reclaimed his Clacton seat, triggering the reopening of a parliamentary standards probe into a £5 million donation from a crypto billionaire.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/probe-into-5-8-million-gift-to-british-far-right-leader-farage-reopens-as-he-wins-by-election_6756514_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Powerful earthquake strikes Indonesia, killing dozens and triggering landslides</h3>
+          <p class="text-xs text-gray-500 mt-1">Rescuers are struggling to reach remote communities, and authorities have warned the death toll was likely to rise.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/powerful-earthquake-strikes-indonesia-killing-dozens-and-triggering-landslides_6756552_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Powerful 7.7 earthquake off Indonesia sparks mass evacuations</h3>
+          <p class="text-xs text-gray-500 mt-1">The initial jolt was followed by strong aftershocks in the same area, including one with a magnitude of 6.1. Indonesia's Meteorology, Climatology and Geophysics Agency (BMKG) warned of the possibility...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/environment/article/2026/08/15/powerful-7-7-earthquake-off-indonesia-sparks-mass-evacuations_6756532_114.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">PM Burnham says 'tinderbox' Britain must 'face up to the changing climate'</h3>
+          <p class="text-xs text-gray-500 mt-1">His comments came during a visit to an area devastated by wildfires.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/british-pm-andy-burnham-tinderbox-britain-must-face-up-to-the-changing-climate_6756513_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">NATO jets shoot down drone in Latvian airspace</h3>
+          <p class="text-xs text-gray-500 mt-1">Latvian Foreign Minister Baiba Braze thanked Italy for 'maintaining [the] integrity of NATO airspace.'</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/nato-jets-shoot-down-drone-in-latvian-airspace_6756496_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mass drone attack hits Moscow as Russia launches deadly strikes in Ukraine</h3>
+          <p class="text-xs text-gray-500 mt-1">Moscow regional governor Andrey Vorobyov described the assault as 'one of the most massive drone attacks in recent memory.' Meanwhile, Russia launched missile strikes that killed three people and woun...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/mass-drone-attack-hits-moscow-as-russia-launches-deadly-strikes-in-ukraine_6756558_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mali's junta pardons French intelligence officer detained for a year</h3>
+          <p class="text-xs text-gray-500 mt-1">The release of Yann Vezilier, who had been officially accredited by the Malian authorities as an officer of France's foreign intelligence agency, follows several months of diplomatic negotiations.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/le-monde-africa/article/2026/08/13/mali-s-junta-pardons-french-intelligence-officer-detained-for-a-year_6756477_124.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mahmoud Darwish and Tamar Ben Ami: The impossible love of a Palestinian poet and an Israeli dancer</h3>
+          <p class="text-xs text-gray-500 mt-1">In the early 1960s, in Haifa, Israel, the young Palestinian poet Mahmoud Darwish fell in love with Tamar Ben Ami, a Jewish Israeli dancer. Their romance was intense but brief. From this forbidden love...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/m-le-mag/article/2026/08/16/mahmoud-darwish-and-tamar-ben-ami-the-impossible-love-of-a-palestinian-poet-and-an-israeli-dancer_6756554_117.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Luigi Mangione admits to shooting UnitedHealthcare CEO and pleads guilty to stalking charges</h3>
+          <p class="text-xs text-gray-500 mt-1">'On the morning of December 4, I shot Mr. Thompson in Manhattan and he died,' Mangione told a federal judge as he pleaded guilty to stalking his victim. His lawyers moved to have separate state murder...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/luigi-mangione-admits-to-killing-unitedhealthcare-ceo-in-guilty-plea_6756516_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Liechtenstein changes its rules to allow women to inherit the Alpine principality's throne</h3>
+          <p class="text-xs text-gray-500 mt-1">Hereditary Prince Alois announced the change in his speech marking the country's national day.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/liechtenstein-changes-its-rules-to-allow-women-to-inherit-the-alpine-principality-s-throne_6756540_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Lebanon: At least 11 killed by Israeli airstrikes in south of country</h3>
+          <p class="text-xs text-gray-500 mt-1">Israel said it carried out retaliatory strikes against the Iran-backed militant group, but Lebanon's prime minister said seven people killed in one of the strikes were not 'military targets' and urged...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/lebanon-nine-killed-by-israeli-airstrikes-in-south-of-country_6756538_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Japan's pacifist identity is shaken by a world where military might prevails</h3>
+          <p class="text-xs text-gray-500 mt-1">Article 9 of the Constitution, which states that Japan 'renounces war forever,' is being challenged by regional instability and doubts over the enduring reliability of American support.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/japan-s-pacifist-identity-is-shaken-by-a-world-where-military-might-prevails_6756511_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Japan protests Putin's first visit to disputed Kuril Islands</h3>
+          <p class="text-xs text-gray-500 mt-1">Japan condemned Russian President Vladimir Putin's visit to the four disputed islands as 'absolutely unacceptable,' with its prime minister saying they 'are an inherent part of Japan's territory.' Jap...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/putin-makes-first-visit-to-kuril-islands-claimed-by-japan_6756453_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Italian police recover stolen Renoir, Cézanne and Matisse paintings worth millions</h3>
+          <p class="text-xs text-gray-500 mt-1">The paintings had been stolen from the Magnani Rocca Foundation, and were worth more than €10 million combined.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/culture/article/2026/08/14/italian-police-recover-stolen-renoir-cezanne-and-matisse-paintings-worth-millions_6756503_30.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'It was either exile or prison': An interview with Boris Nadezhdin, Putin opponent who fled to France</h3>
+          <p class="text-xs text-gray-500 mt-1">The veteran Russian politician, 63, tried to challenge Vladimir Putin's regime and its war in Ukraine through legal and electoral means. He failed. Facing the threat of arrest, he decided to leave Rus...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/it-was-either-exile-or-prison-an-interview-with-boris-nadezhdin-kremlin-opponent-prosecuted-in-moscow-and-now-in-paris_6756449_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran: More than 30 countries condemn executions of protesters</h3>
+          <p class="text-xs text-gray-500 mt-1">The EU and 32 other countries, including France, the UK and Canada, issued a joint statement condemning Iran's use of the death penalty, to which Iran responded by accusing them of hypocrisy.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/iran-more-than-30-countries-condemn-executions-of-protesters_6756452_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How the pro-Trump right is rehabilitating Richard Nixon</h3>
+          <p class="text-xs text-gray-500 mt-1">On August 8, 1974, Nixon resigned in light of the Watergate scandal. Now, 52 years later, the 'America First' movement claims the Republican president was the victim of a 'deep state' conspiracy, draw...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/how-the-pro-trump-right-is-rehabilitating-richard-nixon_6756570_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hamas disarmament deal offers historic opening, but Israel stands in the way</h3>
+          <p class="text-xs text-gray-500 mt-1">For the first time in its 39-year history, Hamas agreed to put disarmament on the table. The Board of Peace's roadmap, approved by Donald Trump, calls for a gradual and verified process to move forwar...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/hamas-disarmament-deal-offers-historic-opening-but-israel-stands-in-the-way_6756539_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">France welcomes Mali's pardon of intelligence agent serving 20-year jail term</h3>
+          <p class="text-xs text-gray-500 mt-1">Yann Vézilier, who had been stationed at the French embassy in Bamako, was arrested a year ago on charges of being a spy and undermining state security.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/le-monde-africa/article/2026/08/14/france-welcomes-mali-s-pardon-of-intelligence-agent-serving-20-year-jail-term_6756504_124.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">France urges Israel to arrest settlers blockading Palestinian homes in West Bank</h3>
+          <p class="text-xs text-gray-500 mt-1">The French Foreign Ministry condemned the occupation of Palestinian homes in the West Bank village of Qusra by Israeli settlers and called on Israeli authorities to arrest and prosecute those responsi...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/france-urges-israel-to-arrest-settlers-blockading-palestinian-homes-in-west-bank_6756505_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Firefighters battle massive wildfires in Belgium and Greece as two die on island near Athens</h3>
+          <p class="text-xs text-gray-500 mt-1">A blaze in eastern Belgium burned about 30 square kilometers in the High Fens, a large nature reserve, in one of the country's worst wildfires in recent history. On the Greek island of Salamina, some ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/firefighters-battle-massive-wildfires-in-belgium-and-greece-as-two-die-on-island-near-athens_6756564_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Finland wants to restore its peatlands to help the environment. And to slow Russian tanks.</h3>
+          <p class="text-xs text-gray-500 mt-1">The Nordic country has identified 180,000 hectares of wetlands that, if restored, could benefit not only the climate and biodiversity but also national defense. While the military supports the plan, s...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/finland-wants-to-restore-its-peatlands-to-help-the-environment-and-to-slow-russian-tanks_6756480_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Felwine Sarr, writer: 'African nations' budgets could be directed toward dignity'</h3>
+          <p class="text-xs text-gray-500 mt-1">In a new essay, the Senegalese writer explores what might foster the emergence of African societies more focused on individual dignity. In an interview with Le Monde, he argues that public policies mu...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/16/felwine-sarr-writer-african-nations-budgets-could-be-directed-toward-dignity_6756560_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'Europe risks repeating a familiar mistake by tightening fiscal policy too soon'</h3>
+          <p class="text-xs text-gray-500 mt-1">While fiscal discipline is necessary, it can become counterproductive in the absence of demand, the five chief economists of Scandinavian trade union organizations warn, denouncing the strategy of Fin...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/13/europe-risks-repeating-a-familiar-mistake-by-tightening-fiscal-policy-too-soon_6756469_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Europe braces for another temperature spike above 35°C</h3>
+          <p class="text-xs text-gray-500 mt-1">Areas of Europe home to more than 135 million people are set to be affected by the highest temperatures. Temperatures are set to surpass 30°C for nearly three out of five European residents.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/europe-braces-for-another-temperature-spike-above-35-c_6756467_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Epstein plaintiffs slam French justice system's 'slowness' and sue state</h3>
+          <p class="text-xs text-gray-500 mt-1">The child protection group Innocence En Danger and Swedish former model Ebba Karlsson point to failures and delays within the French justice system.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/france/article/2026/08/13/epstein-plaintiffs-slam-french-justice-system-s-slowness-and-sue-state_6756474_7.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ebola outbreak in DR Congo spreads to sixth province as death toll passes 2,100</h3>
+          <p class="text-xs text-gray-500 mt-1">The epidemic, already the deadliest in the country's history, is spreading faster than any previous Ebola outbreak, the World Health Organization has warned.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/health/article/2026/08/13/ebola-outbreak-in-dr-congo-spreads-to-sixth-province-as-death-toll-passes-2-100_6756475_14.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ebola outbreak in DR Congo killing one person every 30 minutes, UN says</h3>
+          <p class="text-xs text-gray-500 mt-1">The United Nations says the epidemic is spreading at its fastest pace on record and threatens to become the deadliest outbreak in the disease's history.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/ebola-outbreak-in-dr-congo-killing-one-person-every-30-minutes-un-says_6756522_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">EU plastic packaging reduction targets weakened from outset by industry lobbying</h3>
+          <p class="text-xs text-gray-500 mt-1">The EU Packaging and Packaging Waste Regulation, which came into effect on Wednesday, introduces binding reduction targets for the first time in Europe, though it has been undermined by heavy industry...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/environment/article/2026/08/13/eu-plastic-packaging-reduction-targets-weakened-from-outset-by-industry-lobbying_6756462_114.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Divisions within Iran's leadership weigh on talks with the US</h3>
+          <p class="text-xs text-gray-500 mt-1">The Revolutionary Guards control more than military operations: They also impose their demands on Iran's president and his negotiators, writes historian Jean-Pierre Filiu in his column.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/divisions-within-iran-s-leadership-weigh-on-talks-with-the-us_6756559_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">China targets its ultra-wealthy living abroad in tax bid</h3>
+          <p class="text-xs text-gray-500 mt-1">As Beijing seeks to close its budget deficit, authorities are tightening regulations on trusts established outside China, commonly used by the country's super-rich to avoid taxes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/15/china-targets-its-ultra-wealthy-living-abroad-in-tax-bid_6756550_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chile: Long and twisting saga of Salvador Allende's home ends in private sale</h3>
+          <p class="text-xs text-gray-500 mt-1">Former Chilean president Gabriel Boric wanted to turn the site into a museum and a memorial. The home of his predecessor, who took his own life during General Pinochet's coup in 1973, was instead purc...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/chile-long-and-twisting-saga-of-converting-president-salvador-s-home-into-a-museum-ends-in-private-sale_6756563_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chadian president pardons nine jailed opposition leaders</h3>
+          <p class="text-xs text-gray-500 mt-1">The pardoned prisoners include former prime minister Succès Masra, leader of the main opposition party, sentenced to prison a year ago.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/le-monde-africa/article/2026/08/14/chadian-president-pardons-nine-jailed-opposition-leaders_6756501_124.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">British far right's leader Farage beats Count Binface to win by-election</h3>
+          <p class="text-xs text-gray-500 mt-1">Reform UK leader Nigel Farage won with 63% of the vote in an election that was boycotted by the major parties. A parliamentary probe into undisclosed gifts he received was subsequently reopened.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/uk-far-right-leader-farage-beats-count-binface-to-win-by-election_6756493_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">British PM calls for 'reflection' after death of Cambridge professor</h3>
+          <p class="text-xs text-gray-500 mt-1">The family of former Cambridge professor Jason Arday, who was found dead days after resigning amid plagiarism allegations, has accused his critics of subjecting him to years of harassment.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/16/british-pm-calls-for-reflection-after-death-of-cambridge-professor_6756553_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Brazilian police recover eight stolen Matisse engravings</h3>
+          <p class="text-xs text-gray-500 mt-1">The works were found at a home in the town of Sao Bernardo do Campo, near Sao Paulo, and the man who had them was arrested, police said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/culture/article/2026/08/14/brazilian-police-recover-eight-stolen-matisse-engravings_6756494_30.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Berlin's housing crisis and security concerns shape election campaign</h3>
+          <p class="text-xs text-gray-500 mt-1">Led since 2023 by a Christian Democratic mayor, Berlin stands out as an exception in a national context marked by the rise of the far right. The city-state will hold elections on September 20.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/berlin-s-housing-crisis-and-security-concerns-shape-election-campaign_6756542_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Afghanistan's Taliban break out of international isolation five years after returning to power</h3>
+          <p class="text-xs text-gray-500 mt-1">Neighboring capitals now engage with Kabul over regional trade routes, while American and European officials are negotiating with the regime in the name of counterterrorism and the return of failed as...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/afghanistan-s-taliban-break-out-of-international-isolation-five-years-after-returning-to-power_6756531_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">2026 European Swimming Championships: The return of Russian athletes sparks controversy</h3>
+          <p class="text-xs text-gray-500 mt-1">While the international federation reinstated Russian and Belarusian swimmers in April, the European governing body insisted on maintaining neutrality criteria for the competition as the war in Ukrain...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/sports/article/2026/08/15/2026-european-swimming-championships-the-return-of-russian-athletes-sparks-controversy_6756535_9.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

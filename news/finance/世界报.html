@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界报 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / 世界报</h1>
+      <span class="text-sm text-gray-400">25 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US court rules Trump can end tariff exemption for small parcels</h3>
+          <p class="text-xs text-gray-500 mt-1">The President's agenda has faced a series of legal pushbacks since he imposed sweeping duties on trading partners after returning to the White House last year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/us-court-rules-trump-can-end-tariff-exemption-for-small-parcels_6756481_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump announces tariffs of up to 100% on imported drones</h3>
+          <p class="text-xs text-gray-500 mt-1">A White House statement said the tariffs will 'encourage increased domestic production' of drones and their components, and reduce reliance on foreign supply chains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/14/trump-announces-tariffs-of-up-to-100-on-imported-drones_6756487_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swedish union ends Tesla strike after almost three years</h3>
+          <p class="text-xs text-gray-500 mt-1">Sweden's union IF Metal said the US carmaker had bought out all of the union's striking members. Tesla chief executive Elon Musk has long rejected calls to allow the company's over 100,000 employees w...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/swedish-union-ends-tesla-strike-after-almost-three-years_6756472_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SpaceX, a dream put to the test of the numbers</h3>
+          <p class="text-xs text-gray-500 mt-1">The euphoria surrounding the space venture has not entirely subsided, despite a sharp drop in valuation since its mid-June stock market debut. However extraordinary the ambitions may be, they do not a...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 08 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/08/spacex-a-dream-put-to-the-test-of-the-numbers_6756289_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Shortages of solar eclipse viewing glasses expected  in France</h3>
+          <p class="text-xs text-gray-500 mt-1">Purchases of protective eyewear, essential for observing the phenomenon, have risen sharply ahead of August 12. France's consumer fraud authority has stepped up inspections.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/09/shortages-of-solar-eclipse-viewing-glasses-expected-in-france_6756309_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Revolut claims to have secured French banking license, boosting European retail bank push</h3>
+          <p class="text-xs text-gray-500 mt-1">British fintech Revolut said it had obtained a full French banking license, a long-sought step cementing its standing among Europe's established retail lenders.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/10/revolut-claims-to-have-secured-french-banking-license-boosting-european-retail-bank-push_6756346_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">One-person households' struggle for housing: 'It would be much easier as a couple. I feel like I'm being punished twice'</h3>
+          <p class="text-xs text-gray-500 mt-1">Some 12 million people live alone in France, and their number continues to rise. The country's housing stock has not kept pace with this trend, exacerbating the impact of the housing crisis on these i...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/france/article/2026/08/14/one-person-households-struggle-for-housing-it-would-be-much-easier-as-a-couple-i-feel-like-i-m-being-punished-twice_6756490_7.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">NBA's Los Angeles Lakers to be sold for reported $12.5 billion</h3>
+          <p class="text-xs text-gray-500 mt-1">One of the most successful teams in NBA history is being sold to former Disney CEO Bob Iger and investor Joshua Kushner, the brother of US President Donald Trump's son-in-law.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.lemonde.fr/en/sports/article/2026/08/12/nba-s-los-angeles-lakers-to-be-sold-for-reported-12-5-bn_6756437_9.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Meta CEO Zuckerberg lays out open-source vision for AI</h3>
+          <p class="text-xs text-gray-500 mt-1">As the tech giant Meta launched Muse Glimmer, a new AI model, its CEO, Mark Zuckerberg, released a video and an essay calling for open-source AI models as a way for the US to compete with China and su...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/10/meta-ceo-zuckerberg-lays-out-open-source-vision-for-ai_6756347_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Just hours before solar eclipse, search for protective viewing glasses turns into treasure hunt</h3>
+          <p class="text-xs text-gray-500 mt-1">Certified eye protection is essential for safely observing the August 12 eclipse. Purchases surged as the event approached, resulting in stock shortages at many retailers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/12/just-hours-before-the-solar-eclipse-the-search-for-protective-viewing-glasses-turns-into-a-treasure-hunt_6756404_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Javier Tebas, president of La Liga: 'The Infantino era is over'</h3>
+          <p class="text-xs text-gray-500 mt-1">The head of Spain's top football league, often at the forefront of clashes with global football authorities, delivers a damning assessment of the situation at FIFA in an interview with Le Monde.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.lemonde.fr/en/sports/article/2026/08/09/javier-tebas-president-of-la-liga-the-infantino-era-is-over_6756308_9.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'In France, the unchecked growth of data centers has more in common with the Wild West than with a digital El Dorado'</h3>
+          <p class="text-xs text-gray-500 mt-1">After the building permit for a planned data center in the northern Paris suburb of Le Bourget was revoked, suburban departmental head Stéphane Troussel calls for a pause and holding a public debate i...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/14/in-france-the-unchecked-growth-of-data-centers-has-more-in-common-with-the-wild-west-than-with-a-digital-el-dorado_6756492_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'In 48 years in the business, I've never seen anything like it': Heatwaves bring early grape harvests and fears of low yields</h3>
+          <p class="text-xs text-gray-500 mt-1">Unusually high temperatures this year have accelerated the grapevine cycle, triggering an exceptionally early harvest across France. Drought and heat have reduced the size and juice content of the gra...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/15/in-48-years-in-the-business-i-ve-never-seen-anything-like-it-heatwaves-bring-early-grape-harvests-and-fears-of-low-yields_6756524_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How AI poses a threat to journalism, already weakened by 20 years of digital upheaval</h3>
+          <p class="text-xs text-gray-500 mt-1">The surge of artificial intelligence, which scrapes journalistic content, is putting the media sector to the test as layoffs continue to mount.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/11/how-ai-poses-a-threat-to-journalism-already-weakened-by-20-years-of-digital-upheaval_6756369_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">High temperatures continue to put pressure on France's nuclear power plants</h3>
+          <p class="text-xs text-gray-500 mt-1">Six EDF nuclear reactors were shut down on Thursday, August 13, due to the ongoing heatwave. As a result, nearly 20% of the nation's nuclear fleet was unavailable.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/high-temperatures-continue-to-put-pressure-on-france-s-nuclear-power-plants_6756482_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">German decommissioned nuclear power plant seeks new life through fusion</h3>
+          <p class="text-xs text-gray-500 mt-1">The start-up Focused Energy set up operations in the German town of Biblis on a site closed in 2011 to build a fusion reactor. This technological gamble could spark a small revolution in a country tha...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/11/german-decommissioned-nuclear-power-plant-seeks-new-life-through-fusion_6756394_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">French taxpayers' data stolen in hack of Finance Ministry</h3>
+          <p class="text-xs text-gray-500 mt-1">The Finance Ministry acknowledged on Thursday that it had fallen victim to another cyberattack. The full extent of the breach remained unclear, but it could concern several hundred thousand people in ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/pixels/article/2026/08/14/french-taxpayers-data-stolen-in-hack-of-finance-ministry_6756510_13.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'Europe risks repeating a familiar mistake by tightening fiscal policy too soon'</h3>
+          <p class="text-xs text-gray-500 mt-1">While fiscal discipline is necessary, it can become counterproductive in the absence of demand, the five chief economists of Scandinavian trade union organizations warn, denouncing the strategy of Fin...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/13/europe-risks-repeating-a-familiar-mistake-by-tightening-fiscal-policy-too-soon_6756469_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">EasyJet strike sees 100 French flights canceled</h3>
+          <p class="text-xs text-gray-500 mt-1">The British budget carrier called off the flights out of French airports because of a strike by cabin crew furious over repeated changes to their schedules.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/15/easyjet-strike-sees-100-french-flights-canceled_6756534_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">China targets its ultra-wealthy living abroad in tax bid</h3>
+          <p class="text-xs text-gray-500 mt-1">As Beijing seeks to close its budget deficit, authorities are tightening regulations on trusts established outside China, commonly used by the country's super-rich to avoid taxes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/15/china-targets-its-ultra-wealthy-living-abroad-in-tax-bid_6756550_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Brittany's fishermen face battle to obtain fishing licenses</h3>
+          <p class="text-xs text-gray-500 mt-1">Though vital to their trade, licenses have become increasingly difficult to secure in the region. Local fishermen have criticized an opaque allocation system, while prices for second-hand boats have s...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/11/brittany-s-fishermen-face-a-battle-to-obtain-fishing-licenses_6756358_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Beyond the disasters, climate change damages society</h3>
+          <p class="text-xs text-gray-500 mt-1">Agriculture, access to water, and the economy have long depended on physical and biological conditions we once took for granted. Now, global warming is calling this stability into question.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.lemonde.fr/en/opinion/article/2026/08/11/beyond-the-disasters-climate-change-damages-society_6756368_23.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">After wildfires, southwest France's timber sector preps for mass influx of salvageable wood</h3>
+          <p class="text-xs text-gray-500 mt-1">About 4 million metric tons of maritime pine are set to enter the market, nearly two-thirds of the region's yearly output. This influx threatens to upend a sector already hit hard by sluggish economic...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/14/after-wildfires-southwest-france-s-timber-sector-preps-for-mass-influx-of-salvageable-wood_6756489_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Abdul Samad Rabiu, the other billionaire industrialist who wants to change Nigeria</h3>
+          <p class="text-xs text-gray-500 mt-1">His career path mirrors that of Aliko Dangote, Africa's richest person. More low-profile, the head of BUA also built an empire in cement and sugar and also comes from Kano, a city that has been a cros...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.lemonde.fr/en/le-monde-africa/article/2026/08/12/abdul-samad-rabiu-the-other-billionaire-industrialist-who-wants-to-change-nigeria_6756403_124.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">300 French newspapers file competition complaint against Google over AI summaries</h3>
+          <p class="text-xs text-gray-500 mt-1">The federation of newspapers said that Google's new AI-generated summaries of search results will erode traffic to their own websites.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/11/300-french-newspapers-file-competition-complaint-against-google-over-ai-summaries_6756384_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

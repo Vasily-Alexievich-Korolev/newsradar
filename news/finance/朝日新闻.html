@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>朝日新闻 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / 朝日新闻</h1>
+      <span class="text-sm text-gray-400">60 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">鹿児島の返礼品牛肉偽装事件、逮捕の元役員は否認　自治体は影響懸念</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3TS5V8LTIPE007M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">鹿児島で返礼品牛肉、産地偽装疑い　詐欺容疑などで元会社役員逮捕</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L21CNV8LTIPE003M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相「努力は払ってきた」　日ロ接触の矢先、プーチン氏択捉訪問</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F3SMSV8FUTFK03FM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">静岡の一番茶荒茶生産量が全国トップに　鹿児島抜き2年ぶり返り咲き</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3QDXV8LUTPB00JM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">関西財界、10月の訪中団を延期　APEC首脳会議後の12月で調整</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M0DF6V8MPLFA009M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">長期金利、一時2.945%に上昇　前日に続き約30年ぶりの高水準</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L0D2QV8LULFA004M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">長期金利3%の節目うかがう　利上げ観測に海外金利高、株価は大幅安</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3TL3V8LULFA00NM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">都道府県別キャッシュレス利用率に最大2倍の差　一般社団法人が調査</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV872DNSV87OXIE02XM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">通販生活が楽天市場から退店　独防衛企業と提携「理念と相いれない」</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3T80V8LULFA024M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">豚肉と鶏肉が最高値を更新　物価高で牛→豚鶏への需要シフトも影響か</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F2V63V8FULFA019M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">米国7月の消費者物価指数、前年同月比3.4%上昇　市場予想と一致</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D45CPV8DUHBI00ZM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">福島・郡山の「東北六彩マルシェ」、直前に中止　SNSで投稿相次ぐ</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8H2JHNV8HUGTB001M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">短パン勤務、企業でじわり浸透　清潔感に配慮、除毛クリーム提供も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8K151GV8KULFA00PM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">特定技能1号受け入れ停止、飲食店の45%が「事業計画に影響」</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M2JHWV8MULFA01DM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">洋服サブスク「Rcawaii」解約トラブル相談多数　業者名を公表</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M2CHHV8MUTFL00MM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「残業は45時間まで」の一律抑制とりやめ　9月から、労基署の指導</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M2VS4V8MULFA01WM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">東南アジアで最も車が売れるマレーシア　日中メーカーが「代理戦争」</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV7X118JV7XUHBI00JM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">日経平均、大幅続落で2134円安　中東情勢の混迷や金利上昇が影響</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M0F82V8MULFA00BM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">日立建機が日立製作所から「完全独立」　社名を「ランドクロス」に</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M343LV8MULFA028M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">新潟産コシヒカリ、JA概算金は昨年比4割安　コメの在庫余りが影響</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L425CV8LUOHB008M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">政府肝いり半導体人材育成はなぜ苦戦　参加は想定の半分以下の13人</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8C0PZ5V8CULFA001M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">工場の煙突、国が全国調査　熊本地震・日本製紙八代工場での倒壊受け</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L34N7V8LUTIL01DM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">対米投資の巨額事業、米裁判所が許可取り消し　JBICが融資契約</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L1QFHV8LUHBI007M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「宇宙不動産」始動　ISS後継に照準、上空400キロに広がる商機</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8B0HMWV8BUTFL005M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">始まりは「日系人の就職先ない」、キャッサバで挑む新たな農業モデル</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8B22S6V8BOIPE00MM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">太平洋クロマグロ国際会議、異例の再開催へ　漁獲増枠の合意が焦点</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G20GQV8GULFA003M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">地震保険金の支払い、デジタル技術で急ぐ　損保各社、早期復興へ一助</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G2JJ0V8GULFA01XM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">品川プリンスに家族向けラウンジも　西武HD社長に聞く再開発戦略</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F2SD2V8FUEFT005M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">勝手に「羽生結弦」「鳩山由紀夫」の開店祝い花設置　麻辣湯店が謝罪</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L32BGV8LUNHB010M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「再編必至」「全部沈む」政投銀・牧社長が語る数千億円投資の狙い</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV873DJVV87ULFA01BM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「先見性に富んだ経営判断と果敢な行動力」　奥田さん死去に悼む声</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D26CWV8DULFA017M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">京都駅前に「京都セントクロス」が開業　産官学で起業家育成へ</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L0QTJV8LPLZB00KM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ロシアの大きな存在、エネルギー政策に影響は　大統領の北方領土訪問</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F2G9PV8FULFA00ZM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">レシピやビジネスも…新聞や雑誌から回答　KDDIが新AIサービス</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8712HVV87ULFA031M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">マンション投資、金利高で家賃値上げの連鎖　オーナーと入居者の思い</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D2S33V8DULFA01GM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">プロテイン高騰「2年でほぼ倍」　米国の「マンジャロ」ブームの影も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV7X0D9ZV7XUTIL012M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ニチレイ、従業員の個人情報が漏洩した可能性　7月のサイバー攻撃で</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G35RQV8GULFA00SM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">トヨタと企業社会を変えた「財界総理」の決断力　奥田碩さんを悼む</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D0GXJV8DOXIE002M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ディズニー新アトラクションの名称決定　シューティング型、世界初も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F1HKNV8FULFA00BM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">タリバン支配下のアフガニスタンで起業する女性たち</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV852TZ7V85UHMC003M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">サンマ漁の主力「大型船」の水揚げ始まる　北海道根室市の花咲港</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8H12Z4V8HIIPE001M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">グーグル、表参道に米国外初の直営店　AIでアバターや仮想空間体験</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D2357V8DULFA00DM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">クロマグロ漁獲枠合意、日本支持の25%増　メキシコ反対で再協議</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L2CX2V8LULFA00LM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">カラオケで認知症予防　歌詞の一部あえて空欄、座って歌って体操も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8920ZYV89PTIL00SM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">アシックス、売り上げ予想を年間1兆円に引き上げ　なぜ、急成長</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G2V5DV8GPLFA005M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">なにわ筋線、最新試算で総事業費6425億円　上乗せ可能性も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3FPFV8LOXIE00PM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「なだ万」運営企業が新潟でコメ自社生産　地域との信頼、社員化で</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8K3TV0V8KUOHB004M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">さくらインターネットに不正アクセス　会員情報136万件に影響か</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M2JCBV8MULFA01XM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">JR九州被害額、16年熊本地震上回る恐れ　新幹線設備の損傷激しく</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M30PJV8MTIPE01GM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">JALも国際線の燃油サーチャージ引き下げ　欧米路線1万5千円安く</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L2FK2V8LULFA00BM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">J1初参戦　水戸ホーリーホック社長が「残留」の先に見据える将来</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F2VKMV8FUJHB009M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ANA、燃油サーチャージ引き下げへ　9～10月、欧米は1万円安く</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D2R3WV8DULFA01BM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ANAとJAL、羽田―岡山で初ダイヤ調整　新幹線との競争も背景？</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3JSPV8LULFA010M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI研究者が警告する「人類滅亡」　SFと笑えない、予測超えた現実</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3GYQV8LUHBI00TM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI時代に新聞・出版はどう稼ぐ　利益分配の新モデル、担当者に聞く</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV87142HV87ULFA016M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「AI俳優」が中国席巻、スマホ向けドラマから映画まで　雇用も奪う</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8B2GPFV8BUHBI028M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AIデータセンターは地方を救うか　UAE大使が秋田を訪問、協議も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L54R1V8LULFA00CM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">7月の企業物価指数、2カ月連続で7%超え　「川下」への波及が焦点</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F0TXWV8FULFA005M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">7月のインバウンドは344万2100人　台湾は初の70万人超に</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M2PD6V8MULFA00TM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">4～6月期のGDP実質成長率、年率1.67%　民間予測の平均値</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D232QV8DULFA011M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

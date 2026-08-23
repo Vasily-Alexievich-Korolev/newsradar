@@ -1,0 +1,2481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国新闻网 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / 中国新闻网</h1>
+      <span class="text-sm text-gray-400">150 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">鹤岗双赛联动：林海奔跑与炭火烟火解锁“流量变留量”的文旅密码</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网鹤岗8月16日电 题：鹤岗双赛联动：林海奔跑与炭火烟火解锁“流量变留量”的文旅密码</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678717.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高温高通胀高赤字……欧洲战略自主缺失吞下苦果</h3>
+          <p class="text-xs text-gray-500 mt-1">这个夏天，仿佛对欧洲格外残酷。美国《纽约时报》近日报道称，欧洲显得像是在旁观席上，眼睁睁看着自己的命运被外部力量所塑造。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10678000.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">首艘国产大型邮轮首次在粤港澳大湾区运营国际邮轮航线</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网深圳8月13日电 (记者 程景伟)爱达邮轮旗下首艘国产大型邮轮爱达·魔都号13日搭载近4600名宾客从深圳招商蛇口国际邮轮母港启航，开启5天4晚到访越南顺化(真美)的海上之旅。这是爱达·魔都号首次在粤港澳大湾区运营国际邮轮航线。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677305.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">院士专家重庆共论具身智能发展新路径</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社重庆8月15日电 (记者 钟旖)机器人不能只会做“后空翻”等炫技动作，真正的价值在于解决真实世界的问题。15日在重庆举行的2026 CCF中国开源大会上，专家学者指出，机器人产业发展应聚焦真实场景下的自适应能力，开源生态与制造业深度融合将是智能机器人构建核心竞争力的关键路径。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678397.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">长江十年行｜“数”读长江经济带十周年江西答卷</h3>
+          <p class="text-xs text-gray-500 mt-1">长江、赣江、鄱阳湖交织成赣鄱大地的水脉根基。十年来，江西锚定长江经济带建设目标，以生态修复擦亮江湖底色，以区域协同深化联防共治，以对外开放拓宽开放格局，以文脉守护留住水乡根魂，统筹生态、产业、经贸、人文一体推进，全方位呈现长江江西段十年蝶变的生动图景。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678215.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">长春都市圈聚力打造特色农品 抱团开拓海内外市场</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长春8月14日电 (李彦国  高龙安)梅花鹿饲养量占全中国的30%，大米端上香港市民的餐桌，鲜食玉米远销30多个国家和地区……记者在14日举行的长春现代化都市圈农业产业协同发展发布会上获悉，圈内四座城市正合力打造梅花鹿、大米、鲜食玉米、食用菌等特色产业，力拓海内外市场。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10678004.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">长春农博会吉林粮食展区客商云集 品牌驱动产业增收</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长春8月14日电 (李钊 金乔)第二十五届中国长春国际农业·食品博览(交易)会14日开幕。长春农博园4号馆内，吉林粮食品牌特装展区热度十足，市民、采购客商齐聚展台，观展、洽谈氛围火热。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677886.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">金观平：为美丽中国筑牢法治基石</h3>
+          <p class="text-xs text-gray-500 mt-1">8月15日是第四个全国生态日，《中华人民共和国生态环境法典》正式施行。这是继民法典之后我国第二部以“法典”命名的法律。它的正式施行，将为美丽中国建设筑牢坚实的法治基石，为经济社会发展全面绿色转型注入强大动能。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678109.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆今年以来办理“免申即领”建设用地规划许可证332个</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网重庆8月19日电 (张旭)重庆市规划和自然资源局19日发布消息称，该市持续推进建设用地规划许可“免申即领”改革，2026年以来，通过“免申即领”模式累计办理332个建设用地规划许可证。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680568.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“进货式游中国”火了 没有老外能空手走出义乌</h3>
+          <p class="text-xs text-gray-500 mt-1">这个夏天，依托全球最大小商品集散中心的优势，浙江义乌国际商贸城人气持续火爆，大批海外客商与游客慕名前来淘选好物。这座商贸城市正成为全世界观察、读懂中国的一扇窗口。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678616.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">近500名中外代表昆明共拓中药材产业国际合作新空间</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社昆明8月14日电 (记者 韩帅南)2026首届昆明中药材产业国际博览会暨中药供应链大会14日在昆明开幕。来自中国、尼泊尔、泰国、马来西亚等国的政企学研代表近500人，共话中药材产业国际合作新空间。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677863.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">辽宁营口：力争2030年临港工业产值突破1500亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网沈阳8月19日电 (王翕瞳)辽宁省政府新闻办19日发布消息称，营口推进高水平对外开放，力争到2030年港口货物吞吐量达到2.85亿吨、集装箱吞吐量达670万标箱。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680675.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">辽宁省规划2030年海洋生产总值突破8000亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网沈阳8月19日电 (记者 李晛 季邵华)辽宁省发展改革委副主任王鹏19日在辽宁省政府新闻办召开的发布会上介绍，辽宁省近期印发了《辽宁省“十五五”海洋经济发展规划》(以下简称《规划》)，并配套出台了《进一步推动海洋经济高质量发展若干政策举措》(以下简称《政策举措》)。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680561.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">辽宁发布首批20个示范场景项目 布局人工智能等赛道</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社沈阳8月14日电 (记者 李晛)辽宁省场景项目发布会14日在沈阳召开。辽宁省发展改革委现场发布全省首批20个示范场景项目，涵盖人工智能、低空经济、清洁能源等多个领域，全面展示辽宁场景建设阶段性成果。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677943.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">超长三伏天催热“清凉经济” 河北多元场景解锁纳凉新体验</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社石家庄8月15日电 (赵丹媚 李玉素)当为期40天的超长三伏天撞上暑期出游高峰，“去哪里寻凉”成为不少家庭的出行议题。今年暑期，游客的目光不再局限于传统清凉目的地，反季室内滑雪、工厂研学“纳凉”、小众山野游等新体验持续走热。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678255.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（走进中国乡村）“吃茶去”品出武夷山星村镇的茶旅共富图景</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社福建武夷山8月16日电 题：“吃茶去”品出武夷山星村镇的茶旅共富图景</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678743.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（走进中国乡村）“中国竹子之乡”安徽广德撬动新消费 非遗“出海”年销千万元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社安徽广德8月15日电 题：“中国竹子之乡”安徽广德撬动新消费 非遗“出海”年销千万元</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678254.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">财经聚焦丨总量合理、结构向优——透视7月金融数据</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社北京8月14日电 题：总量合理、结构向优——透视7月金融数据</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678611.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">财经大V齐俊杰，被海南证监局点名</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网8月13日电(吴家驹)近日，中国证监会海南监管局网站发布行政监管措施决定书，对齐家私募基金管理(海南)有限公司(简称“齐家私募基金公司”)、齐俊杰采取责令改正的行政监管措施，并记入资本市场诚信档案数据库，同时要求于2026年9月30日前提交整改报告。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677333.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">证监会发布上市公司2025年年度财务报告会计监管报告</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月14日电 (记者 陈康亮)中国证监会14日发布上市公司2025年年度财务报告会计监管报告。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677789.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">落实开渔安全举措 大亚湾区召开商渔船联管会商会</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网惠州8月14日电 (郭军 梁海棠 王瀚杰)为扎实做好南海开渔前水上安全管控，统筹抓好船舶防台、小型船艇规范管理、商渔船防碰撞等工作，8月14日，大亚湾区商渔船联管中心2026年第三次会商会在大亚湾海事处召开。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677819.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">范志忠：从流量追逐走向长期价值，精品微短剧讲好中国故事</h3>
+          <p class="text-xs text-gray-500 mt-1">微短剧持续升温，内容品质也在不断提升。从关注现实生活，到展现时代新气象；从挖掘地域文化，到讲好中国故事，微短剧精品化正在成为行业发展的新命题。近日，由河南省广播电视局主办，红果短剧、大象新闻承办的“微短剧精品创作传播交流活动”在郑州举行。在微短剧创作专题交流环节。浙江大学国际影视发展研究院院长范志忠认为，微短剧精品化的核心，是从过去追求流量和短期传播效果，转向追求能够经得起时间检验的内容和艺术价值...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678621.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">苹果找长鑫合作，醉翁之意不在“芯”</h3>
+          <p class="text-xs text-gray-500 mt-1">苹果最近正在主动接触长鑫存储。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678585.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（经济观察）中国咖啡市场持续看涨 海南或成全球咖啡入华新通道</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社海口8月15日电 (记者 王晓斌 李宇凡)“中国庞大的消费群体，会引领咖啡产业重心向亚洲转移、向中国转移。”正在海口举办的2026海南国际咖啡博览会上，亚洲咖啡协会会长张宏作出上述判断。他认为，海南自贸港拥有独特的区位优势、开放的政策体系与深厚的咖啡文化底蕴，有望“成为辐射亚洲、连接全球的东方咖啡港”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678137.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（经济观察）中国信贷结构持续调整 对实体经济支持力度不减</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月15日电 (陶思阅)中国央行14日公布7月金融数据。数据显示，7月末，普惠小微贷款余额、不含房地产业的服务业中长期贷款余额同比分别增长9%和9.3%。以上贷款增速均高于同期各项贷款增速。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678396.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（经济观察）7天期逆回购连续“零投放” 中国央行调整工具精耕流动性</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月19日电 (陶思阅)中国央行19日公告称，7天期逆回购操作量继续为零。至此，央行已连续7个工作日按下7天期逆回购操作的“暂停键”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680633.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“经”彩新图景丨持续升温！“数”看线下消费热力十足</h3>
+          <p class="text-xs text-gray-500 mt-1">从家电卖场里“以旧换新”的选购人潮，到餐饮门店外等位叫号的烟火喧嚣；从文旅街区中摩肩接踵的夜游人潮，到社区便利店里即时达的快捷交易——今年以来，消费支持政策持续发力，我国线下消费稳步回升。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678210.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">精准服务破解通关难题 宁夏好物远销海外市场</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网银川8月13日电 (记者 李佩珊)记者13日从银川海关获悉，今年前7个月，宁夏外贸进出口总值154.8亿元，同比增长24.2%。亮眼的外贸增速背后，一套接地气、高效率的海关监管服务，持续助力企业拓宽出海渠道。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677179.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">粤港澳大湾区首开至镇江方向快速班列</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月15日电 (郭军 梁雨湘 薛茹月)8月15日，随着一声汽笛长鸣，一趟满载着汽车零部件、日用百货的棚车班列从广州东部公铁联运枢纽(增城西站)缓缓启动，预计将于8月17日上午直达江苏镇江上隍站。这标志着粤港澳大湾区至江苏镇江方向的物流新通道正式打通。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678346.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">粤桂协作再落子 三江林下经济湾区觅商机</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月15日电 (记者 许青青)粤桂协作·2026年三江侗族自治县林下经济产业粤港澳大湾区(广州)推介活动14日晚在广州举行，13家三江本土企业携油茶系列与中药材产品亮相羊城，通过企业推介、产品展销等形式，集中展示当地林下经济的资源禀赋与发展潜力，推动油茶及林下中药材走向更广阔市场。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678125.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">第35届海宁家博会特写：从“一块布”到“一座城”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网嘉兴8月16日电(傅飞扬)8月15日至8月17日，第35届海宁中国家纺城家用纺织品博览会(简称“海宁家博会”)在浙江嘉兴海宁市举行。连日来，海宁中国家纺城周边人潮涌动，来自全国各地的采购商拖着行李箱、拿着采购清单涌入展馆。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678718.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“生态统计智能体”在江西发布</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社南昌8月15日电 (记者 吴鹏泉)“加大绿色金融项目支持 助力江西‘十五五’良好开局”座谈会15日下午在南昌举行。座谈会上，江西财经大学与用友集团联合发布了“生态统计智能体”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678410.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">生态环境法典护航美丽中国和美好生活</h3>
+          <p class="text-xs text-gray-500 mt-1">视频：中国第二部法典，连广场舞噪音都管了来源：三里河</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678152.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">滩涂十年变“粮仓”：三亚崖州中心渔港打造产城融合渔港经济区</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网三亚8月16日电 (张月和)“心中早就期盼着开渔了，我们已经准备了半个多月，网具、冰块、燃油、淡水全部补足到位。”8月16日正午，三亚崖州中心渔港内，渔民谭农权站在船头，一边检查缆绳一边说，最希望的是人员船舶平安顺利，满载而归。他的身后，成排渔船正等待离港指令。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678725.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">湘疆葡萄产区共谱“双城记” 以果为媒携手拓市场</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网常德8月19日电 (刘曼)“我来自新疆吐鲁番，也是种葡萄的。”一走进湖南常德澧县的葡萄园，网络博主“吾买尔大叔”吾买尔·热西提便热情地与当地种植户交流种植心得。新疆自媒体达人古孜努尔·买买提迫不及待品尝着刚摘下的阳光玫瑰葡萄，忍不住竖起大拇指，直呼“好吃”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680624.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">游园品吉粮 吉林优质粮食打通文旅消费新赛道</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长春8月14日电 (李钊 金乔)14日，长春市动植物公园内飘出一缕不同于寻常的香气——是鲜食玉米蒸煮时散发出的清甜。循着味道，不少游客在一处特装展位前停下脚步。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677894.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">海南招商引资严格“绿色准入”，高新技术产业投资占比大增</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月14日电 (记者 王晓斌)海南省商务厅副厅长李枝平在14日召开的新闻发布会上介绍，海南将生态环境分区管控要求作为招商引资的“前置条件”和“刚性约束”，坚决摒弃“捡到篮子里都是菜”的粗放模式。今年上半年，全省高新技术产业投资占比较去年全年提高了20.7个百分点，一批绿色低碳项目正加速落地。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677779.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">海南产经新观察：让“康养”成为东方市最鲜明的城市标识</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月15日电 (陈英清)依托独特的滨海生态与气候优势、持续完善的医疗服务体系及多元融合的文旅资源，“世界长寿市”海南省东方市正锚定“要健康，到东方”的愿景，着力打造“康养之城”城市品牌。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678217.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">海南产经新观察：东方打造海南自贸港经济增长新引擎</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月14日电 (陈英清)“十五五”开局，海南西南部中心城市——东方市如何打造海南自贸港经济增长新引擎？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677871.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">浙江直播经济相关企业突破17万家</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网杭州8月13日电(奚金燕)浙江省市场监管局13日发布消息，2025年浙江省直播电商交易规模达6734亿元，汇聚中国约70%的头部MCN机构(多频道网络机构)。截至今年上半年，该省直播经济相关企业已突破17万家。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677247.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">浙江“工厂游”升温 老工业带动新文旅</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社宁波8月15日电 题：浙江“工厂游”升温 老工业带动新文旅</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678309.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">浙江：“十五五”率先基本实现农业农村现代化</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网杭州8月19日电(鲍梦妮)8月19日，《浙江省“十五五”农业农村现代化规划》新闻发布会在杭州召开。据发布会消息，浙江目标到2030年，率先基本实现农业农村现代化。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680622.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（活力中国调研行）湖南湘西“挤满”外国人</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社湖南湘西8月16日电 题：湖南湘西“挤满”外国人</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678773.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（活力中国调研行）当一座内陆小城建设国际港</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社湖南怀化8月15日电 (记者 濮亚新)怀化，地处湖南腹地，不沿边，不靠海，这样一座中国内陆城市为什么能建国际陆港？陆港又怎样改变了这里的生活？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678395.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">活力中国调研行丨夜间文旅消费超4800亿元 湖南古镇这样留住游客的夜晚</h3>
+          <p class="text-xs text-gray-500 mt-1">眼下正值旅游旺季，湖南多地古城古镇夜间客流涌动，热闹非凡。而几年前，这些地方还曾白天游人匆匆、入夜便归于沉寂。近年来，湖南各地立足湖湘文化、历史和非遗资源，摒弃短期流量思维，推动旅游从过路式打卡转向沉浸式文化体验与过夜深度消费，为全省文旅高质量发展注入新动能。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678687.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">沪市科创板88家公司披露半年报 合计实现营业收入同比增长32%</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社上海8月19日电 (高志苗)记者19日从上海证券交易所获悉，截至目前，沪市科创板已有88家公司披露2026年半年度报告，合计实现营业收入2043亿元(人民币，下同)，同比增长32%；实现净利润189亿元，同比增长154%。其中，71家公司实现盈利，51家公司利润增长，11家公司扭亏为盈。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680560.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">沪市年内已有7单公募REITs披露增持计划 合计增持金额上限约4.3亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网上海8月13日电 (高志苗)记者13日从上海证券交易所获悉，沪市年内已有7单公募REITs项目披露增持相关计划，合计增持金额上限约4.3亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677248.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">沈阳同日贯通两条TIR跨境线路</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社沈阳8月19日电 (杨茜茜 王翕瞳)国际公路运输(TIR)沈阳集结中心19日首次同日贯通两条跨境运输线路，分别为沈阳至阿塞拜疆巴库、沈阳经蒙古国至俄罗斯。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680609.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">江西鹰潭全力打造世界级铜基新材料产业集群</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社南昌8月14日电 (记者 吴鹏泉)江西省鹰潭市市长王亚青14日在南昌市介绍，“十五五”时期，鹰潭市将全力打造世界级铜基新材料产业集群。力争到2030年，全市铜基新材料产业营收突破7600亿元人民币。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677973.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">梦想有舞台日子有滋味 湖南湘江新区这样“留”住年轻人</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长沙8月16日电 (刘曼 彭楚然)创业者有免费工位和创业导师“护航”，求职者有拎包入住的青年驿站，安家者有租金减免的人才公寓；闲暇时有看不完的演出、逛不完的市集和走几步就到的公园和球场……在湖南湘江新区，留住年轻人的，是一整套可感可及的青年发展生态。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678646.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">柚家客服回应厨房纸巾致癌物超标：相关产品已下架</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电(左雨晴) 近日，上海市市场监管局发布公告称，上海柚家科技有限公司召回旗下1500件柚家厨房纸巾，因为该批次纸巾丙烯酰胺含量过高，可能对消费者的身体健康造成伤害，消费者应立即停止使用。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680541.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">杭州打造具身智能人才闭环培养体系 产学研用协同直通就业</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网杭州8月16日电(郭其钰)8月16日，浙江杭州具身智能人才培养与考试认证中心及宇树科技机器人(具身智能)职业技能培训中心在杭州滨江成立。该中心由国家人工智能应用中试基地(具身智能)联动宇树科技共建，是目前全国唯一的具身智能人才培养与考试认证中心。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678719.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">未来5年10万亿元消费增量目标，怎样实现？</h3>
+          <p class="text-xs text-gray-500 mt-1">原标题：到2030年，社会消费品零售总额达到60万亿元左右</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677273.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">教练还在学员少了 昔日学车热潮不再</h3>
+          <p class="text-xs text-gray-500 mt-1">抱团涨价、协会串谋、收费失规……</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678108.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“我是廊坊推荐官”走进8大领域 解锁产业发展新动能</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网廊坊8月16日电 8月14日至15日，由中共廊坊市委网信办组织开展的“我是廊坊推荐官”之行在河北廊坊举行。活动聚焦新材料、空港装备、智慧康养、数字档案、航空实训、柔性显示、高端医疗、文化科教八大领域，系统记录并展示廊坊现代化产业体系建设的阶段性成果。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678749.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">成都首笔“算力贷”落地 创新“券贷协同”赋能人工智能企业发展</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网成都8月13日电 (祝欢)13日，成都首笔114万元“算力贷”已成功发放至企业。“算力贷”依托政府惠企政策构建信用支撑，以“算力券”财政资金作为增信保障，以算力真实需求为业务依托，实行线上便捷申请、智能审批、快速放款。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677287.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“张雪机车”获颁欧盟整车型式认证证书</h3>
+          <p class="text-xs text-gray-500 mt-1">近日，国际独立第三方检测、检验和认证机构德国莱茵T#220;V大中华区(下称“T#220;V莱茵”)发布消息称，“张雪机车”的500RR摩托车获得由卢森堡交通部颁发的欧盟WVTA(整车型式认证)证书。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677192.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">开局起步“十五五”：海口向国际旅游消费目的地转型</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月13日电 (张茜翼 张芷懿)听一场高水准的演唱会，看一出驻场实景舞台剧，买几件与全球同步上新的免税品……这样的旅行体验，未来五年将在海口成为常态。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677269.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">开局起步“十五五”：海南将打造具有全球影响力的旅游消费目的地</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月13日电(张茜翼 张芷懿)当“到海南买全球”逐渐成为消费新风尚，这座热带岛屿正望向更远的彼方。海南新近出台的《“十五五”海南国际旅游消费中心规划》(下称《规划》)明确，到“十五五”末期，海南年接待国内外游客1.54亿人次，入境客运航线超过120条，全球非群岛国海岛旅游目的地竞争力排名进入前3位。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677186.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">开局起步“十五五”：海南将打造“全球免税购物中心”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月13日电(张茜翼 张芷懿)未来五年，海南不仅要让外来游客“买得爽”，还要让本地居民出门就能“买全球”。海南省商务厅副厅长张春亘13日表示，“十五五”期间海南将构建商品丰富、购物便利、价格优惠的“离岛免税+岛内居民日用消费品免税”的免税购物格局，打造“全球免税购物中心”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677245.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">开局起步“十五五”：三亚力推旅游产品迭代升级</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月13日电 (张茜翼 张芷懿)中共三亚市委常委、市政府副市长向义海13日在海南省新闻办公室举行的发布会上表示，到2030年，三亚全市年接待国内外游客不低于5000万人次，年游客总花费不低于1600亿元，年接待入境游客不低于200万人次，力争达到250万人次。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677313.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广西天峨“蓝刀鱼风暴”成文旅新热点 “奔县游”激活县域经济</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网河池8月16日电(记者 黄艳梅)碧水幽幽，鱼影灵动，桨板泛波……今年暑期，广西西北小城天峨县凭借“蓝刀鱼风暴”火爆出圈，数万尾蓝刀鱼在清澈见底的红水河中翻涌如银鳞流动，吸引大批游客慕名前来体验这场“奔县游”的清凉之约。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678658.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广州港“北极中欧快航”首航 28天直达欧洲</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月19日电 (记者 蔡敏婕)广州港南沙港区19日迎来海杰航运在该港的“北极中欧快航”CAX首航，该航线是海杰航运2026年重点打造的季节性周班精品快航，投入7艘至8艘1740标准箱至4890标准箱集装箱船舶。此次首航，标志着华南地区经北冰洋至欧洲航线正式运作。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680628.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广州“消费帮扶工惠行”累计带动特色产品销售超30亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月14日电 (记者 张璐)西藏的清甜鲜果带着雪域高原的阳光、贵州的醇香腊肉裹着苗家烟火的温度、湛江的海鲜干货藏着南海之滨的风浪……8月14日至16日，广州塔西广场化身“山海风味集市”，“奋进‘十五五’助力‘百千万’——十城联动 千品惠购 消费帮扶工惠行”活动(简称“活动”)正式启幕。活动现场人头攒动，烟火气十足，一场集美食、购物、帮扶于一体的夏日消费盛宴火热上演。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677981.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广东首条粤沪铁海联运外贸物流新通道落地运行</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月19日电 (许青青 关悦)据广州海关19日消息，当日，一批广东生产制造的服装、小家电等轻工产品，在上海外高桥港区码头登上国际货轮，启程出口北美市场。该批货物经广州海关所属广州车站海关监管，通过铁海联运新模式，从广州国际港运抵上海芦潮港铁路集装箱中心站后衔接远洋货轮，是广东首条粤沪铁海联运外贸物流新通道落地运行后的首批出口货物。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680537.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广东湛江开渔季签约超50亿元激活蓝色经济</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网湛江8月16日电 (梁盛 谢剑锋)16日12时，南海伏季休渔期正式结束，广东湛江湾汽笛齐鸣，万千渔船列队驶向深海。当天，2026年湛江开渔季启动仪式暨“湛品”展示活动同步举行，产业合作成果丰硕，线下达成签约总额50.5亿元，覆盖保险保障、银行授信、产销对接、冷链物流等海洋渔业全产业链。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678665.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广东发布首个词元经济专项金融产品“Token贷”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月14日电(记者 何俊杰)广东省首个词元经济专项金融产品“Token贷”14日在广州海珠正式发布，《海珠区促进词元经济发展若干措施》(下称“词元八条”)同步落地。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677838.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">广东全域土地综合整治累计拉动投资7670亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网韶关8月14日电 (孙秋霞 周可)广东省全域土地综合整治现场推进会14日在韶关召开，记者从会上获悉，截至目前，广东省累计批复全域土地综合整治实施方案216个，已覆盖全省104个县(市、区)，累计拉动投资7670亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677964.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">巴奴火锅上线“打赏服务员”功能，客服回应：自愿打赏，严禁索要</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网8月14日电(记者 吴家驹)近日，不少消费者发现，巴奴火锅在点餐小程序上线了“打赏服务员”功能，引发网络争议。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10678008.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山西晋中“十五五”谋划3000余个项目 总投资1.6万亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网太原8月19日电(高雨晴)“‘十五五’期间，晋中市谋划了3000多个、总投资1.6万亿元的项目盘子，来有力支撑各领域高质量发展。”19日，中共山西省委宣传部、山西省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会，晋中市委副书记、市长冯晓雷就项目谋划情况作了介绍。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680629.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山西晋中：“十五五”煤炭稳产1.2亿吨 绿电占比超三分之二</h3>
+          <p class="text-xs text-gray-500 mt-1">图为新闻发布会现场。严长江 摄
+
+　　中新网太原8月19日电(高雨晴)“煤炭产量稳定在1.2亿吨，绿电占比达到三分之二以上，非常规天然气产量达到12亿立方米，‘三位一体’构建起新型能源体系。”19日，在中共山西省委宣传部、山西省人民政府新闻办公室举行的开局起步“十五五”系列主题新闻发布会上，晋中市委副书记、市长冯晓雷围绕该市“十五五”规划《纲要》有关情况进行介绍。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680603.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山西忻州：“十五五”持续深耕“特优”战略 五维发力推动农业强市建设</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网太原8月13日电 (杨静 李瑾阳)“特优战略是忻州农业高质量发展的不二选择，杂粮产业是忻州特优农业的主攻方向。”13日，在中共山西省委宣传部、山西省人民政府新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，忻州市副市长孟宏斌表示，“十五五”期间，忻州将坚持特优战略，打造有机旱作特优农业示范基地，从五个方面发力引领农业产业高质量发展。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677244.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山东“清凉产品”走俏海外</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社青岛8月15日电 (王禹)15日清晨，山东省胶州市李哥庄镇制帽产业园内缝纫机的“嗒嗒”声连片响起，激光裁床精准裁切防晒速干面料，一批批带有加宽加长遮光帽檐的功能性棒球帽有序下线，即将装箱发往欧美、东南亚各大商超与户外品牌门店。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678253.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山东—新疆产业合作对接活动走进新疆兵团第十二师</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网乌鲁木齐8月16日电 (记者 戚亚平)16日，“鲁兵携手·产业共兴”山东—新疆产业合作对接活动(新疆生产建设兵团第十二师)在乌鲁木齐市举行。活动邀请两地80余家企业参与，涉及农业机械及装备、食品、消费品、生物科技等领域；同时安排了产业合作对接推介、实地对接等环节，力争达成实质性合作。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678751.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山东口岸首单新能源商品车“集装箱+滚装”同船出口业务落地烟台港</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网烟台8月13日电 (王娇妮 邹常焜)记者13日从山东港口烟台港获悉，千余台国产新能源商品车近日在该港完成装船，发往中东地区。这是山东口岸首单新能源商品车“集装箱+滚装”同船出口业务。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677220.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宇树科技：网上投资者放弃认购数量8734股</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月13日电(记者 刘星晨)13日晚，宇树科技发布首次公开发行股票并在科创板上市发行结果公告。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677332.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宇树上市：王兴兴身家超千亿，梁文锋也赚翻了</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电(左雨晴) 8月19日，A股“人形机器人第一股”宇树科技正式登陆科创板，发行价为150.8元/股，收盘报845元/股，涨幅460.34%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680543.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宁夏构建覆盖全域的康养旅居产品矩阵</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网银川8月13日电 (杨迪 杨政)记者13日从宁夏回族自治区政府新闻办新闻发布会上获悉，宁夏推动五个地级市错位发展、各具特色，构建覆盖全域的康养旅居产品矩阵。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677209.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宁夏中卫：沙漠边缘崛起算力基地</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网中卫8月15日电 题：宁夏中卫：沙漠边缘崛起算力基地</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678218.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">学者：AI革命的下半场将是技术对个人赋能</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网上海8月16日电 (记者 陈静)15日正在举行的2026上海书展上，《微弱烛光：PA时代与人类沉浮》新书发布会举行。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678759.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">【好评中国】秦平 | 解码外资看好中国的多重“硬核”底气</h3>
+          <p class="text-xs text-gray-500 mt-1">近期，外资在中国高端制造领域投资动作频频，一批重大项目接连落地、开工或投产，主要集中于汽车核心零部件再制造、动力电池、化工新材料及半导体等高新技术产业领域。受访专家认为，外资加码中国高端制造的背后，是中国产业升级红利与全球供应链重构的双重驱动，跨国公司正以实际行动为“投资中国”投下信任票。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678774.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">好评中国丨2291万入境客的账单：老外们的“Chinamaxxing”都max了些啥？</h3>
+          <p class="text-xs text-gray-500 mt-1">2026年，“China Travel”从社交平台的热词变成海关入境章上的真实数据。上半年2291.4万人次外国人入境，同比增长20.4%，免签入境占比高达77.7%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678777.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">央企展团首次联合亮相2026世界机器人大会</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电(记者 刘亮)2026世界机器人大会19日在北京经济技术开发区北人亦创国际会展中心开幕。本届大会上，中央企业联合展区首次集中亮相，在国务院国资委指导下，兵器工业集团牵头，联合中央企业、高校及科研院所、民营企业、行业学会等百余家单位组建中央企业机器人创新联合体，同步发布央企机器人十大创新成果和十大高价值应用场景。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680535.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">天津绿色金融“碳”路记：近万亿元贷款背后的创新密码</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网天津8月13日电 题：天津绿色金融“碳”路记：近万亿元贷款背后的创新密码</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677262.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">增长64.5%！西藏“新三样”出口势头强劲</h3>
+          <p class="text-xs text-gray-500 mt-1">今年上半年，西藏自治区以新能源汽车、锂电池、光伏产品为代表的“新三样”产品出口势头迅猛，合计出口2.37亿元，同比增长64.5%。其中，锂电池、新能源汽车出口同比分别增长295.6%和67.0%，中国“智”造正源源不断走向南亚市场。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677148.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">国家邮政局：前7个月我国邮政行业业务量和收入实现双增长</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网8月14日电 据国家邮政局微信公众号消息，国家邮政局14日公布2026年1-7月邮政行业运行情况，前7个月我国邮政行业业务量和收入实现双增长。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677782.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“含绿量”不断上升 一组数据看中国经济的澎湃动能</h3>
+          <p class="text-xs text-gray-500 mt-1">本周</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678610.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">吉林设立百亿“富民产业”资金池赋能乡村振兴</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长春8月13日电 (高龙安 李彦国)吉林省农业农村厅副厅长刘怀13日在省政府新闻办举行的新闻发布会上介绍，该省设立总规模不低于100亿元的“富民产业”资金池，创新“整村授信”模式，信用贷款最高300万元、担保贷款最高5000万元，担保费率不超过0.8%，贷款期限最长可达10年。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677150.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">南方五省区新能源实现“三高” 大湾区能源“含绿量”显著提升</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月14日电(王华 　蓝旺)2026年南方电网能源发展论坛暨南网能源院研究成果发布会14日在广州举行。其间，南方电网公司、南网能源院共发布8份报告，当中指出，南方五省区新能源发展实现“三高”：装机增速高、利用率水平高、市场化程度高；粤港澳大湾区能源发展“含绿量”显著提升。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677834.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">北斗时空安全产业平台落地长沙 共建共享推动特色产业集群建设</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长沙8月16日电(宋倩)北斗时空安全试验基地共建启动暨产业平台建设发布会16日在长沙举行，相关专家学者、企业代表等300余人齐聚，聚焦时空安全产业，共探共建共享产业生态。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678775.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">北京出台18条举措促餐饮和食品领域老字号传承发展</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月13日电 (记者 吕少威)北京市商务局等六部门13日发布《北京市促进餐饮和食品领域老字号传承发展若干措施》(“若干措施”)，出台18条举措以充分发挥餐饮、食品等领域老字号在消费引领、文化传承、品牌建设方面的积极作用。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677237.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">北京亦庄20余家企业携近百款新品亮相2026世界机器人大会</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电 (李玉凤)19日，2026世界机器人大会在北京经济技术开发区(简称“北京经开区”，又称“北京亦庄”)开幕。作为世界机器人大会永久会址，北京亦庄20余家企业携近百款新品亮相同期举办的2026世界机器人博览会，展品覆盖前沿机器人整机、多元应用场景及核心零部件等，全景呈现机器人产业创新发展的最新图景。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680643.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">北京举办消费节促“机器人买卖”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月15日电 (记者 陈杭)北京经济技术开发区(下称经开区)15日启动“2026 E-Town机器人消费节”，以“买卖机器人，到北京亦庄”为主题，打通从技术到市场的“最后一公里”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678185.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">力争农产品加工销售收入破600亿元 山西晋中定下“十五五”农业目标</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网太原8月19日电 (高雨晴)“‘十五五’末，力争国家级龙头企业达到10家以上，农产品加工销售收入突破600亿元。”19日，在山西省委宣传部、山西省人民政府新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，晋中市委常委、副市长，晋中国家农高区党工委书记、管委会主任李哲介绍。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680613.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">前7月全国铁路发送旅客28亿人次</h3>
+          <p class="text-xs text-gray-500 mt-1">经济日报北京8月15日讯（记者齐慧）记者从中国国家铁路集团有限公司获悉，今年前7个月，全国铁路发送旅客28亿人次，同比增长4.1%，再创历史同期新高。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678612.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">前7个月经济数据，这个“50.9%”很关键</h3>
+          <p class="text-xs text-gray-500 mt-1">17日，国家统计局发布7月份国民经济运行数据，一项指标颇为亮眼：前7个月，新动能对规模以上工业增长的贡献率为50.9%，比上半年提高3个百分点。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680615.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">前7个月山西进出口总值797.6亿元  民营企业成稳外贸中坚力量</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网太原8月15日电 (记者 杨静)记者15日从太原海关获悉，2026年前7个月，山西省进出口总值797.6亿元。其中，进口406.9亿元，同比增长4.6%。7月份，山西省进出口112.7亿元，进口64.1亿元，同比增长23.8%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678300.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">内蒙古卓资县举办熏鸡品牌推介会 年销量突破300万只</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网乌兰察布8月16日电 (记者 张林虎)16日，“卓资熏鸡香·四季好风光”品牌推介会暨全国美食主播溯源直播带货活动在内蒙古自治区乌兰察布市卓资县举行。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678713.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">全联旅游业商会银发经济专委会在北京成立</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月13日电 (记者 刘文文)随着我国老龄化进程加快，银发群体正逐步成为文旅消费的中坚力量，“银发文旅”作为银发经济与文旅产业深度融合的新赛道，迎来了前所未有的发展机遇。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677183.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">全球首单企业类自贸离岸债在上海发行</h3>
+          <p class="text-xs text-gray-500 mt-1">8月12日，中央结算公司支持上海电气集团股份有限公司境外子公司上海电气环球资本有限公司成功发行15亿元人民币自贸离岸债，期限3年，票面利率1.8%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677330.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">全国22个科创项目齐聚重庆璧山 意向转化金额达6.3亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网重庆8月13日电 (梁钦卿)重庆璧山13日对外公布，在当地落幕的第二届“渝创星火”重庆科技成果转化大赛先进材料与绿色低碳领域赛决赛上，参赛项目累计研发投入达1.7亿元，意向转化金额达6.3亿元，部分优质项目初步达成落地意向。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677155.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“俄罗斯制造”节庆集市首登天津 主打“达恰”田园风情</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网天津8月15日电 (记者 周亚强)由俄罗斯出口中心主办的“俄罗斯制造”节庆集市15日在天津和平路金街开幕，为期5天。这是该系列活动首次在天津举办。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678365.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">会“思考”的农机在长春农博会登场 AI重塑耕作模式</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长春8月15日电 (记者 郭佳)过去依赖“蛮力”耕作的农机，如今正借助人工智能(AI)学会“思考”——不仅能精准识别杂草与病虫害，还能根据作物长势实时调整作业方式，甚至无需人工干预即可自主下田。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678129.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从“过客”到“归人” 云南昭通避暑经济催热返乡创业潮</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网云南昭通8月16日电 题：从“过客”到“归人” 云南昭通避暑经济催热返乡创业潮</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678645.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从拼融资到比落地，具身智能面临数据“大考”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电(左雨晴) 近年来，具身智能无疑是科技产业最炙手可热的赛道之一。北京物联网智能技术应用协会发布的《2026具身智能产业发展洞察报告》显示，中国具身智能广义市场规模在2025年已达到9150亿元，2026年预计突破1.09万亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680697.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从技术出海到联合攻关 中国菌物科研拓展国际合作新版图</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长春8月16日电 (李彦国  高龙安)中国食用菌产业在保障国内供给的同时，一方面向外输出种植技术助力非洲粮食安全，另一方面搭建国际平台开展菌物前沿科研合作。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678650.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从“产业端”走向“生活端” 苏州打造AI科技公共体验空间</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网苏州8月16日电(常慕城)由苏州国际科技园与苏州恒泰控股集团有限公司联合打造的AI科技公共体验空间——苏州工业园区智能终端体验店，16日上午在苏州中心广场正式对外开放。100余款前沿科技产品集中亮相，覆盖AI视觉、智能健康、绿色能源、数字文创等多个赛道。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678644.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从18.39%看中国经济之“新”</h3>
+          <p class="text-xs text-gray-500 mt-1">“三新”经济是以新产业、新业态、新商业模式为核心内容的经济活动的集合。国家统计局近日发布数据显示，2025年我国“三新”经济增加值为257869亿元，按现价计算，比上年增长6.2%，高于同期国内生产总值(GDP)现价增速2.2个百分点。“三新”经济增加值占GDP的比重逐年增加，从2017年的15.7%增长至2025年的18.39%。数字的变化，清晰勾勒出中国经济新旧动能转换的坚实足迹。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678355.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">今年内蒙古陆路口岸货运量突破1亿吨大关</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网呼和浩特8月14日电 (记者 李爱平)内蒙古自治区口岸管理办公室14日对外发布消息称，截至8月14日，2026年内蒙古陆路口岸进出境货运量已正式突破1亿吨大关，较上一年度提前1个月实现亿吨突破，货运规模继续稳居全国首位。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677832.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">京津冀机器人产教融合协同发展展区亮相世界机器人大会</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电 (记者 杜燕)以“人机共生，产需共融”为主题的2026世界机器人大会19日在北京亦庄拉开帷幕。作为全场唯一聚焦区域协同人才培养的特色展位，京津冀机器人产教融合协同发展展区全景式呈现京津冀机器人产教融合创新育人的“新范式”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680647.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">京东集团发布2026年二季度及半年业绩：活跃用户保持双位数增长 服务收入占比进一步提升</h3>
+          <p class="text-xs text-gray-500 mt-1">北京时间8月13日，京东集团【纳斯达克代码：JD，港交所代号：9618(港币柜台)及89618(人民币柜台)】发布了2026年二季度及半年业绩，AI等新生产要素激发了供应链和产品的创新潮，京东的超级供应链优势更加凸显，围绕居家、健康、出行等需求的多样化生活服务进一步带动了用户活跃度的提升。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677301.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">云南盈江坚果跨山海、销四洲</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网德宏8月14日电(陆希成 杨硕)近日，云南省德宏傣族景颇族自治州盈江县漫山的坚果林迎来丰收季。一批本地加工的澳洲坚果制品经昆明海关所属盈江海关属地查检合格后装车起运，发往中东市场。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677844.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">云南昭通早熟苹果抢“鲜”上市 高原果乡蹚出“红火”新路</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网云南昭通8月16日电 (时文枝)“家人们，昭通早熟糖心苹果熟了，又甜又脆又多汁！产地直发，快来选购！”16日，在云南省昭通市昭阳区洒渔镇的苹果种植基地，主播范强正对着手机镜头热情推介早熟苹果“瑞雪”。随着新一年苹果丰收季的到来，这位助农主播的直播间再度升温，订单纷至沓来。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678663.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（乡村行·看振兴）山西长子：一根粉条串起产业链  土特产变身增收主业</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网长治8月13日电 题：山西长子：一根粉条串起产业链  土特产变身增收主业</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677190.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">为“毛孩子”造新家 浙江纺企转型“掘金”全球市场</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网绍兴8月14日电 题：为“毛孩子”造新家 浙江纺企转型“掘金”全球市场</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677987.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中秘合营 钱凯港上半年集装箱吞吐量同比增长超七成</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社上海8月13日电 总部设于上海的中远海运集团13日对外发布信息称，今年上半年钱凯港完成集装箱船舶作业137艘次，比去年同期增长35.64%；散杂货船舶作业50艘次，同比增长28.2%；滚装船作业14艘次，同比增长133.33%；装箱作业4349TEU(标准箱)，同比增长127.82%；拆箱作业1724TEU，同比增长168.54%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677302.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中澳两国央行续签双边本币互换协议</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网8月19日电 据中国人民银行微信公众号消息，经国务院批准，近日中国人民银行与澳大利亚储备银行续签了双边本币互换协议，互换规模由原来的2000亿元人民币/410亿澳大利亚元扩大至2200亿元人民币/460亿澳大利亚元，协议有效期五年，经双方同意可以展期。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680599.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中消协提出50条行动建议  引导绿色消费行为</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月15日电 (记者 刘亮)中国消费者协会15日在北京发布《中国消费者绿色消费指南(2026版)》(以下简称《指南》)。中消协、生态环境部宣传教育中心、中国社会科学院社会学研究所相关人围绕《指南》编制背景、核心内容、发布意义进行了介绍，引导广大消费者践行绿色低碳理念。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678375.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中欧北极快航开启夏季常态化通航</h3>
+          <p class="text-xs text-gray-500 mt-1">【欧洲专线】中欧北极快航开启夏季常态化通航</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678189.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“中国荔乡”广东茂名今年荔枝出口收官</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社广东茂名8月19日电 (梁盛 赵思懿)记者19日从广东茂名海关获悉，当日，随着最后一批出口鲜荔枝顺利完成海关查验发往美国，今年茂名荔枝出口季圆满收官。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680668.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国移动“天基智算载荷1.0”成功入轨</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月19日电 (记者 刘亮)中国移动“天基智算载荷1.0”19日在东风商业航天创新试验区搭载“鸿鹄03星”随朱雀三号重复使用遥二运载火箭成功发射入轨，后续将启动天基通算智融合技术试验。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680608.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国牵头制定的全球首个算电协同领域国际标准成功立项</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月19日电 (记者 刘亮)中国国家市场监管总局19日公布，由中国向国际电工委员会(IEC)提出的《数据中心微电网监控与能量管理系统技术规范》提案近日获批立项。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680557.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国海关提出“4E AEO合作倡议” 共建开放包容的亚太贸易生态圈</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社辽宁大连8月19日电 (记者 杨毅)亚太经合组织(APEC)“经认证的经营者”(AEO)专题研讨会19日在辽宁大连举行。来自13个APEC经济体的海关、相关国际组织、AEO企业等120余名代表围绕AEO制度全球发展趋势、AEO制度促进APEC成员经济发展等相关议题开展研讨交流。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680612.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国汽车生产重镇重庆车企出海动作不断</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社重庆8月13日电 (张旭 陈媛)重庆海关13日公布，据该关统计，2026年前7个月，重庆出口汽车353.3亿元人民币，同比增长57.1%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677295.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">《中国工业领域绿色低碳发展技术蓝皮书》在湖州发布</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网湖州8月15日电(鲍梦妮)8月15日，2026绿色低碳创新大会在浙江湖州举办，《中国工业领域绿色低碳发展技术蓝皮书》(下称《蓝皮书》)在现场发布。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678269.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国央行将开展1万亿元人民币买断式逆回购操作</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月13日电 (陶思阅)中国央行13日发布公告称，将于14日开展10000亿元人民币买断式逆回购操作，期限为6个月(185天)。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677223.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国央行发文支持跨国公司资金调配便利化</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月14日电 (陶思阅)为进一步便利跨国公司集团资金归集使用，中国央行、国家外汇管理局14日联合发布《关于跨国公司本外币跨境资金集中运营业务有关事宜的通知》。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677913.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国中车上半年营收、净利同比“双增”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月19日电 (记者 陈康亮)中国A股上市公司中国中车股份有限公司(下称“中国中车”)19日发布公告称，2026年上半年，公司实现营业收入约1316.82亿元(人民币，下同)，同比增长9.96%；实现归属于上市公司股东的净利润约79.91亿元，同比增长10.28%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680586.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国20家行业协会发布绿色低碳行动倡议</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月15日电 (记者 阮煜琳)今年8月15日是中国第四个全国生态日。当日，中国商业联合会、中国钢铁工业协会等20家行业协会，共同发出绿色低碳行动倡议并承诺，引导会员企业积极开展能源结构转型，逐步提高可再生能源利用比例，不断降低碳排放强度。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678394.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">《〈中华人民共和国生态环境法典〉施行》纪念邮票将于8月15日发行</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月14日电 (记者 王梦瑶)《中华人民共和国生态环境法典》将于8月15日正式施行。据中国集邮有限公司消息，中国邮政将于15日同步发行《〈中华人民共和国生态环境法典〉施行》纪念邮票一套1枚，以集邮文化为载体普及生态法治理念，纪念生态环境法典实施。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677848.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">【中亚专线】44个国家和地区客商新疆喀交会觅商机</h3>
+          <p class="text-xs text-gray-500 mt-1">【中亚专线】44个国家和地区客商新疆喀交会觅商机</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677879.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">两部门急拨8000万元支持豫鄂皖应急抢险救灾</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月13日电 (记者 赵建华)财政部、应急管理部13日紧急预拨8000万元中央自然灾害救灾资金，支持河南、湖北、安徽3省开展洪涝、地质灾害应急抢险救灾工作，重点做好搜救转移安置受灾人员、排危除险等应急处置、次生灾害隐患排查整治、倒损民房修复等工作，最大限度降低灾害损失和人员伤亡。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677198.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">业内人士称，中国咖啡市场高增速还能持续5到10年</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网海口8月14日电 (记者 王晓斌 李宇凡)中国咖啡市场眼下15%到25%的复合增长率，至少还能维持5到10年。14日在2026海南国际咖啡博览会开幕式上，亚洲咖啡协会会长张宏给出了这样的判断。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677963.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">业内人士：AI时代，内容体系将进一步扩展</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月19日电(梁小燕)AI不仅是提效工具，还在改变着内容与用户的关系。网易传媒副总裁李淼日前接受采访时表示，进入AI时代，内容体系将进一步扩展。内容创作的形式不再局限于图文和视频，还可能延伸至游戏、剧集或微电影等领域。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680700.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">专家学者聚首广州南沙 共议海洋经济产业科技创新</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网广州8月13日电 (王坚 袁仕联)香港城市大学海洋环境健康全国重点实验室副主任陈荔，香港科技大学(广州)功能枢纽地球与海洋大气科学学域助理教授刘易，华南理工大学机械与汽车工程学院教授、博士生导师王振民等专家学者12日齐聚广州南沙，共议海洋经济产业科技创新。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677228.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">不断攀升！多组数据透视中国出口含“新”量含“绿”量</h3>
+          <p class="text-xs text-gray-500 mt-1">海关总署数据显示，7月份，全国货物贸易进出口总值4.66万亿元，其中，高技术产品出口增长超五成。面对全球数字化、绿色化发展趋势，中国人工智能、绿色低碳等产业出口动力强劲，出口含“新”量含“绿”量不断攀升。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678761.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">上海航空枢纽地面竞争升级 东航、南航同日推出服务升级举措</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网上海8月14日电 (记者 殷立勤 李佳佳)2026年暑运过半，各大航空公司在上海虹桥、浦东两大枢纽机场密集推出服务升级举措，从贵宾室体验到行李服务，地面服务精细化竞争持续升温。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677812.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">上海欲推进6G商用 构建国际数据加工枢纽</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社上海8月19日电 (范宇斌)上海市人民政府办公厅19日发布《上海市“数字上海”建设“十五五”规划》。规划提出，“十五五”时期，上海将推进第六代移动通信技术(6G)试验网实现智能协同并部署商用。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680662.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">上厅堂下厨房   中国机器人努力成为“生活搭子”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月19日电(记者 陈杭 吕少威 徐婧)2026世界机器人大会19日在北京开幕，多款机器人化身能提供情感陪护、会按摩理疗、可服务办公的“生活搭子”，加速走进千家万户。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680673.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">三亚港口岸南山港区对外开放后首艘出境船舶顺利通关</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网三亚8月19日电 (丛高)19日，中国籍货船“新辰大运”号缓缓驶离南山港码头前往越南。这标志着海南三亚港口岸南山港区正式对国际航行船舶开放后，首艘出境船舶顺利通关。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680630.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">万物云2026年中期业绩：主动退出低回报项目，营收同比增长5.4%</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月15日电 (记者 庞无忌)房地产市场深度调整，倒逼物业企业加速转型。物业企业万物云日前发布截至2026年6月30日止六个月中期业绩。报告期内，万物云实现营业收入191.1亿元，同比增长5.4%；行政开支同比下降4.9%；剔除开发商业务影响后，核心净利润同比增长7.3%。开发商业务毛利下降、非开发商业务毛利增长、AI带来费用提效，三股力量正在重塑企业资产负债表。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678297.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">一店卖全球，跨境电商推动中国制造加速出海</h3>
+          <p class="text-xs text-gray-500 mt-1">3年时间，年销售额从400多万美元增长到6000多万美元，海外市场从北美拓展到欧洲和日本——这是鑫帕特娜丝（青岛）家居饰品有限公司通过单家跨境电商平台出海交出的成绩单。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678783.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI医生进医院，新药首发到基层：京东健康半年报里的普惠医疗实践</h3>
+          <p class="text-xs text-gray-500 mt-1">一次就诊，少一些排队和反复询问；一款新药，不再只在大城市更快可及；一次减重，不再只靠个人意志硬扛。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677909.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI与算法成为“流量入口” 专家建言电商领域科学应对</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月16日电 题：AI与算法成为“流量入口” 专家建言电商领域科学应对</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678656.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">7月末中国社会融资规模存量超463万亿元 同比增7.4%</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月14日电 (陶思阅)中国央行14日公布的数据显示，初步统计，7月末，中国社会融资规模存量为463.27万亿元(人民币，下同)，同比增长7.4%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677797.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">7月末中国M2余额同比增7.7%</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月14日电 (陶思阅)中国央行14日发布的数据显示，7月末，广义货币(M2)余额355.51万亿元人民币，同比增长7.7%；狭义货币(M1)余额115.46万亿元，同比增长4%；流通中货币(M0)余额14.82万亿元，同比增长11.6%。前7个月净投放现金7255亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677784.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">7月中国快递发展指数同比提升2.4%</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月14日电 (记者 王梦瑶)中国国家邮政局14日发布的报告显示，7月中国快递发展指数为424.2，同比提升2.4%。行业运行平稳有序，市场规模持续扩容，服务质效稳步提升，创新动能不断蓄积，综合竞争实力明显增强，有力支撑消费提质扩容，为经济社会发展添力赋能。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677856.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">4000多辆国产汽车搭乘“维京卡瑞娜”轮从厦门港出海</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网厦门8月14日电 (蓝金长 陈颖维)8月14日，马绍尔群岛籍汽车滚装船“维京卡瑞娜”轮装载着4171辆长城品牌出口汽车缓缓驶离厦门港，开启远洋之旅。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-14/10677965.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">2026 E-Town机器人消费节在京启动 推出工业科技研学线路</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网北京8月15日电 (许淑芳)北京经济技术开发区(简称北京经开区，也称北京亦庄)15日启动“2026 E-Town机器人消费节”。今年的消费节在2025年基础上全面升级，以“买卖机器人，到北京亦庄”为主题，持续创新机器人消费节的服务全过程，打通从技术到市场的“最后一公里”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678102.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">1至7月全国铁路发送旅客28亿人次 再创历史同期新高</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网8月15日电 据“中国铁路”微信公众号消息，今年以来，铁路部门坚持以人民为中心的发展思想，积极适应旅客多样化的出行需求，精心组织旅客运输，持续丰富客运产品供给，不断优化站车服务品质，保障了旅客平安便捷温馨出行，1至7月，全国铁路发送旅客28亿人次，同比增长4.1%，再创历史同期新高。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678071.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福克斯新闻 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/world.html" class="text-sm text-blue-600 hover:underline">&larr; Back to World</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">World / 福克斯新闻</h1>
+      <span class="text-sm text-gray-400">48 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine pounds Black Sea Fleet’s ‘last major stronghold’ while Putin flexes naval power in Pacific</h3>
+          <p class="text-xs text-gray-500 mt-1">Putin threatened to seize European vessels from the Russian Black Sea to the Pacific after Ukraine&apos;s drone attack crippled Novorossiysk grain terminals.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.foxnews.com/world/ukraine-pounds-black-sea-fleets-last-major-stronghold-while-putin-flexes-naval-power-pacific" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US intel warns Russia could launch limited attack on NATO ally in effort to fragment organization: report</h3>
+          <p class="text-xs text-gray-500 mt-1">Vladimir Putin could attack a NATO member between this fall and 2029, U.S. intelligence assesses, likely targeting the Baltics or Poland directly.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.foxnews.com/world/us-intel-warns-russia-could-launch-limited-attack-nato-ally-effort-fragment-organization-report" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US Ambassador Huckabee slams extreme group of Israeli settlers for seizing Palestinian homes on West Bank</h3>
+          <p class="text-xs text-gray-500 mt-1">Settler violence in the West Bank prompted U.S. Ambassador Mike Huckabee to call the perpetrators &quot;Israeli terrorists&quot; after they besieged a Palestinian American&apos;s home near Nablus.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/world/us-ambassador-huckabee-slams-extreme-group-israeli-settlers-seizing-palestinian-homes-west-bank" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UN watchdog slams potential election of Iran to panel with human rights sway: 'Lunatics running the asylum'</h3>
+          <p class="text-xs text-gray-500 mt-1">Iran&apos;s expected election to a United Nations committee on human rights and counterterrorism is called &quot;Orwellian&quot; by UN Watch&apos;s Hillel Neuer.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/world/un-watchdog-slams-potential-election-iran-panel-human-rights-sway-lunatics-running-asylum" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UNICEF Gaza findings ‘completely shatters’ starvation claims against Israel, State Dept says</h3>
+          <p class="text-xs text-gray-500 mt-1">New UNICEF findings fuel fresh scrutiny of Gaza famine claims as the State Department says the data &quot;completely shatters&quot; allegations Israel deliberately starved civilians.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/unicef-gaza-findings-completely-shatters-starvation-claims-against-israel-state-dept-says" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK ‘in free fall’ on free speech, expert warns as British MP brands Trump admin grant 'MAGA money meddling'</h3>
+          <p class="text-xs text-gray-500 mt-1">The U.S. Embassy in London is offering up to $500,000 for projects promoting Anglo-American principles including freedom of speech, limited government and the rule of law.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/uk-free-fall-free-speech-expert-warns-british-mp-brands-trump-admin-grant-maga-money-meddling" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump confirms IRGC backchannel, but calls for Iran's 'white flag of surrender'</h3>
+          <p class="text-xs text-gray-500 mt-1">Trump confirmed a direct backchannel with the IRGC for peace talks and issued an extraordinary bombing warning to Oman as the ceasefire expires.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/trump-confirms-irgc-backchannel-calls-irans-white-flag-surrender" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump bets economic pressure can squeeze Iran as regime’s own failures deepen the pain</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump says he is &quot;low-keying it&quot; with Iran as sanctions and a naval blockade compound Tehran&apos;s financial crisis and inflation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.foxnews.com/world/trump-bets-economic-pressure-can-squeeze-iran-regimes-own-failures-deepen-pain" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump ally 'El Tigre' sworn in as Colombia's new president amid continent's rightward shift</h3>
+          <p class="text-xs text-gray-500 mt-1">Abelardo de la Espriella inherits soaring violence, a fragmented Congress and a $34 billion financing gap as he vows to rebuild U.S. ties.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.foxnews.com/world/trump-ally-el-tigre-sworn-colombias-new-president-amid-continents-rightward-shift" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump administration sanctions sitting president of the International Criminal Court for 'abuses of power'</h3>
+          <p class="text-xs text-gray-500 mt-1">Marco Rubio called the International Criminal Court &quot;corrupt&quot; as the Trump administration sanctioned two top ICC officials over jurisdiction disputes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/world/trump-administration-sanctions-sitting-president-international-criminal-court-abuses-power" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Taliban wipes out decades of progress as 2.4M Afghan girls remain locked out of school, UN agency says</h3>
+          <p class="text-xs text-gray-500 mt-1">UNESCO says 2.4 million Afghan girls are locked out of secondary school five years after the Taliban banned female education beyond the primary level.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.foxnews.com/world/taliban-wipes-out-decades-progress-2-4m-afghan-girls-remain-locked-school-un-agency-says" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Student perpetrates deadly shooting at Thailand high school, authorities say</h3>
+          <p class="text-xs text-gray-500 mt-1">A student opened fire at a high school in Thailand on Friday, ending the lives of at least six individuals and injuring others, police said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.foxnews.com/world/student-perpetrates-deadly-shooting-thailand-high-school-authorities-say" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Spanish journalist says Ceuta residents believe government isn't doing enough to prevent another migrant rush</h3>
+          <p class="text-xs text-gray-500 mt-1">Ceuta residents say they feel scared after 70,000 migrants flooded Spain&apos;s North African enclave, as border security concerns grow amid Morocco tensions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/world/spanish-journalist-ceuta-residents-believe-government-isnt-doing-enough-prevent-another-migrant-rush" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Spain's migrant surge reignites debate over Europe’s Islamist terror threat</h3>
+          <p class="text-xs text-gray-500 mt-1">Spain recorded the EU&apos;s highest number of jihadist terrorism arrests in 2025 as suspected extremists were identified among 72,000 migrants flooding into Ceuta.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 08 Au</div>
+          <a href="https://www.foxnews.com/world/spains-migrant-surge-reignites-debate-over-europes-islamist-terror-threat" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Spain stocks African enclave Ceuta with boosted security as Morocco monitors calls for second border rush</h3>
+          <p class="text-xs text-gray-500 mt-1">Spain&apos;s African enclave Ceuta sees soldiers patrolling streets, and Morocco says it arrested those inciting a second mass border crossing on Saturday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/world/spain-stocks-african-enclave-ceuta-boosted-security-morocco-monitors-calls-second-border-rush" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">South Korean president jumps to invest in military after Trump cuts joint exercises</h3>
+          <p class="text-xs text-gray-500 mt-1">Lee Jae Myung urged stronger independent South Korean military capabilities after Trump ordered cuts to U.S.-South Korean Ulchi Freedom Shield drills.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/world/south-korean-president-jumps-invest-military-trump-cuts-joint-exercises" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Russia’s ‘Amazon’ in deep-strike Ukraine blitz, wiping billions from Putin-linked CEO</h3>
+          <p class="text-xs text-gray-500 mt-1">Ukraine&apos;s drone strikes have knocked out 27% of Wildberries warehouse capacity, with losses estimated up to $8.5 billion as Russia&apos;s logistics reels.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/russia-amazon-deep-strike-ukraine-blitz-wiping-billions-putin-linked-ceo" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Russian state economist fired after stark warning about Moscow’s economic future</h3>
+          <p class="text-xs text-gray-500 mt-1">VEB.RF, Russian state development bank, economist Andrei Klepach warned Russia is losing the war of attrition before his firing, as the European Union prepares sweeping sanctions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/russian-state-economist-fired-after-stark-warning-about-moscows-economic-future" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Poland arrests Russian allegedly hired to kill Ukrainian-American who was 'inconvenient to the Putin regime'</h3>
+          <p class="text-xs text-gray-500 mt-1">Polish Prime Minister Donald Tusk says Poland arrested a Russian citizen recruited by Russian intelligence to kill a Ukrainian-American in Warsaw.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/poland-arrests-russian-allegedly-hired-kill-ukrainian-american-inconvenient-putin-regime" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">One of world’s oldest orca whales found with possible shotgun wounds as officials launch investigation</h3>
+          <p class="text-xs text-gray-500 mt-1">Toñi, the oldest known Iberian orca, surfaced in the Strait of Gibraltar with wounds conservationists believe were caused by shotgun pellets.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/one-worlds-oldest-orca-whales-found-possible-shotgun-wounds-officials-launch-investigation" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">North Korea launches another ballistic missile as US, South Korea prepare for military drills</h3>
+          <p class="text-xs text-gray-500 mt-1">North Korea&apos;s second ballistic missile launch in less than a week comes as the U.S. and South Korea prepare for Ulchi Freedom Shield exercises.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.foxnews.com/world/north-korea-launches-ballistic-missile-us-south-korea-prepare-military-drills" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Nigeria's largest rescue operation frees 308 hostages held by militants in Kwara State</h3>
+          <p class="text-xs text-gray-500 mt-1">Victims of a six-month jihadi kidnapping in Nigeria&apos;s Kwara State describe starvation, forced births and the burying of fellow captives in a forest hideout.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 08 Au</div>
+          <a href="https://www.foxnews.com/world/nigerias-largest-rescue-operation-frees-308-hostages-held-militants-kwara-state" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">New power axis in the making? Three military heavyweights lock arms, complicating Abraham Accords strategy</h3>
+          <p class="text-xs text-gray-500 mt-1">The Mecca Joint Defence Agreement signed by Saudi Arabia, Turkey and Pakistan raises questions about whether it signals a Middle East shift from the U.S.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.foxnews.com/world/new-power-axis-making-three-military-heavyweights-lock-arms-complicating-abraham-accords-strategy" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Netanyahu rejects Board of Peace's Gaza plan: No 'withdrawal until Hamas is genuinely disarmed'</h3>
+          <p class="text-xs text-gray-500 mt-1">Israeli Prime Minister Benjamin Netanyahu rejects the Board of Peace&apos;s 15-point Gaza proposal, demanding Hamas surrender all weapons before any withdrawal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.foxnews.com/world/netanyahu-rejects-board-peace-gaza-plan-no-withdrawal-until-hamas-genuinely-disarmed" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Moscow, Kyiv assassins hunt weapons bosses as Ukraine war spills beyond the battlefield</h3>
+          <p class="text-xs text-gray-500 mt-1">Draganfly CEO Cameron Chell says drone company leaders are now primary targets as Russia and Ukraine race for battlefield AI and autonomy advantages.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.foxnews.com/world/moscow-kyiv-assassins-hunt-weapons-bosses-ukraine-war-spills-beyond-battlefield" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">More than 3,000 missing after Colombia earthquake as Trump administration provides $15.5 million in relief</h3>
+          <p class="text-xs text-gray-500 mt-1">Videos show rescue workers combing through rubble as more than 3,000 people remain missing on Tuesday after a 7.4-magnitude earthquake in Colombia.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.foxnews.com/world/more-than-3000-missing-colombia-earthquake-trump-administration-provides-15-5-million-relief" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Luxury $9 million yacht caught on camera sinking off coast, days after delivery to owner</h3>
+          <p class="text-xs text-gray-500 mt-1">Video footage shows the $9.1 million Angiola II tipping onto its side in the Mediterranean Sea after engine failure sparked a fire off Porto Cervo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/luxury-yacht-caught-camera-sinking-coast-after-delivery-owner" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Liberia agrees to accept 1,200 third-country deportees from US within a year</h3>
+          <p class="text-xs text-gray-500 mt-1">Liberia agreed to accept 1,200 third-country deportees from the U.S. over the next year, with the first group of 20 expected to arrive on Thursday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/world/liberia-agrees-accept-1200-third-country-deportees-us-within-year" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kushner gives Hamas stark ultimatum: Disarm or Israel gets US backing to ‘finish the job’</h3>
+          <p class="text-xs text-gray-500 mt-1">Jared Kushner warned Hamas it must disarm within 60 to 90 days or face Israel finishing the job, following a rare face-to-face meeting in Cairo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/kushner-gives-hamas-stark-ultimatum-disarm-israel-gets-us-backing-finish-job" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Italy-Spain border feud exposes Europe’s deepening immigration divide</h3>
+          <p class="text-xs text-gray-500 mt-1">Italy and Spain face off over immigration and border controls, highlighting a widening European divide over enforcement, national security and the future of Schengen.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/italy-spain-border-feud-exposes-europes-deepening-immigration-divide" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israel's new $634M German-built 'doomsday' sub gives major boost to Iran deterrence</h3>
+          <p class="text-xs text-gray-500 mt-1">The INS Drakon is the largest submarine built in Germany since World War II, carrying a $634 million price tag as Israel bolsters naval power.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.foxnews.com/world/israel-receives-634-million-submarine-germany-major-boost-naval-deterrence" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israel vindicated by Gaza nutrition data after ‘blood libel’ starvation claims, UN envoy says</h3>
+          <p class="text-xs text-gray-500 mt-1">A United Nations-backed survey found no widespread acute malnutrition in Gaza, prompting Israel&apos;s ambassador to call prior famine claims a blood libel.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.foxnews.com/world/israel-vindicated-gaza-nutrition-data-after-blood-libel-starvation-claims-un-envoy-says" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran’s gutted ranks leave loyalists filling critical posts — with one glaring problem</h3>
+          <p class="text-xs text-gray-500 mt-1">Iran appoints IRGC veterans of the Islamic Revolution and Iran-Iraq War to top posts, raising questions about its shrinking circle of commanders.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/world/irans-gutted-ranks-leave-loyalists-filling-critical-posts-one-glaring-problem" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran war thrusts Diego Garcia into spotlight as official calls US military base ‘integral’</h3>
+          <p class="text-xs text-gray-500 mt-1">Diego Garcia supports U.S. carrier strike groups and supply chains after an Iranian strike on Bahrain forced the Pentagon to shift logistics.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/world/iran-war-thrusts-diego-garcia-spotlight-official-calls-us-military-base-integral" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran jails psychologist over Trump plea as regime demands he make Americans ‘look stupid’: family</h3>
+          <p class="text-xs text-gray-500 mt-1">Seyed Ahmad Seyedabdollahi was sentenced to seven months in prison by the Islamic Republic after posting a video appealing to Trump to support protesters.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/world/iran-jails-psychologist-trump-plea-regime-demands-americans-look-stupid-family" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran installs new war chiefs as Tehran signals ‘prolonged confrontation,’ expert warns</h3>
+          <p class="text-xs text-gray-500 mt-1">Iranian Supreme Leader Mojtaba Khamenei named six military commanders as an expert says Tehran is preparing for prolonged confrontation, not settlement.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.foxnews.com/world/iran-installs-new-war-chiefs-tehran-signals-prolonged-confrontation-expert-warns" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran deal clock hits zero as Trump demands ‘white flag’ with new pressure campaign looming</h3>
+          <p class="text-xs text-gray-500 mt-1">Treasury Secretary Scott Bessent promises unprecedented economic isolation of Iran as the 60-day nuclear deal deadline passes with no final agreement.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/iran-deal-clock-hits-zero-trump-demands-white-flag-new-pressure-campaign-looming" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran could unleash ‘kinetic’ response as US tightens economic containment, analyst warns</h3>
+          <p class="text-xs text-gray-500 mt-1">Analysts warn Iran could strike U.S. bases, ships, and Gulf infrastructure this fall as Trump&apos;s sanctions tighten and the Strait of Hormuz deadline looms.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/tehran-turn-kinetic-tool-break-us-economic-containment-analyst-warns" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran-backed Houthi threat in Red Sea could lead to major US policy shift, analysts say</h3>
+          <p class="text-xs text-gray-500 mt-1">Houthi attacks on Red Sea shipping may push the U.S. to forge closer ties with Somaliland, analysts say, as concerns grow over Djibouti&apos;s reliability and China&apos;s expanding presence.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.foxnews.com/world/iran-backed-houthi-threat-red-sea-could-lead-major-us-policy-shift-analysts-say" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Former Syrian President Assad sentenced to death in absentia</h3>
+          <p class="text-xs text-gray-500 mt-1">Syrian President Bashar Assad and his brother Maher were sentenced to death in absentia by a Damascus court for war crimes and crimes against humanity.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.foxnews.com/world/former-syrian-president-assad-sentenced-death-absentia" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Farage puts seat on the line over ‘establishment hit job’ — voters send him right back</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage reclaimed his Clacton seat with 22,239 votes, but the parliamentary investigation into his undeclared £5 million gift is now active again.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/world/farage-puts-seat-line-over-establishment-hit-job-voters-send-him-right-back" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Exclusive: Israel seizes vast Iran terror axis arsenal with surprising foreign origins</h3>
+          <p class="text-xs text-gray-500 mt-1">The IDF Tzrifin Base in Central Israel stores a massive arsenal seized from Hezbollah and Hamas, including Iranian rockets, drones, and Nazi-era guns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/world/exclusive-israel-seizes-vast-iran-terror-axis-arsenal-surprising-foreign-origins" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cuba’s economic freefall is hiding a national security threat just miles from Florida: report</h3>
+          <p class="text-xs text-gray-500 mt-1">A new report says Cuba&apos;s ties with Russia, China and Iran create intelligence and military threats just 90 miles from the Florida coastline.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/world/cubas-economic-freefall-hiding-national-security-threat-just-miles-from-florida-report" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cruz sounds alarm over $400M Hamas-era provision in Board of Peace plan — issues blunt warning</h3>
+          <p class="text-xs text-gray-500 mt-1">Sen. Ted Cruz says he&apos;s deeply concerned about a Board of Peace provision that could cover up to $400 million in debts from Hamas&apos; rule in Gaza.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/cruz-sounds-alarm-over-400m-hamas-era-provision-board-peace-plan-issues-blunt-warning" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Construction workers uncover $10 million in gold while building sewer under former brewery</h3>
+          <p class="text-xs text-gray-500 mt-1">Construction workers in Belgium discovered $10 million in gold coins and bars while building a sewer, but a finder&apos;s fee remains uncertain.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/world/construction-workers-uncover-10-million-gold-building-sewer-former-brewery" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Colombia building collapses on camera as earthquake brings death, destruction</h3>
+          <p class="text-xs text-gray-500 mt-1">Video posted to social media shows a building crumbling in Pereira, Colombia, as a magnitude 7.4 earthquake struck western Colombia, killing at least 111 people.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.foxnews.com/world/colombia-building-collapses-camera-earthquake-brings-death-destruction" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bab el-Mandeb Strait faces growing threat as Houthi attacks raise fears of a second Hormuz</h3>
+          <p class="text-xs text-gray-500 mt-1">Iran-backed Houthis exploit Yemen&apos;s fractured state to threaten Bab el-Mandeb, raising fears it could become a second Strait of Hormuz choke point.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/world/bab-el-mandeb-strait-faces-growing-threat-houthi-attacks-raise-fears-second-hormuz" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Australia sets launch for sweeping gun buyback after Bondi Beach terror attack: 'Sensible gun reform'</h3>
+          <p class="text-xs text-gray-500 mt-1">New South Wales will be the first Australian state to launch a gun buyback scheme, offering up to $700 per firearm after the Bondi Beach terror attack.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/australia-sets-launch-sweeping-gun-buyback-bondi-beach-terror-attack-sensible-gun-reform" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

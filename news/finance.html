@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../news.html" class="text-sm text-blue-600 hover:underline">&larr; Back to sources</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance (all)</h1>
+      <span class="text-sm text-gray-400">100 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why the UK is dithering over what to do about e-scooters</h3>
+          <p class="text-xs text-gray-500 mt-1">Why is it taking so long for the government to regulate them, and what are the consequences of delay?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 22 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/cn4nvn9w00no?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆今年以来办理“免申即领”建设用地规划许可证332个</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网重庆8月19日电 (张旭)重庆市规划和自然资源局19日发布消息称，该市持续推进建设用地规划许可“免申即领”改革，2026年以来，通过“免申即领”模式累计办理332个建设用地规划许可证。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-19/10680568.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">韩国QFI已买入长鑫科技</h3>
+          <p class="text-xs text-gray-500 mt-1">据中国基金报，韩国证券存托结算院(KSD)旗下SEIBro的数据显示，截至8月18日，过去一个月，韩国投资者买入金额最多的A股为一只神秘的股票。其间，韩国投资者净买入这只股票4532.2233万美元(约合3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779821" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zelenskyy fires top aide as corruption allegations pile up</h3>
+          <p class="text-xs text-gray-500 mt-1">Raid on Ukrainian official’s home came after ousted defence minister launches a blistering attack on wartime president</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.ft.com/content/5799e5fa-c836-443b-935d-eb9fb58681b6?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near</h3>
+          <p class="text-xs text-gray-500 mt-1">Prime Minister Mark Carney of Canada was less definitive about what the intense talks produced, saying “important work” remained.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/canada/tariffs-trade-trump-carney.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What's happening to UK interest rates and what does it mean for mortgages?</h3>
+          <p class="text-xs text-gray-500 mt-1">The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Texas cities dominate America's best housing markets as coastal powerhouses fall behind: report</h3>
+          <p class="text-xs text-gray-500 mt-1">Sun Belt cities like Frisco and McKinney, Texas, top the 2026 best real estate markets ranking while costly coastal metros struggle with affordability and economic health.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxbusiness.com/real-estate/texas-cities-dominate-americas-best-housing-markets-coastal-powerhouses-fall-behind-report" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Venezuela abandons Nicolás Maduro to fate in US jail</h3>
+          <p class="text-xs text-gray-500 mt-1">Government makes no mention of freeing former leader after nearly two weeks of talks</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.ft.com/content/51d68f38-df09-4f78-bb80-02a4b4684235?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">When brands lose their magic</h3>
+          <p class="text-xs text-gray-500 mt-1">From mayonnaise to toothpaste, household names in the US are being undercut by own labels and outshone by insurgents</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.ft.com/content/59ed10fc-0e58-454c-9f93-d4d258ccfd9c?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump to Nominate Heidi Overton, a Top Domestic Policy Aide, for F.D.A. Commissioner</h3>
+          <p class="text-xs text-gray-500 mt-1">Dr. Overton is a fierce opponent of abortion rights and a supporter of Health Secretary Robert F. Kennedy Jr.’s Make America Healthy Again agenda.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/health/heidi-overton-fda.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Japanese firms are being so slow to use AI</h3>
+          <p class="text-xs text-gray-500 mt-1">Japanese risk aversion and conservatism blamed for slow AI take-up by the country's business sector.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwymw4434v7o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Treasury Scales Back Scrutiny of U.S. Shell Companies</h3>
+          <p class="text-xs text-gray-500 mt-1">The Trump administration will not enforce reporting requirements of the 2021 Corporate Transparency Act, which was intended to crack down on money laundering.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/us/politics/treasury-scrutiny-shell-companies.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Whole Foods recalls salsa, guacamole and prepared foods in 12 states over salmonella concerns</h3>
+          <p class="text-xs text-gray-500 mt-1">Whole Foods recalled salsas, guacamole, pico de gallo and prepared foods containing jalapeños linked to a salmonella outbreak sickening 345 people.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.foxbusiness.com/lifestyle/whole-foods-recalls-salsa-guacamole-prepared-foods-12-states-over-salmonella-concerns" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">NBA's Los Angeles Lakers to be sold for reported $12.5 billion</h3>
+          <p class="text-xs text-gray-500 mt-1">One of the most successful teams in NBA history is being sold to former Disney CEO Bob Iger and investor Joshua Kushner, the brother of US President Donald Trump's son-in-law.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.lemonde.fr/en/sports/article/2026/08/12/nba-s-los-angeles-lakers-to-be-sold-for-reported-12-5-bn_6756437_9.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tesla files plans for proposed $10.1B Texas solar manufacturing plant</h3>
+          <p class="text-xs text-gray-500 mt-1">Tesla, led by Elon Musk, is looking to build a massive solar panel factory just outside Houston, Texas, according to documents filed with the state.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.foxbusiness.com/technology/tesla-files-plans-proposed-10-1b-texas-solar-manufacturing-plant" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Young islanders concerned about their future</h3>
+          <p class="text-xs text-gray-500 mt-1">The Medical Officer Health Report shows 36% of young people are certain they will leave the island.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c87nw2dd7rjo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Just hours before solar eclipse, search for protective viewing glasses turns into treasure hunt</h3>
+          <p class="text-xs text-gray-500 mt-1">Certified eye protection is essential for safely observing the August 12 eclipse. Purchases surged as the event approached, resulting in stock shortages at many retailers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/12/just-hours-before-the-solar-eclipse-the-search-for-protective-viewing-glasses-turns-into-a-treasure-hunt_6756404_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Gen Z are planning for life without a state pension</h3>
+          <p class="text-xs text-gray-500 mt-1">Many younger people do not believe the state pension will exist when they are older</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 30 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/c8e2yp1gg37o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump pauses 50% tariffs on Canada hours before deadline after announcing potential deal</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump paused 50% tariffs on Canadian imports hours before they took effect, saying a deal with Canada is pending finalization.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxbusiness.com/politics/trump-pauses-50-tariffs-canada-hours-before-deadline-after-announcing-new-deal" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine’s ousted defence minister calls for wartime election</h3>
+          <p class="text-xs text-gray-500 mt-1">Mykhailo Fedorov launches major challenge to President Volodymyr Zelenskyy</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.ft.com/content/7bf79169-f84f-44a2-b64d-c1a3d1fb7d08?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Treasury yields hit multi-decade highs amid surging national debt</h3>
+          <p class="text-xs text-gray-500 mt-1">Treasury yields hit multi-decade highs as the U.S. national debt nears $40 trillion, with the federal budget deficit projected at $2.1 trillion this year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxbusiness.com/economy/treasury-yields-hit-multi-decade-highs-amid-surging-national-debt" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tunnel to Towers Foundation and Anheuser-Busch deepen partnership ahead of 9/11 25th anniversary</h3>
+          <p class="text-xs text-gray-500 mt-1">Budweiser&apos;s iconic Clydesdales &quot;Respect&quot; commercial will re-air for just the fourth time as Anheuser-Busch sponsors 9/11 anniversary events nationwide.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxbusiness.com/lifestyle/tunnel-towers-foundation-anheuser-busch-deepen-partnership-ahead-9-11-25th-anniversary" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Two Ships Transiting Strait of Hormuz Are Attacked as Oil Prices Rise</h3>
+          <p class="text-xs text-gray-500 mt-1">Maritime officials on Tuesday announced the recent attacks, which killed at least one sailor. Six months into the conflict, the vital waterway remains perilous.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/strait-of-hormuz-ship-attack.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What’s in an Airport Code? In West Palm Beach, It’s the President’s Initials.</h3>
+          <p class="text-xs text-gray-500 mt-1">The state’s Palm Beach International Airport has been renamed for the president, complete with a rare change in its three-letter airport code.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/travel/palm-beach-president-donald-trump-airport.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US court rules Trump can end tariff exemption for small parcels</h3>
+          <p class="text-xs text-gray-500 mt-1">The President's agenda has faced a series of legal pushbacks since he imposed sweeping duties on trading partners after returning to the White House last year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/us-court-rules-trump-can-end-tariff-exemption-for-small-parcels_6756481_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">首艘国产大型邮轮首次在粤港澳大湾区运营国际邮轮航线</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网深圳8月13日电 (记者 程景伟)爱达邮轮旗下首艘国产大型邮轮爱达·魔都号13日搭载近4600名宾客从深圳招商蛇口国际邮轮母港启航，开启5天4晚到访越南顺化(真美)的海上之旅。这是爱达·魔都号首次在粤港澳大湾区运营国际邮轮航线。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-13/10677305.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Tyson Foods to close 2 facilities, pursue sale of another amid 'historic' cattle shortage</h3>
+          <p class="text-xs text-gray-500 mt-1">Tyson Foods announced it is closing two facilities and pursuing the sale of a third as tight cattle supplies continue to pressure its beef business.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxbusiness.com/retail/tyson-foods-close-facilities-pursue-sale-another-amid-historic-cattle-shortage" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swedish union ends Tesla strike after almost three years</h3>
+          <p class="text-xs text-gray-500 mt-1">Sweden's union IF Metal said the US carmaker had bought out all of the union's striking members. Tesla chief executive Elon Musk has long rejected calls to allow the company's over 100,000 employees w...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/13/swedish-union-ends-tesla-strike-after-almost-three-years_6756472_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">韩国股市暴涨22%，但几乎“无人持仓”</h3>
+          <p class="text-xs text-gray-500 mt-1">韩国股市在技术面和资金面双重驱动下完成罕见快速反弹，但对冲基金的仓位却意外缺席了这波涨势，由此埋下FOMO驱动的再上攻潜力。
+KOSPI指数在短短三个交易日内累计上涨约10%，从7月30日低点算起已累计反弹逾22%，正式进入技术性牛市区间。这是该指数自7月历史性暴跌以来首次达到这一门槛。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/articles/3779396" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高温超导已发现四十年，机理仍未完全阐明！我国科学家获重要进展</h3>
+          <p class="text-xs text-gray-500 mt-1">记者13日从复旦大学获悉，该校物理学系张远波团队联合国内外多家科研单位，首次成功制备仅含单个CuO2超导平面的极限二维铜基高温超导体Bi-2201，为解开高温超导机理这一凝聚态物理领域公认的“皇冠之谜”，搭建起高度可调的量子实验平台。相关研究12日晚刊发于《自然》杂志。
+为突破技术瓶颈，张远波课题组自主研发低温惰性气氛实验设备，在隔绝外界干扰的环境下完成样品剥离与器件加工，还创新发展出高精度原位掺...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149203" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Young people want better job prospects and housing</h3>
+          <p class="text-xs text-gray-500 mt-1">In a recent survey only 27% of respondents say they want to stay in Guernsey.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyj260x1p1o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Will Paramount’s Brinkmanship Work?</h3>
+          <p class="text-xs text-gray-500 mt-1">The media company’s leader, David Ellison, is threatening to pull the company out of California in the face of a lawsuit by states seeking to block its big deal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/dealbook/paramount-california-states-lawsuit.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zero hours crackdown could cost firms up to £2.9bn a year</h3>
+          <p class="text-xs text-gray-500 mt-1">Labour's employment rights bill crackdown on zero hours contracts could cost businesses up to £2.9bn a year, new official analysis has found.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0l525k76d0o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What We Know About Taylor Farms’ Food Recalls</h3>
+          <p class="text-xs text-gray-500 mt-1">Just weeks after the company recalled lettuce and other produce suspected of being tainted by the cyclosporiasis parasite, it recalled jalapeños linked to a salmonella outbreak.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/taylor-farms-recalls-cyclospora-salmonella.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What your out-of-office really means</h3>
+          <p class="text-xs text-gray-500 mt-1">An email translator for the summer holidays</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.ft.com/content/46caeb96-13a3-4231-ae9a-7230225d09b7?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wealth managers woo OpenAI and Anthropic staff ahead of IPO windfalls</h3>
+          <p class="text-xs text-gray-500 mt-1">The rise of equity-rich tech workers at Anthropic and OpenAI is shifting negotiating power towards clients</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.ft.com/content/aa0ca006-5af4-4f94-9789-3e56f9f53e1d?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who Is Joshua Kushner, the New Lakers Co-Owner?</h3>
+          <p class="text-xs text-gray-500 mt-1">The brother of Jared Kushner is an influential venture capitalist with big bets on A.I. and health insurance.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/joshua-kushner-lakers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why airlines are warning over lithium-ion batteries</h3>
+          <p class="text-xs text-gray-500 mt-1">The airline industry wants passengers to be careful when travelling with lithium ion batteries.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">鹤岗双赛联动：林海奔跑与炭火烟火解锁“流量变留量”的文旅密码</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网鹤岗8月16日电 题：鹤岗双赛联动：林海奔跑与炭火烟火解锁“流量变留量”的文旅密码</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678717.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“进货式游中国”火了 没有老外能空手走出义乌</h3>
+          <p class="text-xs text-gray-500 mt-1">这个夏天，依托全球最大小商品集散中心的优势，浙江义乌国际商贸城人气持续火爆，大批海外客商与游客慕名前来淘选好物。这座商贸城市正成为全世界观察、读懂中国的一扇窗口。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-16/10678616.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine presses drone attacks on Moscow and Russian logistics</h3>
+          <p class="text-xs text-gray-500 mt-1">Kyiv launches more than 600 drones at enemy capital in one of its largest assaults of the summer</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.ft.com/content/a71bcea9-b0eb-4ed2-8bc9-f4dace738e37?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">频准激光：将于8月18日科创板上市</h3>
+          <p class="text-xs text-gray-500 mt-1">频准激光公告称，公司股票将于2026年8月18日在上海证券交易所科创板上市。本次公开发行股票1000万股，发行价186.88元/股，发行后总股本4000万股。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3150042" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Shortages of solar eclipse viewing glasses expected  in France</h3>
+          <p class="text-xs text-gray-500 mt-1">Purchases of protective eyewear, essential for observing the phenomenon, have risen sharply ahead of August 12. France's consumer fraud authority has stepped up inspections.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.lemonde.fr/en/economy/article/2026/08/09/shortages-of-solar-eclipse-viewing-glasses-expected-in-france_6756309_19.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Waymo gets regulatory approval to scale up robotaxi service across California, enter 2 new markets</h3>
+          <p class="text-xs text-gray-500 mt-1">Waymo&apos;s robotaxi service expands across Northern and Southern California after CPUC approval, adding Sacramento and San Diego as new markets.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxbusiness.com/technology/waymo-gets-regulatory-approval-scale-up-robotaxi-service-across-california-enter-2-new-markets" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">院士专家重庆共论具身智能发展新路径</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社重庆8月15日电 (记者 钟旖)机器人不能只会做“后空翻”等炫技动作，真正的价值在于解决真实世界的问题。15日在重庆举行的2026 CCF中国开源大会上，专家学者指出，机器人产业发展应聚焦真实场景下的自适应能力，开源生态与制造业深度融合将是智能机器人构建核心竞争力的关键路径。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678397.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Walmart tomato bisque soup recalled over possible Listeria contamination</h3>
+          <p class="text-xs text-gray-500 mt-1">More than 3,000 Marketside Tomato Bisque Soup Kits sold at select Walmart stores are being recalled over possible Listeria contamination</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxbusiness.com/lifestyle/walmart-tomato-bisque-soup-recalled-possible-listeria-contamination" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">长江十年行｜“数”读长江经济带十周年江西答卷</h3>
+          <p class="text-xs text-gray-500 mt-1">长江、赣江、鄱阳湖交织成赣鄱大地的水脉根基。十年来，江西锚定长江经济带建设目标，以生态修复擦亮江湖底色，以区域协同深化联防共治，以对外开放拓宽开放格局，以文脉守护留住水乡根魂，统筹生态、产业、经贸、人文一体推进，全方位呈现长江江西段十年蝶变的生动图景。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678215.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">金融时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine left exposed as Patriot launchers run empty</h3>
+          <p class="text-xs text-gray-500 mt-1">Kyiv’s military momentum at risk as dwindling interceptor stocks leave it vulnerable to Russia’s winter campaign</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.ft.com/content/6448b0af-f2ed-4067-b814-73f41b56fa78?syn-25a6b1a6=1" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">金观平：为美丽中国筑牢法治基石</h3>
+          <p class="text-xs text-gray-500 mt-1">8月15日是第四个全国生态日，《中华人民共和国生态环境法典》正式施行。这是继民法典之后我国第二部以“法典”命名的法律。它的正式施行，将为美丽中国建设筑牢坚实的法治基石，为经济社会发展全面绿色转型注入强大动能。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/cj/2026/08-15/10678109.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">华尔街见闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">非沪籍居民及境外人士置换性购房政策微调？上海房地产交易中心热线回应</h3>
+          <p class="text-xs text-gray-500 mt-1">针对市场传出上海更新置换购房相关执行口径，8月15日，记者致电上海房地产交易中心热线“962269”进行咨询。针对非本市户籍居民置换性购房的问题，上海房地产交易中心热线工作人员表示，并未出台新政。
+据热线工作人员介绍，非本市户籍居民家庭，出售名下唯一房产，可在全市范围内置换一套住房，前后产权人需保持一致，无需提供社保或个税证明。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://wallstreetcn.com/livenews/3149965" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

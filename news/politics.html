@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politics News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../news.html" class="text-sm text-blue-600 hover:underline">&larr; Back to sources</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Politics (all)</h1>
+      <span class="text-sm text-gray-400">60 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆市大足区政府原副区长钱虎被“双开”</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网8月19日电 据重庆市纪委监委消息：经重庆市委批准，重庆市纪委监委对大足区政府原党组成员、副区长钱虎严重违纪违法问题进行了立案审查调查。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-19/10680553.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">谌贻琴在调研第20届亚运会备战工作时强调 全力做好备战参赛工作 为建设体育强国再立新功</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社北京8月19日电 国务委员谌贻琴19日到体育总局训练局调研名古屋亚运会备战工作，看望慰问运动员、教练员和工作人员，勉励大家牢记党和人民重托，全力做好备战参赛工作，夺取运动成绩和精神文明双丰收，在新的奥运备战周期打好基础，为建设体育强国再立新功。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-19/10680572.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Turkey accuses Netanyahu of pursuing ‘expansionist’ policies after Israeli strike on Syrian airbase</h3>
+          <p class="text-xs text-gray-500 mt-1">Turkey accused Benjamin Netanyahu of pursuing expansionist policies with recent Israeli airstrikes on Syria&apos;s Abu al-Duhur airbase near Aleppo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/turkey-accuses-netanyahu-pursuing-expansionist-policies-israeli-strike-syrian-airbase" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zack Polanski reported to police over guillotine post</h3>
+          <p class="text-xs text-gray-500 mt-1">Zack Polanski reported to police over guillotine post</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 28 Ju</div>
+          <a href="https://www.bbc.co.uk/news/videos/c3d34n4j3v2o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who's in Andy Burnham's cabinet?</h3>
+          <p class="text-xs text-gray-500 mt-1">An in-depth look at which Labour MPs have been appointed to cabinet roles by new Prime Minister Andy Burnham</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 28 Ju</div>
+          <a href="https://www.bbc.co.uk/news/articles/ckg4we9g58do?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Your favorite cocktail could be an unexpected casualty of Trump's looming trade fight</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump&apos;s 50% tariff threat on Canadian spirits could devastate U.S. bars and restaurants while pressuring Canada to restock bourbon.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/your-favorite-cocktail-could-unexpected-casualty-trumps-looming-trade-fight" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What could happen to prisoner early release scheme now?</h3>
+          <p class="text-xs text-gray-500 mt-1">The PM is changing the scheme for some prisoners after a police officer's widow said the possible early release of his killers was "deplorable".</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 04 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c62vqj7ged4o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">追忆“两弹一星”元勋王希季：转行拓荒，铺就中国航天路</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月13日电 题：追忆“两弹一星”元勋王希季：转行拓荒，铺就中国航天路</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-13/10677303.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">White House exposes ‘Transshipment Scam’ costing US up to $26B, points finger at China</h3>
+          <p class="text-xs text-gray-500 mt-1">The White House report identifies over 40 countries posing elevated transshipment risk as China routes goods through third nations to dodge tariffs.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/white-house-exposes-transshipment-scam-costing-us-26b-points-finger-china" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">镜观·回响｜九曲叠翠 黄河焕新</h3>
+          <p class="text-xs text-gray-500 mt-1">九曲黄河万里沙。黄河是全世界泥沙含量最高、治理难度最大、水害严重的河流之一，素来“多淤、多决、多徙”。千百年来，黄河安澜是中华儿女的祈盼。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-13/10677251.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">近十年杭州检察机关办理生态环境公益诉讼案2766件</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网杭州8月13日电(郭其钰)8月13日，2026年全国生态日杭州主场活动在浙江杭州举行。浙江省杭州市人民检察院在活动上发布《杭州生态环境和资源保护检察公益诉讼白皮书》，显示2017年以来，杭州检察机关共办理生态环境和资源保护公益诉讼案件2766件。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-13/10677168.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">World War II Memorial on National Mall vandalized with pink spray paint; fountain overflowing with bubbles</h3>
+          <p class="text-xs text-gray-500 mt-1">Pink spray paint graffiti that said &quot;clean hands, dirty money&quot; was found on the World War II Memorial, and U.S. Park Police launched an investigation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/world-war-ii-memorial-national-mall-vandalized-pink-spray-paint-fountain-overflowing-bubbles" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">White House launches interactive map tracking billions in suspected fraud</h3>
+          <p class="text-xs text-gray-500 mt-1">The White House launched The Fraud Ledger, an interactive dashboard tracking $230 billion in suspected fraud uncovered by JD Vance&apos;s task force.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/white-house-launches-interactive-map-tracking-billions-suspected-fraud" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Warren’s ancestry saga roars back after Dem ally touts Native Senate first: ‘Arrows fired’</h3>
+          <p class="text-xs text-gray-500 mt-1">Elizabeth Warren&apos;s past Native American claims face a new criticisms as Minnesota&apos;s Democratic Senate nominee says no Native woman has served in the US Senate.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/warrens-ancestry-saga-roars-back-after-dem-ally-touts-native-senate-first-arrows-fired" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">With Russia's strikes in Ukraine and hybrid war in Europe, Kyiv's allies face heightened uncertainty</h3>
+          <p class="text-xs text-gray-500 mt-1">Russia has stepped up deep strikes in Ukraine and continued its hybrid warfare against Europe, just as US support is faltering. Washington is warning of a possible Russian attack to test Western defen...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/with-russia-s-strikes-in-ukraine-and-hybrid-war-in-europe-kyiv-s-allies-face-heightened-uncertainty_6756460_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zero hours crackdown could cost firms up to £2.9bn a year</h3>
+          <p class="text-xs text-gray-500 mt-1">Labour's employment rights bill crackdown on zero hours contracts could cost businesses up to £2.9bn a year, new official analysis has found.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/c0l525k76d0o?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">West Bank: Israel sends troops following unusual criticism from US ambassador</h3>
+          <p class="text-xs text-gray-500 mt-1">Mike Huckabee, usually a staunch defender of Israel, had denounced a 'horrific act of terror' by settlers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/west-bank-us-ambassador-to-israel-denounces-siege-of-palestinian-homes-as-horrific-act-of-terror_6756455_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Venezuelan government and opposition wrap first round of talks</h3>
+          <p class="text-xs text-gray-500 mt-1">The two sides issued a joint statement, highlighting agreements on reforming the judiciary and seeking access to earthquake recovery funds.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/13/venezuelan-government-opposition-wrap-first-round-of-talks_6756450_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What will Devon's four new councils mean for you?</h3>
+          <p class="text-xs text-gray-500 mt-1">The shake-up will need to consider everything from leisure centres and planning to recycling.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 06 Au</div>
+          <a href="https://www.bbc.co.uk/news/videos/cglj6xd99gxo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">评论：两岸亲情为何总能跨越山海？</h3>
+          <p class="text-xs text-gray-500 mt-1">中新社北京8月16日电 题：两岸亲情为何总能跨越山海？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-16/10678697.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'We were petrified': Afghan women on the tragic day the Taliban came back</h3>
+          <p class="text-xs text-gray-500 mt-1">'Voices of Afghan Women' (1/6). Five years after the Taliban returned to power and imposed their archaic version of Sharia law, our special correspondent in Kabul spoke with these almost invisible wom...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.lemonde.fr/en/summer-reads/article/2026/08/16/we-were-petrified-afghan-women-on-the-tragic-day-the-taliban-came-back_6756566_183.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">闽江河口湿地博物馆焕新启幕 沉浸式科普点亮全国生态日</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网福州8月16日电 (记者 闫旭)8月15日是全国生态日，2026闽江河口湿地“全国生态日”暨湿地博物馆启新科普活动，在完成全面升级改造的闽江河口湿地博物馆举行。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-16/10678647.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（长江十年行）一江青绿润钢城</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网马鞍山8月16日电 题：一江青绿润钢城</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-16/10678609.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">（长征胜利90周年）广西资源县苗乡火塘边的红色故事</h3>
+          <p class="text-xs text-gray-500 mt-1">中新网桂林8月15日电 题：广西资源县苗乡火塘边的红色故事</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-16/10678494.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zimbabwe ferry disaster death toll rises to 72 as search continues</h3>
+          <p class="text-xs text-gray-500 mt-1">The death toll from Zimbabwe's worst ferry disaster has risen to 72 after authorities recovered 25 more bodies from Lake Kariba, as rescuers continued searching the waters for victims.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/zimbabwe-ferry-disaster-death-toll-rises-to-72-as-search-continues_6756551_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">中国新闻网</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">近思录·到2035年建成健康中国，为什么关键在走对路？</h3>
+          <p class="text-xs text-gray-500 mt-1">到2035年建成健康中国，是中共中央作出的一项战略决策。在《求是》杂志发表的重要文章《加快建设健康中国》中，习近平总书记为新征程上卫生与健康工作把脉定向，强调要坚定不移走中国特色卫生与健康发展道路，推动“十五五”时期健康中国建设取得决定性进展。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.chinanews.com.cn/gn/2026/08-15/10678380.shtml" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wildfires in Belgium force evacuations</h3>
+          <p class="text-xs text-gray-500 mt-1">By Saturday afternoon, the fire had scorched at least 16 square kilometers in the High Fens natural park. A local spokesperson called it the 'largest in recent history' for Belgium.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/environment/article/2026/08/15/wildfires-in-belgium-force-evacuations_6756544_114.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zelensky regains control after a month of political crisis</h3>
+          <p class="text-xs text-gray-500 mt-1">After dismissing his popular defense minister, Mykhailo Fedorov, and sparking anger in the streets and within the opposition, Ukrainian President Volodymyr Zelensky appears to have contained the unres...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/zelensky-regains-control-after-a-month-of-political-crisis_6756543_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">BBC</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who voted for Count Binface and why?</h3>
+          <p class="text-xs text-gray-500 mt-1">Cheaper Flakes and using Adele to fund the NHS - voters on why they support a man dressed as a bin.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.bbc.co.uk/news/articles/cj36gyxv2lyo?at_medium=RSS&at_campaign=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Veteran pediatrician hails Medicaid shift ending youth sex-change treatments: 'This is not denial of care'</h3>
+          <p class="text-xs text-gray-500 mt-1">Pediatric endocrinologist Dr. Quentin Van Meter said the policy shift comes amid what he described as a collapsing medical framework behind the youth transgender movement.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/veteran-pediatrician-hails-medicaid-shift-ending-youth-sex-change-treatments-not-denial-care" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Venezuela frees over 130 political prisoners amid post-Maduro talks</h3>
+          <p class="text-xs text-gray-500 mt-1">The move comes a day after opposition figure Dinorah Figuera vowed to fight for the release of political prisoners in formal talks with the interim government. A first round of the US-brokered talks k...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/international/article/2026/08/15/venezuela-frees-more-political-prisoners-amid-post-maduro-talks_6756525_4.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">世界报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'We are losing our youth': In northern Morocco, mourning those who drowned off Ceuta</h3>
+          <p class="text-xs text-gray-500 mt-1">In Tétouan, families mourn the deaths of many young men who tried to swim to the Spanish enclave of Ceuta at the end of July. According to a Moroccan non-profit organization, over 140 people lost thei...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.lemonde.fr/en/le-monde-africa/article/2026/08/15/we-are-losing-our-youth-in-northern-morocco-mourning-those-who-drowned-off-ceuta_6756523_124.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">黑龙江周末两天晴天为主 11日夜间开始雨雪又上线</h3>
+          <p class="text-xs text-gray-500 mt-1">周末两天（12月10日至11日），黑龙江大部地区晴天唱主调，天气舞台总体平静。但冷空气即将“复工”，眼前的平静状态也将被打破，预计11日夜间开始到12日，黑龙江大部地区雨雪再登场，公众需关注临近预报，提前做好相关防范措施。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/10/c_1129197664.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">魏凤和在上合组织、独联体成员国国防部长会议上发表视频讲话</h3>
+          <p class="text-xs text-gray-500 mt-1">国务委员兼国防部长魏凤和9日应邀在上海合作组织、独立国家联合体成员国国防部长会议上发表视频讲话。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/10/c_1129198567.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高清大图｜战机护航！国旗色彩带！沙特盛情迎接习主席</h3>
+          <p class="text-xs text-gray-500 mt-1">当地时间12月7日下午，国家主席习近平乘专机抵达沙特阿拉伯首都利雅得，受到沙方隆重热烈欢迎。战机护航，礼炮欢迎，象征中国国旗的红黄两色彩带划过长空，处处彰显高规格礼遇。利雅得市内也洋溢着热烈的欢迎氛围。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/08/c_1129191750.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高清大图 | 中国沙特关系的“重要里程碑”！</h3>
+          <p class="text-xs text-gray-500 mt-1">时隔6年，国家主席习近平再次访问沙特阿拉伯。当地时间8日，习近平主席与沙特王储兼首相穆罕默德举行会谈，并会见国王萨勒曼。双方共同擘画中沙关系发展，达成系列重要共识，中沙关系的战略性和全局性更加凸显。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/09/c_1129194746.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高分五号01A卫星升空 高分专项工程空间段建设任务全面完成</h3>
+          <p class="text-xs text-gray-500 mt-1">12月9日，我国在太原卫星发射中心使用长征二号丁运载火箭，成功将高分五号01A卫星发射升空，卫星顺利进入预定轨道，发射任务获得圆满成功，标志着高分专项工程空间段建设任务已全面完成。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/09/c_1129196088.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高云龙同志简历</h3>
+          <p class="text-xs text-gray-500 mt-1">现任十三届全国政协副主席，中华全国工商业联合会主席、中国民间商会会长，中国和平统一促进会副会长（兼职）。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/13/c_1129203475.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">韩正出席2022能源电力转型国际论坛并致辞</h3>
+          <p class="text-xs text-gray-500 mt-1">2022能源电力转型国际论坛9日以线下和线上结合方式在北京举行。国务院副总理韩正出席论坛并致辞。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/09/c_1129196685.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">陕西文化艺术展在巴黎举行</h3>
+          <p class="text-xs text-gray-500 mt-1">由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/09/c_1129194638.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“阳”了怎么办？居家治疗如何用药？——权威专家解答防疫热点问题</h3>
+          <p class="text-xs text-gray-500 mt-1">奥密克戎病毒致病力下降，但传播速度快、传染性强。若通过核酸检测、抗原检测发现自己感染了新冠病毒，“阳”了怎么办？居家治疗期间如何科学合理用药？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/09/c_1129196760.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">新华社</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防疫热点问答｜感染奥密克戎后，抗原多久能测出来？</h3>
+          <p class="text-xs text-gray-500 mt-1">为进一步优化新冠病毒检测策略，做好防控工作，国务院联防联控机制综合组近日印发了《新冠病毒抗原检测应用方案》等文件。感染奥密克戎后，抗原多久能测出来？抗原“阳”了怎么办？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="http://www.news.cn/politics/2022-12/11/c_1129200729.htm" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相、熊本地震「支援パッケージ速やかに」　熊本県知事と面会</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L1GXQV8LUTFK001M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相「断じて許容できぬ」　プーチン氏の択捉島訪問、外相も抗議</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F2FRHV8FULFA014M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相、「反省」「不戦の誓い」触れず　戦没者追悼の式辞</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G36F3V8GUTFK01LM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相がトルコ大統領と電話協議　ホルムズ海峡の情勢など議論</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M3VSTV8MUTFK00ZM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市政権の対中政策　「威勢のいい言葉」ではなく「適切な管理」を</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F243LV8FUTFK00LM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">香川知事選が告示、現新4人が立候補　それぞれの主張と目指す社会は</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D7H4ZV8DPLXB002M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防衛省、過去最大8.9兆円概算要求へ　水中発射型ミサイルの開発も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M366JV8MUTFK005M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防衛省が最大3局増を検討、小泉氏の肝いり構想　実現は不透明</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8K2TBNV8KUTFK006M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

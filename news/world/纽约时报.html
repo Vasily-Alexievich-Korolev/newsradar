@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纽约时报 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/world.html" class="text-sm text-blue-600 hover:underline">&larr; Back to World</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">World / 纽约时报</h1>
+      <span class="text-sm text-gray-400">149 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zhu Rongji, Former Premier Who Pushed China to a Market Economy, Dies at 97</h3>
+          <p class="text-xs text-gray-500 mt-1">As a vice premier and then premier, he helped transform China into the world’s leading manufacturing power and led his country into the World Trade Organization.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/asia/zhu-rongji-dead.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia Says President Won Re-election After Tumultuous Campaign</h3>
+          <p class="text-xs text-gray-500 mt-1">With a second term, Hakainde Hichilema must navigate relations with the Trump administration, which has sought greater access to the copper-rich nation’s natural resources.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/africa/zambia-election-hichilema.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia Halts Presidential Election Vote Count Over Violence and Fraud Allegations</h3>
+          <p class="text-xs text-gray-500 mt-1">The electoral commission for the southern African nation said poll workers had been attacked and ballots had been stolen.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/africa/zambia-election-vote-count-suspended-president.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia Election: President Hichilema Faces Backlash Ahead of Vote</h3>
+          <p class="text-xs text-gray-500 mt-1">President Hakainde Hichilema was elected five years ago, promising to protect civil liberties in his copper-rich African nation. Now, he’s accused of trampling on them.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/africa/zambia-presidential-election-hichilema.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">With Trump’s Hamas Deal in Peril, Kushner Set to Visit Israel for Gaza Talks</h3>
+          <p class="text-xs text-gray-500 mt-1">Jared Kushner, President Trump’s senior aide, is expected to meet with Prime Minister Benjamin Netanyahu of Israel, who has rejected a U.S.-backed deal to disarm Hamas.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/middleeast/jared-kushner-visit-israel-hamas-deal.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">With Priests Scarce in Rural Italy, an African Pastor Is Filling the Void</h3>
+          <p class="text-xs text-gray-500 mt-1">Immigrants have long eased labor shortages on farms and factories in Italy. But churches also need foreign-born priests, like the Rev. Vincent Souly of the Ivory Coast.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/europe/italy-priest-shortage.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Will Sudan’s El Obeid Become the Next El Fasher? What to Know.</h3>
+          <p class="text-xs text-gray-500 mt-1">Taking El Obeid would allow the paramilitary Rapid Support Forces to consolidate its hold on western Sudan, a significant strategic goal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/africa/el-obeid-sudan-war-el-fasher.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Nigel Farage Is Running Against a ‘Trash Can’</h3>
+          <p class="text-xs text-gray-500 mt-1">Our reporter Amelia Nierenberg describes how the right-wing British political leader Nigel Farage, who is seeking re-election to Parliament, faces an unconventional opponent: Count Binface.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/video/world/europe/100000011041924/why-nigel-farage-is-running-against-a-trash-can.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who Are the Houthis, Iran-Backed Militia Entering Mideast War?</h3>
+          <p class="text-xs text-gray-500 mt-1">Amid relentless war in the Middle East, the Iran-backed militants seem poised to renew their conflict with Yemen’s Saudi-backed government.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/article/houthi-yemen-militia-iran.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Where to Eat and Drink at a Barcelona Bar Like a Local</h3>
+          <p class="text-xs text-gray-500 mt-1">The classic bars, known as bodegas, are where locals in the Catalan capital take their rituals seriously. If you know where to look, you can join them.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/travel/barcelona-bars-bodegas.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Where Future Champions Race Against the Tide</h3>
+          <p class="text-xs text-gray-500 mt-1">An uninhabited Irish island fills up one day each summer for a treasured amateur horse race in which young jockeys ride across the shifting sands.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/europe/omey-island-races-horse-racing-ireland.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">When a Rare Wolf Got Too Close, Denmark Faced a Conservation Dilemma</h3>
+          <p class="text-xs text-gray-500 mt-1">The authorities tracked the animal after a string of close encounters with residents, reigniting a bitter debate over how a small, densely populated country should live with wolves.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/rare-wolf-denmark-conservation-dilemma.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What to Know About the U.K. Special Election: Farage vs. Binface</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage, the right-wing populist leader, won a by-election for his parliamentary seat in Clacton, which he initiated after coming under pressure over his financial declarations.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/farage-binface-uk-byelection-clacton.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What to Know About Today’s U.K. Special Election: Farage vs. Binface</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage, the right-wing populist leader, forced a by-election in his parliamentary seat of Clacton after he came under pressure over his financial declarations.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/farage-binface-uk-byelection-clacton.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What happens to animals during an eclipse?</h3>
+          <p class="text-xs text-gray-500 mt-1">The moon’s journ</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/what-happens-to-animals-during-an-eclipse" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wary of Trump, Europe Seeks Role in Eventual Russia-Ukraine Talks</h3>
+          <p class="text-xs text-gray-500 mt-1">French, German and British diplomats are working on a format for future negotiations — even if Russia has shown little interest.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/europe/europe-russia-ukraine-talks.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine’s Ex-Defense Minister Calls for Election, Cementing Break With Zelensky</h3>
+          <p class="text-xs text-gray-500 mt-1">Mykhailo Fedorov, a popular young leader who was fired last month, said Russia should not be allowed to dictate when Ukrainians can choose their next government.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/europe/ukraine-fedorov-zelensky-elections.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">U.S. and Iran Blow Through Deadline to Agree to a Broad Deal to End War</h3>
+          <p class="text-xs text-gray-500 mt-1">President Trump said a cease-fire agreed in June would lead to limits on Iran’s nuclear program and finish the conflict, but the countries appear far apart.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/middleeast/iran-mou-deadline.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">U.A.E. Announces Halt to Trade With Iran Amid Trump’s Push To Isolate Tehran</h3>
+          <p class="text-xs text-gray-500 mt-1">The Emirates has long been a major trading hub for Iran, and analysts say it has been key to Iranian efforts to evade international sanctions, which Emirati officials deny.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/middleeast/uae-cuts-trade-ties-iran-missiles.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump’s Plane Switch Ruse Pales in Comparison With Putin’s Secrecy</h3>
+          <p class="text-xs text-gray-500 mt-1">President Trump’s Air Force One subterfuge pales in comparison to the secrecy surrounding Russia’s president, whose fixation on security has reached new heights in recent years.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/trump-flight-putin-security.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump’s Overture to North Korea Strains Alliance With the South</h3>
+          <p class="text-xs text-gray-500 mt-1">President Trump wants to curtail military exercises with South Korea, saying they were hostile to North Korea. But under Mr. Kim, the North has become increasingly belligerent toward the South.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/asia/trump-korea-military-kim-jong-un.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump’s Other Hold on the Americas: The Visa</h3>
+          <p class="text-xs text-gray-500 mt-1">As part of its expansionist approach to the Western Hemisphere, the Trump administration is trying to reassert its dominance, one U.S. visa at a time.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/americas/trump-americas-visas.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump, With Limited Options in Iran, Tries Economic Pressure — Again</h3>
+          <p class="text-xs text-gray-500 mt-1">Iran has survived decades of sanctions. Faced with more, it is likely to escalate rather than surrender, analysts said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/europe/iran-trump-economic-sanctions-leverage.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump Tariffs Force Some Canadian Companies to Move South of the Border</h3>
+          <p class="text-xs text-gray-500 mt-1">If President Trump moves ahead with 50 percent tariffs on a wide range of Canadian products later this month, some companies may only survive by relocating to the United States.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/canada/canada-tariffs-manufacturing-trade-trump.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near</h3>
+          <p class="text-xs text-gray-500 mt-1">Prime Minister Mark Carney of Canada was less definitive about what the intense talks produced, saying “important work” remained.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/canada/tariffs-trade-trump-carney.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump Orders Pentagon to Curtail Military Exercises With Ally South Korea</h3>
+          <p class="text-xs text-gray-500 mt-1">In a social media post, the president scolded South Korea for not helping denuclearize Iran, and also praised North Korea and its leader.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/us/politics/trump-south-korea-military-exercises.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Train Derails Near Town of Lewes in East Sussex, U.K.</h3>
+          <p class="text-xs text-gray-500 mt-1">Emergency services said they were working at the scene of a derailment near Lewes, in East Sussex, on Thursday. Eighteen other people were less badly hurt.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/train-derails-southern-england.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Topos Azteca, a Mexican Volunteer Rescue Group, Helps With Rescue Efforts After Colombia Earthquake</h3>
+          <p class="text-xs text-gray-500 mt-1">Topos Azteca, a Mexican volunteer rescue group that works worldwide and helped after the Sept. 11 attacks, arrived in Colombia after searching for survivors in Venezuela.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/americas/topos-azteca-rescue-efforts-colombia-earthquake.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">This remote spot has cliffs, seabirds — and today, a few extra seconds of darkness.</h3>
+          <p class="text-xs text-gray-500 mt-1">The full eclipse will last the longest</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/this-remote-spot-has-cliffs-seabirds-and-today-a-few-extra-seconds-of-darkness" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Tragic Story of Jason Arday</h3>
+          <p class="text-xs text-gray-500 mt-1">The Cambridge professor, found dead last week, was at the center of a firestorm about race and hiring. We talk to the reporter covering the story.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/jason-arday-cambridge-canada-meta.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Taliban Kicked the U.S. Out of Afghanistan. Now They Want It Back.</h3>
+          <p class="text-xs text-gray-500 mt-1">In an interview, Afghanistan’s foreign minister called on the U.S. to reopen its embassy and invest in the country — a near-impossible sell for now, analysts and former diplomats say.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/asia/afghanistan-us-taliban.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Man on a Mission to Build India’s Most Livable City</h3>
+          <p class="text-xs text-gray-500 mt-1">The chief minister of Andhra Pradesh has 25,000 workers building his dream capital with waterways, bike lanes and a “Quantum Valley” tech hub.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/asia/one-mans-quest-to-build-indias-most-livable-city.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Iranian YouTube Show Posing Questions Few Dare Ask</h3>
+          <p class="text-xs text-gray-500 mt-1">Azad, a popular online debate program, has tackled topics that push the limits of Iran’s authoritarian system. Some question how it has remained on air.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/middleeast/iran-youtube-show.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Thailand Halts New Gun Permits After Mass Shooting at a School</h3>
+          <p class="text-xs text-gray-500 mt-1">It remains to be seen how far the government will go to tighten gun control in the country, which has experienced a string of high-profile shootings in recent years.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/asia/thailand-gun-permits-school-shooting.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Syrian Convicted in Austria of Civil War Abuses Is Detained in Syria</h3>
+          <p class="text-xs text-gray-500 mt-1">Musab Abu Rukbah, a former police chief, left Austria after appealing his eight-year sentence for crimes committed during Syria’s civil war.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/middleeast/syria-austria-arrest-civil-war-crimes.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Summer Camps Strive to Stay Part of Canadian Life, Despite Hurdles</h3>
+          <p class="text-xs text-gray-500 mt-1">Long a tradition for many kids and teenagers across the country, overnight camps are facing financial and cultural hurdles as inflation bites and parenting trends shift.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/canada/sleepaway-summer-camp-children-ontario-canada.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Spain Urges Eclipse Watchers to Be Wary of Wildfire Risks</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/be-wary-of-wildfire-risks-spanish-officials-tell-eclipse-watchers" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Solar eclipses occur when the sun, moon and Earth align in space.</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/solar-eclipses-occur-when-the-sun-moon-and-earth-align-in-space" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Six Years in Provence: An Ancient Castle and a Feud Over a Troublesome Bridge</h3>
+          <p class="text-xs text-gray-500 mt-1">In a picturesque village, the mayor closed a road, setting off a storm with residents and the owners of a castle that once belonged to his family.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/europe/provence-chateau-village-feud.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Settler Siege of Palestinian Homes Highlights Growing West Bank Chaos</h3>
+          <p class="text-xs text-gray-500 mt-1">Two families have been trapped by settlers for days, casting a spotlight on the army’s struggle to curtail settler violence and protect Palestinians living in the occupied West Bank.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/middleeast/west-bank-palestinians-israeli-settlers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Send Us Your Questions About the Iran War</h3>
+          <p class="text-xs text-gray-500 mt-1">Times reporters who cover the war, diplomacy, energy and the broader Middle East are joining our “Ask a Correspondent” feature as the conflict nears the six-month mark. Let us know what’s on your mind...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/iran-war-reader-questions.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">See the 2026 European Solar Eclipse, in Photos and Videos</h3>
+          <p class="text-xs text-gray-500 mt-1">People gathered across the continent to watch the total solar eclipse on Wednesday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/solar-eclipse-europe-photos.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Russian Blockade of Major Ukrainian Ports Threatens Global Grain Supplies</h3>
+          <p class="text-xs text-gray-500 mt-1">The deadly strikes are part of a long-running maritime battle with Ukraine and echo battles over other key shipping routes around the world.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/russia-ukraine-ports-odesa-cargo-ship-attacks.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Russia Campaigned to Derail Moldova’s Pro-Western Government</h3>
+          <p class="text-xs text-gray-500 mt-1">In Moldova, Moscow paid Orthodox priests, conducted a vote-buying scheme and set up training camps on election interference — all in an effort to derail the Western-leaning government.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/russia-moldova-putin.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Record-Breaking Rainfall Leaves Eight Dead and Thousands Stranded in Japan</h3>
+          <p class="text-xs text-gray-500 mt-1">Three months’ worth of rain fell in just 12 hours in a region east of Tokyo, leading to deadly flooding.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/asia/chiba-tokyo-flood-rain-deaths.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Quit Lit</h3>
+          <p class="text-xs text-gray-500 mt-1">There are good reasons to abandon books we’re not enjoying, but our attenuated attention might lead us to tap out too early.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/briefing/quit-lit.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Queen Camilla Says It Was ‘Difficult’ to Keep Charles’s Cancer a Secret</h3>
+          <p class="text-xs text-gray-500 mt-1">“I was just longing to let it out,” Camilla said in rare public comments about the king’s 2024 diagnosis, which was not immediately revealed. “But obviously I couldn’t.”</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/europe/camilla-charles-cancer-diagnosis-secret-charity.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Putin Visits Islands Seized From Japan in World War II, Angering Tokyo</h3>
+          <p class="text-xs text-gray-500 mt-1">Prime Minister Sanae Takaichi of Japan has been a public critic of Mr. Putin, who has denounced her country’s sanctions against Russia over the Ukraine war.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/asia/putin-visit-islands-japan-russia.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Professor’s Death Leaves Behind Hard Questions for Cambridge on Race and Hiring</h3>
+          <p class="text-xs text-gray-500 mt-1">Jason Arday, the school’s youngest Black professor, was found dead on Friday. The school ignored a series of warnings about his life story and his work.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/europe/jason-arday-cambridge-hiring-questions.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">‘Posh George,’ the Convicted Fraudster in Nigel Farage’s Inner Circle</h3>
+          <p class="text-xs text-gray-500 mt-1">George Cottrell’s close alliance with Mr. Farage is back in the spotlight now that the Reform U.K. leader has returned to Parliament.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/europe/posh-george-nigel-farage-reform.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Palestinian Rappers Shabjdeed and Saint Levant in Spat Over Authenticity</h3>
+          <p class="text-xs text-gray-500 mt-1">Shabjdeed, a rapper in the West Bank, criticized a fellow Palestinian musician in a song, saying his Western lifestyle and lyrics were far removed from life back home.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/middleeast/shabjdeed-saint-levant-slv.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">No Way Out</h3>
+          <p class="text-xs text-gray-500 mt-1">The U.S. is building an archipelago of overseas detention sites where deportees are often held indefinitely without charge.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/deportations-eswatini-italy-heist.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Muddling through Iceland’s rainy eclipse, accompanied by clouds, whales and at least one proposal.</h3>
+          <p class="text-xs text-gray-500 mt-1">In a place known for its fickle weather, eclipse watchers took a risk. Only some got to see the sun.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/muddling-through-icelands-rainy-eclipse-accompanied-by-clouds-whales-and-at-least-one-proposal" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">More Than 40 Dead After a Ferry Capsizes on Zimbabwe’s Lake Kariba</h3>
+          <p class="text-xs text-gray-500 mt-1">The vessel was crowded far beyond capacity and was hit by strong waves, the police said. While dozens have been rescued, the search continues for an unknown number of missing people.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/africa/-zimbabwe-lake-kariba-ferry-capsize.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Liechtenstein Changes Its Law to Allow Women to Ascend the Throne</h3>
+          <p class="text-xs text-gray-500 mt-1">The move puts the principality in the majority among nearby nations with royal families.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/europe/liechtenstein-royal-succession-women.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kyiv’s Dormition Cathedral is Revived After Russian Drone Strike</h3>
+          <p class="text-xs text-gray-500 mt-1">Volunteers and priests rallied to clean up Kyiv’s Dormition Cathedral, still smelling of smoke from a massive blaze, for an anniversary celebration.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/europe/ukraine-kyiv-cathedral-russia-drone-strike.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kushner Meets With Hamas to Advance Trump’s Gaza Plan</h3>
+          <p class="text-xs text-gray-500 mt-1">The president’s son-in-law met the Palestinian militant group’s leaders in Egypt, officials said. He will soon see Benjamin Netanyahu, the Israeli leader.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/middleeast/kushner-hamas-talks.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kushner Meets Netanyahu in Israel in Effort to Break Logjam Over Gaza</h3>
+          <p class="text-xs text-gray-500 mt-1">Prime Minister Benjamin Netanyahu of Israel has refused to pull back the country’s military until Hamas fully disarms. But the Trump administration is under pressure to show progress.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/middleeast/kushner-netanyahu-gaza-peace-deal.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kevin Rideout, American Missionary Kidnapped in Niger, Is Released</h3>
+          <p class="text-xs text-gray-500 mt-1">Kevin Rideout, a pilot, was abducted from his home in the country’s capital, Niamey, last fall. His mission organization said he was in “good health” after his release.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/africa/american-missionary-niger-rideout-released.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jason Arday, Cambridge Professor Accused of Plagiarism, Is Found Dead</h3>
+          <p class="text-xs text-gray-500 mt-1">Mr. Arday resigned last week after the university announced an investigation into allegations of plagiarism and fabrication.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/jason-arday-dead.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israeli Strikes in Lebanon Kill 11, Health Officials Say</h3>
+          <p class="text-xs text-gray-500 mt-1">The Lebanese health ministry said children were among those killed. The Israeli prime minister’s office said Hezbollah had struck first, injuring three Israeli soldiers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/middleeast/israel-strikes-lebanon-ansar.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israeli Settlers Resume West Bank Siege After Eviction</h3>
+          <p class="text-xs text-gray-500 mt-1">The military’s failure to keep extremists away from two Palestinian families trapped in their West Bank homes made clear the chaos gripping the Israeli-occupied territory.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/middleeast/west-bank-siege-israeli-settlers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israel Strikes Air Base in Syria, Drawing Ire From the U.S.</h3>
+          <p class="text-xs text-gray-500 mt-1">The attack was the latest in a series of Israeli military interventions in Syria over the past two years.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/middleeast/israel-airstrikes-syria-air-base.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israel Opens Criminal Investigation Into Killings of Hind Rajab and Gaza Medical Workers</h3>
+          <p class="text-xs text-gray-500 mt-1">Two high-profile cases that had spurred international condemnation of the country’s conduct in Gaza were transferred to the military police. Such investigations have rarely led to convictions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/middleeast/israel-criminal-investigation-hind-rajab-gaza-workers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran’s Supreme Leader Signals Intention to Keep Country on a War Footing</h3>
+          <p class="text-xs text-gray-500 mt-1">Ayatollah Mojtaba Khamenei’s appointment of hard-line loyalists to top jobs suggests he is prepared to keep the country on a war footing and to quash domestic dissent.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/middleeast/iran-khamenei-military-leaders-war.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran Says Qatar Captured Its Pilots Months Ago, a Claim Qatar Rejects</h3>
+          <p class="text-xs text-gray-500 mt-1">Iran said the airmen have been held since March 2 when their fighter jets were shot down. The Qatari government denies detaining any Iranian pilots.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/middleeast/iran-missing-pilots-qatar.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">In a Faltering Chinese Economy, Working-Class Stories Strike a Chord</h3>
+          <p class="text-xs text-gray-500 mt-1">Poems, essays and books written by working-class writers have garnered recognition in recent years — as well as increasing government attention.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/asia/china-working-class-writers-books.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">In Iceland, the eclipse czar is broken-hearted over the weather.</h3>
+          <p class="text-xs text-gray-500 mt-1">Saevar Helgi Bragason has spent years wrangling Iceland into eclipse-ready shape. But even he can’t control the clouds.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/in-iceland-the-eclipse-czar-is-broken-hearted-over-the-weather" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">In Bali, a Quest to Restore the Sacred Glow of Fireflies</h3>
+          <p class="text-xs text-gray-500 mt-1">The insects, revered in local culture, are disappearing for many reasons, including rapid development to cater to tourists.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/asia/bali-restore-fireflies.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hundreds of Flights Canceled in Sicily as Mount Etna Erupts</h3>
+          <p class="text-xs text-gray-500 mt-1">Etna erupts often, but it usually doesn’t release this much ash, an expert said. Tens of thousands of travelers’ plans have been disrupted in the past week.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/mount-etna-volcano-sicily-eruption.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How to Safely Watch the Solar Eclipse, Even Without Glasses</h3>
+          <p class="text-xs text-gray-500 mt-1">If you plan to watch the solar eclipse, make sure your lenses offer enough protection. Alternatively, you can safely watch using household items.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/watch-solar-eclipse-without-glasses-pinhole-camera-colander.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How the Iran War Made Africa’s Richest Man Even Richer</h3>
+          <p class="text-xs text-gray-500 mt-1">Africans have turned to one of their own for fuel as the world’s supplies run low. But they are not the only ones with the continent’s richest man on speed dial.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/africa/dangote-iran-refinery-oil-nigeria.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How a Ukrainian Bank Worker Came to Face Life in a Russian Prison</h3>
+          <p class="text-xs text-gray-500 mt-1">Artem Murdid, his mother and his girlfriend are accused of terrorism. They say they did nothing wrong.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/europe/russia-detained-ukrainians-war-murdid.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How a Long-Shot U.S. Oil Drilling Project Is Shaking Up Greenland</h3>
+          <p class="text-xs text-gray-500 mt-1">A U.S. oil company says it could be on the verge of a major discovery in Greenland. The proposal comes at a tricky time for the Arctic island, and locals are lining up against it.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/greenland-oil-project-us-dr-phil.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Ukraine’s Satellites Help Drive Its War Drones</h3>
+          <p class="text-xs text-gray-500 mt-1">Ukrainian drone teams have a powerful new tool: near real-time information on troop movements and locations.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/europe/from-the-sky-to-the-battlefield.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Scientists Use Eclipses for Research</h3>
+          <p class="text-xs text-gray-500 mt-1">It’s a chance not just to study the sun but also space weather, light pollution and even animal behavior.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/eclipse-scientists.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Nigel Farage Ended Up Running Against Count Binface in Clacton</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage forced a new election in his parliamentary seat after coming under pressure over his finances. His main challenger is Count Binface, a novelty candidate.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/count-binface-nigel-farage-clacton.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Japan Averted a Major Earthquake Disaster</h3>
+          <p class="text-xs text-gray-500 mt-1">Japan avoided a major disaster after a 6.8-magnitude earthquake hit last month. Our reporter River Akira Davis visited Kumamoto, a prefecture near the epicenter, to see how it built quake-proof buildi...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/video/world/asia/100000011069179/japan-earthquake-disaster-kumamoto.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Israel’s Financial Chokehold Is Stifling the West Bank Economy</h3>
+          <p class="text-xs text-gray-500 mt-1">Intensifying restrictions have hit every part of the territory’s dealings, spurring worries about whether the Palestinian Authority can remain solvent.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/middleeast/west-bank-economy.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Cyclospora Evaded the U.S. Food Safety System to Sicken Thousands</h3>
+          <p class="text-xs text-gray-500 mt-1">The Trump administration delayed a rule last year that could have sped up the effort to pinpoint the source of the contamination. Critics charge that food safety oversight has eroded overall.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/health/cyclospora-invesigation-fda.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How China Remembers Zhu Rongji, the Premier Who Spoke His Mind</h3>
+          <p class="text-xs text-gray-500 mt-1">Tributes to the former premier recalled his spirited style and his efforts to integrate China into global commerce, in contrast with the rigidity of the Xi era.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/asia/china-premier-zhu-rongji-reaction.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Houthis Claim Strike on Saudi Vessel as Red Sea Violence Escalates</h3>
+          <p class="text-xs text-gray-500 mt-1">The armed group, based in Yemen and backed by Iran, said it had launched missiles near the vital maritime trade route, in a conflict that shows no sign of abating.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/middleeast/houthis-saudi-strike.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Here’s how to stay safe watching the solar eclipse.</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/heres-how-to-stay-safe-watching-the-solar-eclipse" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Heat Is Hammering Europe, Again. Here’s What That Looks Like.</h3>
+          <p class="text-xs text-gray-500 mt-1">Extreme temperatures and repeated wildfires are pushing infrastructure to the limit and testing the continent’s resolve.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/europe-heat-wave-photos.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Heat Deaths in a ‘Cold’ Country Are a Warning to the Rest of Europe</h3>
+          <p class="text-xs text-gray-500 mt-1">A June heat wave in Belgium and neighboring countries exposed a lethal lack of readiness. That’s a risk as another wave hits Europe.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/europe/belgium-heat-wave-deaths.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">He Was Deported to Eswatini in Southern Africa. He May Never Go Free.</h3>
+          <p class="text-xs text-gray-500 mt-1">As the Trump administration sends a growing number of immigrants to countries they have no connection to, some find themselves imprisoned with no way out.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/magazine/deportation-immigrants-prison-eswatini.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">France’s Top Court Strikes Down Ban on Social Media for Children</h3>
+          <p class="text-xs text-gray-500 mt-1">The move was a setback for President Emmanuel Macron, who championed the ban. He vowed to pass a new version before he leaves office next spring.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/france-court-strikes-down-ban-social-media-children.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Former Catholic Bishop Is Convicted of Sexual Abuse, Australian News Outlets Say</h3>
+          <p class="text-xs text-gray-500 mt-1">A court found Christopher Alan Saunders, the former bishop of Broome, guilty of sexually abusing two men, the Australian Broadcasting Corporation reported.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/australia/bishop-christopher-saunders-abuse.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Five Arrested in Connection to Stolen Works by Cézanne, Renoir and Matisse, Prosecutors Say</h3>
+          <p class="text-xs text-gray-500 mt-1">The Italian military police said that art collectively valued at more than $10 million had been found five months after being taken in a nighttime heist near Parma.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/cezanne-renoir-matisse-heist-recovered.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Female Afghans Erased From Public Life in Five Years of Taliban Rule</h3>
+          <p class="text-xs text-gray-500 mt-1">Decrees restricting women’s rights to study, work, travel and act independently now threaten to damage Afghanistan permanently, experts say.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/asia/afghan-women-taliban-rule.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Farage Wins Special U.K. Election That He Initiated, as Expected</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage, the leader of Reform U.K., won the Clacton by-election with 63 percent. Count Binface, a novelty candidate, came second with 27 percent, a personal best.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/farage-binface-clacton-result-byelection.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Even outside the path of totality, the eclipse will provide remarkable views.</h3>
+          <p class="text-xs text-gray-500 mt-1">Beyond the path of totality, clear skies over London, Paris, Lisbon and Milan will reveal a crescent-shaped evening sun to millions of Europeans.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/even-outside-the-path-of-totality-the-eclipse-will-provide-remarkable-views" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Europeans, Braced for 5th Heat Wave of 2026, Have Had Enough</h3>
+          <p class="text-xs text-gray-500 mt-1">With temperatures set to soar as high as 109 degrees Fahrenheit (43 Celsius) this week, Europeans and tourists say that summer in Europe has lost its appeal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/europe-fifth-heat-wave.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Erin Patterson, Woman Convicted in Australia’s Mushroom Murder Case, Appeals</h3>
+          <p class="text-xs text-gray-500 mt-1">An Australian woman, Erin Patterson, was found guilty of murdering three of her husband’s relatives and trying to kill a fourth by serving them deadly mushrooms.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/australia/erin-patterson-appeal-mushroom-murder-australia.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Entrenched, Embattled and Defiant, the Taliban Celebrate 5 Years in Power</h3>
+          <p class="text-xs text-gray-500 mt-1">The Taliban have Afghanistan in a chokehold that spares no one. But threats are starting to crack their veneer of stability and control.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/asia/entrenched-embattled-and-defiant-the-taliban-celebrate-5-years-in-power.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Engine Blade Hit Window on Jet Before Man Was Partly Sucked Outside, Report Says</h3>
+          <p class="text-xs text-gray-500 mt-1">The National Transportation Safety Board said it had found a bird’s remains and feathers on a broken engine.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/ryanair-flight-passenger-window.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Electric Thrills</h3>
+          <p class="text-xs text-gray-500 mt-1">Electric motorcycle sales are surging in Pakistan, as wartime prices accelerate the pivot away from fossil fuels in the developing world.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/pakistan-e-bikes-europe-heat.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Effects of Record-Breaking El Niño Are Happening on 3 Continents</h3>
+          <p class="text-xs text-gray-500 mt-1">The recurring climate phenomenon is expected to peak later this year, but it is already causing dry spells and crop failures on three continents.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/climate/el-nino-early-onset-effects.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ecuadorean Fishing Boats Hit by Mystery Attackers</h3>
+          <p class="text-xs text-gray-500 mt-1">Ecuadorean crews plying the waters of the Pacific have been targeted by a mysterious outfit equipped with drones. Some sailors appear to have lost their lives.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/americas/ecuador-fishing-boat-strikes.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Eclipse chasers stake out their viewing spots in Iceland.</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/eclipse-chasers-stake-out-their-viewing-spots-in-iceland" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Early-Onset El Niño</h3>
+          <p class="text-xs text-gray-500 mt-1">The global weather disrupter appears to be taking a toll, and its peak could still be months away.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/climate/el-nino-effects.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Driver Sets Record for Hydrogen-Powered Vehicle at More Than 406 M.P.H.</h3>
+          <p class="text-xs text-gray-500 mt-1">Andy Green, a 64-year-old retired Royal Air Force pilot from Britain, was already the only person to break the sound barrier on land. “The ground comes at you very, very quickly,” he said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/us/land-speed-record-utah-andy-green.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Deadly Israeli Strike on Gaza Raises Doubts About Trump Peace Plan</h3>
+          <p class="text-xs text-gray-500 mt-1">A day after President Trump’s envoy, Jared Kushner, visited Israel to advance a stalled plan for demilitarizing and rebuilding Gaza, the Israeli military said it targeted Hamas commanders.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/middleeast/israeli-strike-gaza-cafe-peace-plan.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Coming next summer: the ‘eclipse of the century.’</h3>
+          <p class="text-xs text-gray-500 mt-1">The sky will go dark for six minutes or more over landmarks like the Rock of Gibraltar, the casbah of Tangier and the temples of Luxor, Egypt.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/2027-eclipse-morocco-spain-egypt" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cholera Outbreak Sickens Over 90 in Myanmar’s Biggest City</h3>
+          <p class="text-xs text-gray-500 mt-1">Civil war and military rule have weakened Myanmar’s health care system, while heavy monsoon rains have increased the risk of waterborne disease.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/asia/cholera-outbreak-yangon-myanmar.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chocó, Colombia, Faces Deeper Hardship After an Earthquake</h3>
+          <p class="text-xs text-gray-500 mt-1">In Chocó, a remote region, “pain, hunger and homelessness await” survivors of last week’s earthquake, the governor said. Shakira visited to help draw awareness.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/americas/colombia-earthquake-choco.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chinese Comic Investigated After Singing a Riff of a Patriotic Song</h3>
+          <p class="text-xs text-gray-500 mt-1">Guo Degang, one of the country’s best-known comedians, was reported to the authorities, as the arts continue to be a focus for ideological crackdowns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/us/guo-degang-china-comic-investigated.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">China Wants Its Data to Power the World’s A.I.</h3>
+          <p class="text-xs text-gray-500 mt-1">China is exporting more than A.I. models. It wants its data to influence the world’s chatbots, raising fears that Beijing’s narratives will spread with the technology.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/asia/china-ai-data-chatbots.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Childhood Friends, Adopted From India, Discover They’re Sisters</h3>
+          <p class="text-xs text-gray-500 mt-1">Meena Geltink and Minal Tijssen were adopted from India by families in the Netherlands and grew up less than 100 miles apart.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/europe/friends-adopted-sisters-india-netherlands.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Carney and Trump Talk Again as Deadline Nears on New U.S. Tariffs</h3>
+          <p class="text-xs text-gray-500 mt-1">Canada is seeking a deal to dodge further economic pain at the hands of the Trump administration on midnight Tuesday. But at what cost?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/canada/trade-tariffs-trump-carney.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Canadian Petition to Expel U.S. Ambassador Pete Hoekstra Takes Off</h3>
+          <p class="text-xs text-gray-500 mt-1">Mr. Hoekstra has been President Trump’s faithful messenger in Canada amid a historic low in relations. More than 170,000 Canadians want him gone.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/canada/hoekstra-ambassador-petition-canada-trump.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Britain’s Farage Takes a Page From Trump’s Playbook Amid Investigations</h3>
+          <p class="text-xs text-gray-500 mt-1">Nigel Farage, the Reform U.K. leader who resigned from Parliament and won back his seat on Thursday, stays on the offensive and says voters don’t care about allegations of financial impropriety.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/farage-britain-trump-playbook-analysis.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Brazil’s Disease-Fighting Mosquitoes</h3>
+          <p class="text-xs text-gray-500 mt-1">Our reporter, Apoorva Mandavilli, goes inside a mosquito factory in Brazil, where scientists are producing millions of mosquitoes to fight deadly tropical diseases in a warming world.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/video/world/americas/100000011042147/brazils-disease-fighting-mosquitoes.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bou Meng, Rare Survivor of Khmer Rouge Torture House, Dies at 85</h3>
+          <p class="text-xs text-gray-500 mt-1">Saved by his ability to paint, he was one of only a handful of prisoners to make it out of the brutal prison Tuol Sleng.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/asia/bou-meng-dead.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Barred From Ballot, a Party Becomes a Vessel for Russians’ Discontent</h3>
+          <p class="text-xs text-gray-500 mt-1">The spotlight on the country’s only antiwar party has brought a spark to what had looked like another dull, tightly controlled election campaign.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/europe/russia-yabloko-party-election.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">At Least 47 Dead as 7.7-Magnitude Earthquake Rocks Indonesia</h3>
+          <p class="text-xs text-gray-500 mt-1">The temblor was one of the strongest the area had experienced in decades, an official said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/asia/earthquake-indonesia-flores-tsunami.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">At Iceland’s eclipse festival, a prayer for sea cucumbers and ‘generosity from the sky.’</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/world/solar-eclipse-2026-updates/at-icelands-eclipse-festival-prayer-for-sea-cucumbers-and-generosity-from-the-sky" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">At Ex-Premier Zhu Rongji’s Funeral, China’s Past Shadows Its Present</h3>
+          <p class="text-xs text-gray-500 mt-1">Beijing wants to portray today’s China as carrying forward Zhu Rongji’s era of growth, but for many Chinese, the optimism of that time has since faded.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/asia/zhu-rongji-funeral-china.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As Iran War Turns Into Economic Battle, a New U.S. Strategy Recalls Old Ones</h3>
+          <p class="text-xs text-gray-500 mt-1">The United States and Iran are poised to blow past a deadline they had set themselves to broker terms on peace and Iran’s nuclear program.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/middleeast/iran-war-us-trump.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As Europe Gets Hotter, Its Transportation Systems Struggle to Cope</h3>
+          <p class="text-xs text-gray-500 mt-1">The continent’s railways and roads “were engineered for a climate that no longer exists,” one expert said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/heat-trains-transportation-roads.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As Europe Faces Heat Waves and Wildfires, Travelers Are Forced to Adapt</h3>
+          <p class="text-xs text-gray-500 mt-1">Soaring temperatures, widespread wildfires and dried-up rivers are transforming tourism across the continent. Here’s how travelers are responding.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/travel/europe-travel-tourism-wildfires-heat-waves.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As China Pushes to Expand in Asia, Trump Focuses on Iran</h3>
+          <p class="text-xs text-gray-500 mt-1">Asian allies are beginning to wonder whether the United States would or could defend them in a war.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/us/politics/china-expansion-asia-trump-iran.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As Army Fails to Protect Palestinians, Israeli Leaders Sympathize With Settlers</h3>
+          <p class="text-xs text-gray-500 mt-1">Defense Minister Katz called for the military to turn over to the police the responsibility for protecting Palestinians after two West Bank families were besieged by violent settlers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/middleeast/israel-west-bank-settler-violence-military-police.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Art Heist: 4 Antonello da Messina Paintings Stolen From Sicily</h3>
+          <p class="text-xs text-gray-500 mt-1">The works, by Antonello da Messina, were taken as the Sicilian city of Messina held a religious celebration.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/europe/italy-renaissance-art-heist.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Arabian Sea Bird and Turtle Habitat Threatened by Oil From Grounded Tanker</h3>
+          <p class="text-xs text-gray-500 mt-1">The spill of Russian crude bound for India compounds the environmental damage from spills in and around the Strait of Hormuz, where tankers and oil facilities have come under attack.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/middleeast/oil-spill-oman.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Andy Burnham, UK Prime Minister, Exchanged Texts With Someone Posing as Trump’s Chief of Staff</h3>
+          <p class="text-xs text-gray-500 mt-1">Prime Minister Andy Burnham messaged briefly with a person impersonating Susie Wiles, a British government official said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/europe/andy-burnham-prime-minister-uk-fake-texts-trump.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">‘An English Summer Is Not the Same Anymore’</h3>
+          <p class="text-xs text-gray-500 mt-1">With forecasters issuing a warning for very high temperatures, this summer is on track to be one of the hottest yet.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/europe/uk-heat-climate-change.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">American Hiker Dies After Lightning Strike on Mount Etna in Italy</h3>
+          <p class="text-xs text-gray-500 mt-1">Rescuers found a 29-year-old man in serious condition on the volcano’s eastern slope on Sunday. He was later pronounced dead at a hospital in Catania.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/europe/mount-etna-hiker-lightning-strike-death.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">After the Earthquakes</h3>
+          <p class="text-xs text-gray-500 mt-1">Venezuela and Japan both experienced major quakes this summer. Their responses differed, and not just because of money.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/earthquake-response-japan-venezuela.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">After Youth Outcry, Vietnam Says Former Official Caused Fatal Crash at Tree 55</h3>
+          <p class="text-xs text-gray-500 mt-1">Young people are calling for justice after a former Communist Party official killed a teenager in a car crash. The government’s response has been surprising.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/asia/vietnam-crash-tree-55-community-party-official.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">After Women in India Joined Protests, Online Harassment Followed</h3>
+          <p class="text-xs text-gray-500 mt-1">Widespread online abuse and visits from the police show the added risks women take standing up for their beliefs in a patriarchal society.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/asia/india-women-protests-online-abuse.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">After Notre-Dame Fire, France Restored the Cathedral — but Not These Windows</h3>
+          <p class="text-xs text-gray-500 mt-1">France has faithfully renovated most of what burned at Notre-Dame in 2019. Contentiously, six towering windows will soon be replaced by a new design.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/europe/notre-dame-windows-glass-tabouret.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">After 2 Plasma Donor Deaths, Company Pauses Clinics in Canada</h3>
+          <p class="text-xs text-gray-500 mt-1">Grifols, a Spanish company, said “unfounded attention” on its blood plasma business in Canada had led it to temporarily end collections at 17 clinics.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/canada/plasma-blood-donation-deaths-grifols.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Afghanistan’s Unhappy Anniversary</h3>
+          <p class="text-xs text-gray-500 mt-1">Five years into their hard-line rule, the Taliban find themselves in crisis at home and abroad.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/afghanistan-taliban-anniversary-eclipse-lakers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Afghan Women Erased From Public Life in Five Years of Taliban Rule</h3>
+          <p class="text-xs text-gray-500 mt-1">Decrees restricting the rights of women and girls to study, work, travel and act independently now threaten to damage Afghanistan permanently, experts say.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/asia/afghan-women-taliban-rule.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Special U.S. Navy Squadron Photographed the Last Total Solar Eclipse in Spain in 1905</h3>
+          <p class="text-xs text-gray-500 mt-1">Three American warships were sent to Valencia to capture pictures of the sun’s corona with a high-definition camera that would cost over $34,000 in today’s money.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/total-solar-eclipse-spain-1905-us-navy.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Space Expert Hoped to Use the Eclipse as Science Class. The D.J.s Had Other Plans.</h3>
+          <p class="text-xs text-gray-500 mt-1">Mar Carretero-Castrillo, an astrophysicist, returned to her remote village in Spain to be in the path of totality. Hundreds of  partygoers came too.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/spain-eclipse-astrophysicist-festival.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Shooting at the U.S. Consulate in Toronto Exposes a Neighborhood’s Guns-for-Hire Network</h3>
+          <p class="text-xs text-gray-500 mt-1">A shooting at a U.S. Consulate has thrust a neighborhood with a troubled past into the center of an emerging criminal phenomenon: young guns for hire as gig workers in the underworld economy.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/canada/us-consulate-synagogue-shooting-toronto-canada.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Rescue Mission in Remote Colombia</h3>
+          <p class="text-xs text-gray-500 mt-1">Our photographer Federico Rios joined aid flights in Chocó to document earthquake rescue efforts in remote communities.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/video/world/americas/100000011097252/a-rescue-mission-in-remote-colombia.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Rescue Effort After Colombia’s Earthquake</h3>
+          <p class="text-xs text-gray-500 mt-1">Our reporter Genevieve Glatsky, who is based in Colombia, witnesses the rescue of a buried earthquake survivor in the city of Cali.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/video/world/americas/100000011086264/a-rescue-effort-after-colombias-earthquake.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Prominent Mexican Politician Says U.S. Revoked His Visa</h3>
+          <p class="text-xs text-gray-500 mt-1">Andrés Manuel López Beltrán, a former president’s son, lashed out at the Trump administration after he said it canceled his visa, another flashpoint in the tense U.S.-Mexico relationship.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/americas/mexico-visas-lopez-beltran.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Patient’s Final Breath in a Congolese Ebola Ward</h3>
+          <p class="text-xs text-gray-500 mt-1">The distance between life and death is razor thin at one medical clinic in Rwampara, the heart of the epidemic ravaging the Democratic Republic of Congo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/world/africa/ebola-congo-patient-dies.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Partial Solar Eclipse Will Be Visible in Parts of the U.S. and Canada</h3>
+          <p class="text-xs text-gray-500 mt-1">Parts of the United States and Canada will have the chance to see the moon block at least a small portion of the sun.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/europe/solar-eclipse-us-north-america.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Mother’s Quest to Rescue Her Son From Russian-Occupied Ukraine</h3>
+          <p class="text-xs text-gray-500 mt-1">They made a risky bid to reunite after three years of separation, illness and deprivation — the kind of ordeal suffered by many thousands of families torn apart by the war in eastern Ukraine.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/europe/ukraine-russia-rescue.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A City Mobilizes Against a Stubborn Health Threat: Mosquitoes</h3>
+          <p class="text-xs text-gray-500 mt-1">The city of Belém in northern Brazil was overwhelmed by an outbreak of dengue two years ago. An all-out municipal effort has reduced cases and may offer lessons to American cities.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/health/mosquitoes-brazil-health-threat.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Bright Spot in Colombia as Rescuers Free Quake Victim</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/americas/colombia-earthquake-rescue.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">8 Matisse Works, Looted from Library in Brazil, Are Recovered</h3>
+          <p class="text-xs text-gray-500 mt-1">The prints by the French master were taken in São Paulo last year in a brazen daylight heist.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/americas/matisse-stolen-art-found-sao-paulo-brazil-heist.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">1 Dead After Student Livestreams School Shooting in the Philippines</h3>
+          <p class="text-xs text-gray-500 mt-1">The boy shot and killed a schoolmate at a junior high school before fatally turning the gun on himself, the mayor of Zamboanga City said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/asia/philippines-school-shooting-zamboanga-city.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">$10 Million in Gold Found Buried Under Former Brewery in Belgium</h3>
+          <p class="text-xs text-gray-500 mt-1">A construction worker’s drill struck gold during a renovation project in East Flanders, setting off a search for the owners of the stashed fortune.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/world/europe/gold-bars-coins-belgium.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

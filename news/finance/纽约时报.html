@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纽约时报 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / 纽约时报</h1>
+      <span class="text-sm text-gray-400">86 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Worker Pay Isn’t Keeping Up With Inflation Once Again</h3>
+          <p class="text-xs text-gray-500 mt-1">When prices spiked in 2021-22, wages failed to keep up for many workers, new research shows. Now the pattern is repeating.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/business/inflation-worker-pay.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Will Paramount’s Brinkmanship Work?</h3>
+          <p class="text-xs text-gray-500 mt-1">The media company’s leader, David Ellison, is threatening to pull the company out of California in the face of a lawsuit by states seeking to block its big deal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/dealbook/paramount-california-states-lawsuit.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Japan Is Struggling to Stop the Yen’s Decline</h3>
+          <p class="text-xs text-gray-500 mt-1">The currency has resumed its slide, eroding gains after the U.S. Treasury intervened to prop it up, as concerns mount about the direction of the country’s spending.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/japan-yen-intervention.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who Is Joshua Kushner, the New Lakers Co-Owner?</h3>
+          <p class="text-xs text-gray-500 mt-1">The brother of Jared Kushner is an influential venture capitalist with big bets on A.I. and health insurance.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/joshua-kushner-lakers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What’s in an Airport Code? In West Palm Beach, It’s the President’s Initials.</h3>
+          <p class="text-xs text-gray-500 mt-1">The state’s Palm Beach International Airport has been renamed for the president, complete with a rare change in its three-letter airport code.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/travel/palm-beach-president-donald-trump-airport.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What We Know About Taylor Farms’ Food Recalls</h3>
+          <p class="text-xs text-gray-500 mt-1">Just weeks after the company recalled lettuce and other produce suspected of being tainted by the cyclosporiasis parasite, it recalled jalapeños linked to a salmonella outbreak.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/taylor-farms-recalls-cyclospora-salmonella.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Two Ships Transiting Strait of Hormuz Are Attacked as Oil Prices Rise</h3>
+          <p class="text-xs text-gray-500 mt-1">Maritime officials on Tuesday announced the recent attacks, which killed at least one sailor. Six months into the conflict, the vital waterway remains perilous.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/strait-of-hormuz-ship-attack.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump to Nominate Heidi Overton, a Top Domestic Policy Aide, for F.D.A. Commissioner</h3>
+          <p class="text-xs text-gray-500 mt-1">Dr. Overton is a fierce opponent of abortion rights and a supporter of Health Secretary Robert F. Kennedy Jr.’s Make America Healthy Again agenda.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/health/heidi-overton-fda.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near</h3>
+          <p class="text-xs text-gray-500 mt-1">Prime Minister Mark Carney of Canada was less definitive about what the intense talks produced, saying “important work” remained.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/canada/tariffs-trade-trump-carney.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Treasury Scales Back Scrutiny of U.S. Shell Companies</h3>
+          <p class="text-xs text-gray-500 mt-1">The Trump administration will not enforce reporting requirements of the 2021 Corporate Transparency Act, which was intended to crack down on money laundering.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/us/politics/treasury-scrutiny-shell-companies.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Thrive Holdings, A.I.-Focused Buyer of Service Firms, Raises $2 Billion</h3>
+          <p class="text-xs text-gray-500 mt-1">The company, Thrive Holdings, acquires businesses to infuse them with artificial intelligence and drew interest from backers like SoftBank.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/dealbook/thrive-holdings-ai-funding.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Theater Chains Back Paramount-Warner Deal That States Say Will Hurt Them</h3>
+          <p class="text-xs text-gray-500 mt-1">America’s three largest movie theater companies have lined up behind David Ellison’s $111 billion merger of Paramount and Warner Bros. Discovery.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/cinemark-paramount-warner-deal-movie-theater-chains.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The labor market slowed as employers grew wary of hiring.</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/business/inflation-cpi-report/the-labor-market-slowed-as-employers-grew-wary-of-hiring" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Rising Stakes of the Global Bond Rout</h3>
+          <p class="text-xs text-gray-500 mt-1">There were already several factors rattling investors. A further rise in bond yields is making things more expensive for everyone.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/dealbook/bonds-yields-treasury-ai.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Markets Have Been on a Roll. Is It Time to Hedge Your Bets?</h3>
+          <p class="text-xs text-gray-500 mt-1">The S&amp;P 500 is in position for a rare fourth year of consecutive annual gains. Risks are rising, our columnist says, yet Wall Street is doubling down.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/stock-market-ai-bonds-rally.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Golden Age of Mexican Food Is Here. And It’s Complicated.</h3>
+          <p class="text-xs text-gray-500 mt-1">Even at a time of anti-immigration politics, there has never been a richer variety of Mexican restaurants in the United States.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/dining/mexican-food-scene-united-states-immigration.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Cutthroat Wearables Battle Is About More Than Tracking Your Fitness</h3>
+          <p class="text-xs text-gray-500 mt-1">Google, Apple, Samsung and upstarts like Oura are racing to integrate data from their wearable devices into the health care system.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/business/dealbook/wearables-healthcare.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The ‘Betting Coup’ Shaking Up Horse Racing</h3>
+          <p class="text-xs text-gray-500 mt-1">When several horses wildly outperformed the odds at tracks at Saratoga and the Jersey Shore, bookmakers in London were stung and industry watchers suspected an elaborate plot.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/horse-racing-betting-coup.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ted Decker, CEO of Home Depot, Is Taking Medical Leave</h3>
+          <p class="text-xs text-gray-500 mt-1">Ted Decker is expected to return in a few months, and two executives have been appointed to oversee his duties in the interim.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/home-depot-ceo.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sugar Importer With Trump Ties Said to Maintain Abusive Labor Practices</h3>
+          <p class="text-xs text-gray-500 mt-1">A watchdog group said the Dominican company continued to violate labor standards after President Trump lifted an import ban last year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/economy/trump-central-romana-sugar-forced-labor.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sports Team Sale Prices Keep Hitting New Highs</h3>
+          <p class="text-xs text-gray-500 mt-1">This week’s deal for the Los Angeles Lakers, which valued the team at a record $12.5 billion, was the latest in a pattern of skyrocketing prices.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/business/sports-team-values-billionaires.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Should I Publicize a Bad Publicist?</h3>
+          <p class="text-xs text-gray-500 mt-1">Plus: An intern considers whether to give the boss an honest review.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/business/bad-boss-warning.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Salvage Company Hoping to Sell Titanic Artifacts Challenges Court’s Role</h3>
+          <p class="text-xs text-gray-500 mt-1">A Virginia federal court has awarded the company the rights to collect, but not sell, items from the shipwreck. But the company says its earliest retrievals are governed by a French court.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/arts/design/salvage-company-hoping-to-sell-titanic-artifacts-challenges-courts-role.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Robinhood Bets Again on a Public Venture Capital Fund</h3>
+          <p class="text-xs text-gray-500 mt-1">The trading platform raised $200 million for a second publicly traded vehicle to let ordinary investors buy into privately held start-ups.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/dealbook/robinhood-public-venture-capital-fund.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Prediction Firms Are Flagging Insider Traders. Many Will Not Face Charges.</h3>
+          <p class="text-xs text-gray-500 mt-1">The agency that polices the industry does not have the staffing, the legal tools or the will to broadly crack down on wagers that are easily manipulated, experts say.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/us/politics/prediction-markets-insider-trading.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Paramount Asks States to Shoulder Costs of Delaying Warner Bros. Deal</h3>
+          <p class="text-xs text-gray-500 mt-1">Paramount’s $111 billion deal to acquire Warner Bros. Discovery has been postponed until the conclusion of a trial, a delay the studio says could cost it millions of dollars.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/business/paramount-warner-bros-antitrust-trial.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Outshine Frozen Fruit Bars Recalled Over Glass Contamination Concern</h3>
+          <p class="text-xs text-gray-500 mt-1">The parent company, Dreyer’s Grand Ice Cream, voluntarily recalled five flavors nationwide. No injuries linked to the recalled products have been reported.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/us/outshine-recall-glass-frozen-fruit-treat.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Outrage at UnitedHealth and Other Insurers Persists After Brian Thompson Killing</h3>
+          <p class="text-xs text-gray-500 mt-1">Higher premiums and rising medical bills have intensified Americans’ dissatisfaction with their medical coverage.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/unitedhealthcare-killing-luigi-mangione-affordability.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">New Yorkers Can’t Stop Lining Up for This Sushi</h3>
+          <p class="text-xs text-gray-500 mt-1">At a proliferating number of stores, discounts on sushi and other items are offered after 8 p.m. To get the best meals, you have to be there early.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/nyregion/sushi-discount-japanese-markets-new-york.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Markets Rally After U.S. Treasury Tries to Ease Bond Market Stress</h3>
+          <p class="text-xs text-gray-500 mt-1">Government bond yields fell and stocks jumped on a move by the Treasury Department to double the amount of debt that it can buy back from investors.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/bond-yields-treasury-department.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mark Cuban and Other Founders Wade Into Wealth Tax Debate</h3>
+          <p class="text-xs text-gray-500 mt-1">Some entrepreneurs, including Mark Cuban, are publicly worried about the potential fallout from California’s proposal to impose a special billionaire tax.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/business/dealbook/cuban-founders-california-wealth-tax.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Many Student Loan Borrowers May Have to Switch to Worse Repayment Plans</h3>
+          <p class="text-xs text-gray-500 mt-1">In an unusual move, Congress worsened terms for some existing borrowers. Now they’ll have to pay more, and for a longer term.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/student-loans-ibr-paye.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Lawsuit Accuses Selena Gomez of Defrauding Investors in Mental Health Site</h3>
+          <p class="text-xs text-gray-500 mt-1">The actor, singer and beauty mogul founded Wondermind, a mental health platform, with her mother. Investors put in more than $1 million in the venture, which “quietly collapsed,” the suit said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/us/selena-gomez-wondermind-lawsuit-fraud.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kalshi’s Tarek Mansour Isn’t Interested in Management Advice</h3>
+          <p class="text-xs text-gray-500 mt-1">Tarek Mansour co-founded the fast-growing prediction market company shortly after graduating from M.I.T., aiming to provide a “mathematical, objective” view of the world.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.nytimes.com/2026/08/09/business/kalshi-tarek-mansour-prediction-markets.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kalshi Ordered to Cease Most Operations in Washington State</h3>
+          <p class="text-xs text-gray-500 mt-1">In a preliminary injunction, a state judge barred the prediction market from allowing residents to place bets on the bulk of its offerings.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/kalshi-washington-state-ruling.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">July Retail Sales Notch Biggest Drop in Over a Year</h3>
+          <p class="text-xs text-gray-500 mt-1">The data for July showed the biggest drop in more than a year, as American households face the economic strains brought on by persistent inflation</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/retail-sales-july.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">July CPI Report Is Expected to Show Falling Energy Prices</h3>
+          <p class="text-xs text-gray-500 mt-1">The war with Iran injected volatility into the oil and gas market, with prices rising and falling in concert with the conflict.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/economy/energy-oil-prices-inflation.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Judge Awards $250,000 to Musician Who Fled Trump-Led Kennedy Center Gig</h3>
+          <p class="text-xs text-gray-500 mt-1">The center had sued Chuck Redd when he canceled a free concert last year, citing the addition of the Trump name to the venue. But a judge dismissed the case.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.nytimes.com/2026/08/11/arts/music/chuck-redd-kennedy-center.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jeff Bezos Buys a Piece of Liverpool Football Club</h3>
+          <p class="text-xs text-gray-500 mt-1">It is the first known investment by Mr. Bezos, one of the world’s richest men, into a sports team.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/jeff-bezos-liverpool-football-club.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Is Silicon Valley in the Justice Dept.’s Sights?</h3>
+          <p class="text-xs text-gray-500 mt-1">Federal prosecutors are reportedly investigating Andreessen Horowitz, the venture capital giant, over board seats it holds.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/dealbook/andreessen-horowitz-justice-antitrust.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Inside the $12.5 Billion Deal for the Lakers</h3>
+          <p class="text-xs text-gray-500 mt-1">The transaction, hashed out last weekend, reflects the huge profit potential of major sports franchises.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/dealbook/lakers-deal-kushner-iger-walter.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Inflation Eased Slightly in July, but Prices Remain Elevated as War Drags On</h3>
+          <p class="text-xs text-gray-500 mt-1">Though energy prices fell last month after their spring surge, other factors pushed up costs as the Fed considers raising interest rates.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/economy/cpi-report-july-inflation-data.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">India’s College Boom Is Leaving Graduates in Debt and Without Jobs</h3>
+          <p class="text-xs text-gray-500 mt-1">Families are betting their savings on private universities as a path to a better life. A shortage of well-paying work is turning that wager into frustration.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/india-private-university-debt.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">In a Chinese Leader’s Death, Mourning for a More Hopeful Time</h3>
+          <p class="text-xs text-gray-500 mt-1">Tributes for former Premier Zhu Rongji reflect nostalgia for an era when China was opening to the world and the future seemed more prosperous and hopeful.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/zhu-rongji-death-mourning-china.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">In a Big Pivot, Seat-Back Screens Are Returning at American Airlines</h3>
+          <p class="text-xs text-gray-500 mt-1">In an announcement on Tuesday, the carrier promised screens at every seat in its narrow-body fleet, along with an expansion of its premium seating.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/travel/american-airlines-seatback-screens.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How to Protect Your Home While You’re on Vacation</h3>
+          <p class="text-xs text-gray-500 mt-1">Store food in sealed containers and fix any leaking faucets or pipes, experts told our columnist, who had her own nightmare upon returning home.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/your-money/vacation-protecting-home.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How to Find the Best Flight and Travel Deals Over Labor Day and Beyond</h3>
+          <p class="text-xs text-gray-500 mt-1">Last-minute budget strategies rest on one key principle: flexibility.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/travel/travel-deals-labor-day.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How the U.S. Navy Is Helping Get Oil Through the Strait of Hormuz</h3>
+          <p class="text-xs text-gray-500 mt-1">With Iran making ship traffic perilous, a U.S. operation offers a way out for some energy exports, stealthily shepherding tankers on dangerous journeys.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/iran-hormuz-oman-us-navy.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How the Iran War Made Africa’s Richest Man Even Richer</h3>
+          <p class="text-xs text-gray-500 mt-1">Africans have turned to one of their own for fuel as the world’s supplies run low. But they are not the only ones with the continent’s richest man on speed dial.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/world/africa/dangote-iran-refinery-oil-nigeria.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How a False Nuclear Claim About Iran Ricocheted From India to Washington</h3>
+          <p class="text-xs text-gray-500 mt-1">A dubious post that spread on X became the basis of false claims that Iran’s leadership had declared it a nuclear power.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/business/iran-nuclear-false-claims.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Wall St. Profits When Personal Injury Lawsuits Pay Out</h3>
+          <p class="text-xs text-gray-500 mt-1">Personal injury cases have exploded, in number and magnitude, funded by companies betting on a win — and offering investors a piece of the action.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/personal-injury-lawsuits-funding.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Pennsylvania Got Hooked on Games That Look a Lot Like Slot Machines</h3>
+          <p class="text-xs text-gray-500 mt-1">A legal loophole kept “skill games” from being considered gambling. Now lawmakers are trying to save them from a court ruling.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/upshot/gambling-pennsylvania-slots-skill-games.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Cyclospora Evaded the U.S. Food Safety System to Sicken Thousands</h3>
+          <p class="text-xs text-gray-500 mt-1">The Trump administration delayed a rule last year that could have sped up the effort to pinpoint the source of the contamination. Critics charge that food safety oversight has eroded overall.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/health/cyclospora-invesigation-fda.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How Bob Iger and Joshua Kushner’s Bromance Led Them to Lakers</h3>
+          <p class="text-xs text-gray-500 mt-1">Bob Iger, the former chief executive of Disney, and Josh Kushner, the venture capitalist, are buying the Los Angeles Lakers. Their wives set them up.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/bob-iger-joshua-kushner-lakers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Homeowners tight on cash are tapping into their homes’ equity.</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/live/2026/08/12/business/inflation-cpi-report/homeowners-tight-on-cash-are-tapping-into-their-homes-equity" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Home Depot Reports Higher Sales, but Its C.E.O. Isn’t There to Spread the News</h3>
+          <p class="text-xs text-gray-500 mt-1">Investors got a shock last week when the retailer said that Ted Decker, the chief executive, would take a medical leave. Tuesday’s earnings brought a more welcome surprise.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/home-depot-ceo-medical-leave.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hiroshi Okuda, Disrupter Who Revived Toyota in the 1990s, Dies at 93</h3>
+          <p class="text-xs text-gray-500 mt-1">As the car company’s president, he made decisions quickly and shook things up, expanding overseas manufacturing and introducing the Prius, a milestone in automotive history.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/automobiles/hiroshi-okuda-dead.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Heat Kills Hundreds of Workers Each Year. A Postal Carrier Was One.</h3>
+          <p class="text-xs text-gray-500 mt-1">About half a dozen states explicitly protect workers from excessive heat. And some others, like Texas, prevent local governments from passing their own laws.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/extreme-heat-worker-deaths.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Gulf Oil Giants Push to Expand Overseas Stockpiles as Iran War Drags On</h3>
+          <p class="text-xs text-gray-500 mt-1">Saudi Arabia and the United Arab Emirates are seeking larger oil reserves in Japan and South Korea as regional conflict threatens supply routes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/saudi-uae-japan-oil-storage.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Gulf Oil Giants Are Spending Billions to Build Ways Around Strait of Hormuz</h3>
+          <p class="text-xs text-gray-500 mt-1">Even if a cease-fire materializes, Gulf exporters recognize that relying strictly on the Strait of Hormuz is a risk they can no longer take.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/iran-war-hormuz-oil.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Google Turns On Gemini A.I. for Students Using Its Classroom App</h3>
+          <p class="text-xs text-gray-500 mt-1">Google enabled A.I. features for K-12 schools that have allowed student access to Gemini. Until this week, Google automatically enabled Gemini in Classroom only for students 18 or older.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/google-gemini-ai-schools.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">G.M.’s ‘Car Guy’ Talks Electrics, China and Nepotism</h3>
+          <p class="text-xs text-gray-500 mt-1">Mark Reuss became the automaker’s president seven years ago, ascending to a role his father was fired from decades before. We got the chance to speak with him.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 11 Au</div>
+          <a href="https://www.nytimes.com/2026/08/11/business/general-motors-mark-reuss.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Frenzy for Solar Eclipse Glasses Takes Over London</h3>
+          <p class="text-xs text-gray-500 mt-1">Ahead of Wednesday’s rare cosmic event, thousands of people in London are searching for protective eyewear, as prices surge and stocks sell out.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/11/world/europe/solar-eclipse-glasses-uk.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Forbes Fired Top Editor After Discovering He Received Secret $6 Million Payment</h3>
+          <p class="text-xs text-gray-500 mt-1">Randall Lane, the magazine’s chief content officer, received the money from the founder of Shook Research, which has worked with Forbes on content about wealth advisers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/forbes-editor-fired.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Flock Announces Privacy Updates to Its Car-Tracking Cameras</h3>
+          <p class="text-xs text-gray-500 mt-1">Critics say the measures are “public relations” and leave room for continued misuse.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/flock-cameras-privacy-updates.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Flight Is Canceled After a Child Refuses to Be Seated</h3>
+          <p class="text-xs text-gray-500 mt-1">Passengers aboard a Porter Airlines plane headed to Toronto had to wait for a flight the next day after a child remained standing in a seat and would not get buckled in, the company said.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 09 Au</div>
+          <a href="https://www.nytimes.com/2026/08/09/travel/flight-canceled-child-seatbelt-porter-canada.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">FDA Classifies Egg Recall as Class I for Highest Health Risk</h3>
+          <p class="text-xs text-gray-500 mt-1">Nearly 20 million eggs were recalled in July over salmonella concerns. The new classification signals a “reasonable probability” of “serious adverse health consequences or death.”</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/health/fda-egg-recall-salmonella.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Europe Hurries to Fund More Cutting-Edge Businesses to Compete With China and U.S.</h3>
+          <p class="text-xs text-gray-500 mt-1">European governments, facing a nearly $1 trillion gap in investment funding, are casting a wide net to back start-ups developing pioneering technologies.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/19/business/economy/europe-investment-innovation-competition-us-china.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">David Ellison Floats Hollywood Exit as States Threaten His Warner Bros. Deal</h3>
+          <p class="text-xs text-gray-500 mt-1">Mr. Ellison told Paramount executives that he was considering pulling the company out of California amid a lawsuit brought by state attorneys general.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/11/business/media/david-ellison-hollywood-paramount-warner-bros.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Consumer Debt Data Shows ‘Overall’ Health Amid Persisting Divides</h3>
+          <p class="text-xs text-gray-500 mt-1">Homeowners with low fixed-rate mortgages lead a resilient picture of the economy. But many consumers are frustrated with declining real wages and other loans.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/consumer-debt-inflation.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">China Wants Its Tech Champions to Raise Money at Home</h3>
+          <p class="text-xs text-gray-500 mt-1">Blockbuster market debuts by two technology companies show how Beijing is turning to local investors to finance its A.I. ambitions and reduce reliance on Wall Street.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/unitree-ipo-trading.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Carney and Trump Talk Again as Deadline Nears on New U.S. Tariffs</h3>
+          <p class="text-xs text-gray-500 mt-1">Canada is seeking a deal to dodge further economic pain at the hands of the Trump administration on midnight Tuesday. But at what cost?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/canada/trade-tariffs-trump-carney.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">‘Buy Now, Pay Later’ Lenders Pitch Loans for Needs Like Electricity and Rent</h3>
+          <p class="text-xs text-gray-500 mt-1">The rapid growth of pay-later loans raises questions about whether their popularity is driven by consumer preference or desperation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/business/buy-now-pay-later.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bond Sell-Off Sends Borrowing Costs to Highest Level Since 2007</h3>
+          <p class="text-xs text-gray-500 mt-1">Yields on the 30-year U.S. Treasury and government bonds across the world rose to multiyear highs as investors fret about inflation, deficits and A.I. spending.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/oil-prices-bonds.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Benign Inflation Data Offers Reprieve to Fed as It Weighs Rate Increase</h3>
+          <p class="text-xs text-gray-500 mt-1">The latest Consumer Price Index report helped to reinforce the patient approach adopted by many officials at the Federal Reserve about raising rates, but it has not resolved the debate altogether.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/business/economy/inflation-federal-reserve-interest-rates.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">At Ex-Premier Zhu Rongji’s Funeral, China’s Past Shadows Its Present</h3>
+          <p class="text-xs text-gray-500 mt-1">Beijing wants to portray today’s China as carrying forward Zhu Rongji’s era of growth, but for many Chinese, the optimism of that time has since faded.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/world/asia/zhu-rongji-funeral-china.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As China Hunts for Scientific Talent, the US Makes It Easier</h3>
+          <p class="text-xs text-gray-500 mt-1">Young researchers have long come to the U.S. for academic training, but a combination of Chinese money and U.S. restrictions is shifting the balance.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/business/china-scientific-talent-competition.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As A.I. Data Centers Spread, Pressure Mounts to Share Profits</h3>
+          <p class="text-xs text-gray-500 mt-1">Policymakers around the country are maneuvering to ensure that tech giants aren’t the only ones who stand to benefit.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/business/ai-data-centers.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">An A.I. Tax Boom Could Curtail America’s Debt. But Not Solve It.</h3>
+          <p class="text-xs text-gray-500 mt-1">The consequences of A.I. for the budget will largely hinge on whether — and to what extent — the technology reshapes the labor market.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/us/politics/ai-national-debt-budget.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">America Wants to Make Its Own Humanoid Robots. That Won’t Be Easy.</h3>
+          <p class="text-xs text-gray-500 mt-1">China already manufactures humanoid robots by the thousands. A new generation of U.S. start-ups is betting that there is still time to compete.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/humanoid-robot-us-china.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Amazon and Alphabet’s Profits Reveal Circular Nature of A.I. Boom</h3>
+          <p class="text-xs text-gray-500 mt-1">Investment gains at Alphabet and Amazon reveal a new way in which technology companies’ fortunes are increasingly linked.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/ai-tech-profits.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Alfonso Fanjul Jr., Cuban American Sugar Baron, Dies at 89</h3>
+          <p class="text-xs text-gray-500 mt-1">With his brother, he presided over a family empire that includes the world’s largest cane sugar refiner and the Domino and C&amp;H brands.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/2026/08/13/business/alfonso-fanjul-jr-dead.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A Silicon Valley Dirt Farmer Hangs Up His Shears</h3>
+          <p class="text-xs text-gray-500 mt-1">Andy Mariani grows exotic and ethereally delicious stone fruit in the shadow of tech giants. But at age 80, it’s time to give up the land.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/business/andys-orchard-silicon-valley.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A French Start-Up, Inbolt, Makes Robots See, and Work, Better</h3>
+          <p class="text-xs text-gray-500 mt-1">Inbolt, a French start-up that sells robot vision systems, helped a Stellantis plant in Detroit become a top performer in the company.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/business/robots-stellantis-inbolt.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ABC Sues Trump Administration Over F.C.C. Threat to Its TV Licenses</h3>
+          <p class="text-xs text-gray-500 mt-1">The network asked a court to stop the agency from taking steps that could force ABC stations off the air and accused the F.C.C. of violating its First Amendment rights.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.nytimes.com/2026/08/18/business/media/abc-fcc-lawsuit-broadcast-licenses.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">2 Planes With Same Call Sign in Phoenix Could Have Been ‘Disastrous’</h3>
+          <p class="text-xs text-gray-500 mt-1">An air traffic controller noticed that two planes — one departing, one landing — were both flight 2482. He acted quickly to avoid confusion.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/us/american-airlines-call-signs-phoenix.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

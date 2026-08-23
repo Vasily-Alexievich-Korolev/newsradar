@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing 2026-07-15 — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4">
+      <a href="../briefings.html" class="text-sm text-blue-600 hover:underline">&larr; Back to briefings</a>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 markdown text-sm"><p># 经济分析报告</p>
+<blockquote>生成时间: 2026-07-15</blockquote>
+<hr>
+<p>好的，遵照您的指示，以下是基于所提供宏观经济数据的系统性分析。</p>
+<hr>
+<h2>1. 宏观周期判断</h2>
+<p><strong>复苏</strong></p>
+<p>PMI回升至扩张区间（50.3%），表明生产端在边际改善。然而，CPI跌至0%，PPI仍在深度负值区间，显示终端需求极度疲软，通胀压力完全缺失。这种“生产先行、需求滞后”的组合，是典型的经济复苏早期特征，而非过热或扩张。</p>
+<h2>2. 流动性分析</h2>
+<p><strong>中性偏紧（边际收紧）</strong></p>
+<p>DR007低位回升（Δ↑0.2%），虽绝对值（1.40%）仍处于宽松范围，但边际变化传递了央行防止资金空转、引导资金利率向政策利率回归的信号。LPR按兵不动，证实了政策在价格层面保持定力，整体流动性从“极度宽松”转向“量足价稳”的审慎中性状态。</p>
+<h2>3. 信用周期</h2>
+<p><strong>见底</strong></p>
+<p>M1与M2同比增速均出现边际回升（Δ↑0.3%和0.2%），且M1增速快于M2，这是企业活期存款增加、经营活动边际改善的信号。但社融存量增速（若隐含稳定）与M2的缺口可能并未扩大，说明信用扩张的动力主要依赖政策（政府债）而非自发的融资需求，信用周期处于“收缩”后的“见底”阶段。</p>
+<h2>4. 经济基本面</h2>
+<p><strong>结构性复苏，内需孱弱</strong></p>
+<p>PMI（Δ↑0.6%）与极低CPI（0.0%）、深度负值PPI（-3.6%）形成鲜明背离。PMI是领先指标，指向生产活动在政策和外需带动下回暖；CPI与PPI是滞后指标，反映内需消费和工业品价格通缩压力巨大。基本面处于“好的一面在变好（生产），坏的一面没变好（需求）”的失衡状态。</p>
+<h2>5. 资金面</h2>
+<p><strong>风险偏好：结构性偏好，整体中性</strong></p>
+<p>以科创50（+5.1%）为代表的小盘科技指数大涨，而沪深300（-0.7%）等大盘指数小幅下跌，表明市场风险偏好并非全面上升，而是高度聚焦于特定方向（如科技）。北向/两融/成交量数据缺失，但市场结构显示资金在做“高低切”或追逐主题热点，整体风险偏好呈结构性抬升而非系统性反转。</p>
+<h2>6. 核心矛盾（最重要！）</h2>
+<ul><li><strong>矛盾1：流动性“量稳价升” vs 信用周期“见底未扩张”</strong> —— DR007边际上升（流动性边际收紧）的同时，社融/M1虽有企稳迹象但尚未形成强劲信用扩张，这构成“宽货币”向“宽信用”传导不畅的延续。这意味着市场流动性更多是“存量博弈”而非“增量推动”，指数级大行情概率低。</li>
+<li><strong>矛盾2：生产端（PMI↑）强扩张 vs 价格端（CPI≈0, PPI↓）强通缩</strong> —— 这是当前经济的“基差”问题。企业生产活动恢复，但产品价格无法上涨，甚至下跌，意味着企业利润面临“量增价减”的挤压。如果该矛盾不解决（如通过刺激消费或出清供给），复苏的持续性将存疑。</li>
+<li><strong>矛盾3：中美利差深度倒挂（-284bps） vs 国内弱增长</strong> —— 极宽的利差对人民币汇率和跨境资本流动构成持续压力。即便国内基本面边际改善，外部金融条件的收紧仍会限制国内货币政策空间和市场风险偏好。</li></ul>
+<h2>7. 市场结论</h2>
+<ul><li><strong>对A股：震荡偏多，风格偏好：小盘、成长</strong>。PMI回升与流动性格局决定了市场无系统性下行风险，但信用扩张不足意味着大盘价值股缺乏爆发力。结构上，科创50的强势表现印证了资金在寻找“最不受宏观拖累”且“有政策想象空间”的方向（科技成长），短期这一风格将继续演绎。</li>
+<li><strong>对美股：偏空</strong>。中美利差倒挂深度加剧，反映美国经济韧性与通胀粘性，支撑高利率。这对美债估值和成长股（利率敏感）不利。全球资金从新兴市场回流的压力未减。</li>
+<li><strong>对利率/债市：方向震荡，久期策略风险加大</strong>。当前10Y国债利率1.74%已充分反映了经济通缩预期，但PMI回升与流动性边际收紧形成压制。利率下行空间被堵，上行风险来自经济复苏超预期。从“买预期”转向“卖现实”的分水岭，短期维持震荡。</li>
+<li><strong>最大风险来源</strong>：内需（消费/地产）复苏持续不及预期，导致 “PMI反弹” 与 “通缩加剧” 的分化进一步扩大，最终导致企业利润恶化并反噬生产，引发市场二次探底。</li></ul>
+<h2>8. 一句话总结</h2>
+<p>当前市场处于 <strong>弱复苏</strong> 阶段，流动性 <strong>边际收紧但整体中性</strong>，核心矛盾是 <strong>“生产反弹”与“需求通缩”的背离</strong>，短期关注 <strong>科创50等小盘成长方向的结构性机会</strong>，同时对宏观数据的反复保持警惕。</p></div>
+</main>
+</body>
+</html>

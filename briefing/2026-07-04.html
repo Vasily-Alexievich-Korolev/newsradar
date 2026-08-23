@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing 2026-07-04 — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4">
+      <a href="../briefings.html" class="text-sm text-blue-600 hover:underline">&larr; Back to briefings</a>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 markdown text-sm"><p># 每日情报简报 — 2026-07-04</p>
+<blockquote>分析来源: 25 个新闻源（世界/政治/财经/科技/加密） | 今日新闻: 1264 条 | 分析引擎: DeepSeek</blockquote>
+<hr>
+<h2>[GLOBE] 政治</h2>
+<p>伊朗最高领袖哈梅内伊葬礼启动，多国政要出席；美伊冲突出现停火迹象，但伊朗同时攻击巴林和科威特，局势仍紧张。美国最高法院裁定特朗普出生公民权令违宪，并支持跨性别者参与女性体育禁令。英国首相斯塔默辞职，安迪·伯纳姆即将接任。</p>
+<ul><li>伊朗最高领袖哈梅内伊葬礼在德黑兰举行，中国等百余国代表出席</li>
+<li>美国与伊朗在多哈举行间接会谈，双方同意暂停攻击，但伊朗仍攻击巴林和科威特</li>
+<li>美国最高法院以6-3裁定特朗普限制出生公民权行政令违宪</li>
+<li>英国首相斯塔默正式辞职，安迪·伯纳姆成为唯一候选人，计划7月17日接任</li>
+<li>德国发生枪击案致6人死亡，但因世界杯报道被掩盖</li></ul>
+<p><strong>市场影响</strong>: 中东停火预期一度缓解能源供应担忧，但伊朗攻击邻国重新引发地缘风险，油价维持高位波动。美国政治不确定性因法院裁决和英国政权交接而增加，全球避险情绪波动。欧洲安全格局因北约内部分歧（特朗普批评北约）而趋紧，军工股承压。</p>
+<hr>
+<h2>[GLOBE] 经济</h2>
+<p>美国6月非农新增就业仅5.7万，大幅不及预期，失业率微降至4.2%，但平均时薪增速稳定，美联储加息压力暂时缓解。美国确认不延长USMCA 16年期限，改为逐年审查，贸易不确定性上升。德国大众计划削减10万个工作岗位，欧洲制造业危机深化。中国央行开展1万亿元买断式逆回购操作，释放流动性。比特币因就业数据疲软反弹至62,000美元上方，黄金同步走强。</p>
+<ul><li>美国6月非农就业仅增5.7万人，前值下修，市场预期加息概率下降</li>
+<li>美国正式拒绝续签USMCA 16年协议，改为每年审查，加拿大和墨西哥尚未同意</li>
+<li>德国大众计划削减10万个工作岗位，反映欧洲制造业深度衰退</li>
+<li>中国央行公告开展1万亿元买断式逆回购操作，期限3个月</li>
+<li>特斯拉Q2交付量超预期，欧洲市场复苏推动股价上涨</li></ul>
+<p><strong>市场影响</strong>: 非农数据疲软降低美联储7月加息概率，美股、比特币、黄金均获提振，美元指数走弱。USMCA不确定性打击北美供应链，墨西哥比索和加元承压。欧洲汽车股因大众裁员消息重挫，制造业PMI数据继续萎缩。中国央行大规模逆回购操作稳定银行间流动性，人民币汇率小幅走强。比特币突破62,000美元，资金从科技股轮动至加密资产。</p>
+<hr>
+<h2>[GLOBE] 文化</h2>
+<p>世界杯赛事持续吸引全球注意力，德国枪击案被体育新闻掩盖，墨西哥队晋级引发举国狂欢。美国庆祝建国250周年，但民意调查显示国家自豪感降至20年新低。Taylor Swift与Travis Kelce婚礼筹备引发全球粉丝狂热。法国热浪造成约1000例超额死亡，气候变化议题凸显。</p>
+<ul><li>世界杯期间德国发生6人死亡枪击案，但媒体聚焦德国队失利，事件被淡化</li>
+<li>美国250周年独立日庆典举行，但民意调查显示近半数美国人不知7月4日意义</li>
+<li>Taylor Swift与Travis Kelce婚礼在纽约筹备，预计将成为年度文化大事件</li>
+<li>欧洲热浪持续，法国约1000例超额死亡，空调需求飙升引发社会争议</li></ul>
+<p><strong>市场影响</strong>: 世界杯带动东道主国家消费和旅游业，墨西哥等国经济受益，但德国枪击案对国内安全情绪有负面影响。美国庆典消费提升零售和餐饮业，但低落的民族情绪可能削弱节日促销效果。婚礼经济相关品牌（珠宝、服装、酒店）受益。热浪推高空调、制冷设备需求，同时电力负荷压力导致部分数据中心启用备用电源，能源股短期波动。</p>
+<hr>
+<h2>[GLOBE] 科技</h2>
+<p>Anthropic与三星讨论自研AI芯片，继OpenAI后加速算力产业链重塑；Meta计划对外商业化富余AI算力，暗示供给可能过剩。索尼宣布2028年后停止生产PlayStation实体光盘，全面转向数字下载。中国发布具身智能新职业和AI赋能科研方案，推动产业落地。谷歌因垄断被判支付41亿欧元罚款，欧洲反垄断力度加大。</p>
+<ul><li>Anthropic正与三星讨论定制AI芯片，进一步减少对英伟达依赖</li>
+<li>Meta探索将富余AI算力对外商业化，可能标志AI算力从稀缺转向过剩</li>
+<li>索尼宣布2028年新作游戏将仅通过数字方式发行，停止生产实体光盘</li>
+<li>中国发布12个新职业，包括具身智能机器人应用技术员，北京拟建科学智能创新中枢</li>
+<li>谷歌因Android捆绑搜索被欧盟法院维持41亿欧元罚款</li></ul>
+<p><strong>市场影响</strong>: AI芯片自研趋势加剧英伟达股价波动，三星受益于代工预期，但算力过剩信号打压AI硬件股。索尼全面数字化的决策利好数字发行平台（如Steam、Epic），打击实体零售和二手市场。中国具身智能政策利好本土机器人及AI应用公司，相关概念股活跃。谷歌罚款虽大但市场已有预期，对股价影响有限，但强化了欧洲科技监管风险。</p>
+<hr>
+<h2>[SYNC] 追踪事件更新</h2>
+<h3>^^ 世界杯期间德国枪击案被体育新闻掩盖</h3>
+<ul><li><strong>新动态</strong>: 今日德国发生枪击案造成6人死亡，但媒体和公众注意力几乎完全被世界杯德国队失利占据。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 事件本身严重但被体育狂热掩盖，可能影响德国国内安全讨论和枪支管制政策，但短期舆论风险较低。</li></ul>
+<h3>vv 美国参议院通过决议要求总统从伊朗冲突中撤军</h3>
+<ul><li><strong>新动态</strong>: 美伊在多哈举行间接会谈，双方同意暂停攻击，但伊朗同时攻击巴林和科威特。</li>
+<li><strong>状态变化</strong>: 缓解</li>
+<li><strong>更新评估</strong>: 停火协议初步达成，但伊朗对盟友的攻击表明冲突远未结束，后续谈判仍脆弱。</li></ul>
+<h3>^^ 特朗普威胁对欧洲征收100%数字税关税</h3>
+<ul><li><strong>新动态</strong>: 特朗普今日再次威胁对任何征收数字税的国家征收100%关税。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 风险加大，若执行将严重冲击欧美贸易关系，尤其影响科技和数字服务行业。</li></ul>
+<h3>^^ 德国汽车业大规模裁员与产业危机</h3>
+<ul><li><strong>新动态</strong>: 今日报道大众计划削减10万个工作岗位，德国制造业深陷多重危机。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 德国汽车业危机深化，大众裁员规模超预期，将拖累德国GDP和就业市场，并影响全球汽车供应链。</li></ul>
+<h3>vv 美国通胀加速与美联储加息压力</h3>
+<ul><li><strong>新动态</strong>: 美联储主席沃什在欧洲央行论坛表示通胀风险下降但7月会议将有激烈争论；ADP就业不及预期但加息概率仍存。今日非农数据大幅不及预期，进一步降低加息概率。</li>
+<li><strong>状态变化</strong>: 缓解</li>
+<li><strong>更新评估</strong>: 非农数据疲软大大削弱了7月加息可能性，市场转向对经济衰退的定价，美联储可能暂停加息。</li></ul>
+<h3>^^ Meta计划出售富余AI算力</h3>
+<ul><li><strong>新动态</strong>: 今日消息称Meta正探索将富余AI算力对外商业化，暗示AI算力可能从稀缺转向过剩。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 如果执行，将对英伟达等算力供应商构成利空，同时可能压低云计算和AI芯片价格。</li></ul>
+<h3>^^ 委内瑞拉双震灾后人道主义危机与国际救援</h3>
+<ul><li><strong>新动态</strong>: 死亡人数升至至少1719人，失踪近5万；美国救援队救出婴儿，但救援设备短缺；余震持续。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 人道主义危机持续恶化，国际救援物资不足，可能引发更大规模疫情和难民流动，对拉美地区稳定有长期影响。</li></ul>
+<h3>^^ 刚果（金）埃博拉疫情扩散至法国</h3>
+<ul><li><strong>新动态</strong>: 法国确认首例埃博拉病例，刚果境内死亡超400人，仍有近300人失联。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 疫情跨洲传播风险增加，法国加强监测但恐慌情绪可能影响旅游业和跨境流动。</li></ul>
+<h3>vv 英国首相斯塔默辞职与工党领导权争夺</h3>
+<ul><li><strong>新动态</strong>: 安迪·伯纳姆成为唯一候选人，计划7月17日接任；特朗普批评其‘极端自由派’。</li>
+<li><strong>状态变化</strong>: 缓解</li>
+<li><strong>更新评估</strong>: 领导权过渡平稳，但伯纳姆面临国防开支缺口和党内左翼压力，英国政策不确定性仍存。</li></ul>
+<h3>^^ 美国不续签USMCA转向逐年审查</h3>
+<ul><li><strong>新动态</strong>: 美国今日确认不延长USMCA 16年期限，改为逐年审查，加拿大、墨西哥尚未同意。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 北美贸易不确定性显著增加，可能引发企业投资延迟，对加拿大和墨西哥经济构成负面冲击。</li></ul>
+<h3>^^ 日本酸素宣布电子级氦气提价30%</h3>
+<ul><li><strong>新动态</strong>: 提价已正式生效，新一轮涨价潮开启。</li>
+<li><strong>状态变化</strong>: 升级</li>
+<li><strong>更新评估</strong>: 氦气涨价将传导至半导体、光纤、医疗影像等下游行业，加剧全球供应链成本。</li></ul>
+<hr>
+<h2>[NEW] 新检测事件</h2>
+<h3>[MED] 美国最高法院裁定特朗普出生公民权令违宪</h3>
+<ul><li><strong>分类</strong>: politics</li>
+<li><strong>为何重要</strong>: 这是对总统行政权力的重大司法约束，可能引发新一轮移民政策立法斗争，直接影响数百万移民家庭，并可能成为2026年中期选举的核心议题。</li>
+<li><strong>潜在影响资产</strong>: 美国国债, 美元指数, 移民相关ETF</li>
+<li><strong>预估风险</strong>: medium</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 最高法院裁决->限制总统行政权->移民政策不确定->国会立法博弈->社会分裂加剧</p>
+<h3>[HIGH] 美国6月非农仅增5.7万，大幅不及预期</h3>
+<ul><li><strong>分类</strong>: economy</li>
+<li><strong>为何重要</strong>: 就业增长意外急剧放缓，且前值下修，表明劳动力市场可能比之前数据更疲弱，这将迫使美联储重新评估加息节奏，并可能引发市场对经济衰退的重新定价。</li>
+<li><strong>潜在影响资产</strong>: 美国国债, 标普500指数, 比特币, 黄金, 美元</li>
+<li><strong>预估风险</strong>: high</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 非农数据远逊预期->市场下调加息预期->美债收益率下跌->美元走弱->风险资产（股票、加密货币）反弹->衰退担忧持续</p>
+<h3>[HIGH] 伊朗最高领袖葬礼启动，多国代表团出席</h3>
+<ul><li><strong>分类</strong>: politics</li>
+<li><strong>为何重要</strong>: 哈梅内伊葬礼是伊朗政权凝聚力和转移内部矛盾的窗口，多国代表团（包括中国、沙特）出席显示地缘外交变数。葬礼期间若发生袭击将进一步恶化地区局势。</li>
+<li><strong>潜在影响资产</strong>: 原油, 黄金, 中东股市</li>
+<li><strong>预估风险</strong>: high</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 葬礼大规模聚集->安全风险上升->伊朗政权展示力量->美伊谈判敏感期->油价波动</p>
+<h3>[MED] Anthropic与三星讨论定制AI芯片</h3>
+<ul><li><strong>分类</strong>: technology</li>
+<li><strong>为何重要</strong>: 继OpenAI后，Anthropic也开始自研芯片，将进一步加速AI算力产业链重构，减少对英伟达的依赖，同时为三星等代工厂带来新订单，可能改变现有AI芯片竞争格局。</li>
+<li><strong>潜在影响资产</strong>: 英伟达(NVDA), 三星电子, AI芯片ETF</li>
+<li><strong>预估风险</strong>: medium</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- Anthropic自研芯片->减少英伟达订单->三星Foundry受益->AI算力多元化->长期影响GPU定价</p>
+<h3>[HIGH] 大众计划削减10万个工作岗位</h3>
+<ul><li><strong>分类</strong>: economy</li>
+<li><strong>为何重要</strong>: 作为欧洲最大汽车制造商，大众的大规模裁员标志德国制造业危机达到新高度，反映能源成本高企、电动化转型失败和关税保护的多重冲击，可能引发欧洲连锁反应。</li>
+<li><strong>潜在影响资产</strong>: 德国DAX指数, 欧元, 大众汽车(VOW3), 欧洲汽车ETF</li>
+<li><strong>预估风险</strong>: high</li>
+<li><strong>因果链</strong>:</li></ul>
+<p>- 大众裁员10万->德国工业产出萎缩->失业率上升->消费信心受挫->欧元区GDP下行->欧央行政策压力加大</p>
+<hr>
+<h2>[TAIL] 长尾效应分析</h2>
+<h3>美伊冲突与霍尔木兹海峡危机</h3>
+<ul><li><strong>起始时间</strong>: 2026年2月（美国-以色列空袭伊朗）</li>
+<li><strong>影响链条</strong>: 冲突导致霍尔木兹海峡一度关闭，全球油价飙升，能源贸易重构；沙特、科威特等产油国出口中断，OPEC产量波动；欧盟被迫重新评估对俄能源依赖；航运保险费飙升，全球供应链成本上升。</li>
+<li><strong>未来展望</strong>: 随着停火协议达成和海峡逐步恢复通航，油价将回归供需基本面，但伊朗与海湾国家敌意未消，低烈度冲突将持续。长期看，全球能源安全格局将加速多元化，美国LNG出口和可再生能源投资受益。</li>
+<li><strong>关注节点</strong>: 7月9日哈梅内伊葬礼；7月中旬多哈下一轮谈判；10月OPEC+产量会议</li></ul>
+<h3>全球AI投资泡沫与算力过剩风险</h3>
+<ul><li><strong>起始时间</strong>: 2024年初（AI大模型热潮）</li>
+<li><strong>影响链条</strong>: 超大规模资本开支推动英伟达等芯片股暴涨，但Meta等公司开始出售富余算力，BIS警告泡沫可能崩溃。AI Token支出指数近期下跌，表明边际需求放缓。</li>
+<li><strong>未来展望</strong>: AI算力可能从稀缺转向过剩，导致芯片价格下跌和资本支出回报率下降。但长期需求由应用落地支撑，泡沫消化后行业将更健康。</li>
+<li><strong>关注节点</strong>: 7月科技巨头财报季（微软、谷歌、Meta）；Anthropic IPO进展；OpenAI与Broadcom芯片合作落地</li></ul>
+<h3>美国2024年大选后的政治极化和贸易政策转向</h3>
+<ul><li><strong>起始时间</strong>: 2025年1月（特朗普第二任期开始）</li>
+<li><strong>影响链条</strong>: 特朗普推行激进关税政策，打破USMCA，威胁数字税，导致全球贸易体系碎片化。美国最高法院扩大总统对独立机构的控制权，但限制出生公民权，政治斗争白热化。</li>
+<li><strong>未来展望</strong>: 2026年中期选举前，贸易保护主义和移民议题将持续发酵。美国可能退出更多多边协议，推动双边或逐年审查机制，全球经济不确定性上升。</li>
+<li><strong>关注节点</strong>: 2026年11月中期选举；USMCA年度审查；特朗普与欧盟数字税谈判</li></ul>
+<hr>
+<h2>[DEEP] 水面下的信号</h2>
+<h3>[MED] 德国社会对安全事件的冷漠化（枪击案被体育新闻淹没）</h3>
+<ul><li><strong>依据</strong>: 今日德国枪击案造成6人死亡，但主流媒体和公众关注完全被世界杯失利占据，记忆库中已有类似先例。</li>
+<li><strong>如果成立</strong>: 可能反映德国社会对暴力事件麻木，或政府有意淡化安全危机以避免影响世界杯气氛，长期可能助长安全漏洞和极端主义抬头。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[MED] AI算力供给过剩的早期迹象（Meta算力商业化）</h3>
+<ul><li><strong>依据</strong>: Meta正探索将富余AI算力出售，同时LLM Token支出指数近期下跌，与过去一年算力紧缺叙事形成反转。</li>
+<li><strong>如果成立</strong>: AI芯片价格面临下行压力，英伟达等短期盈利预期可能过高。中小企业获得廉价算力将促进应用创新，但资本开支高峰后的产能过剩可能引发行业回调。</li>
+<li><strong>置信度</strong>: medium</li></ul>
+<h3>[HIGH] 美国民众对建国理念的疏离（250周年喜庆但骄傲感新低）</h3>
+<ul><li><strong>依据</strong>: 多项民调显示近半数美国人不知7月4日含义，国家自豪感降至20年低点，同时左翼和右翼以不同方式解构国旗象征。</li>
+<li><strong>如果成立</strong>: 社会共识进一步瓦解，可能削弱政策执行力，增加社会动荡风险。但民族主义情绪可能被政治人物利用进行选举动员，对某些消费品和国防类股票或有短暂提振。</li>
+<li><strong>置信度</strong>: high</li></ul>
+<h3>[LOW] 欧洲央行政策独立性面临政治挑战（拉加德暗示提前离任）</h3>
+<ul><li><strong>依据</strong>: 欧洲央行行长拉加德表示不排除提前离任以投身法国政坛，法国总统选举临近。</li>
+<li><strong>如果成立</strong>: 欧洲央行领导层不确定性增加，市场可能担忧货币政策独立性受损，推高欧元区主权债券风险溢价，尤其是法国国债。</li>
+<li><strong>置信度</strong>: low</li></ul>
+<hr>
+<p>*简报生成时间: 2026-07-04 06:02*</p>
+<p>*数据来源: 纽约时报、福克斯新闻、BBC、卫报、金融时报、Investing、</p>
+<p>今日俄罗斯、联合早报、中国新闻网、世界报、朝日新闻、</p>
+<p>新华社、人民网财经、华尔街见闻、</p>
+<p>TechCrunch、Ars Technica、MIT Tech Review*</p></div>
+</main>
+</body>
+</html>

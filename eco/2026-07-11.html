@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing 2026-07-11 — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4">
+      <a href="../briefings.html" class="text-sm text-blue-600 hover:underline">&larr; Back to briefings</a>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 markdown text-sm"><p># 经济分析报告</p>
+<blockquote>生成时间: 2026-07-11</blockquote>
+<hr>
+<h2>1. 宏观周期判断</h2>
+<p><strong>复苏</strong></p>
+<p>PMI回升至50.3%（Δ+0.6%）表明制造业景气边际改善，但CPI同比为0%（Δ-100.0%）显示终端需求极度疲弱，PPI仍处-3.6%深度负区间。这是典型的“生产回暖而消费通缩”格局，经济处于从收缩底部向弱复苏过渡的阶段，尚未形成内生性扩张动力。</p>
+<h2>2. 流动性分析</h2>
+<p><strong>宽松</strong></p>
+<p>DR007（1.38%）持续低于政策利率，Shibor隔夜（1.36%）与1周（1.38%）均处低位，LPR保持3.0%/3.5%不变，CN10Y国债收益率下行至1.74%，形成一个“短端宽松→长端压低→信贷成本中性”的传导链。央行维持流动性净投放意愿明确，市场实际利率处于历史极低水平。</p>
+<h2>3. 信用周期</h2>
+<p><strong>收缩</strong></p>
+<p>M2同比增速仅+0.2%，社融增量（假设2026年5月数据规模有限）与M2的缺口收窄甚至倒挂，说明“宽货币”未能转化为“宽信用”。M1增速（+0.3%）远低于M2，M1-M2剪刀差负值加深，企业活期存款占比持续下降，表明资金存在“淤积于银行体系”而非投入实体投资。</p>
+<h2>4. 经济基本面</h2>
+<p><strong>弱复苏，但内需塌陷</strong></p>
+<p>PMI连续微升（50.3%）、工业增加值环比改善是少数亮点，但CPI归零与PPI深跌构成“量价背离”——工业产出在增加，但价格无法传导，企业实际利润承压。这种组合指向需求侧严重不足，经济复苏高度依赖政策托底。</p>
+<h2>5. 资金面</h2>
+<p><strong>风险偏好结构性上升（结构性转向小盘成长）</strong></p>
+<p>北向资金（数据缺失）、两融规模与成交额（未来日期无法判断）虽未提供明确读数，但市场指数近5日走势给出了更直接信号：科创50（+5.1%）远强于沪深300（-0.7%）与上证50（+0.4%），表明资金正从大盘价值向小盘成长迁移，风险偏好处于“结构性回升”状态。</p>
+<h2>6. 核心矛盾</h2>
+<ul><li><strong>矛盾1：流动性极度宽松 vs 信用总量收缩</strong> → 资金“空转”于金融市场，推高对成长风格的估值溢价，但无法拉动实体信贷脉冲，形成“有流动性无宽信用”的尴尬。</li>
+<li><strong>矛盾2：生产端改善（PMI↑） vs 价格端通缩（CPI/PPI↓）</strong> → 企业营收改善受制于价格下行，实际盈利回升存疑，弱现实与强预期之间随时可能被证伪。</li>
+<li><strong>矛盾3：中美利差倒挂 -2.82% 与国内宽松取向冲突</strong> → 人民币资产对海外套利资金吸引力下降，但国内宽松无法随之收敛，形成“外部收紧约束内部政策空间”的潜在风险。</li></ul>
+<h2>7. 市场结论</h2>
+<ul><li><strong>对A股：震荡偏多，风格明确指向小盘成长</strong>  </li></ul>
+<p>理由：宽松流动性支撑估值，小盘成长（科创50、中证1000）受益于存量资金的结构性迁徙与科技主题催化；但大盘价值受通缩与信用收缩压制，难以趋势性突破。</p>
+<ul><li><strong>对美股：偏空</strong>  </li></ul>
+<p>依据：中美利差深度倒挂 + 美债收益率（4.56%）维持高位，全球资本回流美元资产压力持续，对风险偏好形成压制。</p>
+<ul><li><strong>对利率/债市：偏多但空间有限</strong>  </li></ul>
+<p>理由：经济复苏根基不稳+通缩格局支持债券多头逻辑；但10年期国债已降至1.74%，进一步下行需更强的宽松预期催化。</p>
+<ul><li><strong>最大风险来源</strong>：信用收缩持续、无法转化为PMI持续向上的证据链，导致“复苏证伪”——届时流动性宽松将不再是支撑，反而成为短期交易拥挤的脆弱性来源。</li></ul>
+<h2>8. 一句话总结</h2>
+<p>当前市场处于 <strong>“弱复苏+宽货币+紧信用”</strong> 的阶段性组合，流动性宽松与信用收缩的背离是核心矛盾，短期关注PMI能否持续改善以及工业价格是否触底；对A股维持震荡判断，优选小盘成长风格。</p></div>
+</main>
+</body>
+</html>

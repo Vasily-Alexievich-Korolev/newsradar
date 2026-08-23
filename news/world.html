@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../news.html" class="text-sm text-blue-600 hover:underline">&larr; Back to sources</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">World (all)</h1>
+      <span class="text-sm text-gray-400">30 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">White House intensifies attacks on opponents and media as Trump seeks new mouthpiece</h3>
+          <p class="text-xs text-gray-500 mt-1">Senator Jon Ossoff, who is up for re-election, came up with arguably the standout line of the midterm elections so far
+Hello there,
+Jon Ossoff
+really struck a nerve. That much is clear.
+Continue readi...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.theguardian.com/us-news/2026/aug/19/trump-white-house-attacks" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zelenskyy sacks deputy head of his office amid reported corruption investigation – as it happened</h3>
+          <p class="text-xs text-gray-500 mt-1">Ukrainian anti-corruption agencies said they uncovered group responsible for money laundering $3.35m but did not name individuals involved
+The rise in Germany’s ⁠borrowing costs to a 15-year high refl...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.theguardian.com/world/live/2026/aug/19/europe-ukraine-zelenskyy-mykhailo-fedorov-parliament-vote-corruption-probe-russia-belgium-wildfires-latest-news-updates" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Virgin Australia apologises to disability advocate removed from flight over wheelchair motor</h3>
+          <p class="text-xs text-gray-500 mt-1">Shane Hryhorec’s viral video showing the interaction with flight staff has already garnered 16m views
+Get our
+breaking news email
+,
+free app
+or
+daily news podcast
+Virgin Australia has apologised to a ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.theguardian.com/business/2026/aug/19/virgin-australia-apologises-to-disability-advocate-removed-from-flight-over-wheelchair-motor-ntwnfb" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump administration sanctions sitting president of the International Criminal Court for 'abuses of power'</h3>
+          <p class="text-xs text-gray-500 mt-1">Marco Rubio called the International Criminal Court &quot;corrupt&quot; as the Trump administration sanctioned two top ICC officials over jurisdiction disputes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/world/trump-administration-sanctions-sitting-president-international-criminal-court-abuses-power" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zhu Rongji, Former Premier Who Pushed China to a Market Economy, Dies at 97</h3>
+          <p class="text-xs text-gray-500 mt-1">As a vice premier and then premier, he helped transform China into the world’s leading manufacturing power and led his country into the World Trade Organization.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/asia/zhu-rongji-dead.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine pounds Black Sea Fleet’s ‘last major stronghold’ while Putin flexes naval power in Pacific</h3>
+          <p class="text-xs text-gray-500 mt-1">Putin threatened to seize European vessels from the Russian Black Sea to the Pacific after Ukraine&apos;s drone attack crippled Novorossiysk grain terminals.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.foxnews.com/world/ukraine-pounds-black-sea-fleets-last-major-stronghold-while-putin-flexes-naval-power-pacific" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia Election: President Hichilema Faces Backlash Ahead of Vote</h3>
+          <p class="text-xs text-gray-500 mt-1">President Hakainde Hichilema was elected five years ago, promising to protect civil liberties in his copper-rich African nation. Now, he’s accused of trampling on them.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://www.nytimes.com/2026/08/12/world/africa/zambia-presidential-election-hichilema.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia Says President Won Re-election After Tumultuous Campaign</h3>
+          <p class="text-xs text-gray-500 mt-1">With a second term, Hakainde Hichilema must navigate relations with the Trump administration, which has sought greater access to the copper-rich nation’s natural resources.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.nytimes.com/2026/08/17/world/africa/zambia-election-hichilema.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who will replace Karoline Leavitt as the next White House press secretary?</h3>
+          <p class="text-xs text-gray-500 mt-1">Karoline Leavitt’s abrupt departure has sparked a tough race inside Trump’s circle for the prominent position
+Karoline Leavitt’s surprise resignation as the White House press secretary is set to trigg...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.theguardian.com/us-news/2026/aug/13/next-white-house-press-secretary-leavitt" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Nigel Farage Is Running Against a ‘Trash Can’</h3>
+          <p class="text-xs text-gray-500 mt-1">Our reporter Amelia Nierenberg describes how the right-wing British political leader Nigel Farage, who is seeking re-election to Parliament, faces an unconventional opponent: Count Binface.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/video/world/europe/100000011041924/why-nigel-farage-is-running-against-a-trash-can.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UNICEF Gaza findings ‘completely shatters’ starvation claims against Israel, State Dept says</h3>
+          <p class="text-xs text-gray-500 mt-1">New UNICEF findings fuel fresh scrutiny of Gaza famine claims as the State Department says the data &quot;completely shatters&quot; allegations Israel deliberately starved civilians.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/unicef-gaza-findings-completely-shatters-starvation-claims-against-israel-state-dept-says" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who Are the Houthis, Iran-Backed Militia Entering Mideast War?</h3>
+          <p class="text-xs text-gray-500 mt-1">Amid relentless war in the Middle East, the Iran-backed militants seem poised to renew their conflict with Yemen’s Saudi-backed government.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.nytimes.com/article/houthi-yemen-militia-iran.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UK ‘in free fall’ on free speech, expert warns as British MP brands Trump admin grant 'MAGA money meddling'</h3>
+          <p class="text-xs text-gray-500 mt-1">The U.S. Embassy in London is offering up to $500,000 for projects promoting Anglo-American principles including freedom of speech, limited government and the rule of law.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/world/uk-free-fall-free-speech-expert-warns-british-mp-brands-trump-admin-grant-maga-money-meddling" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia elections haunted by ghost of incumbent president’s arch-rival</h3>
+          <p class="text-xs text-gray-500 mt-1">Hakainde Hichilema is bidding for second term, but feud between him and family of Edgar Lungu, who died in 2025, continues
+As Zambians go to the polls on Thursday, the ghost of the current president’s...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.theguardian.com/world/2026/aug/13/zambia-elections-hakainde-hichilema-haunted-ghost-incumbent-president-arch-rival-edgar-lungu" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Water companies in England and Wales explore ‘surge pricing’ during drought</h3>
+          <p class="text-xs text-gray-500 mt-1">Suppliers could factor water scarcity into charges as part of Ofwat proposal to reduce consumption
+Water companies could be allowed to raise bills for customers during periods of drought under proposa...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.theguardian.com/business/2026/aug/16/water-companies-england-and-wales-explore-surge-pricing-bills-drought" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukrainian drone attack on Russia kills at least six, says Moscow</h3>
+          <p class="text-xs text-gray-500 mt-1">Kyiv launches what may be its largest attack wave of war, with fire breaking out at warehouse near Russian capital
+Ukraine has launched one of its largest drone attacks since the start of the war, cau...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.theguardian.com/world/2026/aug/16/ukrainian-drone-attack-on-russia-wildberries-warehouse-fire" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">With Priests Scarce in Rural Italy, an African Pastor Is Filling the Void</h3>
+          <p class="text-xs text-gray-500 mt-1">Immigrants have long eased labor shortages on farms and factories in Italy. But churches also need foreign-born priests, like the Rev. Vincent Souly of the Ivory Coast.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.nytimes.com/2026/08/16/world/europe/italy-priest-shortage.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Where to Eat and Drink at a Barcelona Bar Like a Local</h3>
+          <p class="text-xs text-gray-500 mt-1">The classic bars, known as bodegas, are where locals in the Catalan capital take their rituals seriously. If you know where to look, you can join them.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.nytimes.com/2026/08/15/travel/barcelona-bars-bodegas.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zimbabwe boat accident death toll hits 68 as 22 more bodies recovered</h3>
+          <p class="text-xs text-gray-500 mt-1">Eighteen children among the people killed after ferry capsized on Lake Kariba
+Twenty-two more bodies have been recovered after a boat accident in Zimbabwe, taking the death toll to 68, police said on ...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.theguardian.com/world/2026/aug/15/more-bodies-recovered-after-zimbabwe-boat-accident" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump confirms IRGC backchannel, but calls for Iran's 'white flag of surrender'</h3>
+          <p class="text-xs text-gray-500 mt-1">Trump confirmed a direct backchannel with the IRGC for peace talks and issued an extraordinary bombing warning to Oman as the ceasefire expires.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://www.foxnews.com/world/trump-confirms-irgc-backchannel-calls-irans-white-flag-surrender" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump bets economic pressure can squeeze Iran as regime’s own failures deepen the pain</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump says he is &quot;low-keying it&quot; with Iran as sanctions and a naval blockade compound Tehran&apos;s financial crisis and inflation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 10 Au</div>
+          <a href="https://www.foxnews.com/world/trump-bets-economic-pressure-can-squeeze-iran-regimes-own-failures-deepen-pain" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Woman arrested after second world war memorial in DC vandalized</h3>
+          <p class="text-xs text-gray-500 mt-1">Suspect faces two felony charges after memorial filled with bubbles and spray-paint reading ‘Clean hands Dirty $’
+A woman was arrested on Friday morning in connection with the vandalization of the Nat...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.theguardian.com/us-news/2026/aug/14/world-war-two-memorial-dc-vandalism" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Zambia Halts Presidential Election Vote Count Over Violence and Fraud Allegations</h3>
+          <p class="text-xs text-gray-500 mt-1">The electoral commission for the southern African nation said poll workers had been attacked and ballots had been stolen.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/africa/zambia-election-vote-count-suspended-president.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">With Trump’s Hamas Deal in Peril, Kushner Set to Visit Israel for Gaza Talks</h3>
+          <p class="text-xs text-gray-500 mt-1">Jared Kushner, President Trump’s senior aide, is expected to meet with Prime Minister Benjamin Netanyahu of Israel, who has rejected a U.S.-backed deal to disarm Hamas.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/middleeast/jared-kushner-visit-israel-hamas-deal.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">卫报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">‘Unprecedented’ rain kills five in Japan as thousands stranded at airport</h3>
+          <p class="text-xs text-gray-500 mt-1">Evacuation orders issued for 400,000 after flooding, landslide warnings and power outages in Chiba prefecture
+At least five people have died in eastern Japan after “unprecedented” heavy rain that left...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.theguardian.com/world/2026/aug/14/japan-deadly-rain-evacuation-thousands-stranded-tokyo-airport-weather" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US Ambassador Huckabee slams extreme group of Israeli settlers for seizing Palestinian homes on West Bank</h3>
+          <p class="text-xs text-gray-500 mt-1">Settler violence in the West Bank prompted U.S. Ambassador Mike Huckabee to call the perpetrators &quot;Israeli terrorists&quot; after they besieged a Palestinian American&apos;s home near Nablus.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/world/us-ambassador-huckabee-slams-extreme-group-israeli-settlers-seizing-palestinian-homes-west-bank" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">UN watchdog slams potential election of Iran to panel with human rights sway: 'Lunatics running the asylum'</h3>
+          <p class="text-xs text-gray-500 mt-1">Iran&apos;s expected election to a United Nations committee on human rights and counterterrorism is called &quot;Orwellian&quot; by UN Watch&apos;s Hillel Neuer.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/world/un-watchdog-slams-potential-election-iran-panel-human-rights-sway-lunatics-running-asylum" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">纽约时报</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Will Sudan’s El Obeid Become the Next El Fasher? What to Know.</h3>
+          <p class="text-xs text-gray-500 mt-1">Taking El Obeid would allow the paramilitary Rapid Support Forces to consolidate its hold on western Sudan, a significant strategic goal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.nytimes.com/2026/08/14/world/africa/el-obeid-sudan-war-el-fasher.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump ally 'El Tigre' sworn in as Colombia's new president amid continent's rightward shift</h3>
+          <p class="text-xs text-gray-500 mt-1">Abelardo de la Espriella inherits soaring violence, a fragmented Congress and a $34 billion financing gap as he vows to rebuild U.S. ties.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.foxnews.com/world/trump-ally-el-tigre-sworn-colombias-new-president-amid-continents-rightward-shift" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">world</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US intel warns Russia could launch limited attack on NATO ally in effort to fragment organization: report</h3>
+          <p class="text-xs text-gray-500 mt-1">Vladimir Putin could attack a NATO member between this fall and 2029, U.S. intelligence assesses, likely targeting the Baltics or Poland directly.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 07 Au</div>
+          <a href="https://www.foxnews.com/world/us-intel-warns-russia-could-launch-limited-attack-nato-ally-effort-fragment-organization-report" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

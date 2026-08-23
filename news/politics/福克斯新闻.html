@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福克斯新闻 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/politics.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Politics</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Politics / 福克斯新闻</h1>
+      <span class="text-sm text-gray-400">103 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Your favorite cocktail could be an unexpected casualty of Trump's looming trade fight</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump&apos;s 50% tariff threat on Canadian spirits could devastate U.S. bars and restaurants while pressuring Canada to restock bourbon.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/your-favorite-cocktail-could-unexpected-casualty-trumps-looming-trade-fight" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">World War II Memorial on National Mall vandalized with pink spray paint; fountain overflowing with bubbles</h3>
+          <p class="text-xs text-gray-500 mt-1">Pink spray paint graffiti that said &quot;clean hands, dirty money&quot; was found on the World War II Memorial, and U.S. Park Police launched an investigation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/world-war-ii-memorial-national-mall-vandalized-pink-spray-paint-fountain-overflowing-bubbles" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who controls the Strait of Hormuz right now? Here's what the ship traffic actually shows</h3>
+          <p class="text-xs text-gray-500 mt-1">Traffic through the Strait of Hormuz appears to have declined substantially as compared to conditions before the war with Iran started earlier this year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/who-controls-strait-hormuz-right-now-heres-what-ship-traffic-actually-shows" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">White House launches interactive map tracking billions in suspected fraud</h3>
+          <p class="text-xs text-gray-500 mt-1">The White House launched The Fraud Ledger, an interactive dashboard tracking $230 billion in suspected fraud uncovered by JD Vance&apos;s task force.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/white-house-launches-interactive-map-tracking-billions-suspected-fraud" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">White House exposes ‘Transshipment Scam’ costing US up to $26B, points finger at China</h3>
+          <p class="text-xs text-gray-500 mt-1">The White House report identifies over 40 countries posing elevated transshipment risk as China routes goods through third nations to dodge tariffs.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/white-house-exposes-transshipment-scam-costing-us-26b-points-finger-china" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Warren’s ancestry saga roars back after Dem ally touts Native Senate first: ‘Arrows fired’</h3>
+          <p class="text-xs text-gray-500 mt-1">Elizabeth Warren&apos;s past Native American claims face a new criticisms as Minnesota&apos;s Democratic Senate nominee says no Native woman has served in the US Senate.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/warrens-ancestry-saga-roars-back-after-dem-ally-touts-native-senate-first-arrows-fired" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">WWII Memorial vandalism suspect in custody, charged with two felonies, Pirro says</h3>
+          <p class="text-xs text-gray-500 mt-1">Melissa L. Farris was served two felony charges for allegedly vandalizing the World War II Memorial in Washington, D.C.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/politics-wwii-memorial-vandalism-suspect-now-custody-charged-two-felonies-pirro-announces" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Veteran pediatrician hails Medicaid shift ending youth sex-change treatments: 'This is not denial of care'</h3>
+          <p class="text-xs text-gray-500 mt-1">Pediatric endocrinologist Dr. Quentin Van Meter said the policy shift comes amid what he described as a collapsing medical framework behind the youth transgender movement.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/veteran-pediatrician-hails-medicaid-shift-ending-youth-sex-change-treatments-not-denial-care" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Unearthed El-Sayed essay draws explosive Trump-bin Laden parallel: ‘recruited, radicalized and reassured’</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed&apos;s now-private 2021 blog post argued Trump should be treated like Osama bin Laden, calling the Capitol riot comparable to 9/11.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/unearthed-el-sayed-essay-draws-explosive-trump-bin-laden-parallel-recruited-radicalized-reassured" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Turkey accuses Netanyahu of pursuing ‘expansionist’ policies after Israeli strike on Syrian airbase</h3>
+          <p class="text-xs text-gray-500 mt-1">Turkey accused Benjamin Netanyahu of pursuing expansionist policies with recent Israeli airstrikes on Syria&apos;s Abu al-Duhur airbase near Aleppo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/turkey-accuses-netanyahu-pursuing-expansionist-policies-israeli-strike-syrian-airbase" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump's support doesn't save scandal-plagued lawmaker in primary</h3>
+          <p class="text-xs text-gray-500 mt-1">Donald Trump&apos;s endorsement couldn&apos;t save Rep. Cory Mills as Ryan Elijah pulled off an upset in Florida&apos;s 7th Congressional District primary.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/trumps-support-doesnt-save-scandal-plagued-lawmaker-primary" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump’s fight over rarely used 18th-century deportation law lives on in latest court clash</h3>
+          <p class="text-xs text-gray-500 mt-1">The 5th Circuit dismissed a challenge to Trump&apos;s use of the Alien Enemies Act against alleged Tren de Aragua members after all plaintiffs were deported.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/trumps-fight-rarely-used-18th-century-deportation-law-lives-latest-court-clash" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump to rally with New York police in highlighting historic coast-to-coast violent crime drop</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump travels to Nassau County Police Academy with Todd Blanche and Kash Patel to rally with cops and tout historic crime drop.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-rally-new-york-police-highlighting-historic-coast-to-coast-violent-crime-drop" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump scores major immigration victory as judge clears way to end TPS protections for thousands of Somalis</h3>
+          <p class="text-xs text-gray-500 mt-1">Trump scored a major legal victory as a federal judge in Boston lifted a stay blocking the termination of Somalia&apos;s TPS designation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-scores-major-immigration-victory-judge-clears-way-end-tps-protections-thousands-somalis" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump leaves stage mid-speech to embrace parents of 12-year-old killed by stray bullet in the Bronx</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump left the stage mid-speech at the Nassau County Police Academy to embrace the parents of Jacob Freytes, a 12-year-old killed by a stray bullet.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-leaves-stage-mid-speech-embrace-parents-12-year-old-killed-stray-bullet-bronx" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump claims AOC may run for president as far-left Dems back away from extreme policy</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump said Alexandria Ocasio-Cortez and progressive Democrats are all trying to disavow their defund police and sanctuary cities stances.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/president-trump-claims-aoc-far-left-democrats-backing-away-controversial-positions" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump backs Republican challenger to oust Letitia James amid ongoing mortgage fraud feud</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump endorsed Saritha Komatireddy to challenge Letitia James, calling the New York attorney general the &quot;WORST&quot; in the country.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-backs-republican-challenger-oust-letitia-james-amid-ongoing-mortgage-fraud-feud" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump admin sued over visa time restrictions for foreign students, journalists</h3>
+          <p class="text-xs text-gray-500 mt-1">A coalition sued to block a DHS visa rule changes that would cap international students at four years in the U.S. and limit foreign journalists to 240 days.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-admin-sued-visa-time-restrictions-foreign-students-journalists" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump admin marks 15 straight months with zero border releases as apprehensions plunge 94%</h3>
+          <p class="text-xs text-gray-500 mt-1">President Donald Trump&apos;s administration says it has gone 15 straight months without a single release at the border as apprehensions drop 94%.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-admin-marks-15-straight-months-zero-border-releases-apprehensions-plunge" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump-aligned conservative emerges from crowded primary to decide who fills Wyoming’s lone House seat</h3>
+          <p class="text-xs text-gray-500 mt-1">Wyoming Republican Secretary of State Chuck Gray faced Steve Friess and Reid Rasner in a crowded GOP primary to replace Rep. Harriet Hageman.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-aligned-conservative-emerges-from-crowded-primary-decide-wyoming-house-seat" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Top Dem operative brushes off latest scandal plaguing Maine Senate candidate as 'salacious gossip'</h3>
+          <p class="text-xs text-gray-500 mt-1">Donna Brazile declined to comment on a report that Maine U.S. Senate nominee Troy Jackson fathered children with his second cousin, calling it gossip.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/top-dem-operative-brushes-off-latest-scandal-plaguing-maine-senate-candidate-salacious-gossip" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The only map you need to see as California's billionaire tax fight heats up</h3>
+          <p class="text-xs text-gray-500 mt-1">Mark Cuban warns he&apos;ll pull startup investments from California if the proposed billionaire wealth tax passes, calling founders who stay &quot;idiots.&quot;</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/only-map-need-see-californias-billionaire-tax-fight-heats" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ted Cruz takes victory lap as iconic American brand's stock plunges to 12-year low</h3>
+          <p class="text-xs text-gray-500 mt-1">Ted Cruz revived his Nike boycott on social media, saying the Betsy Ross shoe cancellation proved the brand&apos;s &quot;marketing plan was America-hate.&quot;</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/ted-cruz-takes-victory-lap-iconic-american-brands-stock-hits-12-year-low" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Swing-state's fraud reckoning raises Minnesota-style alarm as wild schemes exposed</h3>
+          <p class="text-xs text-gray-500 mt-1">The DOJ&apos;s anti-fraud task force expansion into Pennsylvania netted 19 arrests as suspects allegedly billed Medicaid while in prison or driving rideshares.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/swing-states-fraud-reckoning-raises-minnesota-style-alarm-wild-schemes-exposed" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Susan Collins drops brutal reminder of Dem rival rocked by accusations</h3>
+          <p class="text-xs text-gray-500 mt-1">Republican Sen. Susan Collins says Democratic challenger Troy Jackson &quot;struggles to control his temper&quot; after a resurfaced 1988 police report emerged.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/susan-collins-drops-brutal-reminder-dem-rival-rocked-accusations" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Surrogate gives birth in Texas to baby with heart defect after parents requested abortion</h3>
+          <p class="text-xs text-gray-500 mt-1">Baby Gabriel was born Wednesday after surrogate McKenna West fled to Texas, where Attorney General Ken Paxton secured legal victory for surgery.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/surrogate-gives-birth-texas-baby-heart-defect-parents-requested-abortion" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">State of play: What to know about California showdown to replace Swalwell after massive scandal</h3>
+          <p class="text-xs text-gray-500 mt-1">Aisha Wahab and Melissa Hernandez battle for Eric Swalwell&apos;s California 14th Congressional District seat, as early results remain undecided.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/state-play-california-showdown-replace-swalwell-after-massive-scandal" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Socialists capture major Florida victory on hit-or-miss night for Trump-endorsed primary candidates</h3>
+          <p class="text-xs text-gray-500 mt-1">Trump endorsements delivered mixed results across Florida and Wyoming primary elections, as some backed candidates lost key congressional races.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/socialists-capture-major-florida-victory-hit-miss-night-trump-endorsed-primary-candidates" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Socialist insurgency heads to Trump’s backyard, targets pro-Israel Democrat</h3>
+          <p class="text-xs text-gray-500 mt-1">The Democratic Party&apos;s ideological civil war moves to Florida, where DSA-endorsed Oliver Larkin challenges AIPAC-backed Rep. Jared Moskowitz.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/socialist-insurgency-heads-trumps-backyard-targets-pro-israel-democrat" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Socialist in Trump country gives Karl Marx vision thumbs-up before ducking key tax question</h3>
+          <p class="text-xs text-gray-500 mt-1">Oliver Larkin defended taxing billionaires &quot;out of existence&quot; but repeatedly refused to give Sean Hannity a specific tax rate during their heated exchange.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/socialist-trump-country-gives-karl-marx-vision-thumbs-up-ducking-key-tax-question" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Scramble for Karoline Leavitt's replacement ensues with just weeks until Trump's spokesperson exits</h3>
+          <p class="text-xs text-gray-500 mt-1">Alina Habba, Stephen Miller and Scott Jennings are among the names floated to replace Karoline Leavitt as Trump&apos;s White House press secretary.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/scramble-karoline-leavitt-replacement-weeks-trump-spokesperson-exits" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Scope of CCP-backed Chinese exchange program inside American schools uncovered in sweeping report</h3>
+          <p class="text-xs text-gray-500 mt-1">A Defending Education report reveals 83 universities and 26 K-12 schools joined Xi Jinping&apos;s exchange program run by a Marxism-Leninism agency.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/scope-ccp-backed-chinese-exchange-program-inside-american-schools-uncovered-sweeping-report" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Resurfaced assault report puts Dem Senate nominee in GOP crosshairs: 'Graham Platner 2.0'</h3>
+          <p class="text-xs text-gray-500 mt-1">Troy Jackson, the Democratic Senate nominee in Maine, faces GOP attacks after a 1988 police report details a late-night brawl and assault claims.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/resurfaced-assault-report-puts-dem-senate-nominee-gop-crosshairs-graham-platner-2-0" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Republican who kicked Liz Cheney out of Congress seeks higher office in reddest state</h3>
+          <p class="text-xs text-gray-500 mt-1">Wyoming Republicans chose their U.S. Senate nominee from a five-way primary featuring Trump-endorsed Harriet Hageman, who unseated Liz Cheney in 2022.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/republican-kicked-liz-cheney-congress-seeks-higher-office-reddest-state" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Reagan National Airport makes drastic change following deadly 2025 midair collision</h3>
+          <p class="text-xs text-gray-500 mt-1">Ronald Reagan Washington National Airport received new surface movement radar to help controllers track aircraft on runways in low visibility.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/reagan-national-airport-makes-drastic-change-following-deadly-2025-midair-collision" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">‘Raw material for election fraud’: Expert flags voter-roll problems far beyond one state</h3>
+          <p class="text-xs text-gray-500 mt-1">Chuck DeVore told Fox News Digital that liberal states treat elections as census exercises, supercharging weaknesses in noncitizen voting safeguards.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/raw-material-election-fraud-expert-flags-voter-roll-problems-far-beyond-one-state" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Rashida Tlaib rally moved after Jewish-owned Florida venue cancels event, cites 'increased security concerns'</h3>
+          <p class="text-xs text-gray-500 mt-1">A Jewish-owned Fort Lauderdale venue canceled a rally set to headline Rashida Tlaib days before Florida&apos;s primary, citing security concerns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/rashida-tlaib-rally-moved-jewish-owned-florida-venue-cancels-event-cites-increased-security-concerns" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Progressive Minneapolis mayor's viral hip-hop moves spark 'humiliation ritual' mockery online</h3>
+          <p class="text-xs text-gray-500 mt-1">Video captures Minneapolis Mayor Jacob Frey dancing alone at the Black Entrepreneur State Fair, sparking a wave of conservative mockery online.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/progressive-minneapolis-mayors-viral-hip-hop-moves-spark-humiliation-ritual-mockery-online" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Potential successor to cowboy hat-wearing Dem tops crowded Florida primary</h3>
+          <p class="text-xs text-gray-500 mt-1">Seven Democrats battled for Frederica Wilson&apos;s safe blue seat in Florida&apos;s 24th Congressional District with a political dynasty and endorsements at play.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/potential-successor-cowboy-hat-wearing-dem-tops-crowded-florida-primary" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Paul Pelosi absent from first court appearance on hit-and-run charge in Napa County crash case</h3>
+          <p class="text-xs text-gray-500 mt-1">Paul Pelosi did not appear in court Friday, and his attorney entered a not guilty plea on his behalf in a Napa County hit-and-run case stemming from a July 3 crash.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/paul-pelosi-absent-first-court-appearance-hit-and-run-charge-napa-county-crash-case" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Newsom-appointed judge who freed migrant before fatal stabbing said justice 'sometimes means a dismissal'</h3>
+          <p class="text-xs text-gray-500 mt-1">Judge Nichelle Holmes once said justice can mean &quot;dismissal.&quot; After she released Marcos Iriarte-Valdez, he allegedly killed Todd Stewart, 68.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/newsom-appointed-judge-freed-migrant-fatal-stabbing-said-justice-sometimes-means-dismissal" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">New York City’s lone Republican in Congress accuses Mamdani, Schumer of 'hypocrisy' in voter ID fight</h3>
+          <p class="text-xs text-gray-500 mt-1">Rep. Nicole Malliotakis, R-N.Y. argues Senate Minority Leader Chuck Schumer and Senate Democrats block the SAVE Act while claiming to support voter ID in their districts.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/new-york-citys-lone-republican-congress-accuses-mamdani-schumer-hypocrisy-voter-id-fight" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Never-Trump Republican is top Dem choice in crucial Florida primary</h3>
+          <p class="text-xs text-gray-500 mt-1">David Jolly, a former Republican congressman turned never-Trumper, won Florida&apos;s Democratic gubernatorial primary to challenge for the governor&apos;s seat.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/never-trump-republican-top-dem-choice-crucial-florida-primary" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Media executive overcomes Trump endorsement in race to succeed Byron Donalds in ‘circus-like primary’</h3>
+          <p class="text-xs text-gray-500 mt-1">Catalina Lauf, an appointee from the first Trump administration, lost to businessman Jim Schwartzel in a heated primary to succeed Rep. Byron Donalds.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/trump-endorsed-33-year-old-wins-gop-nod-succeed-byron-donalds-circus-like-primary" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Massive piece of 9/11 history makes stunning 10,500-mile journey across America</h3>
+          <p class="text-xs text-gray-500 mt-1">A 16,000-pound steel beam from the South Tower is traveling 10,500 miles across America, stopping at museums, the White House and Ground Zero.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/massive-piece-9-11-history-embarks-stunning-10500-mile-journey-across-america" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mark Lynch endorses Ralph Norman as congressman heads into runoff against Darline Graham</h3>
+          <p class="text-xs text-gray-500 mt-1">Mark Lynch endorsed Rep. Ralph Norman, the candidate running against Sen. Darline Graham in the South Carolina special GOP U.S. Senate primary runoff.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/ralph-norman-darline-graham-senate-runoff" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Marco Rubio gets 68 new jobs in epic White House birthday gift inspired by viral meme</h3>
+          <p class="text-xs text-gray-500 mt-1">The gold-framed collage features 68 versions of the viral Marco Rubio meme, signed by Trump in gold ink, celebrating the secretary of state&apos;s birthday.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/marco-rubio-gets-68-new-jobs-epic-white-house-birthday-gift-inspired-viral-meme" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Mamdani’s luxury-home tax gets new life as appeals court lifts roadblock in homeowner fight</h3>
+          <p class="text-xs text-gray-500 mt-1">The legal battle over Zohran Mamdani&apos;s luxury home tax surcharge intensifies as the city warns of jeopardized revenue projected at $500 million.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/mamdanis-luxury-home-tax-gets-new-life-appeals-court-lifts-roadblock-homeowner-fight" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">MN Senate candidate ripped for blaming Walz for fraud despite being his #2: 'Knows she's cooked'</h3>
+          <p class="text-xs text-gray-500 mt-1">Minnesota Democratic Lt. Gov. Peggy Flanagan pointed the finger at Tim Walz when asked about her responsibility for the massive fraud scandal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/mn-senate-candidate-ripped-blaming-walz-fraud-despite-being-his-2-knows-shes-cooked" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">'Look at me!' Justice fires back at critics who dare question his Blackness</h3>
+          <p class="text-xs text-gray-500 mt-1">Supreme Court Justice Clarence Thomas reveals how Thomas Sowell&apos;s work freed him from isolation and gave him confidence to challenge Black political norms.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/look-at-me-justice-fires-back-critics-question-blackness" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Lindsey Graham’s sister admits she’s ‘not that informed on national security’ while seeking full Senate term</h3>
+          <p class="text-xs text-gray-500 mt-1">Darline Graham admitted national security is &quot;not my thing&quot; at a South Carolina GOP Senate runoff debate when asked about Taiwan and the South China Sea.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/lindsey-grahams-sister-admits-shes-not-informed-national-security-while-seeking-full-senate-term" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Legal expert calls for Smithsonian leadership overhaul over ‘self-loathing’ portrayal of history: ‘It’s bile’</h3>
+          <p class="text-xs text-gray-500 mt-1">Heritage Foundation&apos;s Cully Stimson calls for Anthea Hartig&apos;s firing at the Smithsonian National Museum of American History over DEI concerns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/legal-expert-calls-smithsonian-leadership-overhaul-self-loathing-portrayal-history-bile" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Justice Thomas reveals this elite institution is ‘off limits’ to him: ‘That's the world we're in’</h3>
+          <p class="text-xs text-gray-500 mt-1">Supreme Court Justice Clarence Thomas claims Stanford Law School is &apos;off limits&apos; for conservatives, but a spokesperson says they&apos;d be honored to host him.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/justice-thomas-reveals-elite-institution-off-limits-world-were-in" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Justice Department slams 'politically motivated demands' of DC Council asking govs to remove National Guard</h3>
+          <p class="text-xs text-gray-500 mt-1">The Justice Department slammed D.C. Council letters urging governors to recall National Guard troops, calling the demands &quot;impotent theatrics.&quot;</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/justice-department-slams-politically-motivated-demands-dc-council-asking-govs-remove-national-guard" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Judge’s Harvard antisemitism ruling sends Trump Justice Department back to drawing board</h3>
+          <p class="text-xs text-gray-500 mt-1">The Justice Department says it disagrees with the ruling dismissing its Title VI antisemitism case against Harvard University and is assessing next steps.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/judge-harvard-antisemitism-ruling-sends-trump-justice-department-back-drawing-board" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">JD Vance calls on DOJ to prosecute alleged fraud in teen transgender treatment</h3>
+          <p class="text-xs text-gray-500 mt-1">JD Vance refers a bombshell HHS report to the Justice Department alleging hospitals pushed gender affirming care on minors to boost profits.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/jd-vance-calls-doj-prosecute-alleged-fraud-teen-transgender-treatment" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Iran loses key economic lifeline in Middle East that Trump's sanctions couldn't reach as deadlock persists</h3>
+          <p class="text-xs text-gray-500 mt-1">The United Arab Emirates suspended all trade with Iran after accusing Tehran of firing ballistic missiles toward maritime traffic in the region.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/iran-loses-key-economic-lifeline-in-middle-east-that-trumps-sanctions-couldnt-reach-as-deadlock-persists" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Inside the tension that drove Trump’s South Korea alliance from ‘historic new era’ to military pullback</h3>
+          <p class="text-xs text-gray-500 mt-1">Trump scales back Ulchi Freedom Shield drills to pressure Seoul on investment delays while dangling an incentive for Kim Jong Un to reopen diplomacy.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/tension-drove-trumps-south-korea-alliance-historic-new-era-military-pullback" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Humanoid robots could patrol southern border, CEO pitches, as futuristic technology moves closer to reality</h3>
+          <p class="text-xs text-gray-500 mt-1">Foundation CEO Sankaet Pathak said humanoid robots could conduct autonomous surveillance and reconnaissance along the southern border&apos;s rugged terrain.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/humanoid-robots-patrol-southern-border-ceo-pitches-futuristic-technology-moves-closer-reality" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How a noncitizen suspected killer got caught and released by Newsom-appointed judge: timeline</h3>
+          <p class="text-xs text-gray-500 mt-1">Surveillance video allegedly shows Marcos Iriarte-Valdez in a tactical vest stabbing retiree Todd Stewart in a quiet East Bay suburb of California.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/how-noncitizen-suspected-killer-got-caught-released-newsom-appointed-judge-timeline" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">House Republican urges new Trump AG Blanche to shut down Biden-era NYC heroin injection sites</h3>
+          <p class="text-xs text-gray-500 mt-1">Rep. Nicole Malliotakis, R-N.Y., wrote to Attorney General Todd Blanche demanding swift action to shut down OnPoint&apos;s overdose prevention centers in Manhattan.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/house-republican-urges-new-trump-ag-blanche-shut-down-biden-era-nyc-heroin-injection-sites" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hasan Piker torched over playbook to dodge his past controversies: 'Bats--- crazy'</h3>
+          <p class="text-xs text-gray-500 mt-1">Shannon Watts accused Hasan Piker of deflecting past controversial remarks, sparking a heated exchange over Democrats&apos; responsibility for rhetoric.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/hasan-piker-torched-playbook-dodge-past-controversies-crazy" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hasan Piker event cancellation sparks intervention from top House progressive</h3>
+          <p class="text-xs text-gray-500 mt-1">Rep. Pramila Jayapal said she is working with the University of Washington after it canceled Hasan Piker&apos;s campus event over process concerns.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/hasan-piker-event-cancellation-sparks-intervention-from-top-house-progressive" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Gun rights groups capitalize after judge reverses decades-old restrictions: 'Monumental'</h3>
+          <p class="text-xs text-gray-500 mt-1">Gun Owners of America members completed the first silencer transfers without National Firearms Act registration since 1934 after a court ruling.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/gun-rights-groups-capitalize-after-judge-reverses-decades-old-restrictions" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Gun rights gets 'greatest restoration' in 100 years with latest Trump DOJ move, lawmaker hails</h3>
+          <p class="text-xs text-gray-500 mt-1">Rep. Andrew Clyde calls the ruling removing the $200 tax on silencers and short-barreled rifles the greatest Second Amendment restoration in a century.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/gun-rights-greatest-restoration-100-years-latest-trump-doj-move-lawmaker-hails" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">GSA finds China-made tech labeled ‘Made in USA’ in federal procurement program, orders sweeping review</h3>
+          <p class="text-xs text-gray-500 mt-1">GSA alleges AbilityOne listed China-made technology products as American-made, demanding a sweeping audit of 18,000 items on the federal procurement list.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/gsa-finds-china-made-tech-labeled-made-usa-federal-procurement-program-orders-sweeping-review" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">GOP senator, ex-House Dem emerge from Alaska’s ‘jungle primary’ despite far-left meddling</h3>
+          <p class="text-xs text-gray-500 mt-1">Dan Sullivan and Mary Peltola advance from Alaska&apos;s jungle primary, but a second Dan Sullivan on the ballot raises election confusion claims.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/gop-senator-ex-house-dem-emerge-alaskas-jungle-primary-despite-far-left-meddling" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fury erupts as 37-year illegal alien demands citizenship in viral Spanish rant alongside Dem leaders</h3>
+          <p class="text-xs text-gray-500 mt-1">A viral video clip shows an illegal alien demanding amnesty in Spanish alongside Democratic Party leaders, sparking fierce backlash over immigration laws.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/fury-erupts-37-year-illegal-alien-demands-citizenship-viral-spanish-rant-alongside-dem-leaders" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fox News Poll: A Senate battle looms in Michigan</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed trails Mike Rogers 51% to 47% in the Wolverine State Senate race, but Democrats show higher enthusiasm and engagement ahead of the fall.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/fox-news-poll-senate-battle-looms-michigan" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Former state rep tops ranked-choice slugfest as Alaska advances nominees for governor</h3>
+          <p class="text-xs text-gray-500 mt-1">Seventeen tickets competed in Alaska&apos;s nonpartisan primary to succeed term-limited Republican Gov. Michael Dunleavy in the November general election.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/former-state-rep-tops-ranked-choice-slugfest-alaska-advances-nominees-governor" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Federal judge clears path for border wall construction in Arizona</h3>
+          <p class="text-xs text-gray-500 mt-1">A federal judge ruled against a Native American tribe&apos;s trespassing claims, citing a 1907 proclamation reserving 60 feet of Arizona border land.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/federal-judge-clears-path-border-wall-construction-arizona" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Federal judge blocks Trump admin plan to move FBI headquarters to Reagan Building</h3>
+          <p class="text-xs text-gray-500 mt-1">The FBI blasted the court ruling blocking its Reagan Building headquarters move, calling it political interference against the Trump administration.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/federal-judge-blocks-trump-administration-plan-move-fbi-headquarters-reagan-building" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Federal appeals court restores Texas mail ballot ID requirements in major election integrity ruling</h3>
+          <p class="text-xs text-gray-500 mt-1">The 5th Circuit restored key parts of Texas Senate Bill 1 governing mail-in voting and voter assistance after rejecting the plaintiffs’ challenges</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/federal-appeals-court-restores-texas-mail-ballot-id-requirements-major-election-integrity-ruling" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fauci scandal grows as top House committee accuses Biden Cabinet official of hiding COVID diary</h3>
+          <p class="text-xs text-gray-500 mt-1">James Comer demands answers from Xavier Becerra on why Anthony Fauci&apos;s COVID-19 diary and cellphone were not turned over to Congress in 2023.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/fauci-scandal-grows-top-house-committee-accuses-california-governor-hopeful-hiding-covid-diary" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fauci refuses Senate appearance after invoking Fifth Amendment more than 100 times in COVID probe</h3>
+          <p class="text-xs text-gray-500 mt-1">Anthony Fauci&apos;s attorney rejected Sen. Ron Johnson&apos;s request to testify, arguing a second Senate appearance would amount to political harassment.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/fauci-refuses-senate-appearance-invoking-fifth-amendment-100-times-covid-probe" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Election 'human error' delays key primary results in latest voting mishap to hit blue states</h3>
+          <p class="text-xs text-gray-500 mt-1">David Crowley&apos;s narrow win over Francesca Hong was delayed 90 minutes after five USB flash drives failed to download Milwaukee election data.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/election-human-error-delays-key-primary-results-latest-voting-mishap-hit-blue-states" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">El-Sayed’s half sister revealed as radical professor arrested for allegedly assaulting a cop at anti-ICE riot</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed&apos;s half sister Eman Abdelhadi was arrested on a felony charge for allegedly spitting on a trooper during anti-ICE protests in Broadview.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/el-sayed-half-sister-revealed-radical-professor-arrested-allegedly-assaulting-cop-anti-ice-riot" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">El-Sayed’s half sister offered Oct 7 ‘blessing,’ one year after Hamas attack: ‘Allahu Akbar’</h3>
+          <p class="text-xs text-gray-500 mt-1">Eman Abdelhadi delivered an &quot;October 7th blessing&quot; without mentioning those killed by Hamas as her brother, Abdul El-Sayed, campaigns in Michigan.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/el-sayeds-half-sister-offered-oct-7-blessing-one-year-after-hamas-attack-allahu-akbar" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">El-Sayed may be 'full-blown communist' despite socialist denial: top Republican</h3>
+          <p class="text-xs text-gray-500 mt-1">Lisa McClain calls Abdul El-Sayed a potential &quot;full-blown communist&quot; after his upset Michigan Senate primary win, citing his progressive platform.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/top-republican-says-el-sayed-may-full-blown-communist-despite-socialist-denial" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">El-Sayed in the hot seat after 'sickening' animal control record goes viral on social media</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed&apos;s Michigan Senate bid faces scrutiny over thousands of euthanized animals at Detroit Animal Control during his tenure as the city&apos;s health director.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/el-sayed-hot-seat-sickening-animal-control-record-goes-viral-social-media" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">El-Sayed argued against the Second Amendment in unearthed social media videos</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed hid roughly 100 YouTube videos before launching his Michigan Senate campaign, including clips arguing to amend the Second Amendment.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/el-sayed-argued-against-second-amendment-unearthed-social-media-videos" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">El-Sayed, Mamdani branded 'hair tonic salesmen' in brutal jab from top House Republican</h3>
+          <p class="text-xs text-gray-500 mt-1">House GOP Whip Tom Emmer compares socialists Abdul El-Sayed and Zohran Mamdani to con artists selling young Americans a failed ideology.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/watch-top-house-republican-brands-el-sayed-mamdani-hair-tonic-salesmen-brutal-jab" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">EXCLUSIVE: Kennedy Center board moves to name grounds ‘President Donald J Trump Plaza'</h3>
+          <p class="text-xs text-gray-500 mt-1">The Kennedy Center Board of Trustees voted to name the institution&apos;s grounds &quot;President Donald J. Trump Plaza&quot; as a sweeping renovation begins.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/exclusive-kennedy-center-board-moves-name-grounds-president-donald-j-trump-plaza" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Detransitioners reveal how doctors pushed them toward life-altering treatment as teens</h3>
+          <p class="text-xs text-gray-500 mt-1">Three detransitioners say doctors pushed puberty blockers, testosterone and double mastectomy on them as teens without adequate mental health screening.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/detransitioners-reveal-how-doctors-pushed-them-toward-life-altering-treatment-teens" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Democrats pick their fighter for uphill bid to flip deep-red Senate seat</h3>
+          <p class="text-xs text-gray-500 mt-1">James Byrd defeated Billy Benavidez in Wyoming&apos;s Democratic primary for the open Senate seat after Cynthia Lummis announced she won&apos;t seek reelection.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/democrats-pick-fighter-uphill-bid-flip-deep-red-senate-seat" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Democrats get their man as scandals put once-safe GOP House seat in play</h3>
+          <p class="text-xs text-gray-500 mt-1">Bale Dalton won the Democratic primary in Florida&apos;s 7th Congressional District, setting up a challenge to Rep. Cory Mills amid his ethics scandals.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/democrats-get-man-scandals-put-once-safe-gop-house-seat-play" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Dem Senate nominee admits 'I take responsibility' after police report alleges he broke down door, punched man</h3>
+          <p class="text-xs text-gray-500 mt-1">Troy Jackson acknowledged a 1988 fight, and the NRSC called on Senate Democrats to condemn the Democrat nominee challenging Susan Collins in Maine.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/dem-senate-nominee-admits-takes-responsibility-after-police-report-alleges-broke-down-door-punched-man" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">DSA brand on trial as El-Sayed struggles where Dems can least afford it</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed struggles to unify Democrats after the divisive Michigan Democratic Senate primary, giving Mike Rogers a 51%-47% polling edge.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/dsa-brand-trial-el-sayed-struggles-where-dems-can-least-afford" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">DFW Airport scraps controversial Islamic foot-washing station plan as Texas Gov Abbott takes aim</h3>
+          <p class="text-xs text-gray-500 mt-1">Texas Gov. Greg Abbott directed a review of state grants to DFW Airport and George Bush Intercontinental over planned Islamic wudu ablution stations.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/dfw-airport-scraps-controversial-islamic-footwashing-station-plan-texas-gov-abbott-takes-aim" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cuban ties put powerful US union under microscope over alleged communist influence push</h3>
+          <p class="text-xs text-gray-500 mt-1">Senate Committee on Health, Education, Labor and Pensions Chair Bill Cassidy demands answers from IAM over alleged Cuban regime influence scheme.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://www.foxnews.com/politics/cuban-ties-put-powerful-us-union-under-microscope-over-alleged-communist-influence-push" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Court filings reveal Kyrsten Sinema had sex multiple times with married bodyguard while serving as senator</h3>
+          <p class="text-xs text-gray-500 mt-1">Kyrsten Sinema testified to sex with her married security guard at locations across the U.S., now facing an alienation of affection suit in NC.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/court-filings-reveal-kyrsten-sinema-sex-multiple-times-married-bodyguard-serving-senator" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">CENTCOM commander touts USS Abraham Lincoln mental health record after more than 260 days without port call</h3>
+          <p class="text-xs text-gray-500 mt-1">CENTCOM Adm. Brad Cooper said the Lincoln&apos;s leadership has prioritized mental health as the carrier nears the end of its extended deployment.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/centcom-commander-touts-uss-abraham-lincoln-mental-health-record-after-more-than-260-days-without-port-call" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bernie-backed California House candidate called DEI a ‘social justice-driven duty,’ embraced activist role</h3>
+          <p class="text-xs text-gray-500 mt-1">Bernie Sanders-backed California candidate Randy Villegas promoted DEI as a &quot;social justice-driven duty&quot; in his academic writings on community colleges.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/bernie-backed-california-house-candidate-called-dei-social-justice-driven-duty-embraced-activist-role" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anti-Israel nonprofit under federal investigation over financial dealings: report</h3>
+          <p class="text-xs text-gray-500 mt-1">The Department of Homeland Security is reportedly probing a U.K.-based nonprofit with ties to NYC Mayor Zohran Mamdani over sanctioned group links.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/anti-israel-nonprofit-federal-investigation-financial-dealings-report" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">America’s reddest state crowns GOP governor nominee</h3>
+          <p class="text-xs text-gray-500 mt-1">Wyoming Republicans chose their governor nominee from a four-way primary featuring Trump-endorsed Megan Degenfelder and three other candidates.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://www.foxnews.com/politics/americas-reddest-state-crowns-gop-governor-nominee" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Americans clash over transgender athletes as debate heats up: ‘Just getting outrageous'</h3>
+          <p class="text-xs text-gray-500 mt-1">Americans told Fox News Digital they&apos;re sharply divided over transgender athletes in women&apos;s sports as Sophie Cunningham doubles down on her stance.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://www.foxnews.com/politics/americans-clash-over-transgender-athletes-debate-heats-up-just-getting-outrageous" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Alaskan political scion hopes to hold onto state's single House seat</h3>
+          <p class="text-xs text-gray-500 mt-1">Nicholas Begich III faces a major insurgency from independent candidate Bill Hill in Alaska&apos;s ranked choice voting congressional primary race.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/alaskan-political-scion-hopes-hold-onto-states-single-house-seat" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Alarming study finds top chatbots more likely to repeat falsehoods from the left: ‘Truly astonishing’</h3>
+          <p class="text-xs text-gray-500 mt-1">ChatGPT, Gemini and Claude were more likely to fall for political falsehoods from the left, while Grok skewed right, a new misinformation study found.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/alarming-study-finds-top-chatbots-more-likely-repeat-falsehoods-left-truly-astonishing" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Advocate tells freed Marine vet's physical, psychological torment in Russian prison as 5 Americans remain held</h3>
+          <p class="text-xs text-gray-500 mt-1">Global Reach&apos;s Kieran Ramsey reveals the beatings and psychological torment Robert Gilman endured during 1,666 days in Russian prison and pleads for remaining detainees.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/advocate-tells-freed-marine-vet-physical-psychological-torment-russian-prison-5-americans-remain-held" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Advocate reveals freed Marine vet's physical, mental torment in Russian prison as 5 Americans remain held</h3>
+          <p class="text-xs text-gray-500 mt-1">Global Reach&apos;s Kieran Ramsey reveals the beatings and psychological torment Robert Gilman endured during 1,666 days in a Russian prison and pleads for remaining detainees.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://www.foxnews.com/politics/advocate-tells-freed-marine-vet-physical-psychological-torment-russian-prison-5-americans-remain-held" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Abdul El-Sayed's resurfaced kiddie show campaign clip ripped to shreds in brutal internet takedown</h3>
+          <p class="text-xs text-gray-500 mt-1">Abdul El-Sayed&apos;s &quot;Blue&apos;s Clues&quot; Senate campaign video went viral, drawing widespread mockery online and a stunned reaction from Ted Cruz on X.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/abdul-el-sayed-resurfaced-kiddie-show-campaign-clip-ripped-shreds-brutal-internet-takedown" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">5 takeaways from Florida Senate primary: GOP Sen Ashley Moody will face DSA's Nixon</h3>
+          <p class="text-xs text-gray-500 mt-1">Angie Nixon&apos;s stunning upset over Alexander Vindman in Florida&apos;s Senate primary sparked a Trump celebration and exposed Democrats&apos; fundraising crisis.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://www.foxnews.com/politics/5-takeaways-florida-senate-primary-gop-sen-ashley-moody-face-dsa-nixon" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">福克斯新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">10 House incumbent lawmakers who saw their 2026 re-election bids end in primary defeat</h3>
+          <p class="text-xs text-gray-500 mt-1">10 incumbent U.S. House lawmakers so far have lost their primaries while running in the 2026 election cycle, including three Republicans and seven Democrats.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://www.foxnews.com/politics/10-house-incumbent-lawmakers-who-saw-2026-re-election-bids-end-primary-defeat" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

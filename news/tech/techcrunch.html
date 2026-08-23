@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>techcrunch — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/tech.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Tech</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Tech / techcrunch</h1>
+      <span class="text-sm text-gray-400">62 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">You can Venmo your college tuition, for some reason</h3>
+          <p class="text-xs text-gray-500 mt-1">Kids these days don't know how good they have it.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/you-can-venmo-your-college-tuition-for-some-reason/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">X open sources its ranking algorithm, letting users see if they’ve been ‘shadowbanned’</h3>
+          <p class="text-xs text-gray-500 mt-1">X is expanding the open source code behind its 'For You' feed and launching new transparency tools that show users when its ranking systems have affected their accounts or posts.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/x-open-sources-its-ranking-algorithm-letting-users-see-if-theyve-been-shadowbanned/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Writer introduces new AI model and upgraded harness to contain token costs</h3>
+          <p class="text-xs text-gray-500 mt-1">Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Woman claims her stepfather used Grok to transform childhood photo into explicit imagery</h3>
+          <p class="text-xs text-gray-500 mt-1">The woman claimed that AI tools are "taking everyday life and turning it into child sexual abuse."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why people aren’t buying Mark Zuckerberg’s AI future</h3>
+          <p class="text-xs text-gray-500 mt-1">On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Who really needs a cocktail robot?</h3>
+          <p class="text-xs text-gray-500 mt-1">Bartesian's cocktail makers would be best described like a Keurig or Nespresso machine, but for alcoholic drinks.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/bartesian-duet-cocktail-maker-review/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">What we know about the alleged Iranian hacks on US water utilities</h3>
+          <p class="text-xs text-gray-500 mt-1">Over the last couple of weeks, hackers have targeted and broken into the systems of several water plants in the United States. Here’s what we know and don’t know about this wave of attacks allegedly c...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/what-we-know-about-the-alleged-iranian-hacks-on-u-s-water-utilities/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Unforgetful is a new reminders app for people who can’t stop hitting snooze</h3>
+          <p class="text-xs text-gray-500 mt-1">Unforgetful, the latest app from longtime indie developer Marco Arment, is designed to make reminders harder to ignore — or accidentally dismiss.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/unforgetful-is-a-new-reminders-app-for-people-who-cant-stop-hitting-snooze/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Uber and Pony.ai plan to bring 2,000 robotaxis to Europe</h3>
+          <p class="text-xs text-gray-500 mt-1">The partnership is expanding beyond the initial market of Zagreb, Croatia to four additional European cities.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US courts will start publishing how often the government uses spyware</h3>
+          <p class="text-xs text-gray-500 mt-1">The Administrative Office of the U.S. Courts told TechCrunch that it will start disclosing how many times judges authorized the use of spyware to wiretap suspected criminals.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/us-courts-will-start-publishing-how-often-the-government-uses-spyware/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">TikTok explores peer-to-peer payments via DMs, report says</h3>
+          <p class="text-xs text-gray-500 mt-1">If rolled out, the feature would use the social media service’s TikTok Pay offering, which is already available in Southeast Asia for TikTok Shop purchases.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/tiktok-explores-peer-to-peer-payments-via-dms-report-says/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria</h3>
+          <p class="text-xs text-gray-500 mt-1">The AI opportunity is huge, but "it would also be a grave error in our minds to let excitement weaken our investment discipline," Kushner warns in his first-ever investment letter.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The founder’s secret weapon: Work at TechCrunch Disrupt 2026 and learn how the pros do it</h3>
+          <p class="text-xs text-gray-500 mt-1">Volunteer at TechCrunch Disrupt 2026 and get an insider's view of how world-class tech events get built and more.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/the-founders-secret-weapon-work-at-techcrunch-disrupt-2026-and-learn-how-the-pros-do-it/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">TerraPower’s nuclear reactor has a secret weapon for powering AI data centers</h3>
+          <p class="text-xs text-gray-500 mt-1">TerraPower's nuclear power plant possesses a strategic advantage over competitors, especially when chasing after data center deals.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">TechCrunch Mobility: The shifting flight path of electric air taxis</h3>
+          <p class="text-xs text-gray-500 mt-1">Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://techcrunch.com/2026/08/16/techcrunch-mobility-the-shifting-flight-path-of-electric-air-taxis/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Talks to sell PayPal to Stripe and Advent are heating up</h3>
+          <p class="text-xs text-gray-500 mt-1">PayPal is still reportedly negotiating a potential sale to Stripe and private equity firm Advent, as the fintech firm's new CEO attempts to turn the company around.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/talks-to-sell-paypal-to-stripe-and-advent-are-heating-up/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+</h3>
+          <p class="text-xs text-gray-500 mt-1">OpenRouter's CEO recently described the startup as Stripe for AI.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SpaceX officially closes its Cursor acquisition</h3>
+          <p class="text-xs text-gray-500 mt-1">AI coding startup Cursor is now officially a part of SpaceX.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes</h3>
+          <p class="text-xs text-gray-500 mt-1">Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Self-driving trucks are officially testing on California highways</h3>
+          <p class="text-xs text-gray-500 mt-1">Aurora Innovation and Kodiak AI, two companies developing self-driving trucks, have received permits from the California Department of Motor Vehicles.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Save up to $300 on your TechCrunch Disrupt 2026 pass until August 21</h3>
+          <p class="text-xs text-gray-500 mt-1">If you’ve been circling around Disrupt, then now’s the best time to lock in your pass and start getting ready to join the rest of the startup community gathering in San Francisco from October 13-15 at...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/save-up-to-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sachin Bansal’s fintech Navi raises first outside capital with $100M Prosus investment</h3>
+          <p class="text-xs text-gray-500 mt-1">The investment comes amid Navi plans to go public.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/sachin-bansals-fintech-navi-raises-first-outside-capital-with-100m-prosus-investment/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Rivian spinout Also raises another $150 million</h3>
+          <p class="text-xs text-gray-500 mt-1">The round, led by Prysm Capital, will fund the company's expansion beyond pedal-assist electric bikes and commercial cargo quads to autonomous delivery vehicles.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/rivian-spinout-also-raises-another-150-million/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Relativity Networks raises $22 million to bring a faster kind of fiber to data centers</h3>
+          <p class="text-xs text-gray-500 mt-1">Relativity Networks deals in hollow-core fiber, a rarely deployed technology that allows data to be transmitted 30% faster than conventional fiber.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Read-it-later app Pocket shut down — here are the best alternatives</h3>
+          <p class="text-xs text-gray-500 mt-1">Pocket users have until October 8, 2025, to export their saved articles and other items, including lists, archives, favorites, notes, and highlights.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/read-it-later-app-pocket-is-shutting-down-here-are-the-best-alternatives/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed</h3>
+          <p class="text-xs text-gray-500 mt-1">OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI institutes new safeguards after Hugging Face breach</h3>
+          <p class="text-xs text-gray-500 mt-1">The new safeguards include more detailed monitoring of models during the development process, as well as greater emphasis on alignment and security during the post-training process.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI hires new CRO as executive shake-up continues</h3>
+          <p class="text-xs text-gray-500 mt-1">OpenAI has replaced chief revenue officer Denise Dresser after just nine months on the job, tapping Wiz president and chief operating officer Dali Rajic to take on frontier lab's top sales job.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs</h3>
+          <p class="text-xs text-gray-500 mt-1">Nvidia has a plan to make sure its GPUs won't lose value. It wants to convince a new crop of financiers to keep lending for AI buildouts.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Microsoft kills off unsuccessful AI features while merging its separate Copilot apps</h3>
+          <p class="text-xs text-gray-500 mt-1">Microsoft is simplifying Copilot by combining its consumer and business apps, and dropping AI-generated podcasts, Group Chats, Deep Research, and its Mico character.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kog is going deeper to squeeze more inference out of GPUs</h3>
+          <p class="text-xs text-gray-500 mt-1">The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Investors sue Selena Gomez alleging fraud tied to her mental health startup</h3>
+          <p class="text-xs text-gray-500 mt-1">The plaintiffs say they invested nearly $1.2 million in the company, and are accusing Gomez of failing to build and market the startup.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/investors-sue-selena-gomez-alleging-fraud-tied-to-her-mental-health-startup/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Instagram introduces a redesigned wordmark</h3>
+          <p class="text-xs text-gray-500 mt-1">The social media giant says it was time for a sharper and more modern look after a decade.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/instagram-introduces-a-redesigned-wordmark/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">In a first, US will allow some private firms to carry out cyberattacks</h3>
+          <p class="text-xs text-gray-500 mt-1">The new order sweeps away decades of existing U.S. cybersecurity policy prohibiting private companies from conducting 'hack back' attacks or offensive cyber operations.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">If Apple sends you a push notification alerting you to a spyware attack, take it seriously</h3>
+          <p class="text-xs text-gray-500 mt-1">Apple now sends out push notifications to iPhone lock screens when the company identifies government spyware targeting someone's devices.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/if-apple-sends-you-a-push-notification-alerting-you-to-a-spyware-attack-take-it-seriously/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">IBM partners with OpenAI to bolster enterprise AI push</h3>
+          <p class="text-xs text-gray-500 mt-1">IBM plans to train and certify tens of thousands of consultants on OpenAI's technologies as part of this deal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hyperscalers might regret embracing natural gas if new forecast proves correct</h3>
+          <p class="text-xs text-gray-500 mt-1">Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">How to tell if your AI platforms’ accounts have been hacked</h3>
+          <p class="text-xs text-gray-500 mt-1">A guide on how to check if hackers have broken into your accounts on the most popular AI platforms.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have-been-hacked/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Home batteries are suddenly cheap and everywhere. Here’s why.</h3>
+          <p class="text-xs text-gray-500 mt-1">Companies including Tesla and Base Power are vying for a piece of the rapidly growing market for home batteries. One technology has made it all possible.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/home-batteries-are-suddenly-cheap-and-everywhere-heres-why/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Google will now allow users to remove visible watermark from its AI generations</h3>
+          <p class="text-xs text-gray-500 mt-1">Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ford on track to complete $2B factory overhaul for Fathom EV truck</h3>
+          <p class="text-xs text-gray-500 mt-1">Ford expects to begin prototype builds of the Fathom EV in the first quarter of 2027.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/ford-on-track-to-complete-2b-factory-overhaul-for-fathom-ev-truck/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Flock says its new tool will help identify police abuse, but hasn’t explained how it works</h3>
+          <p class="text-xs text-gray-500 mt-1">The surveillance company announced it's making a tool called "Audit Assistance" mandatory for all customers, claiming it's already helped catch abuse. But the company has yet to explain how the tool w...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/flock-says-its-new-tool-will-help-identify-police-abuse-but-hasnt-explained-how-it-works/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Every fusion startup that has raised over $100M</h3>
+          <p class="text-xs text-gray-500 mt-1">Fusion startups have raised $7.1 billion to date, with the majority of it going to a handful of companies.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Etched’s valuation doubles to $21B in a month</h3>
+          <p class="text-xs text-gray-500 mt-1">Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Does Mark Zuckerberg really believe AI is ‘for everyone’?</h3>
+          <p class="text-xs text-gray-500 mt-1">Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that s...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.</h3>
+          <p class="text-xs text-gray-500 mt-1">AI is expensive, Ali Ghodsi tells TechCrunch. With so many investors wanting into his latest round, he said yes to more than planned.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">DOJ’s probe into Andreessen Horowitz over board seats baffles VCs</h3>
+          <p class="text-xs text-gray-500 mt-1">Since portfolio companies often pivot and expand into competing markets, investors view occasional conflicts of interest as unavoidable for large VC firms.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/dojs-probe-into-andreessen-horowitz-over-board-seats-baffles-vcs/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cursor capitalizes on GitHub frustration, launches rival hosting platform</h3>
+          <p class="text-xs text-gray-500 mt-1">Cursor, known for its AI Code Editor, is launching a new code-hosting platform to rival developers' long preferred favorite, GitHub.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Comcast adds motion sensing to millions of its newer routers, with a privacy catch</h3>
+          <p class="text-xs text-gray-500 mt-1">A new feature added to Comcast's newest routers can detect if there is motion inside your home without needing traditional motion sensors.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/comcast-adds-motion-sensing-to-millions-of-its-newer-routers-with-a-privacy-catch/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">CareCloud confirms 3.7M patients had their medical records stolen in data breach</h3>
+          <p class="text-xs text-gray-500 mt-1">The cyberattack at CareCloud resulted in one of the largest reported data breaches in the U.S. healthcare industry this year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/carecloud-confirms-3-7m-patients-had-their-medical-records-stolen-in-data-breach/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Can social media start over? Bluesky’s CEO and COO deliver their case at TechCrunch Disrupt 2026</h3>
+          <p class="text-xs text-gray-500 mt-1">Bluesky CEO Toni Schneider is joined by COO Rose Wang for a Disrupt Stage session on whether social media can start over and where Bluesky fits into that potential reboot.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/can-social-media-start-over-blueskys-ceo-and-coo-deliver-their-case-at-techcrunch-disrupt-2026/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Calendly throws its hat into meeting note-taker circus</h3>
+          <p class="text-xs text-gray-500 mt-1">Calendly is also releasing a meeting scheduling assistant called Callie.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Apple proposes to take a 15% cut of purchases made outside the App Store</h3>
+          <p class="text-xs text-gray-500 mt-1">Apple is asking a federal judge to allow it to charge commissions of up to 15% on purchases made through external links in iOS apps.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://techcrunch.com/2026/08/14/apple-proposes-to-take-a-15-cut-of-purchases-made-outside-the-app-store/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Apple overhauls its EU App Store fees, loosens rules for alternative app stores</h3>
+          <p class="text-xs text-gray-500 mt-1">Apple is simplifying its EU App Store fees, replacing its per-install fee with a 5% commission for apps distributed outside the App Store and making it easier for developers to operate alternative app...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://techcrunch.com/2026/08/18/apple-overhauls-its-eu-app-store-fees-loosens-rules-for-alternative-app-stores/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Apple in talks to pay publishers to provide Siri with current news: report</h3>
+          <p class="text-xs text-gray-500 mt-1">The tech giant has considered a nine-figure budget for the payments, according to the WSJ.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anthropic shares more details about how Claude’s new watermarks will work</h3>
+          <p class="text-xs text-gray-500 mt-1">How will the watermarking actually work? Can it be hidden with editing? And how does this affect code?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anthropic set AI agents loose on the same task. They started a turf war.</h3>
+          <p class="text-xs text-gray-500 mt-1">Anthropic researchers found AI agents can clash, collude, and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’</h3>
+          <p class="text-xs text-gray-500 mt-1">Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Amazon’s Prime Air is taking off in nearly 500 US cities</h3>
+          <p class="text-xs text-gray-500 mt-1">Amazon is significantly expanding its Prime Air drone delivery service, with plans to reach nearly 500 U.S. cities by the end of 2026.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Amazon makes its AI-powered Alexa+ free on Fire TV, no Prime required</h3>
+          <p class="text-xs text-gray-500 mt-1">Amazon is making its AI-powered Alexa+ assistant free on all compatible Fire TV devices in the U.S., automatically upgrading users whether or not they subscribe to Prime.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI nuclear power firm Fermi finally has a new CEO</h3>
+          <p class="text-xs text-gray-500 mt-1">Lee McIntire, an independent member of Fermi's board, has been hired as CEO, more than three months since the company fired co-founder Toby Neugebauer from the top post.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">TechCrunch</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI isn’t close to curing cancer. This startup says it knows what it will take.</h3>
+          <p class="text-xs text-gray-500 mt-1">It's the data, stupid.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 19 Au</div>
+          <a href="https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

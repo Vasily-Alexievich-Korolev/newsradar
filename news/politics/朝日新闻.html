@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>朝日新闻 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/politics.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Politics</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Politics / 朝日新闻</h1>
+      <span class="text-sm text-gray-400">30 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相、熊本地震「支援パッケージ速やかに」　熊本県知事と面会</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L1GXQV8LUTFK001M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相「断じて許容できぬ」　プーチン氏の択捉島訪問、外相も抗議</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F2FRHV8FULFA014M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相、「反省」「不戦の誓い」触れず　戦没者追悼の式辞</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G36F3V8GUTFK01LM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市首相がトルコ大統領と電話協議　ホルムズ海峡の情勢など議論</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M3VSTV8MUTFK00ZM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">高市政権の対中政策　「威勢のいい言葉」ではなく「適切な管理」を</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F243LV8FUTFK00LM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">香川知事選が告示、現新4人が立候補　それぞれの主張と目指す社会は</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D7H4ZV8DPLXB002M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防衛省、過去最大8.9兆円概算要求へ　水中発射型ミサイルの開発も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M366JV8MUTFK005M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防衛省が最大3局増を検討、小泉氏の肝いり構想　実現は不透明</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8K2TBNV8KUTFK006M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「速やかに」「改めて議論を」　原発内の乾式貯蔵へ、福井で動き次々</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M3RLMV8MPJLB002M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">辺野古移設より経済対策が争点か　沖縄県知事選、投開票まで1カ月</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D3TC6V8DTPOB002M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">課題追及の有力ツール「質問主意書」が衆院で9割減　衆院選の影響か</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8K1GCXV8KUTFK00LM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">茂木外相、イエメン暫定政権トップと面会　フーシの船舶攻撃を非難</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M2RC0V8MUTFK006M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">自民・小林政調会長が靖国参拝　終戦の日と合わせ「党四役」全員に</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8H7RTSV8HUTFK001M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">終戦の日に「高市カラー」を出した首相　1年で元に戻った追悼式辞</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8H3WBTV8HUTFK011M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">石破元首相が使った「反省」　高市首相は終戦の日の式辞でどう語る</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV870TLSV87UTFK00RM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">日豪、ミサイル試験で協力へ　新型護衛艦輸出の拡大には課題も</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3J9FV8LUTFK004M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">斎藤知事、スマホを議場に持ち込み議長から注意　「知らなかった」</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M131KV8MPIHB01GM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">政府、機密性の高い情報を扱う民間クラウドを導入へ　候補は米国製</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8B3T3JV8BUTFK009M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">小泉防衛相が靖国参拝、韓国は呼び出して抗議　高市首相は「遥拝」</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G2STSV8GUTFK027M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">大阪都構想、特別区の区議総数は70人に　維新市議団が意見まとめる</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L357BV8LOXIE01FM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">国旗損壊処罰法がきょう施行　表現の自由侵害など懸念残ったまま</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D3FVYV8DULFA015M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">兵庫県、再び起債許可団体　斎藤知事が言う「負の遺産」解消の先に</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8K3DNNV8KPIHB016M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">「信頼失った」パワハラ問題の横浜市長　市議会で辞職要求の動き加速</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G3PM8V8GDIFI00HM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">使用済み核燃料の乾式貯蔵、建設へ事前了解　福井県美浜町長が表明</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3R5VV8LPGJB002M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中道、沖縄知事選は自主投票　立憲、公明の対応が割れる中で静観</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L2VKTV8LUTFK008M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">パワハラ認定の横浜市長　市議会で涙浮かべ謝罪繰り返す　辞職は否定</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8F3PY0V8FULOB013M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">【まとめてわかる】小泉防衛相が靖国参拝、中韓との関係にどう波及？</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8G3D4VV8GUTFK00FM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">JR東海の「上から目線」と川勝氏の思惑 有識者に聞くリニアの教訓</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8D0H0HV8DUTPB00CM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">ICC赤根所長に制裁　高市首相「大変残念。米国と意思疎通を継続」</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8M1V45V8MUTFK009M.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-red-100 text-red-800">politics</span>
+            <span class="text-xs text-gray-400">朝日新闻</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AIの学習データ、開示せずとも罰則なし　政府が事業者向けルール案</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">N/A</div>
+          <a href="https://www.asahi.com/articles/ASV8L3JLXV8LUCVL00JM.html?ref=rss" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

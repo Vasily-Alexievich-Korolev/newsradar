@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>investing — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / investing</h1>
+      <span class="text-sm text-gray-400">50 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Workday launches AI research team, PhD fellowship program</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/company-news/workday-launches-ai-research-team-phd-fellowship-program-93CH-4867903" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Why Nvidia’s $500bn investment mobilization is a positive for the stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/stock-market-news/why-nvidias-500bn-investment-mobilization-is-a-positive-for-the-stock-4861855" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wheels Up Experience chief sales officer to depart, interim leadership named</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/sec-filings/wheels-up-experience-chief-sales-officer-to-depart-interim-leadership-named-93CH-4861591" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wesco director Laura Thompson sells $99,481 in company stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/insider-trading-news/wesco-director-laura-thompson-sells-99481-in-company-stock-93CH-4859410" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US regulator approves bank charter for Trump-backed crypto company World Liberty Financial</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/economy-news/us-regulator-approves-bank-charter-for-trumpbacked-crypto-company-world-liberty-financial-4861461" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US Treasury to double sizes of some debt buyback operations to at least $4 billion</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/stock-market-news/us-treasury-to-double-sizes-of-some-debt-buyback-operations-to-at-least-4-billion-4867698" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Trump urges Americans to accept higher gas prices as he escalates Iran rhetoric</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/commodities-news/trump-urges-americans-to-accept-higher-gas-prices-as-he-escalates-iran-rhetoric-4861490" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Sweden stocks lower at close of trade; OMX Stockholm 30 down 0.03%</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/stock-market-news/sweden-stocks-lower-at-close-of-trade-omx-stockholm-30-down-003-4867898" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">SharkNinja CCO Neil Shah sells $5.5m in company stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/insider-trading-news/sharkninja-cco-neil-shah-sells-55m-in-company-stock-93CH-4862007" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Scholastic EVP, pres. CBG Sasha Quinton sells over $1.2m in stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/insider-trading-news/scholastic-evp-pres-cbg-sasha-quinton-sells-over-12m-in-stock-93CH-4862008" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Savers value village CEO Mark Walsh sells over $2.4m in shares</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/insider-trading-news/savers-value-village-ceo-mark-walsh-sells-over-24m-in-shares-93CH-4862005" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Russia stocks lower at close of trade; MOEX Russia Index down 4.29%</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-down-429-4862013" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Red Cat Holdings director Liuzza sells $584,650 in stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/insider-trading-news/red-cat-holdings-director-liuzza-sells-584650-in-stock-93CH-4859411" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Presidio at EnerCom Denver: buying production, not drilling wells</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/transcripts/presidio-at-enercom-denver-buying-production-not-drilling-wells-93CH-4867893" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">PMGC Holdings to implement 1-for-10 reverse stock split Thursday</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/company-news/pmgc-holdings-to-implement-1for10-reverse-stock-split-thursday-93CH-4867888" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Nvidia’s neocloud funding could drive significant revenue stream - Morgan Stanley</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/company-news/nvidias-neocloud-funding-could-drive-significant-revenue-stream--morgan-stanley-4862014" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Nvidia weighs $3 bln in SB Energy for Ohio AI data center - The Information</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/stock-market-news/nvidia-weighs-3-bln-in-sb-energy-for-ohio-ai-data-center--the-information-4861850" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Nvidia in talks to invest $3 billion in SB Energy as part of OpenAI data center deal, the Information reports</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/stock-market-news/nvidia-in-talks-to-invest-3-billion-in-sb-energy-as-part-of-openai-data-center-deal-the-information-reports-4861844" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">New Zealand’s a2 Milk full-year profit falls 44% on weaker China-label IMF sales</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/stock-market-news/new-zealands-a2-milk-posts-44-fall-in-fullyear-profit-4862012" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Motorsport Games Q2 2026 slides: revenue surges 74%, margins hit 85%</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/company-news/motorsport-games-q2-2026-slides-revenue-surges-74-margins-hit-85-93CH-4861597" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Motorola Solutions declares $1.21 quarterly dividend</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/company-news/motorola-solutions-declares-121-quarterly-dividend-93CH-4867887" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Massachusetts anti-hunger advocate fasts to protest Trump food stamp cuts​</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/economy-news/massachusetts-antihunger-advocate-fasts-to-protest-trump-food-stamp-cuts-4861967" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Kestra Medical Technologies CEO Brian Webster sells $692,214 in stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/insider-trading-news/kestra-medical-technologies-ceo-brian-webster-sells-692214-in-stock-93CH-4861849" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Jane Street takes $15 billion hit following tech sell-off, FT reports</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/stock-market-news/jane-street-takes-15-billion-hit-following-tech-selloff-ft-reports-4861595" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Israeli strikes in southern Lebanon kill at least 11</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/economy-news/israeli-strikes-in-southern-lebanon-kill-at-least-11-4861845" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">InnSuites Hospitality Trust shareholders approve board member and auditor at annual meeting</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/sec-filings/innsuites-hospitality-trust-shareholders-approve-board-member-and-auditor-at-annual-meeting-93CH-4861594" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Horizon Kinetics buys $361 in Texas Pacific Land stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/insider-trading-news/horizon-kinetics-buys-361-in-texas-pacific-land-stock-93CH-4867901" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Home Bancshares director Jim Rankin sells $462,966 in HOMB stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/insider-trading-news/home-bancshares-director-jim-rankin-sells-462966-in-homb-stock-93CH-4861853" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Healthy Choice Wellness issues shares in debt-for-equity exchange on NYSE American</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/sec-filings/healthy-choice-wellness-issues-shares-in-debtforequity-exchange-on-nyse-american-93CH-4859407" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Finland stocks higher at close of trade; OMX Helsinki 25 up 0.28%</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/stock-market-news/finland-stocks-higher-at-close-of-trade-omx-helsinki-25-up-028-4867894" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ferrari’s electric car Luce sells for $40 million at charity auction</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/company-news/ferraris-electric-car-luce-sells-for-40-million-at-charity-auction-4862011" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Equinix director Christopher Paisley sells $4.08m in EQIX stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/insider-trading-news/equinix-director-christopher-paisley-sells-408m-in-eqix-stock-93CH-4861848" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: Vivos Therapeutics posts strong Q2 2026 revenue growth</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-vivos-therapeutics-posts-strong-q2-2026-revenue-growth-93CH-4861596" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: The Metals Company posts Q2 2026 loss, shares slip</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-the-metals-company-posts-q2-2026-loss-shares-slip-93CH-4859412" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: TOMI Environmental Solutions posts strong Q2 2026 growth</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-tomi-environmental-solutions-posts-strong-q2-2026-growth-93CH-4861593" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: Quantum-Si posts Q2 revenue beat as Proteus launch slips to 2027</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-quantumsi-posts-q2-revenue-beat-as-proteus-launch-slips-to-2027-93CH-4859416" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: Nuvve Q2 2026 revenue jumps 268% as losses narrow</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-nuvve-q2-2026-revenue-jumps-268-as-losses-narrow-93CH-4861598" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: MDB Holdings leans on asset monetization in Q2 2026</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-mdb-holdings-leans-on-asset-monetization-in-q2-2026-93CH-4859408" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: Heritage Global posts Q2 2026 loss as stock turns lower</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-heritage-global-posts-q2-2026-loss-as-stock-turns-lower-93CH-4859406" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: HawkEye 360 posts 87% revenue growth in Q2 2026 as shares fall</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-hawkeye-360-posts-87-revenue-growth-in-q2-2026-as-shares-fall-93CH-4859409" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: Caliber misses Q2 2026 EPS forecast as stock falls after hours</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-caliber-misses-q2-2026-eps-forecast-as-stock-falls-after-hours-93CH-4859415" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Earnings call transcript: BirchTech Q2 2026 revenue jumps, but loss widens</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-13</div>
+          <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-birchtech-q2-2026-revenue-jumps-but-loss-widens-93CH-4859413" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Chief people services officer Melinda Geisser sells $766k Savers Value Village stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/insider-trading-news/chief-people-services-officer-melinda-geisser-sells-766k-savers-value-village-stock-93CH-4862004" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cerrado Gold Q2 2026 slides: production jumps 35%, costs rise</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/company-news/cerrado-gold-q2-2026-slides-production-jumps-35-costs-rise-93CH-4867889" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cantor launches prediction market trading for institutional investors</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-19</div>
+          <a href="https://www.investing.com/news/stock-market-news/cantor-launches-prediction-market-trading-for-institutional-investors-4867890" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Cactus CEO Scott Bender sells $4.99m in company stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/insider-trading-news/cactus-ceo-scott-bender-sells-499m-in-company-stock-93CH-4861847" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin price holds near $63,000 as selling pressure offsets regulatory progress</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/cryptocurrency-news/bitcoin-price-holds-on-to-63000-as-selling-pressure-offsets-regulatory-progress-4861762" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Bitcoin coils below $64K resistance: Live levels</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-16</div>
+          <a href="https://www.investing.com/news/cryptocurrency-news/bitcoin-trapped-in-635k655k-squeeze-hourly-levels-93CH-4847929" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Atmos Energy director William Ware buys $50,278 in company stock</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-15</div>
+          <a href="https://www.investing.com/news/insider-trading-news/atmos-energy-director-william-ware-buys-50278-in-company-stock-93CH-4861854" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">Investing</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Alphabet becomes Berkshire Hathaway’s third-largest investment</h3>
+          <p class="text-xs text-gray-500 mt-1">No Summary</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2026-08-14</div>
+          <a href="https://www.investing.com/news/stock-market-news/berkshire-buys-more-alphabet-which-becomes-its-thirdlargest-stock-investment-4861495" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

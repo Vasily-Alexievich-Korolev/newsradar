@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ars_technica — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/tech.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Tech</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Tech / ars_technica</h1>
+      <span class="text-sm text-gray-400">52 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">X-rays add new twist to narwhal's spiral tusk</h3>
+          <p class="text-xs text-gray-500 mt-1">New study finds that the tusks have not one but two spirals, twisting in opposite directions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/x-rays-add-new-twist-to-narwhals-spiral-tusk/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Wildfire smoke now bigger prenatal threat than human sources of air pollution</h3>
+          <p class="text-xs text-gray-500 mt-1">Regulations reduced prenatal exposure to harmful emissions, but wildfire smoke is erasing gains.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sun, 16 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/wildfire-smoke-now-bigger-prenatal-threat-than-human-sources-of-air-pollution/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">We've flown a radiation-blocking vest to the Moon and back, and it worked</h3>
+          <p class="text-xs text-gray-500 mt-1">Let's shield the astronauts instead of the spacecraft.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/weve-flown-a-radiation-blocking-vest-to-the-moon-and-back-and-it-worked/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Vulnerability giving attackers full control of Macs is under active exploitation</h3>
+          <p class="text-xs text-gray-500 mt-1">Screen-sharing bug lets remote hackers log in without a password.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">VisionQuest trailer kicks off Disney's D23 fan event</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://arstechnica.com/culture/2026/08/visionquest-trailer-kicks-off-disneys-d23-fan-event/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Virgin Galactic wants your help naming its new Delta class spaceship</h3>
+          <p class="text-xs text-gray-500 mt-1">Will it be the VSS...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/virgin-galactic-wants-your-help-naming-its-new-delta-class-spaceship/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukrainian drones wipe out entire US tank brigade in live war game</h3>
+          <p class="text-xs text-gray-500 mt-1">Ukrainian drone pilots teach the US military and NATO hard battlefield lessons.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/ukrainian-drones-wipe-out-entire-us-tank-brigade-in-live-war-game/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukrainian drones overwhelm Russian tanks’ new active protection system—for now</h3>
+          <p class="text-xs text-gray-500 mt-1">Tanks with defensive tech for shooting down drones are still proving vulnerable.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/ukrainian-drones-overwhelm-russian-tanks-new-active-protection-system-for-now/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ukraine strikes major Russian rocket factory with cruise missiles</h3>
+          <p class="text-xs text-gray-500 mt-1">"Flamingo missiles were used. A good achievement."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/ukraine-strikes-major-russian-rocket-factory-with-cruise-missiles/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US wait times for cancer surgeries are getting longer and longer</h3>
+          <p class="text-xs text-gray-500 mt-1">Study finds wait times for cancer surgeries hit 10-year high.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/health/2026/08/us-wait-times-for-cancer-surgeries-are-getting-longer-and-longer/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">US vaccination rates fall again as exemptions continue to rise, CDC data shows</h3>
+          <p class="text-xs text-gray-500 mt-1">Again, the CDC did not publish a full report and instead simply put the data online.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/health/2026/08/us-vaccination-rates-fall-again-as-exemptions-continue-to-rise-cdc-data-shows/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Toddler's tragic death from brain-destroying amoeba offers lessons for doctors</h3>
+          <p class="text-xs text-gray-500 mt-1">Boy's unusual symptoms could help identify the next case sooner.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://arstechnica.com/health/2026/08/an-ultra-rare-amoeba-was-destroying-a-toddlers-brain-doctors-missed-it/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Theban tomb reveals how Egyptian burial trends evolved in time</h3>
+          <p class="text-xs text-gray-500 mt-1">Practices shifted from individuals buried in coffins to reusing sites for later mummy interments.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/theban-tomb-reveals-how-egyptian-burial-trends-evolved-in-time/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The web’s newest weapon against AI scrapers is a font</h3>
+          <p class="text-xs text-gray-500 mt-1">“ShieldFont” aims to poison AI training data without making pages unreadable for people.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Wed, 12 Au</div>
+          <a href="https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The new Instagram logo is the perfect embodiment of AI slop</h3>
+          <p class="text-xs text-gray-500 mt-1">Opinion: Some remarks about the new wordmark accidentally being perfectly awful.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The United States is about to wake up to the threat from China's space program</h3>
+          <p class="text-xs text-gray-500 mt-1">One big question: Will China assert territorial rights where its rover explores?</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/the-united-states-is-about-to-wake-up-to-the-threat-from-chinas-space-program/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">The Moon's shadow raced across the heart of Spain, and I was there to see it</h3>
+          <p class="text-xs text-gray-500 mt-1">Here's what it was like watching a total solar eclipse 90 minutes north of Madrid.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/the-moons-shadow-raced-across-the-heart-of-spain-and-i-was-there-to-see-it/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Teenage Sex and Death at Camp Miasma takes pains to deliver a slasher fan’s dream</h3>
+          <p class="text-xs text-gray-500 mt-1">Matte paintings—not CGI—warp a world designed to hit a nerve for slasher fans.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/culture/2026/08/teenage-sex-and-death-at-camp-miasma-takes-pains-to-deliver-a-slasher-fans-dream/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Taylor Farms' connections to Trump admin spurs probe into Cyclospora response</h3>
+          <p class="text-xs text-gray-500 mt-1">Senator Warren questions whether Taylor Farms' influence swayed Trump admin.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/health/2026/08/taylor-farms-connections-to-trump-admin-spurs-probe-into-cyclospora-response/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Suspecting court of using AI, man injected prompts in filings to try to win case</h3>
+          <p class="text-xs text-gray-500 mt-1">Judge warns pro se litigants are using chatbots wrong and getting desperate.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Supreme Court rejects Verizon bid for $47 million refund of FCC fine</h3>
+          <p class="text-xs text-gray-500 mt-1">Despite loss, carriers still claim selling device-location data isn't illegal.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/supreme-court-rejects-verizon-bid-for-47-million-refund-of-fcc-fine/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">State judge orders Kalshi to stop offering sports bets and other wagers</h3>
+          <p class="text-xs text-gray-500 mt-1">Kalshi ordered to stop offering bets in Washington, must implement geofencing.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/state-judge-orders-kalshi-to-stop-offering-sports-bets-and-other-wagers/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">So much solar: Digging into the list of every US power plant that went online this year</h3>
+          <p class="text-xs text-gray-500 mt-1">Utility-scale solar leads by a mile, followed by batteries. Fossil fuels, not so much.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Sat, 15 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/so-much-solar-digging-into-the-list-of-every-us-power-plant-that-went-online-this-year/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Samsung Galaxy Z Fold 8 Ultra review: The ultra foldable with an ultra price</h3>
+          <p class="text-xs text-gray-500 mt-1">Samsung didn't have to change much this year because its hardware is just that good.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/samsung-galaxy-z-fold-8-ultra-review-the-ultra-foldable-with-an-ultra-price/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">"Sabotage": Experts, lawmakers blast RFK Jr. for destroying healthcare research</h3>
+          <p class="text-xs text-gray-500 mt-1">US healthcare is broken. Under RFK Jr., the research agency working to fix it is, too.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/health/2026/08/sabotage-experts-lawmakers-blast-rfk-jr-for-destroying-healthcare-research/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Rocket Report: Rocket Lab shows off its flexibility; Blue Origin's two-pad plan</h3>
+          <p class="text-xs text-gray-500 mt-1">"We’ve never seen launch capacity so constrained."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/rocket-report-rocket-lab-shows-off-its-flexibility-blue-origins-two-pad-plan/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Rivian's 2027 changes include its No. 1 most-requested feature</h3>
+          <p class="text-xs text-gray-500 mt-1">Pricing hasn't changed, and now you can get captain's chairs for the R1S.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/cars/2026/08/rivian-tweaks-its-r1-range-for-model-year-2027/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">R-rated director's cut of X-Files film restores Chris Carter's original horror vision</h3>
+          <p class="text-xs text-gray-500 mt-1">Chris Carter chats with Ars about the film he originally wanted to make—and why it's more relevant than ever.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/culture/2026/08/r-rated-directors-cut-of-x-files-film-restores-chris-carters-original-horror-vision/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Private security firms will soon be allowed to hack overseas cybercriminals</h3>
+          <p class="text-xs text-gray-500 mt-1">Trump memo is first time gov't has authorized private sector to perform cyberattacks.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/security/2026/08/white-house-recruits-security-firms-to-hack-overseas-cybercriminals/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Policy experts: Europe stuck between "rock and a hard place" on launch</h3>
+          <p class="text-xs text-gray-500 mt-1">It turns out that the economics of rocket reuse are pretty, pretty good.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/policy-experts-europe-stuck-between-rock-and-a-hard-place-on-launch/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Petlibro accused of “gaslighting” users over smart pet feeder outage</h3>
+          <p class="text-xs text-gray-500 mt-1">Petlibro says feeders perform scheduled feedings offline. Users report otherwise.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/petlibro-accused-of-gaslighting-users-over-smart-pet-feeder-outage/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Pet owners say smart pet feeder outage led to furry ones going unfed</h3>
+          <p class="text-xs text-gray-500 mt-1">"I've lost trust ..."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/pet-owners-say-smart-pet-feeder-outage-led-to-furry-ones-going-unfed/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Peacock raises prices by 18 percent after becoming profitable</h3>
+          <p class="text-xs text-gray-500 mt-1">Peacock's quarterly profitability isn't guaranteed.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/peacock-raises-prices-by-18-percent-after-becoming-profitable/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">PBS station fears losing 50TB of data after being ghosted by cloud storage provider</h3>
+          <p class="text-xs text-gray-500 mt-1">"We don't have access to the data on the hardware/servers," Iron Mountain told Ars.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Organic-looking brake assemblies debut on new Czinger 21C Spyder</h3>
+          <p class="text-xs text-gray-500 mt-1">Czinger used topological design and additive manufacturing to make the brakes.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/cars/2026/08/czinger-debuts-topology-optimized-brakes-with-21c-spyder/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">OpenAI and Anthropic in price war as Chinese AI rivals gain ground</h3>
+          <p class="text-xs text-gray-500 mt-1">US groups release cheaper models after new challenges to their trillion-dollar ambitions.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Microsoft Copilot reveals secret input that allowed it to be hacked</h3>
+          <p class="text-xs text-gray-500 mt-1">Secret parameter allowed hackers to steal passwords when a target clicked on a link.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Judge gives Google one week to fix "anticompetitive" app store download in Google Play</h3>
+          <p class="text-xs text-gray-500 mt-1">Third-party app stores are about to become more visible in Google Play.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/google-ordered-to-make-it-easier-to-download-alternative-android-app-stores/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Hidden Airtag reveals Amazon is trashing rare books to train AI</h3>
+          <p class="text-xs text-gray-500 mt-1">Amazon’s team uses a
+T. rex
+preparing to devour a book as its logo.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Google announces Gemini 3.7 Flash just three weeks after previous release</h3>
+          <p class="text-xs text-gray-500 mt-1">Gemini 3.6 Flash debuted just 3 weeks ago, but Google says 3.7 has "substantial improvements."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Former SpaceX engineers are building a robotic factory for making steel parts</h3>
+          <p class="text-xs text-gray-500 mt-1">“We're not necessarily building in a dogmatic fashion towards full autonomy.”</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/ai/2026/08/former-spacex-engineers-are-building-a-robotic-factory-for-making-steel-parts/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ford hopes this Hypercar will be its next Le Mans winner</h3>
+          <p class="text-xs text-gray-500 mt-1">The American automaker returns to the top category of endurance racing next year.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/cars/2026/08/ford-hopes-this-hypercar-will-be-its-next-le-mans-winner/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Flock “can’t tech its way out” of the stalker cop problem, experts say</h3>
+          <p class="text-xs text-gray-500 mt-1">Flock to lock out cops who stalk exes, but agencies can still hide abuse.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/flock-cant-tech-its-way-out-of-the-stalker-cop-problem-experts-say/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">First test flight of largest all-electric aircraft used just $5 of electricity</h3>
+          <p class="text-xs text-gray-500 mt-1">Airline-backed venture aims to develop a hybrid-electric commercial aircraft.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Fairphone's latest repairable phone is finally available in the US for $650</h3>
+          <p class="text-xs text-gray-500 mt-1">Fairphone sells components like the USB port and screen, all swappable with a single torx driver.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/gadgets/2026/08/fairphone-brings-the-repairable-fairphone-gen-6-to-the-us/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Disney sues FCC and its chair, escalating fight against Trump's chief censor</h3>
+          <p class="text-xs text-gray-500 mt-1">FCC demands "total capitulation" in Trump censorship campaign, Disney suit says.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/disney-sues-fcc-and-its-chair-escalating-fight-against-trumps-chief-censor/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Claude's new Scarlet Letter watermark is invisible—for now</h3>
+          <p class="text-xs text-gray-500 mt-1">The mark flags anything Claude processed, even human writing it only edited.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As temperatures get hotter, pesticides are more dangerous to farmworkers</h3>
+          <p class="text-xs text-gray-500 mt-1">Research shows heat amplifies the dangers of pesticides.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/science/2026/08/as-temperatures-get-hotter-pesticides-are-more-dangerous-to-farmworkers/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">As Wisconsin cities flee Flock, its shared camera network loses value</h3>
+          <p class="text-xs text-gray-500 mt-1">"Network effect" can run in reverse.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Mon, 17 Au</div>
+          <a href="https://arstechnica.com/tech-policy/2026/08/as-wisconsin-cities-flee-flock-its-shared-camera-network-loses-value/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Ars Live recap: How can we stop publishers from killing their own games?</h3>
+          <p class="text-xs text-gray-500 mt-1">The Stop Killing Games movement faces an uphill battle.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Fri, 14 Au</div>
+          <a href="https://arstechnica.com/gaming/2026/08/ars-live-recap-how-can-we-stop-publishers-from-killing-their-own-games/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Anthropic could be worth $2 trillion when it goes public</h3>
+          <p class="text-xs text-gray-500 mt-1">Rapid revenue growth fuels hope Claude maker's IPO is the biggest listing in history</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Thu, 13 Au</div>
+          <a href="https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800">tech</span>
+            <span class="text-xs text-gray-400">Ars Technica</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">Against all odds, SpaceX finally tugs Starship into port after 24 days at sea</h3>
+          <p class="text-xs text-gray-500 mt-1">"A team of SpaceX engineers is on their way to conduct additional analysis on the vehicle."</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">Tue, 18 Au</div>
+          <a href="https://arstechnica.com/space/2026/08/its-christmastime-at-spacex-as-company-salvages-starship-from-indian-ocean/" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>

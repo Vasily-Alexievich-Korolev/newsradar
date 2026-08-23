@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人民网财经 — News — NewsRadar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', -apple-system, sans-serif; }
+.markdown h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+.markdown p { margin-bottom: 0.5rem; line-height: 1.7; }
+.markdown ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown hr { margin: 1.5rem 0; border-color: #e5e7eb; }
+.markdown blockquote { border-left: 3px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-14 items-center">
+<div class="flex items-center space-x-6">
+
+<a href="/newsradar/index.html" class="text-lg font-bold text-gray-900">NewsRadar</a>
+<div class="hidden sm:flex space-x-4 text-sm">
+<a href="/newsradar/index.html" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+<a href="/newsradar/briefings.html" class="text-gray-600 hover:text-gray-900">Briefings</a>
+<a href="/newsradar/eco.html" class="text-gray-600 hover:text-gray-900">Economy</a>
+<a href="/newsradar/news.html" class="text-gray-600 hover:text-gray-900">News</a>
+<a href="/newsradar/events.html" class="text-gray-600 hover:text-gray-900">Events</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-xs text-gray-400 hidden sm:block">2026-08-24 06:00</div>
+<button id="nav-toggle" type="button" aria-label="菜单" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+<svg id="nav-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg id="nav-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden sm:hidden pb-3 space-y-1 border-t border-gray-100">
+<a href="/newsradar/index.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Dashboard</a>
+<a href="/newsradar/briefings.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Briefings</a>
+<a href="/newsradar/eco.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Economy</a>
+<a href="/newsradar/news.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">News</a>
+<a href="/newsradar/events.html" class="block px-3 py-2 rounded-md text-base text-gray-700 hover:bg-gray-100">Events</a>
+</div>
+</div>
+<script>
+(function() {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      var isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    });
+  }
+})();
+</script>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <div class="mb-4"><a href="../../news/finance.html" class="text-sm text-blue-600 hover:underline">&larr; Back to Finance</a></div>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-xl font-bold text-gray-900">Finance / 人民网财经</h1>
+      <span class="text-sm text-gray-400">100 articles</span>
+    </div>
+    <div class="grid gap-3">
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">首批全国38个零售业创新提升试点城市名单公布</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社北京6月5日电（记者谢希瑶）商务部等5部门办公厅近日印发通知，确定第一批全国零售业创新提升试点城市共38个。通知及名单5日对外发布。
+据介绍，这38个试点城市根据此前商务部等部门印发的《零售业创新提升工程实施方案》要求，在各地申报试点的基础上，经专家评审并向社会公示。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494880.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">首批39个地方特色食品产业获重点培育，有你的家乡吗？</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月5日电 （记者申佳平）据工业和信息化部官网消息，经省级工业和信息化主管部门推荐、专家评价、网上公示等程序，工业和信息化部确定了传统优势食品产区和地方特色食品产业重点培育名单（第一批），包括北京二锅头清香型白酒、哈尔滨红肠、江西山茶油、云南小粒咖啡等39个地方特色食品产业及其所在传统优势食品产区。
+工业和信息化部消费品工业司表示，传统优势食品产区和地方特色食品产业重点培育名单是中国消费...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494616.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">陶溪川  年轻人扎堆来练摊（高质量发展在一线·小城宝藏）</h3>
+          <p class="text-xs text-gray-500 mt-1">日影西斜，周末的江西景德镇陶溪川文创街区，创意集市上星星点点的灯光，照亮年轻人的脸庞。摊主王旭身穿旗袍，佩戴着自己制作的陶瓷耳饰，向顾客介绍：“这种陶瓷首饰用的是简约青花图案，很适合搭配传统服饰。”
+“这些都是你自己做的吗？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494096.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防范非法金融活动的指南请您查收</h3>
+          <p class="text-xs text-gray-500 mt-1">近年来，非法金融活动形式日益多样化，手段不断翻新，不法分子利用高额回报、快速获利等噱头，吸引公众参与非法集资、网络诈骗、金融传销等活动，严重损害了人民群众的财产安全和社会经济秩序。为防范打击非法金融活动，保护人民群众财产安全，向您如下提示：
+一、什么是非法金融活动
+非法金融活动，是指未经金融管理部门依法许可或者违反国家金融管理规定，实质从事货币、支付、吸收存款、放贷、保险、证券、基金、期货、外汇等...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494699.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防范自动驾驶技术风险 筑牢公共安全防护屏障</h3>
+          <p class="text-xs text-gray-500 mt-1">当前，我国智能驾驶技术正以芯片、传感器和大模型等关键核心技术突破为支点，加速重构交通运输产业生态。辅助驾驶系统凭借自适应巡航、车道保持等功能，已覆盖超半数乘用车市场，成为行车安全的“标配防线”；高阶自动驾驶更在政策创新与技术创新双轮驱动下，向干线物流、末端配送等场景纵深突破。随着规模化商用场景日益多元，自动驾驶为汽车行业赋予全新动能。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494673.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">防范和打击非法金融活动部际联席会议召开2025年全体（扩大）会议暨打击非法集资专项行动推进会议</h3>
+          <p class="text-xs text-gray-500 mt-1">2025年防范和打击非法金融活动部际联席会议全体（扩大）会议暨打击非法集资专项行动推进会议4月10日在京召开。联席会议召集人、金融监管总局党委书记、局长李云泽出席会议并讲话。中央政法委副秘书长杨春雷通报相关情况，最高人民法院党组成员、副院长李勇，农业农村部党组成员、副部长张兴旺，中国人民银行党委委员、副行长陶玲，中国证监会党委委员、副主席李明，市场监管总局总工程师刘敏，公安部经济犯罪侦查局局长华列...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494726.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">银河系的未来是一部“变形记”</h3>
+          <p class="text-xs text-gray-500 mt-1">在浩瀚无垠的宇宙中，银河系——我们的家园，正缓缓沿轨迹移动。与它相伴的是邻近的仙女星系、三角座星系与大麦哲伦星系。长久以来，天文学家一直认为，在大约50亿年后，银河系将不可避免地与仙女星系发生碰撞，并最终合并为一个全新的星系“Milkomeda”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493702.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">铁路端午假期累计发送旅客7875.2万人次 创历史同期新高</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月4日电 （记者王连香）记者从中国国家铁路集团有限公司（下称国铁集团）获悉，5月30日至6月3日铁路端午假期运输期间，全国铁路累计发送旅客7875.2万人次、同比增长3.5%，创历史同期新高，全国铁路运输安全平稳有序。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493822.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆市2025年度防非宣传海报（四）责任篇</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494682.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆市2025年度防非宣传海报（二）识别篇</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494680.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆市2025年度防非宣传海报（三）止损篇</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494681.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">重庆市2025年度防非宣传海报（一）定义篇</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494677.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">部分中小银行5年期存款利率降至1.2%</h3>
+          <p class="text-xs text-gray-500 mt-1">近期，中小银行掀起新一轮存款利率调整潮。多家农商行、村镇银行相继宣布下调定期存款利率，调整后，部分机构五年期整存整取利率最低已降至1.2%，跌破国有大行1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494489.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">这颗会下金属雨的狂暴行星从何处来</h3>
+          <p class="text-xs text-gray-500 mt-1">在浩瀚宇宙中，有一颗行星堪称“地狱级”存在——它的表面温度足以蒸发钢铁，大气中飘着金属蒸汽，甚至可能下起滚烫的“金属雨”。这颗行星名叫 WASP-121b，听起来像科幻小说里的设定，但它真实存在于宇宙中。
+WASP-121b是一颗“超热木星”，体积比木星稍大，质量差不多。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494501.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">这20个城市实施城市更新，中央财政拟支持</h3>
+          <p class="text-xs text-gray-500 mt-1">财政部6月4日公示了2025年度中央财政支持实施城市更新行动评选结果，北京等20个城市入选。
+近日，财政部、住房城乡建设部组织开展了2025年度中央财政支持实施城市更新行动评选，拟支持的20个城市为：北京、天津、唐山、包头、大连、哈尔滨、苏州、温州、芜湖、厦门、济南、郑州、宜昌、长沙、广州、海口、宜宾、兰州、西宁、乌鲁木齐。
+据了解，今年中央财政继续支持实施城市更新行动，探索建立可持续的城市更新机...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40494040.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">财政部在香港成功发行2025年第三期125亿元人民币国债</h3>
+          <p class="text-xs text-gray-500 mt-1">记者6月4日从财政部新闻办公室了解到，财政部当日在香港特别行政区，面向机构投资者招标发行2025年第三期125亿元人民币国债，受到投资者广泛欢迎，认购倍数3.96倍。
+其中，2年期35亿元，发行利率1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40494039.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">让算力像水、电一样便捷使用</h3>
+          <p class="text-xs text-gray-500 mt-1">算力，是推动经济社会高质量发展的新质生产力。日前，工业和信息化部印发《算力互联互通行动计划》，推动更好整合利用各类公共算力资源，促进算力高效供需匹配，提升我国公共算力使用效率和服务水平，将有力支撑我国数字经济高质量发展。
+将公共算力资源标准化互联，打造应用场景
+算力互联互通是在现有互联网体系架构基础上，通过构建统一算力标识、增强异构计算和弹性网络能力等方式，将不同主体、不同架构的公共算力资源标准化...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494093.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">让更多农民乐享出游（快评）</h3>
+          <p class="text-xs text-gray-500 mt-1">农忙得闲了，兜里有钱了，出行方便了！如今，一场“说走就走”的旅行，正成为越来越多农村居民的消费新时尚。
+从“攒钱建房”到“花钱看景”，从“背上背篓赶集”到“带上行李出游”，农村居民消费理念的转变，正是乡村全面振兴扎实推进的生动写照。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494086.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">能自愈可拉伸的晶体管电路问世</h3>
+          <p class="text-xs text-gray-500 mt-1">科技日报北京6月4日电 （记者刘霞）韩国成均馆大学、基础科学研究所（IBS）等机构科学家，开发出一种制造柔性电路的新方法。该方法制造出的电子元件可以拉伸且能自行修复，还能扩展组装成高性能可穿戴设备和可植入设备，有望为监测、诊断和治疗各种疾病开辟全新途径。相关论文发表于新一期《自然·电子学》杂志。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494500.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">缙云洋潭头片区城市设计竞赛向国内外征集山水公园城市建设方案</h3>
+          <p class="text-xs text-gray-500 mt-1">近日，由浙江省丽水市缙云县人民政府主办的“缙云县洋潭头片区城市设计竞赛”启动，向国内外规划、建筑设计、咨询及运营机构广泛征集设计方案，旨在以高水平城市设计赋能城市建设，将洋潭头片区打造成为缙云山水公园城市名片、浙江山水公园城市典范、中国山水公园城市建设样板。
+多年来，丽水市践行“绿水青山就是金山银山”的理念，持续推进美丽浙江建设。缙云县作为丽水市的“北大门”，拥有“八山一水一分田”的生态格局，是典...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493909.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">类太阳恒星宜居带发现“超级地球”</h3>
+          <p class="text-xs text-gray-500 mt-1">科技日报昆明6月3日电 （记者赵汉斌）近期，由中国科学院云南天文台研究员顾盛宏领衔的国际联合研究团队，首次利用凌星中间时刻变化（TTV）反演技术，在类太阳恒星的宜居带内发现一颗质量约为地球10倍的“超级地球”——开普勒725c。相关研究成果于3日在国际学术期刊《自然·天文》上发表。
+有没有另一颗像地球一样适合生命存在的行星？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493698.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">《算力互联互通行动计划》印发</h3>
+          <p class="text-xs text-gray-500 mt-1">科技日报北京6月4日电 （记者崔爽）记者4日从工业和信息化部获悉，工业和信息化部近日印发《算力互联互通行动计划》（以下简称《计划》），旨在加快构建算力互联互通体系，实现不同主体、不同架构的公共算力资源标准化互联，提高公共算力资源使用效率和服务水平，促进算力高质量发展。
+当前人工智能产业快速发展，全球算力资源使用需求不断攀升，算力互联互通已成为国内外关注焦点。工业和信息化部信息通信管理局有关负责人介...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494497.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">第二届“一带一路”科技交流大会亮点抢“鲜”看</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493725.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">端午假期超15亿件快递激活假日经济活力</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月3日电 （记者乔雪峰）端午节假期期间，浙江嘉兴快递企业开通“嘉兴粽子专线”、上线智慧驿站，将配送时间缩短2至3小时；湖北崇阳村民轻点手机，将包好的手工粽放进无人快递车，自动驶向县物流中心；贵州仁怀快递企业应用特制保温箱等专业保鲜设备，让粽子新鲜抵达消费者手中。
+这个端午假期，邮政快递企业织密粽香寄递网，更好服务端午“舌尖经济”。智能收投、智能分拣、智能仓储、智能运输等现代技术装备在行...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493755.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">破局汽车业“内卷” 推动产业链“共荣”</h3>
+          <p class="text-xs text-gray-500 mt-1">6月3日，全国工商联汽车经销商商会（以下简称“全联汽车经销商商会”）的一纸倡议，直指当前汽车流通环节的痛点，将汽车行业反“内卷”推向新的高潮。
+一个多星期以前，即5月23日，某头部车企掀起降价风暴，最高降幅达5.3万元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493695.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">知识产权助力 “老工业基地”加速驶向开放经济蓝海</h3>
+          <p class="text-xs text-gray-500 mt-1">东北地区作为我国重要的工业和农业基地，维护国家“五大安全”的战略地位十分重要，关乎国家发展大局。近年来，国家知识产权局与东北三省一区（辽宁、吉林、黑龙江、内蒙古）聚焦区域创新发展需求，以知识产权为核心抓手协同施策、精准发力。
+记者了解到，从顶层设计到产业升级再到乡村振兴，知识产权正多维度、多领域赋能东北三省一区走出一条高质量发展、可持续振兴的新路。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0601/c1004-40492052.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">甘肃新能源装机突破7000万千瓦</h3>
+          <p class="text-xs text-gray-500 mt-1">本报兰州6月4日电 （记者银燕）6月4日，记者从国网甘肃省电力公司获悉：截至5月底，甘肃全省新能源装机达7062.46万千瓦、同比增长25.25%，占总装机65.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494090.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">滴滴程维：将持续发挥稳就业、促消费作用</h3>
+          <p class="text-xs text-gray-500 mt-1">6月5日，滴滴在其官网发布2025年一季度业绩报告，业务持续稳健增长。
+报告显示，一季度，包括中国出行和国际业务在内的核心平台订单量为42.47亿单，较去年同期增长13.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494850.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">湖北联通以优质网络服务赋能千行百业发展</h3>
+          <p class="text-xs text-gray-500 mt-1">5月21日，湖北联通开启为期三天的“联通好服务 用心为客户”客户日活动。通过实地探访武汉联通科技馆营业厅、鄂州花湖国际机场、黄冈联通等地，近距离感受湖北联通在数字化转型和网络建设等领域的领先技术与暖心服务。
+领跑万兆时代，构建全场景数字生态
+作为下一代光网络演进的核心方向，万兆光网已成为新型信息基础设施的重要组成部分。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493754.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">添可洗地机：以科技与服务双驱动 助力品质家居生活</h3>
+          <p class="text-xs text-gray-500 mt-1">当繁重的家务持续消耗现代人的宝贵时间与精力，一台值得信赖的清洁伙伴便显得尤为重要。添可凭借其卓越的产品质量、可靠的性能表现和完善的用户保障，实现了销量销额连续五年全国第一的成就。
+添可深谙，真正的品质生活不仅在于强大的清洁效能，还在于贯穿产品全生命周期的品牌关怀与无忧售后。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493920.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">深化计量与数字技术融合对接</h3>
+          <p class="text-xs text-gray-500 mt-1">本报北京6月4日电 （记者林丽鹂）市场监管总局近日印发《计量数字化转型攻坚行动方案》，旨在加强计量与数字技术深度融合对接，以计量数字化和数字计量化为目标，为数字经济高质量发展夯实测量基础。方案提出，到2030年，重点突破30项以上数字计量关键核心技术，研制10项具有自主知识产权的数字计量装置，培育80家左右国家计量数据建设应用中心，建立国家计量数据中心，在重点领域重点行业建立5家智慧计量实验室，建...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494069.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">油烟治理“智净之道”：中国厨电的全球突围</h3>
+          <p class="text-xs text-gray-500 mt-1">厨房作为家庭生活的核心场景，长期存在一个被忽视的“隐形污染源”——厨房油烟。研究表明，厨房油烟的危害不亚于二手烟，长期暴露可能诱发呼吸系统疾病、心血管问题甚至肺癌风险。
+前不久，方太和苏宁易购在南京新街口联合发起了“游烟停”公益快闪行动，让公众直观感知厨房油烟的隐形危害。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494647.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">油价今年第4次上调 国际油价短期波动幅度或增大</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月4日电 （记者杜燕飞）国家
+发展改革委
+3日发布通知，根据近期国际市场油价变化情况，按照现行成品油价格形成机制，自2025年6月3日24时起，国内汽、柴油价格每吨分别上涨65元和60元。折合升价，全国平均来看，92号汽油、95号汽油、0号柴油每升均上涨0.05元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493912.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">沉浸式民俗游受追捧 端午出行热潮点燃消费新引擎</h3>
+          <p class="text-xs text-gray-500 mt-1">去龙舟文化发源地湖南汨罗，参与江灯祈福、包牛角粽，感受屈原故里的文化厚重感；在贵州镇远古镇的苗侗龙舟赛结束后，“抢鸭子”活动让游客在欢笑声中体验传统趣味；在广东佛山，看龙舟竞渡、体验划龙舟、游龙集市等活动沉浸式带旅客感受传统文化魅力……
+作为传统的民俗大节，沉浸式旅游过节，感受地方民俗成为今年端午文旅消费的核心亮点。
+记者从交通运输部获悉，5月31日至6月2日（端午节假期），全社会跨区域人员流动量...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493752.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">民生银行济南分行营业部进社区开展反诈防非宣传活动</h3>
+          <p class="text-xs text-gray-500 mt-1">为提升社区居民防范电信诈骗和非法集资的意识与能力，近日，民生银行济南分行营业部组织工作人员走进社区，开展了一场主题为“防范电信诈骗·警惕非法集资”的宣传活动，为居民送上实用的金融安全知识。
+活动现场，工作人员通过设立宣传咨询台、悬挂横幅、发放宣传手册等方式，向过往居民普及相关知识。针对社区老年人群体较易受骗的特点，工作人员用通俗易懂的语言，结合真实案例，详细讲解了电信诈骗的常见手段，如“冒充公检法...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494679.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“本源悟空”完成超50万个全球量子计算任务</h3>
+          <p class="text-xs text-gray-500 mt-1">科技日报合肥6月4日电 （记者吴长锋 洪敬谱）记者4日从安徽省量子计算工程研究中心获悉，我国第三代自主超导量子计算机“本源悟空”自2024年1月6日上线运行以来，已为143个国家和地区的用户完成超50万个量子计算任务，全球访问量突破2900万次，刷新中国自主量子算力服务规模纪录，成为全球量子计算领域的重要参与者。
+“本源悟空”由本源量子计算科技（合肥）股份有限公司自主研发。作为我国先进的可编程、已...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494494.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">最高人民法院关于审理非法集资刑事案件具体应用法律若干问题的解释</h3>
+          <p class="text-xs text-gray-500 mt-1">（2010年11月22日最高人民法院审判委员会第1502次会议通过，根据2021年12月30日最高人民法院审判委员会第1860次会议通过的《最高人民法院关于修改〈最高人民法院关于审理非法集资刑事案件具体应用法律若干问题的解释〉的决定》修正，该修正自2022年3月1日起施行）
+为依法惩治非法吸收公众存款、集资诈骗等非法集资犯罪活动，根据《中华人民共和国刑法》的规定，现就审理此类刑事案件具体应用法律的...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494737.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">智能通关“黑科技”畅通水果出口“高速路”</h3>
+          <p class="text-xs text-gray-500 mt-1">5月中旬，一批从果园新鲜采摘的“俄八”大樱桃运抵大连市绿海农业开发有限公司生产车间，工人们熟练地对这批樱桃鲜果进行筛选称重、整齐摆放、打包装箱。大连海关所属大连长兴岛海关关员在现场同步实施检验检疫监管，确保产品符合出口地区的准入标准。随后，这批重500公斤的樱桃将通过空运出口。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493701.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">智能经济加速发展</h3>
+          <p class="text-xs text-gray-500 mt-1">习近平总书记强调，“要推动人工智能科技创新与产业创新深度融合，构建企业主导的产学研用协同创新体系，助力传统产业改造升级，开辟战略性新兴产业和未来产业发展新赛道。”
+近年来，人工智能与医疗、交通、科研等领域加快融合，智能经济加速发展，数字中国建设迈出新步伐。
+沉淀名医经验，诊断更准确。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494087.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“无人机＋”，加出丰富应用场景</h3>
+          <p class="text-xs text-gray-500 mt-1">图①：一架外卖无人机在彭州升空。
+图②：位于彭州的“天空之眼”3号基地。
+图③：一架低空旅游小型飞机正在起飞。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494054.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">数说生态美 共赏美丽中国新画卷</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494620.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">支付机构竞相海外“拿牌” 抢占先发优势</h3>
+          <p class="text-xs text-gray-500 mt-1">连日来，多家支付机构官宣布获得海外支付牌照。比如，跨境支付机构杭州乒乓智能技术有限公司（以下简称“PingPong”）及移卡有限公司（以下简称“移卡”）纷纷宣布获得海外支付牌照。
+南开大学金融学教授田利辉对记者表示，支付机构积极获取海外支付牌照，反映了跨境支付行业全球化、合规化的发展趋势。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493690.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">拒绝“价格战” 银行向结构性改革要增量</h3>
+          <p class="text-xs text-gray-500 mt-1">近日，避免“内卷式”竞争成为银行业持续关注的话题。一方面，国家金融监督管理总局明确提到，防止并纠正涉农信贷业务“内卷式”竞争。另一方面，多家银行也发声拒绝“价格战”，呼吁避免低效竞争。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493682.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">把稳智能驾驶安全“方向盘” 筑牢物流配送无人车“生命线”</h3>
+          <p class="text-xs text-gray-500 mt-1">在物流行业快速发展的今天，无人配送车正以前所未有的速度重塑城市物流格局。截至今年5月，新石器慧通科技有限公司（以下简称“新石器无人车”）已在全球13个国家、200多个城市累计交付部署超5000台无人车，自动驾驶行驶里程突破3000万公里，打造全球最大的无人配送车队。在技术迭代和应用场景拓展的过程中，智能驾驶安全始终是新石器无人车发展的核心使命。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494675.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">打卡“雪龙2”号（记录中国）</h3>
+          <p class="text-xs text-gray-500 mt-1">市民在“雪龙2”号飞行平台上合影留念。
+“雪龙2”号停泊于海口秀英港码头。
+以上图片均为苏弼坤摄（影像中国）
+6月2日，海南海口秀英港码头，市民登上“雪龙2”号，参观实验室、办公区、船员起居室、驾驶台、飞行平台等区域。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494067.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">我国认证认可检验检测行业发展质量实现整体提升</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社上海6月5日电
+题：我国认证认可检验检测行业发展质量实现整体提升
+新华社记者赵文君、程思琪
+2024年，实施强制性产品认证（CCC认证）产品联网核查2.4亿次，拦截无证商品信息1315万次；制定6类工业机器人检验检测方法、3项工业机器人整机安全认证实施规则；在24个地区启动产品碳足迹标识认证试点，支撑产业绿色化发展……我国认证认可检验检测工作在与全球供应链协同发展的同时，行业发展质量实现整体...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494876.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">我国绿色贷款余额超40万亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">本报北京6月4日电 （记者吴秋余）中国人民银行发布的最新数据显示：截至今年一季度末，我国本外币绿色贷款余额40.61万亿元，比年初增长9.6%，一季度增加3.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494060.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">我国第一型自主研制的1000千瓦级民用涡轴发动机获颁生产许可证</h3>
+          <p class="text-xs text-gray-500 mt-1">记者从中国航空发动机集团有限公司获悉，6月5日在湖南株洲举办的AES100发动机研制工作总结会宣布，AES100发动机已获颁生产许可证并签订销售合同，表明AES100发动机从设计研发阶段迈向批量生产阶段，为其投入市场、推动低空装备发展奠定了基础。
+航空发动机是飞机的“心脏”，涡轴发动机主要配装各类直升机。AES100发动机是我国第一型严格按照国际通行适航标准自主创新研制的1000千瓦级先进民用涡轴...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494625.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">快递包装需增“绿”减“废”快“循环”</h3>
+          <p class="text-xs text-gray-500 mt-1">随着电商行业飞速发展，快递业务量呈爆发式增长，快递包装的绿色化转型迫在眉睫。
+6月1日起，《国务院关于修改〈快递暂行条例〉的决定》（以下简称《决定》）正式施行。此次修改，专门增加了“快递包装”章节，填补了快递包装治理的制度空白，为绿色转型提供了有力的法治保障，将推动快递包装绿色化、减量化、可循环，加快形成绿色生产和生活方式。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494492.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">山东广饶县开展防范非法集资宣传进养老机构活动</h3>
+          <p class="text-xs text-gray-500 mt-1">为深入贯彻落实防范非法金融活动宣传月活动，切实维护老年人合法权益，增强老年人防范意识和识别能力，6月4日，广饶县金稳办联合县民政局、县公安局，走进萱花开颐养中心和康泰阳光老年公寓，开展了以“守住钱袋子 护好幸福家”为主题的老年人防范非法集资和养老诈骗专项宣传活动。
+本次宣传活动聚焦老年人群体，通过发放宣传资料、涉非风险提示、典型案例警示、防非技巧展示等方式，重点围绕非法集资的特征、危害、常见手法以...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494704.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">层高不低于3米！新规范如何让住宅更“宜居”？</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月5日电 （记者王连香）今日，住房和城乡建设部召开新闻发布会，介绍《住宅项目规范》（以下简称《规范》）实施有关情况。会上，住房和城乡建设部标准定额司司长姚天玮指出，建“好房子”不等同于建“大房子”“贵房子”，而是要通过好的设计、好的施工、好的材料、好的服务等，解决居住中的痛点问题，全面提升住房品质。
+姚天玮表示，下一步，住房和城乡建设部将积极开展《规范》宣贯实施指导工作，包括开展线下、...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494753.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">宣讲防非打非 增强防范意识</h3>
+          <p class="text-xs text-gray-500 mt-1">5月27日，阳曲县金融监管支局联合阳曲县金融发展服务中心、建设银行阳曲县支行，共同下沉社区，开展“防非打非”主题宣讲活动，并通过端午包粽子联谊形式，将金融知识送到群众身边。
+防非打非工作机制旨在通过加强监管、风险监测、宣传教育等措施，来预防和减少非法金融活动的发生。活动当天，工作人员通过案例讲解、互动问答等形式，向社区居民普及非法集资的常见套路、电信诈骗的防范技巧以及理性投资理财的重要性。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494708.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">完善大语言模型治理体系 守护数智时代网络安全</h3>
+          <p class="text-xs text-gray-500 mt-1">当前，以ChatGPT、DeepSeek为代表的大语言模型（LLM）技术正加速重构全球产业格局。截至2025年，我国生成式人工智能大模型备案数量已突破300个，LLM技术已深度嵌入企业核心业务场景。然而，技术红利背后潜藏着网络安全范式变革——传统基于规则和特征的防护体系，正面临人工智能赋能的复合型风险挑战。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494670.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">安诺其算力AI产业化应用平台发布暨创新基地落成</h3>
+          <p class="text-xs text-gray-500 mt-1">2025年5月28日，安诺其集团在上海人工智能高地徐汇滨江芒果广场会议厅，圆满举办算力AI产业化应用平台发布暨创新基地落成仪式。行业领导、人工智能专家、合作单位代表及媒体人士齐聚一堂，“安诺其视界”视频号平台线上同步直播，共同见证这一具有里程碑意义的时刻。
+安诺其集团自1999年成立以来，始终秉持“创新驱动产业升级”的发展理念，从染料行业深耕起步，不断创新突破。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493770.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">央行公开市场开展2149亿元7天期逆回购操作</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月4日电 （记者黄盛）中国人民银行公告显示，6月4日以固定利率、数量招标方式开展了2149亿元7天期逆回购操作，操作利率1.40%，投标量2149亿元，中标量2149亿元。
+Wind数据显示，6月4日2155亿元逆回购到期，据此计算，单日净回笼6亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493859.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">天问二号开启深空探测新征程</h3>
+          <p class="text-xs text-gray-500 mt-1">天问二号任务示意图。
+图片来源：国家航天局探月与航天工程中心
+AI制图
+5月29日，中国行星探测工程天问二号探测器顺利升空，小行星探测与采样返回之旅由此开启。
+天问二号任务设计周期10年左右，主要任务目标是对小行星2016HO3进行探测、取样并返回地球，此后再对主带彗星311P开展科学探测。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494053.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">外卖补贴搅动咖啡、茶饮江湖 供应链成竞争关键</h3>
+          <p class="text-xs text-gray-500 mt-1">近日，咖啡、茶饮市场迎来了一场前所未有的价格风暴。随着京东、淘宝等外卖平台加速入局，外卖补贴战火迅速蔓延至咖啡、茶饮领域，多家知名咖啡、茶饮品牌的产品价格被拉低至3元甚至更低，一场由外卖补贴点燃的“价格战”就此打响。
+补贴催生低价狂欢
+6月4日，《证券日报》记者走进位于北京大兴区的一家库迪咖啡门店，店员们在制作区和打包区之间来回穿梭，点单台上密密麻麻摆放着待取的外卖单。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494490.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">处置非法集资部际联席会议发布《关于加强防范非法集资宣传教育工作的意见》</h3>
+          <p class="text-xs text-gray-500 mt-1">全方位加强宣传教育工作是防范非法集资风险的治本之策。国务院发布的《防范和处置非法集资条例》（以下简称《条例》）对加强防范非法集资宣传教育作出明确规定：一是建立上下联动的工作机制，推动全国范围内防范非法集资宣传教育工作。二是构建常态化宣传格局。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494740.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">国家管网西气东输为长三角一体化绿色发展注入强劲动能</h3>
+          <p class="text-xs text-gray-500 mt-1">西气东输管道系统向长三角地区输送天然气达5500亿立方米
+6月5日，记者在国家管网集团西气东输公司媒体公众开放暨品牌日活动上获悉，国家管网西气东输累计向上海输送天然气突破650亿立方米，向长三角地区输送天然气达到5500亿立方米。累计输送的5500亿立方米天然气，折合替代标煤7.1亿吨，可减少排放二氧化硫1399.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494676.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">国家电网有限公司发布《服务新能源发展报告2025》</h3>
+          <p class="text-xs text-gray-500 mt-1">6月3日，国家电网有限公司发布《服务新能源发展报告2025》（以下简称《报告》）。《报告》详细介绍了2024年国家电网经营区域内新能源（主要指风电、太阳能发电，下同）发展情况，系统阐释了国家电网公司服务新能源发展的履责意愿，从电源并网、电网建设、调度运行、市场交易、技术创新5个方面全面梳理了国家电网公司服务新能源发展的重点举措和创新实践，分析新能源发展形势，并发布服务新能源发展的国网行动和倡议。
+...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493865.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">国内单体规模最大“茶光互补”电站并网</h3>
+          <p class="text-xs text-gray-500 mt-1">科技日报北京6月3日电 （记者刘园园）记者3日从中国广核新能源控股有限公司（以下简称“中广核新能源”）获悉，中广核云南墨江碧溪235兆瓦光伏电站日前成功并网发电。该电站采用“茶光互补”新型产业融合发展模式，在租赁的5250亩茶山上建设光伏电站，实现了土地立体化增值利用，为乡村振兴注入了新动能。
+据悉，该电站位于云南省普洱市墨江县，装机规模235兆瓦，占地面积5250亩，是国内单体规模最大的“茶光互...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493700.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">国产大飞机C919完成支线机场商业首航</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社郑州6月4日电（记者李文哲、王聿昊）6月4日晚，中国南方航空CZ3383航班顺利抵达南阳姜营机场。这是南航首次使用国产大飞机C919执飞广州—南阳航线，也是C919在支线机场的商业首航。
+南航相关负责人表示，此次支线机场商业首航不仅是国产大飞机市场化运营“干支通”航线的关键一步，也标志着南阳姜营机场正式成为南航C919飞机的常态化飞行训练基地。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494152.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">商务部回应美方提高钢铝关税：将严重扰乱全球产业链供应链稳定</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月5日电（记者孙红丽）6月5日，商务部召开例行新闻发布会，介绍近期商务领域重点工作有关情况，并答记者问。
+有记者问，当地时间6月3日，美国白宫发表声明称，美国总统特朗普宣布将进口钢铁和铝及其衍生制品的关税从25%提高至50%。发言人对此有何评论？</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494835.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">商务部回应汽车行业“内卷”：配合相关部门加强综合整治与合规引导</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社北京6月5日电（记者谢希瑶）商务部新闻发言人何咏前5日表示，针对当前汽车行业存在的“内卷式”竞争现象，商务部将积极配合相关部门，加强综合整治与合规引导，维护公平竞争市场秩序，促进行业健康发展。
+在商务部当天举行的例行新闻发布会上，有记者问，近期“零公里二手车”持续引发市场讨论，商务部对于汽车行业“内卷”现象有何看法？何咏前作出上述回应。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494874.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">商务部：中方反对美301关税的立场是明确的、一贯的</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月5日电（记者孙红丽）6月5日，商务部召开例行新闻发布会，介绍近期商务领域重点工作有关情况，并答记者问。
+有记者问，美国贸易代表办公室6月1日宣布，延长对中国在技术转让、知识产权和创新方面的行为、政策及做法的301调查中的豁免期限。豁免期限原定于2025年5月31日到期，现已延长至2025年8月31日。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494843.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">取得关键资质！AES100发动机获颁生产许可证</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社长沙6月5日电（记者苏晓洲、宋晨）记者从中国航空发动机集团有限公司获悉，6月5日在湖南省株洲市举办的AES100发动机研制工作总结会宣布，AES100发动机获颁生产许可证并签订销售合同，表明该机型从设计研发迈向批量生产，为投入市场、推动低空装备发展奠定了坚实基础。
+航空发动机是飞机的“心脏”，涡轴发动机主要配装直升机。中国航发有关人士介绍，AES100发动机是我国第一型严格按照国际通行适航标...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494627.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">发射无线电波和X射线的天体现身</h3>
+          <p class="text-xs text-gray-500 mt-1">科技日报北京6月3日电 （记者张梦然）包括国际射电天文学研究中心（ICRAR）天文学家在内的联合团队，对一种新型宇宙现象有了惊人发现：一个被命名为ASKAP J1832-0911的天体，每44分钟发射一次持续约两分钟的无线电波和X射线脉冲。这是首次在X射线下探测到这类被称为长周期瞬变（LPT）的物体，为解开天空中类似神秘信号的来源提供了新线索。相关论文发表在最新一期《自然》杂志上。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493704.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">北京“最贵麦田”收获在望</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月5日电 （记者王天乐、李栋）芒种时节，位于北京市三环内隶属于中国农业科学院作物科学研究所的试验田里，麦浪滚滚，满眼金黄。
+这片被网友誉为北京“最贵麦田”的地块上，金灿灿的麦浪与都市湛蓝的天际线交相辉映，构成了一道独特的城市田园景观。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494459.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">前4月规上互联网企业研发经费增长4.8%</h3>
+          <p class="text-xs text-gray-500 mt-1">本报北京6月4日电 （记者王政、刘温馨）工业和信息化部数据显示：今年前4月，我国规模以上互联网和相关服务企业完成互联网业务收入5970亿元，同比增长1.5%。
+研发经费稳步提升。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494059.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">前4月我国集成电路出口同比增长20%</h3>
+          <p class="text-xs text-gray-500 mt-1">本报北京6月4日电 （记者王政、刘温馨）工业和信息化部数据显示，今年前4月，我国规模以上电子信息制造业增加值同比增长11.3%，较同期工业、高技术制造业增速分别高4.9个和1.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494068.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">养老机器人逐浪“夕阳红”新蓝海</h3>
+          <p class="text-xs text-gray-500 mt-1">智能护理臂精准托起老人完成洗漱；健康监测地毯实时捕捉步态数据，提前48小时预警跌倒风险；搭载柔性机械臂的护理床只需一句语音指令就可自动调整到舒适角度；当独居老人凝视屏幕片刻，情感交互机器人便能立即开启定制化陪伴对话……这些嵌入了传感器的钢铁之躯，正在悄然改变银发群体的生活。
+国家统计局最新统计数据显示，截至2024年末，我国60岁及以上人口首次突破3亿人，占全国人口的22.0%。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494485.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">全屋智能带来“一屋千面”居住体验</h3>
+          <p class="text-xs text-gray-500 mt-1">“小度小度，我要起床了。”随着演示人员一声指令，窗帘自动拉开，床垫自动抬起，室内灯光与气温自动调节到适宜区间，墙上的人工智能（AI）中控屏播报着当日天气和要闻……这是记者近日来到小度全屋智能体验中心时看到的场景。在全屋智能逐渐普及的今天，类似的画面正在越来越多的家庭中上演。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494496.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">光大银行持续培育绿色金融特色化竞争优势 助力社会绿色转型</h3>
+          <p class="text-xs text-gray-500 mt-1">“我们一直非常重视碳排放和绿色生产。正因为此，光大银行向我们发放500万元的低息流动资金贷款。”深圳市某模具有限公司相关负责人表示。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494663.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">体育精神赋能 乳制品行业推动品质提升</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月5日电 （记者夏晓伦）近年来，中国乳制品行业在政策引导、消费升级与技术革新的多重驱动下，正经历深度变革。从奶源基地建设到产品结构优化，从技术升级到国际竞争力提升，行业在挑战中孕育着新机遇。
+与此同时，行业供需结构正加速调整。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494877.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">优化口岸营商环境没有最好，只有更好（快评）</h3>
+          <p class="text-xs text-gray-500 mt-1">出台高效举措、优化服务体验、强化硬件设施、搭建高效平台……近年来，海关等职能部门和地方政府密切合作，推出一系列精准有力的政策措施，为激发经营主体活力和助力外贸高质量发展注入强劲动能。
+口岸营商环境直接关系到国际贸易的便利程度。优化口岸营商环境，意味着在简化流程、提高效率、降低成本上下功夫。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494095.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">从乡村出发，赴一场开心旅行（大数据观察）</h3>
+          <p class="text-xs text-gray-500 mt-1">数据来源：文化和旅游部
+农村居民出游热潮涌动，正成为旅游市场的鲜活景象。
+文化和旅游部数据显示，今年一季度，国内出游人次17.94亿，其中，农村居民国内出游人次4.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494085.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">今天，消费升级能改变什么（中国消费向新而行）</h3>
+          <p class="text-xs text-gray-500 mt-1">广东深圳，消费者在选购手机。
+新华社记者 梁 旭摄
+在上海举办的中国美容博览会上，客商亲身体验化妆。
+施 觉摄（影像中国）
+甘肃敦煌鸣沙山，游客在等待星空演唱会开始。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494092.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">人民币“国际范儿”愈浓：筑根基、拓场景、广合作</h3>
+          <p class="text-xs text-gray-500 mt-1">从清算网络的“毛细血管”，到实体经济的“神经末梢”，再到金融科技的“前沿阵地”，人民币国际化正以多维立体的方式稳慎扎实推进。当前，人民币保持全球第四大活跃货币的位置，“朋友圈”不断扩大，“国际范儿”愈浓。
+筑根基 完善跨境清算基础设施
+人民币国际化的稳慎扎实推进，离不开高效安全的跨境支付清算体系作为支撑。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494467.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">“产业造血+文化赋能”双轮驱动 奇富科技百万帮扶云南中屏镇</h3>
+          <p class="text-xs text-gray-500 mt-1">5月30日，云南禄劝县中屏镇第三届“村BA”篮球赛热血开赛，篮球架下的欢呼声与山间菌菇田的劳作声遥相呼应。赛场内球员以球会友，场外奇富科技捐资100万元建设的冻干库正通过公益片《蕈菇纪》讲述着“小菌菇撬动大产业”的乡村故事。作为赛事赞助商与沪滇协作参与者，奇富科技以“产业造血+文化赋能”双轮驱动，为中屏镇铺就振兴之路。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494560.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">买卖二手手机，如何更安心（经济新方位·二手交易市场观察）</h3>
+          <p class="text-xs text-gray-500 mt-1">数据来源：商务部等
+制图：蔡华伟
+山东济南历下区的一家手机店里，市民黄育珍将旧手机交给店员。数据迁移、隐私清除……经过一系列操作，这部手机最终折抵800元。
+“我新换了台大屏手机，算上换新补贴和折旧费用，价格很合适。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494062.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中央财政拟支持20个城市实施城市更新行动</h3>
+          <p class="text-xs text-gray-500 mt-1">6月4日，财政部发布《2025年度中央财政支持实施城市更新行动评选结果公示》（以下简称《公示》），对2025年度中央财政支持实施城市更新行动评选结果进行了公布。
+《公示》显示，中央财政拟支持的20个城市为：北京、天津、唐山、包头、大连、哈尔滨、苏州、温州、芜湖、厦门、济南、郑州、宜昌、长沙、广州、海口、宜宾、兰州、西宁、乌鲁木齐。
+财政部办公厅、住房和城乡建设部办公厅于4月初发布的《关于开展202...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494486.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国人民银行将开展1万亿元买断式逆回购操作</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社北京6月5日电（记者任军、吴雨）中国人民银行5日发布公告称，为保持银行体系流动性充裕，6月6日，中国人民银行将以固定数量、利率招标、多重价位中标方式开展1万亿元买断式逆回购操作，期限为3个月（91天）。
+东方金诚首席宏观分析师王青说，此次操作有助于银行体系流动性持续保持充裕状态，控制资金面波动，稳定市场预期。现阶段加大中期流动性投放，释放出数量型政策工具持续加力的政策信号，有助于强化逆周期调...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494893.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">中国二十二冶举行2025年度市政工程质量观摩会暨经验交流会</h3>
+          <p class="text-xs text-gray-500 mt-1">5月30日，中国二十二冶举行2025年度市政工程质量观摩会暨经验交流会。此次观摩以路桥公司唐山市路北区西部经济开发区基础设施及配套设施建设项目（二期）总承包项目为载体，旨在充分发挥标杆项目的示范引领作用，找差距、补短板、促交流、拓思路，全面落实质量管控主体责任，推动市政工程先进的项目管理经验得以推广和应用，提升市政工程建设管理水平与品质。
+此次观摩会采取“现场观摩+会议交流”的形式举行，与会人员深...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493964.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">两部门部署全面打造现代化用电营商环境</h3>
+          <p class="text-xs text-gray-500 mt-1">国家发展改革委和国家能源局日前联合印发《关于深化提升“获得电力”服务水平 全面打造现代化用电营商环境的意见》，明确到2029年，我国基本建成办电便捷化、供电高质化、用电绿色化、服务普惠化、监管协同化的现代化用电营商环境，我国“获得电力”国际竞争优势进一步巩固，人民群众办电用电获得感满意度持续增强。
+优质高效的供电服务、稳定可靠的电力供应对企业群众生产生活具有重要作用，与千家万户切身利益、经济社会发...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493829.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">两部门：开展高性能生物反应器创新任务揭榜挂帅工作</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月4日电 （方经纶）为强化生物反应器核心组件、关键部件和操作系统等“串珠成链”集成创新，增强生物制造关键装备供给保障能力，工业和信息化部、中国科学院近日联合开展高性能生物反应器创新任务揭榜挂帅工作。
+本次工作聚焦反应器系统、关键部件与耗材、工业操作系统3类9项揭榜任务，旨在遴选培育一批掌握关键核心技术、具备较强创新能力的优势单位，突破一批标志性技术装备，培育典型应用场景，加速新技术新产...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493958.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">东南亚水果从这里“抢鲜”上市（身边的经济故事）</h3>
+          <p class="text-xs text-gray-500 mt-1">车水马龙，鲜果飘香。上午9时，广西友谊关口岸，一趟满载20吨越南菠萝蜜的冷链车进关。
+“验放只需10秒。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494094.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">东北三省一区有效发明专利达19.5万件</h3>
+          <p class="text-xs text-gray-500 mt-1">本报北京6月4日电 （记者谷业凯、祝大伟）记者从国家知识产权局获悉：截至今年4月底，东北三省一区有效发明专利达到19.5万件，同比增长10.2%；有效注册商标达到216.</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494066.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">世界首次！我国科学家确证存在史前母系社会组织</h3>
+          <p class="text-xs text-gray-500 mt-1">新华社济南6月4日电（记者邵琨）我国科学家凭分子遗传学证据确认，山东广饶傅家遗址存在距今4750年以前由两个母系氏族构成的社会形态。
+这项成果在世界范围内首次确证存在史前母系社会组织，首次以分子遗传学证据实证了我国新石器时代母系社会的具体结构，刷新了母系社会最早仅可追溯至欧洲铁器时代的遗传学线索溯源。这项研究由山东省文物考古研究院与北京大学等联合开展，相关论文4日在国际学术期刊《自然》发表。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40494044.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">一粒稻谷上演“七十二变”</h3>
+          <p class="text-xs text-gray-500 mt-1">去年底，美国科学家从稻壳灰中提取出一种高性能硬碳材料，用它做电池，电量比普通电池多一倍。其实，我国早就发现了稻谷加工过程中的巨大利用价值。
+6月2日，科技日报记者走进益海嘉里金龙鱼食品集团股份有限公司（以下简称“益海嘉里”）探访发现，当一粒稻谷进入加工生产线，便开始了它的“七十二变”：优质大米加工而成，米糠变成稻米油，稻谷副产品做成化妆品、医药用品。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493699.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">一日看四季 十里不同天（探访）</h3>
+          <p class="text-xs text-gray-500 mt-1">图为独库公路沿途风光。
+陈遂中摄
+被誉为“中国最美公路”之一的新疆独库公路经过近8个月的交通管制期，于5月31日恢复通车。
+独库公路北起克拉玛依市独山子区，南至阿克苏地区库车市，全长561公里。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494089.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">一季度末科技型中小企业获贷率49.6%</h3>
+          <p class="text-xs text-gray-500 mt-1">在福建厦门，普适性高、服务范围广的“信用快贷”“抵押快贷”为中小微企业量身定制金融方案，更好满足不同行业、不同特征的科技型小微企业的融资需求。
+在湖北武汉，高额度、低利率的“善新贷”，为满足小微企业融资需求而打造，解决小微科创企业抵押物不足、研发投入多、产品周期长、资金需求大的难题。
+在湖南永州，“信用e贷”等线上加线下相结合的信贷产品体系，综合考量企业结算流水、纳税信息等多维度数据，为科技企业提...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494464.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">一图读懂2025年一季度金融机构贷款投向</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494463.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A股多指数样本“更新” 指数化投资再掀热潮</h3>
+          <p class="text-xs text-gray-500 mt-1">6月3日，深圳证券交易所及其全资子公司深圳证券信息有限公司公告称，将对深证成指、创业板指、深证100、创业板50等指数样本进行定期例行调整。此外，5月30日，上海证券交易所与中证指数有限公司也联合发布公告称，将调整上证50、上证180、上证380、科创50等指数样本。相关调整方案均将于6月13日收市后生效。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493679.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">A股多指数样本将调整</h3>
+          <p class="text-xs text-gray-500 mt-1">人民网北京6月4日电 （记者黄盛）6月3日，深圳证券交易所公告表示，将对深证成指、创业板指、深证100、创业板50等指数样本进行定期例行调整。此外，5月30日，上海证券交易所发布公告表示，将调整上证50、上证180、上证380、科创50等指数样本。
+据介绍，本次深市指数调整将于2025年6月16日正式实施，深证成指将更换20只样本，调入主板、创业板公司各10家；创业板指将更换8只样本，创业板50将...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-04</div>
+          <a href="http://finance.people.com.cn/n1/2025/0604/c1004-40493860.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">AI碰上影视，会擦出怎样的火花</h3>
+          <p class="text-xs text-gray-500 mt-1">人工智能（AI）技术正引发众多领域的变革，影视产业便是其一。
+5月21日，谷歌发布影视级视频制作大模型Flow。5月30日，著名科技趋势分析家玛丽·米克尔发布《AI趋势》报告，将“制作全长电影和游戏”，列入“未来5年内AI最可能做到的10件事”。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494502.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">607家上市公司披露贷款总额上限超1260亿元</h3>
+          <p class="text-xs text-gray-500 mt-1">6月3日晚间，浙江嘉化能源化工股份有限公司（以下简称“嘉化能源”）等3家上市公司披露其获得银行回购贷款。据同花顺iFinD数据统计，截至6月4日，自去年10月份以来，累计607家上市公司披露651单回购增持贷款，贷款金额上限合计1260.25亿元。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494484.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">3天逾15亿件 小包裹折射消费大市场</h3>
+          <p class="text-xs text-gray-500 mt-1">曾经，古人只能以“飞车跨山鹘横海，风枝露叶如新采”的诗句遐想岭南鲜果的鲜美。如今，现代物流的极速运输网络已让这份遐想触手可及——端午假期前一天，笔者从线上下单了一份广东茂名出产的荔枝，隔天傍晚就已接到送货电话。开箱刹那，圆润饱满的果实裹着细密的水珠，恰似古人笔下“如新采”的鲜活模样。</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494487.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">2025年防范非法金融活动宣传月正式启动</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c460498-40494684.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">2025年度中央财政支持实施城市更新行动评选结果公示</h3>
+          <p class="text-xs text-gray-500 mt-1">本报北京6月4日电 （记者曲哲涵）财政部、住房和城乡建设部近日组织开展了2025年度中央财政支持实施城市更新行动评选，拟支持的20个城市为：北京、天津、唐山、包头、大连、哈尔滨、苏州、温州、芜湖、厦门、济南、郑州、宜昌、长沙、广州、海口、宜宾、兰州、西宁、乌鲁木齐。两部门将上述结果予以公示，公示期为2025年6月4日至8日。
+另据财政部、住房和城乡建设部4月初公布的《关于开展2025年度中央财政支...</p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494088.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs px-2 py-0.5 rounded bg-green-100 text-green-800">finance</span>
+            <span class="text-xs text-gray-400">人民网财经</span>
+          </div>
+          <h3 class="font-medium text-gray-900 text-sm">1.75亿份补贴！以旧换新“焕”出美好生活</h3>
+          <p class="text-xs text-gray-500 mt-1"></p>
+        </div>
+        <div class="flex-shrink-0 text-right">
+          <div class="text-xs text-gray-400">2025-06-05</div>
+          <a href="http://finance.people.com.cn/n1/2025/0605/c1004-40494452.html" target="_blank" class="text-xs text-blue-500 hover:underline block mt-1">Original</a>
+        </div>
+      </div>
+    </div></div>
+</main>
+</body>
+</html>
